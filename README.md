@@ -1,44 +1,34 @@
-# devforge-doom-template
+# DevForge DOOM
 
-Starter template for **Yugaantar 2026 · DevForge — Track 1: "Can It Play DOOM?"**
+Neural agent for **Yugaantar 2026 · DevForge Track 1, “Can It Play DOOM?”**
 
-> For decades, *"Can it run DOOM?"* was the ultimate hardware test. Now: **can your neural network
-> actually play DOOM?** Train an agent that plays unseen levels **zero-shot**: survive ambushes,
-> navigate multi-room layouts, find keycards, unlock doors and reach the exit.
-
-No dataset is provided. Your agent learns by interacting with the engine.
+The policy learns through live ViZDoom gameplay using PPO. It encodes the
+official raycast, entity and vital readings and combines four frames of
+features before choosing a legal button combination.
 
 ## Quickstart
 
-1. Click **"Use this template"** on GitHub to create your team's (public) repository.
-2. Set up the environment (Python 3.13, [uv](https://docs.astral.sh/uv/)):
+Use the project’s Python 3.13 environment with PyTorch and the official wrapper
+installed. Fetch the trained weights through Git LFS and run the native validator.
 
-   ```bash
-   uv sync                 # installs vizdoom, gymnasium and the official wrapper (env/) in editable mode
-   uv run python validate.py
-   ```
+```bash
+git lfs pull
+python validate.py --device cpu
+```
 
-   Or use the official image, which is exactly what the scorer runs:
+See the local training guide for the installed package versions, commands to
+resume the PPO run, and the fixed-map evaluation procedure. [Training guide](training/LOCAL.md)
 
-   ```bash
-   docker build -t devforge-doom .            # or: docker pull <official image tag, announced>
-   python validate.py --docker --image devforge-doom   # installs requirements.txt, then runs sandboxed like the scorer
-   ```
-
-3. Replace the random baseline in `submission/agent.py` with your trained agent.
-4. Put weights in `submission/weights/` (Git LFS) and training code in `training/`.
-5. Run `python validate.py --docker` and submit your repo URL.
-
-**Platforms:** Linux (x86-64/ARM), macOS on Apple Silicon (macOS 15+) and Windows (x86-64) all
-work with `uv sync` and `validate.py`. Intel Macs have no `vizdoom` 1.3.3 wheel: use Docker or a
-Linux machine. Evaluation runs on Linux, so `validate.py --docker` is the closest check.
+For container validation, use the organizer’s image or build it from a
+separate checkout of the official starter. Pass the image to
+`python validate.py --docker --image IMAGE`. The official evaluation runs on Linux.
 
 ## Repository layout
 
 ```
 env/                  official ViZDoom Gymnasium wrapper (doom_env): spaces, sensors, protocol, limits
-maps/                 one small test map (NOT an evaluation map); bring your own for training
-submission/agent.py   your DoomAgent: the evaluation entry point
+maps/                 small starter validation map
+submission/agent.py   official DoomAgent entry point
 submission/weights/   model weights (Git LFS)
 training/             your training pipeline
 validate.py           run before submitting
@@ -68,7 +58,8 @@ The wrapper's `reward` is a basic default for convenience. Shape your own reward
 One NVIDIA **RTX 3090 (24 GB)** shared between evaluation workers. Each agent gets **2 GB VRAM,
 8 GB RAM and 1 CPU thread**, so keep models compact and inference fast
 (see [hardware](docs/EVALUATION.md#hardware) and [timeouts](docs/EVALUATION.md#timeouts)).
-`validate.py` runs your agent under the same CPU/RAM limits and reports GPU memory.
+Native validation reports the resource checks available on its host. Use the official Linux
+image to check the scoring environment.
 
 ## Documentation
 
