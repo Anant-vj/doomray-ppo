@@ -1,11 +1,15 @@
 """Local map pools, episode metrics, and training-only rewards."""
 import math
+import os
 from pathlib import Path
 from typing import NamedTuple
 
 import numpy as np
 from doom_env import make_env
+from doom_env.wad import Lump, read_wad, write_wad
 import vizdoom
+
+from training.storage import project_root
 
 REPO = Path(__file__).resolve().parents[1]
 # The bundles use the same IWAD as evaluation. Map splits are disjoint.
@@ -35,14 +39,30 @@ REWARD_PROFILES = {
 REWARD_TERMS = (
     "native", "exit_bonus", "coverage", "keys", "doors", "unlocks", "damage", "dealt", "healed",
 )
-PRACTICE_WADS = {"basic.wad", "my_way_home.wad", "e7ab54fb6834ffa3.wad"}
+PRACTICE_WADS = {"basic.wad", "my_way_home.wad", "e7ab54fb6834ffa3.wad", "red_key_backtrack.wad"}
 MIXED_SCENARIOS = ("defend_the_center", "health_gathering", "deadly_corridor")
+
+
+def backtrack_lesson(source):
+    """Move the original lesson's player spawn between the key and locked door."""
+    start = b"thing { x = 96.0; y = 96.0; angle = 0; type = 1;"
+    relocated = b"thing { x = 288.0; y = 96.0; angle = 0; type = 1;"
+    lumps = read_wad(source)
+    if [lump.name for lump in lumps] != ["MAP01", "TEXTMAP", "ENDMAP"] or lumps[1].data.count(start) != 1:
+        raise ValueError("The supplied key lesson does not have the expected player spawn.")
+    lumps[1] = Lump("TEXTMAP", lumps[1].data.replace(start, relocated, 1))
+    path = project_root() / "maps" / "curriculum" / "red_key_backtrack.wad"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_suffix(f".{os.getpid()}.tmp")
+    write_wad(temporary, lumps)
+    os.replace(temporary, path)
+    return path
 
 
 def maps(split):
     assets = Path(vizdoom.__file__).parent
     iwad = assets / "freedoom2.wad"
-    expanded = split in ("curriculum", "progression", "mixed")
+    expanded = split in ("curriculum", "progression", "mixed", "varied")
     map_numbers = SPLITS["train" if expanded else split]
     items = [(iwad, f"MAP{i:02}") for i in map_numbers]
     if split == "train" or expanded:
@@ -53,10 +73,13 @@ def maps(split):
             (assets / "scenarios" / "my_way_home.wad", "MAP01"),
             (iwad, "MAP31"),
         ])
-    if split in ("progression", "mixed"):
+    if split in ("progression", "mixed", "varied"):
         # The official key-pickup/locked-door/exit regression layout.
-        items.append((REPO / "tests/fixtures/e7ab54fb6834ffa3.wad", "MAP01"))
-    if split == "mixed":
+        key_lesson = REPO / "tests/fixtures/e7ab54fb6834ffa3.wad"
+        items.append((key_lesson, "MAP01"))
+        if split == "varied":
+            items.append((backtrack_lesson(key_lesson), "MAP01"))
+    if split in ("mixed", "varied"):
         items.extend((assets / "scenarios" / f"{name}.wad", "MAP01") for name in MIXED_SCENARIOS)
     return items
 

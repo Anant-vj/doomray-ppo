@@ -8,7 +8,7 @@ import time
 from collections import deque
 from pathlib import Path
 
-from training.storage import project_root, snapshot
+from training.storage import internal_limit, project_root, snapshot
 
 
 def save(path, payload):
@@ -40,7 +40,7 @@ def main():
     parser.add_argument("--parallel", action="store_true", help="Run headless simulation in spawned workers.")
     parser.add_argument("--no-render-buffers", action="store_true", help="Skip unused RGB and depth buffers.")
     parser.add_argument(
-        "--curriculum", nargs="?", choices=("expanded", "progression", "mixed"), const="expanded",
+        "--curriculum", nargs="?", choices=("expanded", "progression", "mixed", "varied"), const="expanded",
         help="Add practice maps, key-and-lock progression, or the mixed arena and resource lessons.",
     )
     parser.add_argument("--checkpoint-seconds", type=float, help="Rotate checkpoints at this elapsed interval.")
@@ -65,8 +65,8 @@ def main():
     if args.run_name and not re.fullmatch(r"[a-zA-Z0-9][a-zA-Z0-9_-]*", args.run_name):
         parser.error("Use only letters, digits, hyphens and underscores in --run-name.")
     soft_limit = args.storage_stop_bytes
-    if soft_limit is not None and not 0 < soft_limit < 2_000_000_000:
-        parser.error("--storage-stop-bytes must be below the 2 GB hard limit.")
+    if soft_limit is not None and not 0 < soft_limit < internal_limit():
+        parser.error("--storage-stop-bytes must be below the configured internal drive limit.")
     if soft_limit is not None and snapshot()["internal_delta_bytes"] >= soft_limit:
         parser.error("Internal drive usage is already above the configured soft stop limit.")
 

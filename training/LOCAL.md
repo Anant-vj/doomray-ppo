@@ -31,14 +31,19 @@ also adds the starter's small red key, locked door and exit test layout.
 `--curriculum mixed` adds the bundled Defend the Center, Health Gathering,
 and Deadly Corridor scenarios for arena combat, resource collection, and
 corridor encounters.
+`--curriculum varied` also generates a training-only version of the key
+lesson with the spawn between the key and the lock. It keeps the original
+lesson for rehearsal and writes the variant under the external maps folder.
 
 Use `--checkpoint-seconds 360` for six-minute checkpoint rotation. The trainer
 saves after the first and last update as well. For a run with `--stop-file PATH`,
 creating that file requests a checkpoint and a clean exit at the next update.
 `--max-seconds` also saves and exits at an update boundary.
 `--storage-stop-bytes` can request an earlier checkpoint when the internal
-drive approaches the 2 GB budget. This measures the whole drive's free-space
-change from the baseline recorded in the external workspace.
+drive approaches the storage budget. The default hard limit is 2 GB. Set
+`DOOM_INTERNAL_LIMIT_BYTES` for a run only when an alternate budget is approved.
+Both limits use the whole drive's free-space change from the baseline
+recorded in the external workspace.
 
 For matched reward trials, give each arm its own `--run-name` while keeping
 the seed and `--initialize PATH` identical. Initialization loads the model
