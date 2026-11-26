@@ -62,6 +62,37 @@ Headless training uses rays, visible entities, and vitals. Local checkpoint
 selection uses matched seeds, maps, and tick caps. The reports separate
 development, inspected diagnostic maps, and the final untouched holdout.
 
+## Checkpoint selection
+
+The selected frame-stack checkpoint is progression run 43, update 749.
+Its lineage contains 324,864 gameplay decisions and 7,614 optimizer steps.
+Evaluation compares policies on identical seeds, maps and 2,100-tick caps.
+The local score proxy combines combat, exploration, progression and survival.
+The official scoring weights are private.
+
+| Four-map development, 16 episodes per policy | Proxy | Alive | Kills | Door events |
+| --- | ---: | ---: | ---: | ---: |
+| Selected progression update 749 | 11.219 | 3/16 | 54 | 21 |
+| Original stack update 174 | 6.245 | 9/16 | 20 | 7 |
+| Seeded random | 4.855 | 10/16 | 15 | 9 |
+
+The selected checkpoint led the documented balanced, survival-combat
+and progression profiles. The gains came with lower survival. It produced
+zero invalid actions in the development suite.
+
+The final holdout used previously untouched MAP11 and MAP12, with seeds
+1001–1004. The checkpoint was frozen before the first holdout episode.
+
+| Final holdout, 8 episodes per policy | Proxy | Alive | Kills | Door events | Mean explored cells |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Selected progression update 749 | 4.570 | 0/8 | 9 | 4 | 24.125 |
+| Original stack update 174 | 2.263 | 0/8 | 7 | 0 | 19.750 |
+| Seeded random | 0.853 | 0/8 | 6 | 1 | 10.625 |
+
+C749 led on both holdout maps and won six of eight matched seed comparisons.
+Across all 24 episodes, each policy recorded zero keys, unlocks, exits and
+invalid actions. Full-level survival and progression remain weak.
+
 ## Hardware at evaluation
 
 One NVIDIA **RTX 3090 (24 GB)** shared between evaluation workers. Each agent gets **2 GB VRAM,

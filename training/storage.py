@@ -12,8 +12,8 @@ def project_root():
 
 def internal_limit():
     limit = int(os.environ.get("DOOM_INTERNAL_LIMIT_BYTES", "2000000000"))
-    if not 500_000_000 < limit <= 3_000_000_000:
-        raise ValueError("Choose an internal storage budget between 0.5 and 3 GB.")
+    if not 500_000_000 < limit <= 5_000_000_000:
+        raise ValueError("Choose an internal storage budget between 0.5 and 5 GB.")
     return limit
 
 
