@@ -151,6 +151,8 @@ activemq-data/
 .venv
 venv/
 ENV/
+# The official wrapper lives in env/ (case-insensitive Git on Windows).
+!/env/
 env.bak/
 venv.bak/
 
