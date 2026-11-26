@@ -1,0 +1,192 @@
+[
+  {
+    "hwnd": 18483000,
+    "visible": true,
+    "minimized": false,
+    "foreground": false,
+    "client_pixels": [
+      1120,
+      704
+    ],
+    "clock": "04:01:45",
+    "wm_null_ack": false,
+    "ack_ms": 300.79200000182027,
+    "hung": false
+  },
+  {
+    "hwnd": 18483000,
+    "visible": true,
+    "minimized": false,
+    "foreground": true,
+    "client_pixels": [
+      1120,
+      704
+    ],
+    "clock": "04:01:46",
+    "wm_null_ack": true,
+    "ack_ms": 6.926300004124641,
+    "hung": false,
+    "decision": 0,
+    "stage": "warmup"
+  },
+  {
+    "hwnd": 18483000,
+    "visible": true,
+    "minimized": false,
+    "foreground": true,
+    "client_pixels": [
+      1120,
+      704
+    ],
+    "clock": "04:01:47",
+    "wm_null_ack": true,
+    "ack_ms": 12.656899998546578,
+    "hung": false,
+    "decision": 0,
+    "stage": "warmup"
+  },
+  {
+    "hwnd": 18483000,
+    "visible": true,
+    "minimized": false,
+    "foreground": true,
+    "client_pixels": [
+      1120,
+      704
+    ],
+    "clock": "04:01:48",
+    "wm_null_ack": true,
+    "ack_ms": 1.178400001663249,
+    "hung": false,
+    "decision": 0,
+    "stage": "warmup"
+  },
+  {
+    "hwnd": 18483000,
+    "visible": true,
+    "minimized": false,
+    "foreground": true,
+    "client_pixels": [
+      1120,
+      704
+    ],
+    "clock": "04:01:49",
+    "wm_null_ack": true,
+    "ack_ms": 69.38699999591336,
+    "hung": false,
+    "decision": 1,
+    "stage": "live"
+  },
+  {
+    "hwnd": 18483000,
+    "visible": true,
+    "minimized": false,
+    "foreground": true,
+    "client_pixels": [
+      1120,
+      704
+    ],
+    "clock": "04:01:50",
+    "wm_null_ack": true,
+    "ack_ms": 22.44280000013532,
+    "hung": false,
+    "decision": 10,
+    "stage": "live"
+  },
+  {
+    "hwnd": 18483000,
+    "visible": true,
+    "minimized": false,
+    "foreground": true,
+    "client_pixels": [
+      1120,
+      704
+    ],
+    "clock": "04:01:51",
+    "wm_null_ack": true,
+    "ack_ms": 19.755799999984447,
+    "hung": false,
+    "decision": 20,
+    "stage": "live"
+  },
+  {
+    "hwnd": 18483000,
+    "visible": true,
+    "minimized": false,
+    "foreground": true,
+    "client_pixels": [
+      1120,
+      704
+    ],
+    "clock": "04:01:52",
+    "wm_null_ack": true,
+    "ack_ms": 14.130999996268656,
+    "hung": false,
+    "decision": 28,
+    "stage": "engine_closed"
+  },
+  {
+    "hwnd": 18483000,
+    "visible": true,
+    "minimized": false,
+    "foreground": true,
+    "client_pixels": [
+      1120,
+      704
+    ],
+    "clock": "04:01:54",
+    "wm_null_ack": true,
+    "ack_ms": 24.984900002891663,
+    "hung": false,
+    "decision": 28,
+    "stage": "engine_closed"
+  },
+  {
+    "hwnd": 18483000,
+    "visible": true,
+    "minimized": false,
+    "foreground": true,
+    "client_pixels": [
+      1120,
+      704
+    ],
+    "clock": "04:01:55",
+    "wm_null_ack": true,
+    "ack_ms": 3.1835999980103225,
+    "hung": false,
+    "decision": 28,
+    "stage": "engine_closed"
+  },
+  {
+    "hwnd": 18483000,
+    "visible": true,
+    "minimized": false,
+    "foreground": true,
+    "client_pixels": [
+      1120,
+      704
+    ],
+    "clock": "04:01:56",
+    "wm_null_ack": true,
+    "ack_ms": 5.407399999967311,
+    "hung": false,
+    "decision": 28,
+    "stage": "engine_closed"
+  },
+  {
+    "hwnd": 18483000,
+    "visible": true,
+    "minimized": false,
+    "foreground": true,
+    "client_pixels": [
+      1120,
+      704
+    ],
+    "clock": "04:01:57",
+    "wm_null_ack": true,
+    "ack_ms": 1.222700004291255,
+    "hung": false,
+    "decision": 28,
+    "stage": "engine_closed"
+  }
+]

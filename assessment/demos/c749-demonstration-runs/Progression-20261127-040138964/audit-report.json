@@ -1,0 +1,157 @@
+{
+  "commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+  "seed": 3103,
+  "wad": "locked_progression.wad",
+  "map": "MAP01",
+  "decisions": 28,
+  "tick": 0,
+  "outcome": "Exit reached",
+  "kills": 0,
+  "final_health": 100.0,
+  "damage": 0.0,
+  "invalid_actions": 0,
+  "distinct_rgb_frames": 27,
+  "valid_rgb_native_input": [
+    120,
+    160,
+    3
+  ],
+  "display_driver": "windows",
+  "display_size": [
+    1120,
+    704
+  ],
+  "p99_inference_ms": 155.35460599712687,
+  "gameplay_seconds": 3.131807999998273,
+  "polls": 175,
+  "poll_timer_events": 29,
+  "live_marker_samples": 3,
+  "live_marker_matches": 3,
+  "storage_before": 5044682752,
+  "storage_after": 5044416512,
+  "captures": [
+    {
+      "path": "audit-begin.png",
+      "phase": "begin",
+      "decision": 1,
+      "tic": 5,
+      "rgb_roundtrip": true
+    },
+    {
+      "path": "audit-key.png",
+      "phase": "key",
+      "decision": 6,
+      "tic": 25,
+      "rgb_roundtrip": true
+    },
+    {
+      "path": "audit-door.png",
+      "phase": "door",
+      "decision": 10,
+      "tic": 41,
+      "rgb_roundtrip": true
+    },
+    {
+      "path": "audit-unlock.png",
+      "phase": "unlock",
+      "decision": 10,
+      "tic": 41,
+      "rgb_roundtrip": true
+    },
+    {
+      "path": "audit-mid.png",
+      "phase": "mid",
+      "decision": 14,
+      "tic": 57,
+      "rgb_roundtrip": true
+    },
+    {
+      "path": "audit-exit.png",
+      "phase": "exit",
+      "decision": 28,
+      "tic": 0,
+      "rgb_roundtrip": true
+    },
+    {
+      "path": "audit-end.png",
+      "phase": "end",
+      "decision": 28,
+      "tic": 0,
+      "rgb_roundtrip": true
+    }
+  ],
+  "engine_closed_at": "04:01:52",
+  "mode": "Progression",
+  "scope": "Generated local diagnostic layout",
+  "seed_basis": "Fastest of the three previously recorded successful C749 diagnostic seeds on this fixture.",
+  "release_checkout": "D:\\Doom\\DevForge_DOOM\\submission_artifacts\\github-fresh-6c2d549-20261127-022250050",
+  "manifest": "D:\\Doom\\DevForge_DOOM\\submission_artifacts\\c749-demonstration-manifest.json",
+  "wad_sha256": "3a959dfb181acfddfd9b78d16b5f7312f6d6094f874a031fef3df383718f7e84",
+  "tick_cap": 1024,
+  "start_tick": 1,
+  "elapsed_ticks_through_last_report": 108,
+  "terminal_tick_regressed": true,
+  "nominal_requested_ticks": 112,
+  "last_legal_observation_vitals": {
+    "health": 100,
+    "armor": 0,
+    "selected_weapon": 1,
+    "selected_weapon_ammo": 0,
+    "ammo_bullets": 50,
+    "ammo_shells": 0,
+    "ammo_rockets": 0,
+    "ammo_cells": 0,
+    "key_blue_card": 0,
+    "key_yellow_card": 0,
+    "key_red_card": 1,
+    "key_blue_skull": 0,
+    "key_yellow_skull": 0,
+    "key_red_skull": 0,
+    "vel_forward": 5,
+    "vel_right": -4,
+    "vel_up": 0
+  },
+  "keys_acquired": [
+    "red_card"
+  ],
+  "doors": 1,
+  "unlocks": 1,
+  "last_unlock_decision": 10,
+  "exit_reached": true,
+  "events": [
+    {
+      "event": "key",
+      "value": [
+        "red_card"
+      ],
+      "decision": 6,
+      "raw_tic": 25,
+      "elapsed_ticks_through_last_report": 24
+    },
+    {
+      "event": "door",
+      "value": [
+        1
+      ],
+      "decision": 10,
+      "raw_tic": 41,
+      "elapsed_ticks_through_last_report": 40
+    },
+    {
+      "event": "unlock",
+      "value": [
+        1
+      ],
+      "decision": 10,
+      "raw_tic": 41,
+      "elapsed_ticks_through_last_report": 40
+    },
+    {
+      "event": "exit",
+      "value": true,
+      "decision": 28,
+      "raw_tic": 0,
+      "elapsed_ticks_through_last_report": 108
+    }
+  ]
+}

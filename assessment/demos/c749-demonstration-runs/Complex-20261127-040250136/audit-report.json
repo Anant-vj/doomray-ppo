@@ -1,0 +1,92 @@
+{
+  "commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+  "seed": 3101,
+  "wad": "freedoom2.wad",
+  "map": "MAP08",
+  "decisions": 201,
+  "tick": 804,
+  "outcome": "Agent died",
+  "kills": 2,
+  "final_health": -8.0,
+  "damage": 108.0,
+  "invalid_actions": 0,
+  "distinct_rgb_frames": 200,
+  "valid_rgb_native_input": [
+    120,
+    160,
+    3
+  ],
+  "display_driver": "windows",
+  "display_size": [
+    1120,
+    704
+  ],
+  "p99_inference_ms": 6.217599999217782,
+  "gameplay_seconds": 22.871205499999633,
+  "polls": 348,
+  "poll_timer_events": 106,
+  "live_marker_samples": 21,
+  "live_marker_matches": 21,
+  "storage_before": 5048418304,
+  "storage_after": 5049049088,
+  "captures": [
+    {
+      "path": "audit-begin.png",
+      "phase": "begin",
+      "decision": 1,
+      "tic": 5,
+      "rgb_roundtrip": true
+    },
+    {
+      "path": "audit-mid.png",
+      "phase": "mid",
+      "decision": 100,
+      "tic": 401,
+      "rgb_roundtrip": true
+    },
+    {
+      "path": "audit-end.png",
+      "phase": "end",
+      "decision": 201,
+      "tic": 804,
+      "rgb_roundtrip": true
+    }
+  ],
+  "engine_closed_at": "04:03:20",
+  "mode": "Complex",
+  "scope": "Previously used Freedoom development map",
+  "seed_basis": "First recorded C749 diagnostic seed on MAP08. It provides a combat and failure contrast.",
+  "release_checkout": "D:\\Doom\\DevForge_DOOM\\submission_artifacts\\github-fresh-6c2d549-20261127-022250050",
+  "manifest": "D:\\Doom\\DevForge_DOOM\\submission_artifacts\\c749-demonstration-manifest.json",
+  "wad_sha256": "a8772e088847032510d97ba2312406a6998f21cbab44d4ff10696faa9c0ecd4b",
+  "tick_cap": 2100,
+  "start_tick": 1,
+  "elapsed_ticks_through_last_report": 803,
+  "terminal_tick_regressed": false,
+  "nominal_requested_ticks": 804,
+  "last_legal_observation_vitals": {
+    "health": 4,
+    "armor": 0,
+    "selected_weapon": 2,
+    "selected_weapon_ammo": 62,
+    "ammo_bullets": 62,
+    "ammo_shells": 4,
+    "ammo_rockets": 0,
+    "ammo_cells": 0,
+    "key_blue_card": 0,
+    "key_yellow_card": 0,
+    "key_red_card": 0,
+    "key_blue_skull": 0,
+    "key_yellow_skull": 0,
+    "key_red_skull": 0,
+    "vel_forward": -4,
+    "vel_right": 0,
+    "vel_up": 0
+  },
+  "keys_acquired": [],
+  "doors": 0,
+  "unlocks": 0,
+  "last_unlock_decision": null,
+  "exit_reached": false,
+  "events": []
+}

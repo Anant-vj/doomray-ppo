@@ -1,0 +1,932 @@
+{
+  "maps": [
+    {
+      "id": "MAP18",
+      "wad": "D:/Doom/DevForge_DOOM/environments/competition/Lib/site-packages/vizdoom/freedoom2.wad",
+      "map": "MAP18",
+      "tier": 1,
+      "skill": 3,
+      "tick_cap": 2100,
+      "family": "freedoom2-map18-1823fba5bc7a",
+      "wad_sha256": "a8772e088847032510d97ba2312406a6998f21cbab44d4ff10696faa9c0ecd4b",
+      "seeds": [
+        9101,
+        9102
+      ],
+      "verification": "PASSED_STATIC_ENGINE_PENDING",
+      "geometry_sha256": "1526a780235d7cee5b836680324add3f845be17800e587845777bc7f1195ca2a",
+      "sector_graph_sha256": "1823fba5bc7a56ef159a18b9bd365cda30300f2e56a22898492fb029ead16a42",
+      "format": "doom",
+      "sectors": 278,
+      "lines": 1935,
+      "graph_edges": 372,
+      "graph_components": 2,
+      "graph_cycle_rank": 96,
+      "key_colors": [
+        "blue",
+        "red"
+      ],
+      "player_starts": 1,
+      "placed_monsters_skill3": 118,
+      "placed_monsters_within_768_euclidean": 26,
+      "placed_resources_skill3": 141,
+      "ordinary_door_sectors": 10,
+      "locked_door_sectors": 2,
+      "static_standard_exit_line": true,
+      "phase2_layout_sha256": "bb3cc2391e991e05b31a37ac3e3440c414c4c290c8dad2290768d18e75f233d1"
+    },
+    {
+      "id": "MAP19",
+      "wad": "D:/Doom/DevForge_DOOM/environments/competition/Lib/site-packages/vizdoom/freedoom2.wad",
+      "map": "MAP19",
+      "tier": 1,
+      "skill": 3,
+      "tick_cap": 2100,
+      "family": "freedoom2-map19-baf8487dd59a",
+      "wad_sha256": "a8772e088847032510d97ba2312406a6998f21cbab44d4ff10696faa9c0ecd4b",
+      "seeds": [
+        9101,
+        9102
+      ],
+      "verification": "PASSED_STATIC_ENGINE_PENDING",
+      "geometry_sha256": "02d094bc902648d2709b81f81754b0bbd7ffb43996c48e6aaef856a20f94be9e",
+      "sector_graph_sha256": "baf8487dd59a731fffa89969f28158af501efc3bc620e1c9f452c659430fafb9",
+      "format": "doom",
+      "sectors": 289,
+      "lines": 2142,
+      "graph_edges": 378,
+      "graph_components": 1,
+      "graph_cycle_rank": 90,
+      "key_colors": [
+        "blue",
+        "red",
+        "yellow"
+      ],
+      "player_starts": 1,
+      "placed_monsters_skill3": 146,
+      "placed_monsters_within_768_euclidean": 26,
+      "placed_resources_skill3": 74,
+      "ordinary_door_sectors": 2,
+      "locked_door_sectors": 4,
+      "static_standard_exit_line": true,
+      "phase2_layout_sha256": "f5552933c45bdc0aa37a9d70932396fe5e3ba06efee123d1be53624a23675b83"
+    },
+    {
+      "id": "MAP21",
+      "wad": "D:/Doom/DevForge_DOOM/environments/competition/Lib/site-packages/vizdoom/freedoom2.wad",
+      "map": "MAP21",
+      "tier": 1,
+      "skill": 3,
+      "tick_cap": 2100,
+      "family": "freedoom2-map21-13d596bd06c0",
+      "wad_sha256": "a8772e088847032510d97ba2312406a6998f21cbab44d4ff10696faa9c0ecd4b",
+      "seeds": [
+        9101,
+        9102
+      ],
+      "verification": "PASSED_STATIC_ENGINE_PENDING",
+      "geometry_sha256": "233c60514fec46b54c5cbf8d69b38962f2bc35aa99da15cadccbc8d33739a02c",
+      "sector_graph_sha256": "13d596bd06c009fd63ea20b5e3b5a2c919df2e2bb99425335d1f33d57926e84e",
+      "format": "doom",
+      "sectors": 196,
+      "lines": 1347,
+      "graph_edges": 224,
+      "graph_components": 1,
+      "graph_cycle_rank": 29,
+      "key_colors": [
+        "yellow"
+      ],
+      "player_starts": 1,
+      "placed_monsters_skill3": 81,
+      "placed_monsters_within_768_euclidean": 12,
+      "placed_resources_skill3": 108,
+      "ordinary_door_sectors": 9,
+      "locked_door_sectors": 1,
+      "static_standard_exit_line": true,
+      "phase2_layout_sha256": "b85c9351c46976efd1e33ea0c2102aa819f214e80542936f95b130b5756e48e3"
+    },
+    {
+      "id": "MAP26",
+      "wad": "D:/Doom/DevForge_DOOM/environments/competition/Lib/site-packages/vizdoom/freedoom2.wad",
+      "map": "MAP26",
+      "tier": 1,
+      "skill": 3,
+      "tick_cap": 2100,
+      "family": "freedoom2-map26-6183bc210350",
+      "wad_sha256": "a8772e088847032510d97ba2312406a6998f21cbab44d4ff10696faa9c0ecd4b",
+      "seeds": [
+        9101,
+        9102
+      ],
+      "verification": "PASSED_STATIC_ENGINE_PENDING",
+      "geometry_sha256": "3ba0f6b39e5ff1fd9a1114ac1be8ddf5d5bfb36e2ccd52481a3208d1e7c87270",
+      "sector_graph_sha256": "6183bc2103504038644947911ef1e2e7b2554561762cd75a7cfc8210a6dcafe7",
+      "format": "doom",
+      "sectors": 348,
+      "lines": 2046,
+      "graph_edges": 464,
+      "graph_components": 3,
+      "graph_cycle_rank": 119,
+      "key_colors": [
+        "blue",
+        "yellow"
+      ],
+      "player_starts": 1,
+      "placed_monsters_skill3": 242,
+      "placed_monsters_within_768_euclidean": 25,
+      "placed_resources_skill3": 256,
+      "ordinary_door_sectors": 3,
+      "locked_door_sectors": 3,
+      "static_standard_exit_line": true,
+      "phase2_layout_sha256": "7213004a41c37ebaa110a8c47a8b7263f69360f9058931f8c0f2b679b38a0e75"
+    },
+    {
+      "id": "MAP17",
+      "wad": "D:/Doom/DevForge_DOOM/environments/competition/Lib/site-packages/vizdoom/freedoom2.wad",
+      "map": "MAP17",
+      "tier": 2,
+      "skill": 3,
+      "tick_cap": 2100,
+      "family": "freedoom2-map17-b22c789f33b2",
+      "wad_sha256": "a8772e088847032510d97ba2312406a6998f21cbab44d4ff10696faa9c0ecd4b",
+      "seeds": [
+        9101,
+        9102
+      ],
+      "verification": "PASSED_STATIC_ENGINE_PENDING",
+      "geometry_sha256": "0de89bd681439598eb808a8e1ce7948e9a8cc60ff3825f44db1b12cac7531741",
+      "sector_graph_sha256": "b22c789f33b2846fa529dda7aa5db40bc22d665a153859419cdfdc14156da16d",
+      "format": "doom",
+      "sectors": 198,
+      "lines": 1052,
+      "graph_edges": 253,
+      "graph_components": 1,
+      "graph_cycle_rank": 56,
+      "key_colors": [
+        "blue",
+        "yellow"
+      ],
+      "player_starts": 1,
+      "placed_monsters_skill3": 51,
+      "placed_monsters_within_768_euclidean": 10,
+      "placed_resources_skill3": 106,
+      "ordinary_door_sectors": 6,
+      "locked_door_sectors": 3,
+      "static_standard_exit_line": true,
+      "phase2_layout_sha256": "a2641c0df9470322a6480e078604070ba6437e39ca1f39b2108c43c4c93300ac"
+    },
+    {
+      "id": "MAP20",
+      "wad": "D:/Doom/DevForge_DOOM/environments/competition/Lib/site-packages/vizdoom/freedoom2.wad",
+      "map": "MAP20",
+      "tier": 2,
+      "skill": 3,
+      "tick_cap": 2100,
+      "family": "freedoom2-map20-6011e24baf47",
+      "wad_sha256": "a8772e088847032510d97ba2312406a6998f21cbab44d4ff10696faa9c0ecd4b",
+      "seeds": [
+        9101,
+        9102
+      ],
+      "verification": "PASSED_STATIC_ENGINE_PENDING",
+      "geometry_sha256": "0775c9f8fc2509b32900c105bc21add03d5f8ffa9316c565778eef843f2b94ce",
+      "sector_graph_sha256": "6011e24baf473578ca669125146e18cd07124e311397440173013e7aa4bf84df",
+      "format": "doom",
+      "sectors": 414,
+      "lines": 3060,
+      "graph_edges": 594,
+      "graph_components": 10,
+      "graph_cycle_rank": 190,
+      "key_colors": [
+        "blue",
+        "red",
+        "yellow"
+      ],
+      "player_starts": 1,
+      "placed_monsters_skill3": 141,
+      "placed_monsters_within_768_euclidean": 6,
+      "placed_resources_skill3": 123,
+      "ordinary_door_sectors": 11,
+      "locked_door_sectors": 4,
+      "static_standard_exit_line": true,
+      "phase2_layout_sha256": "37bdb118a3d60373f3eba0e737bdb6e9954df5c72605cf4dc5bb5b30c4bbf30a"
+    },
+    {
+      "id": "MAP23",
+      "wad": "D:/Doom/DevForge_DOOM/environments/competition/Lib/site-packages/vizdoom/freedoom2.wad",
+      "map": "MAP23",
+      "tier": 2,
+      "skill": 3,
+      "tick_cap": 2100,
+      "family": "freedoom2-map23-ef160115421d",
+      "wad_sha256": "a8772e088847032510d97ba2312406a6998f21cbab44d4ff10696faa9c0ecd4b",
+      "seeds": [
+        9101,
+        9102
+      ],
+      "verification": "PASSED_STATIC_ENGINE_PENDING",
+      "geometry_sha256": "08eee97dacbca18380d11893db8582c1cc939340d13b2ba02ff20fe379554d0e",
+      "sector_graph_sha256": "ef160115421ddf579e4c20bbbce024f020ac077446cd495db7bd421d42761e0b",
+      "format": "doom",
+      "sectors": 539,
+      "lines": 2984,
+      "graph_edges": 731,
+      "graph_components": 1,
+      "graph_cycle_rank": 193,
+      "key_colors": [
+        "red",
+        "yellow"
+      ],
+      "player_starts": 1,
+      "placed_monsters_skill3": 219,
+      "placed_monsters_within_768_euclidean": 2,
+      "placed_resources_skill3": 156,
+      "ordinary_door_sectors": 30,
+      "locked_door_sectors": 2,
+      "static_standard_exit_line": true,
+      "phase2_layout_sha256": "a3576122b55aeeb22d5a01b74771c7fe5bcc47ea74ecadd274447ce4d3720f06"
+    },
+    {
+      "id": "MAP32",
+      "wad": "D:/Doom/DevForge_DOOM/environments/competition/Lib/site-packages/vizdoom/freedoom2.wad",
+      "map": "MAP32",
+      "tier": 2,
+      "skill": 3,
+      "tick_cap": 2100,
+      "family": "freedoom2-map32-e8475b823bdd",
+      "wad_sha256": "a8772e088847032510d97ba2312406a6998f21cbab44d4ff10696faa9c0ecd4b",
+      "seeds": [
+        9101,
+        9102
+      ],
+      "verification": "PASSED_STATIC_ENGINE_PENDING",
+      "geometry_sha256": "0af17604efc580d5b7cbb2b0675822f32fb2d63e3b5fa4d18f902cb8d34a3f13",
+      "sector_graph_sha256": "e8475b823bdd34aadf12dcc98458b71e8b458998ecbd1417866a433163bdaabf",
+      "format": "doom",
+      "sectors": 146,
+      "lines": 788,
+      "graph_edges": 185,
+      "graph_components": 2,
+      "graph_cycle_rank": 41,
+      "key_colors": [
+        "blue",
+        "red",
+        "yellow"
+      ],
+      "player_starts": 1,
+      "placed_monsters_skill3": 81,
+      "placed_monsters_within_768_euclidean": 13,
+      "placed_resources_skill3": 87,
+      "ordinary_door_sectors": 17,
+      "locked_door_sectors": 3,
+      "static_standard_exit_line": true,
+      "phase2_layout_sha256": "be737e2646279da97d30746bcaae3e1b8f66ebb7d475fac5eab3b3e3147e9f9e"
+    },
+    {
+      "id": "MAP16",
+      "wad": "D:/Doom/DevForge_DOOM/environments/competition/Lib/site-packages/vizdoom/freedoom2.wad",
+      "map": "MAP16",
+      "tier": 3,
+      "skill": 3,
+      "tick_cap": 4200,
+      "family": "freedoom2-map16-2c66c22bd89f",
+      "wad_sha256": "a8772e088847032510d97ba2312406a6998f21cbab44d4ff10696faa9c0ecd4b",
+      "seeds": [
+        9101,
+        9102
+      ],
+      "verification": "PASSED_STATIC_ENGINE_PENDING",
+      "geometry_sha256": "241c5ee292b032763e8dbb4da1c476d22f5307bdecadd6b9b088f096e5485597",
+      "sector_graph_sha256": "2c66c22bd89fa8ff02d7885f2622855f4ce7c10fac6fedf35e7439f4ec5cd198",
+      "format": "doom",
+      "sectors": 207,
+      "lines": 1787,
+      "graph_edges": 283,
+      "graph_components": 4,
+      "graph_cycle_rank": 80,
+      "key_colors": [
+        "blue",
+        "yellow"
+      ],
+      "player_starts": 1,
+      "placed_monsters_skill3": 78,
+      "placed_monsters_within_768_euclidean": 24,
+      "placed_resources_skill3": 42,
+      "ordinary_door_sectors": 6,
+      "locked_door_sectors": 5,
+      "static_standard_exit_line": true,
+      "phase2_layout_sha256": "eb266e179a3b4ea90bf877c273a511ecbbd405e9be01ab13b66e288ee012c463"
+    },
+    {
+      "id": "MAP22",
+      "wad": "D:/Doom/DevForge_DOOM/environments/competition/Lib/site-packages/vizdoom/freedoom2.wad",
+      "map": "MAP22",
+      "tier": 3,
+      "skill": 3,
+      "tick_cap": 4200,
+      "family": "freedoom2-map22-c83a3692d22e",
+      "wad_sha256": "a8772e088847032510d97ba2312406a6998f21cbab44d4ff10696faa9c0ecd4b",
+      "seeds": [
+        9101,
+        9102
+      ],
+      "verification": "PASSED_STATIC_ENGINE_PENDING",
+      "geometry_sha256": "03bb84f027d8c4560bb56d66b6d7ad803846af12b13eef6f165608e793d97f93",
+      "sector_graph_sha256": "c83a3692d22eefcd163cc293f882bbd22f4f72438764922144ae12dcc1bf57ad",
+      "format": "doom",
+      "sectors": 355,
+      "lines": 2520,
+      "graph_edges": 489,
+      "graph_components": 1,
+      "graph_cycle_rank": 135,
+      "key_colors": [
+        "blue",
+        "red",
+        "yellow"
+      ],
+      "player_starts": 1,
+      "placed_monsters_skill3": 85,
+      "placed_monsters_within_768_euclidean": 19,
+      "placed_resources_skill3": 101,
+      "ordinary_door_sectors": 15,
+      "locked_door_sectors": 5,
+      "static_standard_exit_line": true,
+      "phase2_layout_sha256": "e7c32182e50b6ce0cc5ee2d7299d612276e36fcab828406013d7fc257b870241"
+    },
+    {
+      "id": "MAP24",
+      "wad": "D:/Doom/DevForge_DOOM/environments/competition/Lib/site-packages/vizdoom/freedoom2.wad",
+      "map": "MAP24",
+      "tier": 3,
+      "skill": 3,
+      "tick_cap": 4200,
+      "family": "freedoom2-map24-8255014f2657",
+      "wad_sha256": "a8772e088847032510d97ba2312406a6998f21cbab44d4ff10696faa9c0ecd4b",
+      "seeds": [
+        9101,
+        9102
+      ],
+      "verification": "PASSED_STATIC_ENGINE_PENDING",
+      "geometry_sha256": "483b3f0c9acd2a36da46aded33d0bee6d5951c9b9397c4751dfb698d71d35b83",
+      "sector_graph_sha256": "8255014f2657f850371e1662236a302a8b313c16bf25f442261c9bce9dbc6570",
+      "format": "doom",
+      "sectors": 195,
+      "lines": 1640,
+      "graph_edges": 219,
+      "graph_components": 1,
+      "graph_cycle_rank": 25,
+      "key_colors": [
+        "blue",
+        "red",
+        "yellow"
+      ],
+      "player_starts": 1,
+      "placed_monsters_skill3": 98,
+      "placed_monsters_within_768_euclidean": 29,
+      "placed_resources_skill3": 72,
+      "ordinary_door_sectors": 11,
+      "locked_door_sectors": 4,
+      "static_standard_exit_line": true,
+      "phase2_layout_sha256": "226555cbef8902651f53e2f28bc13974f0c0d2803a883244d69cd1721f067ec2"
+    },
+    {
+      "id": "MAP29",
+      "wad": "D:/Doom/DevForge_DOOM/environments/competition/Lib/site-packages/vizdoom/freedoom2.wad",
+      "map": "MAP29",
+      "tier": 3,
+      "skill": 3,
+      "tick_cap": 4200,
+      "family": "freedoom2-map29-025cd47fb0d5",
+      "wad_sha256": "a8772e088847032510d97ba2312406a6998f21cbab44d4ff10696faa9c0ecd4b",
+      "seeds": [
+        9101,
+        9102
+      ],
+      "verification": "PASSED_STATIC_ENGINE_PENDING",
+      "geometry_sha256": "11bf2a40ee2c42c988141c493d6ac55ae54e43b34e1d4b1d64d13c9464c63d31",
+      "sector_graph_sha256": "025cd47fb0d5ecc9e88b73e9ea1e43a045acda4ef71292f67b41e755ca51c736",
+      "format": "doom",
+      "sectors": 131,
+      "lines": 1085,
+      "graph_edges": 181,
+      "graph_components": 1,
+      "graph_cycle_rank": 51,
+      "key_colors": [
+        "blue",
+        "red",
+        "yellow"
+      ],
+      "player_starts": 1,
+      "placed_monsters_skill3": 97,
+      "placed_monsters_within_768_euclidean": 5,
+      "placed_resources_skill3": 167,
+      "ordinary_door_sectors": 9,
+      "locked_door_sectors": 4,
+      "static_standard_exit_line": true,
+      "phase2_layout_sha256": "79661e17617b0fb01b155996b2ef9b99695e5a5dc0076a34fd4270726bad3bd7"
+    },
+    {
+      "id": "MAP15",
+      "wad": "D:/Doom/DevForge_DOOM/environments/competition/Lib/site-packages/vizdoom/freedoom2.wad",
+      "map": "MAP15",
+      "tier": 4,
+      "skill": 3,
+      "tick_cap": 4200,
+      "family": "freedoom2-map15-2dbcfb634fb2",
+      "wad_sha256": "a8772e088847032510d97ba2312406a6998f21cbab44d4ff10696faa9c0ecd4b",
+      "seeds": [
+        9101,
+        9102
+      ],
+      "verification": "PASSED_STATIC_ENGINE_PENDING",
+      "geometry_sha256": "3457f8805a5401deda2e015377aaefd585f984e9f32b1d04b884d4884f29483a",
+      "sector_graph_sha256": "2dbcfb634fb241727d3900114f954ffe5f3017e6917a701d5a9d7714ae0ab220",
+      "format": "doom",
+      "sectors": 777,
+      "lines": 5397,
+      "graph_edges": 956,
+      "graph_components": 2,
+      "graph_cycle_rank": 181,
+      "key_colors": [
+        "blue",
+        "red",
+        "yellow"
+      ],
+      "player_starts": 1,
+      "placed_monsters_skill3": 153,
+      "placed_monsters_within_768_euclidean": 6,
+      "placed_resources_skill3": 170,
+      "ordinary_door_sectors": 54,
+      "locked_door_sectors": 3,
+      "static_standard_exit_line": true,
+      "phase2_layout_sha256": "48e42743e56193f9c161e44d218a6f623c7374ae4531141628148e1f0cf7321a"
+    },
+    {
+      "id": "MAP25",
+      "wad": "D:/Doom/DevForge_DOOM/environments/competition/Lib/site-packages/vizdoom/freedoom2.wad",
+      "map": "MAP25",
+      "tier": 4,
+      "skill": 3,
+      "tick_cap": 4200,
+      "family": "freedoom2-map25-b5465ea63a77",
+      "wad_sha256": "a8772e088847032510d97ba2312406a6998f21cbab44d4ff10696faa9c0ecd4b",
+      "seeds": [
+        9101,
+        9102
+      ],
+      "verification": "PASSED_STATIC_ENGINE_PENDING",
+      "geometry_sha256": "3179620189c7b80898e7d527539738bf519997bd9b76c2641f67d1619d4fdadf",
+      "sector_graph_sha256": "b5465ea63a77e60bc55d786d6f6fd581b42a615586cd7bcb998f0f45693403a8",
+      "format": "doom",
+      "sectors": 666,
+      "lines": 4891,
+      "graph_edges": 895,
+      "graph_components": 3,
+      "graph_cycle_rank": 232,
+      "key_colors": [
+        "blue",
+        "red",
+        "yellow"
+      ],
+      "player_starts": 1,
+      "placed_monsters_skill3": 122,
+      "placed_monsters_within_768_euclidean": 11,
+      "placed_resources_skill3": 189,
+      "ordinary_door_sectors": 15,
+      "locked_door_sectors": 3,
+      "static_standard_exit_line": true,
+      "phase2_layout_sha256": "ebe2a213a37abd6f02717bba5922046370d534352491ca6828dc7c1fcfaa640c"
+    },
+    {
+      "id": "MAP27",
+      "wad": "D:/Doom/DevForge_DOOM/environments/competition/Lib/site-packages/vizdoom/freedoom2.wad",
+      "map": "MAP27",
+      "tier": 4,
+      "skill": 3,
+      "tick_cap": 4200,
+      "family": "freedoom2-map27-dc3a1b97bb8f",
+      "wad_sha256": "a8772e088847032510d97ba2312406a6998f21cbab44d4ff10696faa9c0ecd4b",
+      "seeds": [
+        9101,
+        9102
+      ],
+      "verification": "PASSED_STATIC_ENGINE_PENDING",
+      "geometry_sha256": "084e790f603aaf2d353fecf361b49c7c60c5b91c4025e317930268ec4018b281",
+      "sector_graph_sha256": "dc3a1b97bb8f0057e6bfbf7597ceb54e3b49fc75e8dae4190e61e71c221362a9",
+      "format": "doom",
+      "sectors": 503,
+      "lines": 3630,
+      "graph_edges": 635,
+      "graph_components": 1,
+      "graph_cycle_rank": 133,
+      "key_colors": [
+        "blue",
+        "red",
+        "yellow"
+      ],
+      "player_starts": 1,
+      "placed_monsters_skill3": 139,
+      "placed_monsters_within_768_euclidean": 10,
+      "placed_resources_skill3": 161,
+      "ordinary_door_sectors": 22,
+      "locked_door_sectors": 3,
+      "static_standard_exit_line": true,
+      "phase2_layout_sha256": "2aaa749f57663c580a570655493b0e53db9ad1bc16082f2573954f7cd9816f63"
+    },
+    {
+      "id": "MAP28",
+      "wad": "D:/Doom/DevForge_DOOM/environments/competition/Lib/site-packages/vizdoom/freedoom2.wad",
+      "map": "MAP28",
+      "tier": 4,
+      "skill": 3,
+      "tick_cap": 4200,
+      "family": "freedoom2-map28-35792afca963",
+      "wad_sha256": "a8772e088847032510d97ba2312406a6998f21cbab44d4ff10696faa9c0ecd4b",
+      "seeds": [
+        9101,
+        9102
+      ],
+      "verification": "PASSED_STATIC_ENGINE_PENDING",
+      "geometry_sha256": "16ac60cbefbac33a082994e4d2cbb78faf2ac4175660f5a58c8f235134e8bfbd",
+      "sector_graph_sha256": "35792afca96326d16a3c3f08fc8068a43d9070e3f8e760b1b51a6f69ec9d9ff7",
+      "format": "doom",
+      "sectors": 589,
+      "lines": 6873,
+      "graph_edges": 775,
+      "graph_components": 3,
+      "graph_cycle_rank": 189,
+      "key_colors": [
+        "blue",
+        "red",
+        "yellow"
+      ],
+      "player_starts": 1,
+      "placed_monsters_skill3": 194,
+      "placed_monsters_within_768_euclidean": 10,
+      "placed_resources_skill3": 197,
+      "ordinary_door_sectors": 28,
+      "locked_door_sectors": 3,
+      "static_standard_exit_line": true,
+      "phase2_layout_sha256": "6e89d0a926d9c4461cba0581fed09beeafa40d9f30b4477f8ff6d715f7097513"
+    }
+  ],
+  "excluded_layouts": [
+    {
+      "wad": "D:/Doom/DevForge_DOOM/environments/competition/Lib/site-packages/vizdoom/freedoom2.wad",
+      "map": "MAP01",
+      "reason": "training",
+      "geometry_sha256": "036c600a2864705495ba9e6e8c3ea18bb9e15565ffd3a245cf5ae7518bc20a78",
+      "sector_graph_sha256": "93184d7011c8b51dd0fa05fc3cbeaf52fa651f325230d62c6f039ca2d398f8af"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/environments/competition/Lib/site-packages/vizdoom/freedoom2.wad",
+      "map": "MAP02",
+      "reason": "training",
+      "geometry_sha256": "044730d6e7a3e3ec053a479d3a3e4790ca0871582d2c4407dab0c75cce1cae13",
+      "sector_graph_sha256": "906f25033b68cf675f1a648d92850cfaeabd1dd33cd86517a9940239d3b74271"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/environments/competition/Lib/site-packages/vizdoom/freedoom2.wad",
+      "map": "MAP03",
+      "reason": "training",
+      "geometry_sha256": "1819272453db35f1c4cafd03c2430a991d53958d54b01422bebf1b84c73e9b35",
+      "sector_graph_sha256": "168adf66e5fac3c589ae1f977e663b404850adb481490e8c4804ae08ebb3f66e"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/environments/competition/Lib/site-packages/vizdoom/freedoom2.wad",
+      "map": "MAP04",
+      "reason": "training",
+      "geometry_sha256": "0fea5ba0de6cfcc41262e4424349b1d7f8d0a0fe93811c1be31ff776548d2505",
+      "sector_graph_sha256": "3c8a601fa21ad03c1244282b10fdb11d3d7881b7f5f82f220c87aac3abc4e503"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/environments/competition/Lib/site-packages/vizdoom/freedoom2.wad",
+      "map": "MAP05",
+      "reason": "training",
+      "geometry_sha256": "2d5704466166cea260afafa3ca0f9831d14cd85621435cc0cc6c8b6faae33ece",
+      "sector_graph_sha256": "f6b0d652e78f43f6375d9a8370f6876b1794be597d31782a50df98f279c26acb"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/environments/competition/Lib/site-packages/vizdoom/freedoom2.wad",
+      "map": "MAP06",
+      "reason": "training",
+      "geometry_sha256": "18fff7036ece07577543f20305fa6c53771494f0d23d46c3a418f52ede77e0cc",
+      "sector_graph_sha256": "cc173bb3fcc0c786b38f8248d034520f6402c15cf082e5206121dba9d7f88317"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/environments/competition/Lib/site-packages/vizdoom/freedoom2.wad",
+      "map": "MAP07",
+      "reason": "development",
+      "geometry_sha256": "041a68abc8decae80d1809d098a3eadef4bc3ad52764fc109a2b10e52fe35469",
+      "sector_graph_sha256": "f52440e7c3b24c5d96a2abd0810e705175236eae4495bd8bcf72ca84f7b5be25"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/environments/competition/Lib/site-packages/vizdoom/freedoom2.wad",
+      "map": "MAP08",
+      "reason": "development",
+      "geometry_sha256": "29faed452fed7c689da8b545db24a9a68750c2fe071f11d78ed0c0f3346665c1",
+      "sector_graph_sha256": "94e989922f803ff709255fc33a4cdf5127f1283528206bc159a83aaf9a266553"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/environments/competition/Lib/site-packages/vizdoom/freedoom2.wad",
+      "map": "MAP09",
+      "reason": "diagnostic",
+      "geometry_sha256": "1568a4ed9a8d0eabee187f93cf5fdbbea92afe70dee1fb79ecf81009fb0f6e83",
+      "sector_graph_sha256": "24a8b6bfb68df64d42e37f2f5675a5142c538c5f09d4c9713d4612f5ada65746"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/environments/competition/Lib/site-packages/vizdoom/freedoom2.wad",
+      "map": "MAP10",
+      "reason": "diagnostic",
+      "geometry_sha256": "238a3546129f186301bd14aaf1f54890a48f1824325bff02778dcd84838db73d",
+      "sector_graph_sha256": "9ea243947fd88bd42b8bd4cd0fb73cc808cd13a30102cfe773d3f1d7050c271a"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/environments/competition/Lib/site-packages/vizdoom/freedoom2.wad",
+      "map": "MAP11",
+      "reason": "completed prior holdout",
+      "geometry_sha256": "32154acd49b31538f0cfdc4ed5463f5e301975629e20350d49694c5b0b4ca6dc",
+      "sector_graph_sha256": "23ac5bf17873f33032ee7bdf4dc18454b452a004e2cbf5b4f16733a25554e002"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/environments/competition/Lib/site-packages/vizdoom/freedoom2.wad",
+      "map": "MAP12",
+      "reason": "completed prior holdout",
+      "geometry_sha256": "0185dd21bc010395abd3fd8e16d790551082790e87c4704fd1f2f2df73fdf82b",
+      "sector_graph_sha256": "a616e1a3af4b436becc58c5a1b275124f61ae1dbc10e40b3d1c5100a66cff7b3"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/environments/competition/Lib/site-packages/vizdoom/freedoom2.wad",
+      "map": "MAP13",
+      "reason": "development",
+      "geometry_sha256": "355af13628cf9258bf0dd7524b763fa51ea7c1e6b5588c90c9e5ea0cf6530633",
+      "sector_graph_sha256": "da23c425e1a6c0353b09f65037cccedfadd93ea71016aa71e090974d786bd87a"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/environments/competition/Lib/site-packages/vizdoom/freedoom2.wad",
+      "map": "MAP14",
+      "reason": "development",
+      "geometry_sha256": "493aeb8540e46276fd11cf88cad2007e32028ea51d699a06d577a89258b31826",
+      "sector_graph_sha256": "d95cd5c65dacd0876ba5f224a7969d15fa171abe6ba9188e8e6a97abf2096010"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/environments/competition/Lib/site-packages/vizdoom/freedoom2.wad",
+      "map": "MAP30",
+      "reason": "boss ending without a standard exit-lump signature",
+      "geometry_sha256": "290456c6f95491ec18023b6f95be95de8657ba50051b9860ab442db6721d50b3",
+      "sector_graph_sha256": "fd3c13c8274fefac0804e5313697af55e59487e90f6f6430066f6cd2d66dd490"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/environments/competition/Lib/site-packages/vizdoom/freedoom2.wad",
+      "map": "MAP31",
+      "reason": "training curriculum",
+      "geometry_sha256": "0573f0ff8ca09b47aecb54ac0a0da04697b720691ba9de45459994db3e08e5cd",
+      "sector_graph_sha256": "1530578233c71761a7f2192973072398a3523bbed50bcb09ac4246c942f95d3f"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/environments/competition/Lib/site-packages/vizdoom/scenarios/basic.wad",
+      "map": "MAP01",
+      "reason": "training scenario",
+      "geometry_sha256": "0441207d0f2edb0cda38ff03ddcaf963d2832144a58cd7a3ad04b3db78bcfed1",
+      "sector_graph_sha256": "27063bdf72400804c53a12b855338d6c5351e7984ea254cb940faf5a8b012306"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/environments/competition/Lib/site-packages/vizdoom/scenarios/my_way_home.wad",
+      "map": "MAP01",
+      "reason": "training scenario",
+      "geometry_sha256": "1be3f1a4e6a5ec7ac7e849bac705edc2ef7892752970c46ab13183d2ab844c13",
+      "sector_graph_sha256": "bd495988c6e1a552c85a4bfb3beb5d0ea1d587d33133534643e34ac4ad4b7b7b"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/environments/competition/Lib/site-packages/vizdoom/scenarios/defend_the_center.wad",
+      "map": "MAP01",
+      "reason": "training scenario",
+      "geometry_sha256": "20f11de0d6e8ecbef3d9598734cb0c77b6a1189c7a8e4e4916751d7293a2ce37",
+      "sector_graph_sha256": "27063bdf72400804c53a12b855338d6c5351e7984ea254cb940faf5a8b012306"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/environments/competition/Lib/site-packages/vizdoom/scenarios/health_gathering.wad",
+      "map": "MAP01",
+      "reason": "training scenario",
+      "geometry_sha256": "a1399babe9f160bdbed896fb4e5183eb727a8b0dec409d8b2e284c075c64cc85",
+      "sector_graph_sha256": "27063bdf72400804c53a12b855338d6c5351e7984ea254cb940faf5a8b012306"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/environments/competition/Lib/site-packages/vizdoom/scenarios/deadly_corridor.wad",
+      "map": "MAP01",
+      "reason": "training scenario",
+      "geometry_sha256": "1f4f139e493eaa59fb738165d6b1980e50f424df52531a1ec33740a866489c15",
+      "sector_graph_sha256": "43be41cec31ea9a6b9cd3cbf067a95351c2f2c73999d71a237c7e6d324c4fe0e"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/submission_artifacts/github-fresh-6c2d549-20261127-022250050/maps/two_rooms.wad",
+      "map": "MAP01",
+      "reason": "training and official validator",
+      "geometry_sha256": "001e81eae08ccbce9797edf0815dc35483f1c8f74277a4aad6e98c025b063687",
+      "sector_graph_sha256": "0ee67cbe16b3cb05859f287b3363cc9e9680545cd4b14517c2a67934bf6eb61d"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/submission_artifacts/github-fresh-6c2d549-20261127-022250050/tests/fixtures/279106a4a09e9579.wad",
+      "map": "MAP01",
+      "reason": "official fixture and potential prior runtime exposure",
+      "geometry_sha256": "cb920b64eeb93c0a0219529039432bc305abbf829e686f00ffc4c6a890d0d75b",
+      "sector_graph_sha256": "27063bdf72400804c53a12b855338d6c5351e7984ea254cb940faf5a8b012306"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/submission_artifacts/github-fresh-6c2d549-20261127-022250050/tests/fixtures/2f617ad2aa6b5618.wad",
+      "map": "MAP01",
+      "reason": "official fixture and potential prior runtime exposure",
+      "geometry_sha256": "263c430fc43011c28e7188255f7ac6a1f36fbdc5e2047838cdfe8c67d7a52cf6",
+      "sector_graph_sha256": "27063bdf72400804c53a12b855338d6c5351e7984ea254cb940faf5a8b012306"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/submission_artifacts/github-fresh-6c2d549-20261127-022250050/tests/fixtures/509aca7cabb8cd7f.wad",
+      "map": "MAP01",
+      "reason": "official fixture and potential prior runtime exposure",
+      "geometry_sha256": "19285fc524206be5846801c15d795f59b94860191d3ae0e1b5caf88b96edd9c2",
+      "sector_graph_sha256": "5717e44153f70191a73a351781092911eef893ff1be7694077273290d2f4d0dc"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/submission_artifacts/github-fresh-6c2d549-20261127-022250050/tests/fixtures/57a739138e7e276d.wad",
+      "map": "MAP01",
+      "reason": "official fixture and potential prior runtime exposure",
+      "geometry_sha256": "0a0d3e616fd9fe56dc3fd2458004b948e43dbcfd8c27080b46eb4a0d5210e446",
+      "sector_graph_sha256": "27063bdf72400804c53a12b855338d6c5351e7984ea254cb940faf5a8b012306"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/submission_artifacts/github-fresh-6c2d549-20261127-022250050/tests/fixtures/5c688a052900e964.wad",
+      "map": "MAP01",
+      "reason": "official fixture and potential prior runtime exposure",
+      "geometry_sha256": "05ceebc7b733696b77bdbb77561c7aeb853d18424ae8dc595e0b9995d55c8a28",
+      "sector_graph_sha256": "43be41cec31ea9a6b9cd3cbf067a95351c2f2c73999d71a237c7e6d324c4fe0e"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/submission_artifacts/github-fresh-6c2d549-20261127-022250050/tests/fixtures/68d6a90a9de31bb8.wad",
+      "map": "MAP01",
+      "reason": "official fixture and potential prior runtime exposure",
+      "geometry_sha256": "263c430fc43011c28e7188255f7ac6a1f36fbdc5e2047838cdfe8c67d7a52cf6",
+      "sector_graph_sha256": "27063bdf72400804c53a12b855338d6c5351e7984ea254cb940faf5a8b012306"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/submission_artifacts/github-fresh-6c2d549-20261127-022250050/tests/fixtures/6a392a907969372f.wad",
+      "map": "MAP01",
+      "reason": "official fixture and potential prior runtime exposure",
+      "geometry_sha256": "55a5bdfb5d768aa3d17d0edc86045f89c7587bf3ef038e89bc60c59d40ab417a",
+      "sector_graph_sha256": "5717e44153f70191a73a351781092911eef893ff1be7694077273290d2f4d0dc"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/submission_artifacts/github-fresh-6c2d549-20261127-022250050/tests/fixtures/78a88879a8fdeb46.wad",
+      "map": "MAP01",
+      "reason": "official fixture and potential prior runtime exposure",
+      "geometry_sha256": "0c09ac58f6204fc4e13a5394bc001b728600b515ec53648e210d18f54a0f034e",
+      "sector_graph_sha256": "27063bdf72400804c53a12b855338d6c5351e7984ea254cb940faf5a8b012306"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/submission_artifacts/github-fresh-6c2d549-20261127-022250050/tests/fixtures/7965e3db9e16c412.wad",
+      "map": "MAP01",
+      "reason": "official fixture and potential prior runtime exposure",
+      "geometry_sha256": "4a23a93950446d8e98393685ca9fbac3e1efe174d2380938b2aff159ac41dd7a",
+      "sector_graph_sha256": "0ee67cbe16b3cb05859f287b3363cc9e9680545cd4b14517c2a67934bf6eb61d"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/submission_artifacts/github-fresh-6c2d549-20261127-022250050/tests/fixtures/99c8410f05906e0e.wad",
+      "map": "MAP01",
+      "reason": "official fixture and potential prior runtime exposure",
+      "geometry_sha256": "cb920b64eeb93c0a0219529039432bc305abbf829e686f00ffc4c6a890d0d75b",
+      "sector_graph_sha256": "27063bdf72400804c53a12b855338d6c5351e7984ea254cb940faf5a8b012306"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/submission_artifacts/github-fresh-6c2d549-20261127-022250050/tests/fixtures/9a5147dc56a65733.wad",
+      "map": "MAP01",
+      "reason": "official fixture and potential prior runtime exposure",
+      "geometry_sha256": "33afc3b97bcdb4901d980fc4bd9294a4b2abe6f27ff055807fa7561df88a8df6",
+      "sector_graph_sha256": "0ee67cbe16b3cb05859f287b3363cc9e9680545cd4b14517c2a67934bf6eb61d"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/submission_artifacts/github-fresh-6c2d549-20261127-022250050/tests/fixtures/c70e4f3a64c9f8f9.wad",
+      "map": "MAP01",
+      "reason": "official fixture and potential prior runtime exposure",
+      "geometry_sha256": "19285fc524206be5846801c15d795f59b94860191d3ae0e1b5caf88b96edd9c2",
+      "sector_graph_sha256": "5717e44153f70191a73a351781092911eef893ff1be7694077273290d2f4d0dc"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/submission_artifacts/github-fresh-6c2d549-20261127-022250050/tests/fixtures/e7ab54fb6834ffa3.wad",
+      "map": "MAP01",
+      "reason": "official fixture and potential prior runtime exposure",
+      "geometry_sha256": "1e49d6f6b45914fba9bf6ccf482bf566fe1625de57b34211aecc9ce2a904d8a2",
+      "sector_graph_sha256": "0ee67cbe16b3cb05859f287b3363cc9e9680545cd4b14517c2a67934bf6eb61d"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/submission_artifacts/final-functional-audit/backtrack-20261127-024851012/layouts/empty_corridor.wad",
+      "map": "MAP01",
+      "reason": "prior generated diagnostic",
+      "geometry_sha256": "57e5e69927485986d833d39009cc398d5fa92a5b6c1cd5dcac999fc35a043dd3",
+      "sector_graph_sha256": "27063bdf72400804c53a12b855338d6c5351e7984ea254cb940faf5a8b012306"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/submission_artifacts/final-functional-audit/backtrack-20261127-024851012/layouts/locked_progression.wad",
+      "map": "MAP01",
+      "reason": "prior generated diagnostic",
+      "geometry_sha256": "5b6ae357f80d420a3417447ddf3c889ba32822b929e74a4b567863541e4ea755",
+      "sector_graph_sha256": "0ee67cbe16b3cb05859f287b3363cc9e9680545cd4b14517c2a67934bf6eb61d"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/submission_artifacts/final-functional-audit/backtrack-20261127-024851012/layouts/multi_enemy.wad",
+      "map": "MAP01",
+      "reason": "prior generated diagnostic",
+      "geometry_sha256": "5a27cef9d4bff9e3ec6830dd17a684ec74bbde57314a70c84c8b1604fa592ef7",
+      "sector_graph_sha256": "27063bdf72400804c53a12b855338d6c5351e7984ea254cb940faf5a8b012306"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/submission_artifacts/final-functional-audit/backtrack-20261127-024851012/layouts/ordinary_door.wad",
+      "map": "MAP01",
+      "reason": "prior generated diagnostic",
+      "geometry_sha256": "02e06f700ef839b9809465ed1b0a071d40de5094996c3b403c053c6133a9cf7d",
+      "sector_graph_sha256": "43be41cec31ea9a6b9cd3cbf067a95351c2f2c73999d71a237c7e6d324c4fe0e"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/submission_artifacts/final-functional-audit/backtrack-20261127-024851012/layouts/simple_key.wad",
+      "map": "MAP01",
+      "reason": "prior generated diagnostic",
+      "geometry_sha256": "ce620a3e4ecb770f4027c5fbc222221b4421997f838be3d294537c470a6bc540",
+      "sector_graph_sha256": "27063bdf72400804c53a12b855338d6c5351e7984ea254cb940faf5a8b012306"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/submission_artifacts/final-functional-audit/backtrack-20261127-024851012/layouts/single_enemy.wad",
+      "map": "MAP01",
+      "reason": "prior generated diagnostic",
+      "geometry_sha256": "1eefa209b483513fcfa0dd98c83be12961a614ce481a649b3a37e3c797b20a99",
+      "sector_graph_sha256": "27063bdf72400804c53a12b855338d6c5351e7984ea254cb940faf5a8b012306"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/submission_artifacts/final-functional-audit/backtrack-20261127-024851012/layouts/walk_to_exit.wad",
+      "map": "MAP01",
+      "reason": "prior generated diagnostic",
+      "geometry_sha256": "321a163c6ece8cf40a514a5dc5e84505a5172ef58e782eb919f4cfa467a36b2f",
+      "sector_graph_sha256": "5717e44153f70191a73a351781092911eef893ff1be7694077273290d2f4d0dc"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/submission_artifacts/final-functional-audit/backtrack-20261127-025005478/layouts/key_behind_spawn.wad",
+      "map": "MAP01",
+      "reason": "prior generated diagnostic",
+      "geometry_sha256": "8ed6fb258476469a0235dc0c5322736cddb8478238c7ce5f05e1470e2f20cd0c",
+      "sector_graph_sha256": "0ee67cbe16b3cb05859f287b3363cc9e9680545cd4b14517c2a67934bf6eb61d"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/submission_artifacts/final-functional-audit/diagnostics-20261127-024526163/layouts/empty_corridor.wad",
+      "map": "MAP01",
+      "reason": "prior generated diagnostic",
+      "geometry_sha256": "57e5e69927485986d833d39009cc398d5fa92a5b6c1cd5dcac999fc35a043dd3",
+      "sector_graph_sha256": "27063bdf72400804c53a12b855338d6c5351e7984ea254cb940faf5a8b012306"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/submission_artifacts/final-functional-audit/diagnostics-20261127-024526163/layouts/locked_progression.wad",
+      "map": "MAP01",
+      "reason": "prior generated diagnostic",
+      "geometry_sha256": "5b6ae357f80d420a3417447ddf3c889ba32822b929e74a4b567863541e4ea755",
+      "sector_graph_sha256": "0ee67cbe16b3cb05859f287b3363cc9e9680545cd4b14517c2a67934bf6eb61d"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/submission_artifacts/final-functional-audit/diagnostics-20261127-024526163/layouts/multi_enemy.wad",
+      "map": "MAP01",
+      "reason": "prior generated diagnostic",
+      "geometry_sha256": "5a27cef9d4bff9e3ec6830dd17a684ec74bbde57314a70c84c8b1604fa592ef7",
+      "sector_graph_sha256": "27063bdf72400804c53a12b855338d6c5351e7984ea254cb940faf5a8b012306"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/submission_artifacts/final-functional-audit/diagnostics-20261127-024526163/layouts/ordinary_door.wad",
+      "map": "MAP01",
+      "reason": "prior generated diagnostic",
+      "geometry_sha256": "02e06f700ef839b9809465ed1b0a071d40de5094996c3b403c053c6133a9cf7d",
+      "sector_graph_sha256": "43be41cec31ea9a6b9cd3cbf067a95351c2f2c73999d71a237c7e6d324c4fe0e"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/submission_artifacts/final-functional-audit/diagnostics-20261127-024526163/layouts/simple_key.wad",
+      "map": "MAP01",
+      "reason": "prior generated diagnostic",
+      "geometry_sha256": "ce620a3e4ecb770f4027c5fbc222221b4421997f838be3d294537c470a6bc540",
+      "sector_graph_sha256": "27063bdf72400804c53a12b855338d6c5351e7984ea254cb940faf5a8b012306"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/submission_artifacts/final-functional-audit/diagnostics-20261127-024526163/layouts/single_enemy.wad",
+      "map": "MAP01",
+      "reason": "prior generated diagnostic",
+      "geometry_sha256": "1eefa209b483513fcfa0dd98c83be12961a614ce481a649b3a37e3c797b20a99",
+      "sector_graph_sha256": "27063bdf72400804c53a12b855338d6c5351e7984ea254cb940faf5a8b012306"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/submission_artifacts/final-functional-audit/diagnostics-20261127-024526163/layouts/walk_to_exit.wad",
+      "map": "MAP01",
+      "reason": "prior generated diagnostic",
+      "geometry_sha256": "321a163c6ece8cf40a514a5dc5e84505a5172ef58e782eb919f4cfa467a36b2f",
+      "sector_graph_sha256": "5717e44153f70191a73a351781092911eef893ff1be7694077273290d2f4d0dc"
+    },
+    {
+      "wad": "D:/Doom/DevForge_DOOM/maps/curriculum/red_key_backtrack.wad",
+      "map": "MAP01",
+      "reason": "prior spawn-altered training curriculum",
+      "geometry_sha256": "1e49d6f6b45914fba9bf6ccf482bf566fe1625de57b34211aecc9ce2a904d8a2",
+      "sector_graph_sha256": "0ee67cbe16b3cb05859f287b3363cc9e9680545cd4b14517c2a67934bf6eb61d"
+    }
+  ]
+}

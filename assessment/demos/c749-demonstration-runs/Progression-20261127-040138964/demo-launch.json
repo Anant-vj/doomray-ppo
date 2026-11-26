@@ -1,0 +1,18 @@
+{
+  "mode": "Progression",
+  "display_name": "Progression demonstration",
+  "verified_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+  "weight_sha256": "0B8F290CFE36A25F8593DA925D4A4A0DDB8790B37F9319A019AED276A73F5E61",
+  "wad": "D:\\Doom\\DevForge_DOOM\\submission_artifacts\\final-functional-audit\\diagnostics-20261127-024526163\\layouts\\locked_progression.wad",
+  "wad_sha256": "3A959DFB181ACFDDFD9B78D16B5F7312F6D6094F874A031FEF3DF383718F7E84",
+  "map": "MAP01",
+  "seed": 3103,
+  "tick_cap": 1024,
+  "c_net_decline_bytes": 5044678656,
+  "c_decline_cap_bytes": 7000000000,
+  "c_start_reserve_bytes": 500000000,
+  "hold_seconds": 45,
+  "launch_allowed": true,
+  "launcher_pid": 22612,
+  "artifact_directory": "D:\\Doom\\DevForge_DOOM\\submission_artifacts\\c749-demonstration-runs\\Progression-20261127-040138964"
+}

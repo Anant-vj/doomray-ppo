@@ -1,0 +1,13 @@
+{
+  "baseline": "D:/Doom/DevForge_DOOM/logs/storage-baseline.json",
+  "baseline_sha256": "a158265c2cae0ad6d50818bae6e01387d6215f8a20a494115128bdc3a7fa9ccb",
+  "absolute_c_decline_limit_bytes": 7000000000,
+  "start_reserve_bytes": 500000000,
+  "c_decline_start_gate_bytes": 6500000000,
+  "source": "Explicit user authorization to use a 7 GB total C: limit with the same reserve.",
+  "minimum_available_memory_bytes": 805306368,
+  "minimum_available_memory_bytes_with_actor_loaded": 536870912,
+  "minimum_available_memory_bytes_during_episode": 268435456,
+  "minimum_absolute_c_free_bytes": 2000000000,
+  "minimum_d_free_bytes": 500000000
+}

@@ -1,0 +1,18 @@
+{
+  "mode": "Complex",
+  "display_name": "Complex gameplay demonstration",
+  "verified_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+  "weight_sha256": "0B8F290CFE36A25F8593DA925D4A4A0DDB8790B37F9319A019AED276A73F5E61",
+  "wad": "D:\\Doom\\DevForge_DOOM\\environments\\competition\\Lib\\site-packages\\vizdoom\\freedoom2.wad",
+  "wad_sha256": "A8772E088847032510D97BA2312406A6998F21CBAB44D4FF10696FAA9C0ECD4B",
+  "map": "MAP08",
+  "seed": 3101,
+  "tick_cap": 2100,
+  "c_net_decline_bytes": 5048418304,
+  "c_decline_cap_bytes": 7000000000,
+  "c_start_reserve_bytes": 500000000,
+  "hold_seconds": 45,
+  "launch_allowed": true,
+  "launcher_pid": 13332,
+  "artifact_directory": "D:\\Doom\\DevForge_DOOM\\submission_artifacts\\c749-demonstration-runs\\Complex-20261127-040250136"
+}

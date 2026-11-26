@@ -1,0 +1,5578 @@
+{
+  "schema_version": 1,
+  "classification": "Unofficial local proxies and measured gameplay",
+  "models_order": [
+    "C749",
+    "Stack25-u174",
+    "Stack26-u621"
+  ],
+  "counts": {
+    "planned_episodes": 96,
+    "attempted_episodes": 93,
+    "recorded_completed_episodes": 93,
+    "completed_episodes": 93,
+    "failed_or_excluded_units": 0,
+    "unattempted_episodes": 3,
+    "expected_layouts": 16,
+    "attempted_layouts": 16,
+    "completed_layouts": 16,
+    "fully_matched_layouts": 15
+  },
+  "models": {
+    "C749": {
+      "planned": 32,
+      "attempted": 31,
+      "attempted_unique": 31,
+      "completed": 31,
+      "recorded_completed": 31,
+      "unattempted": 1,
+      "failed": 0,
+      "failure_status_counts": {},
+      "attempted_layouts": 16,
+      "completed_layouts": 16,
+      "fully_completed_layouts": 15,
+      "exits": 0,
+      "survived": 3,
+      "deaths": 28,
+      "exit_rate": 0.0,
+      "survival_rate": 0.0967741935483871,
+      "mean_decisions": 338.96774193548384,
+      "metrics": {
+        "keys": {
+          "measured": 31,
+          "total": 0,
+          "mean": 0.0
+        },
+        "unlocks": {
+          "measured": 31,
+          "total": 0,
+          "mean": 0.0
+        },
+        "doors": {
+          "measured": 31,
+          "total": 20,
+          "mean": 0.6451612903225806
+        },
+        "explored_cells_96": {
+          "measured": 31,
+          "total": 950,
+          "mean": 30.64516129032258
+        },
+        "engine_kills": {
+          "measured": 31,
+          "total": 56,
+          "mean": 1.8064516129032258
+        },
+        "health": {
+          "measured": 31,
+          "total": -200.0,
+          "mean": -6.451612903225806
+        },
+        "damage_received": {
+          "measured": 31,
+          "total": 3484.0,
+          "mean": 112.38709677419355
+        },
+        "recorded_player_hits": {
+          "measured": 31,
+          "total": 8,
+          "mean": 0.25806451612903225
+        },
+        "recorded_player_damage": {
+          "measured": 31,
+          "total": 66.0,
+          "mean": 2.129032258064516
+        }
+      },
+      "scores": {
+        "historical": 6.849032258064517,
+        "balanced": 9.79188940092166,
+        "survival-combat": 8.641013824884793,
+        "progression": 11.892304147465438
+      }
+    },
+    "Stack25-u174": {
+      "planned": 32,
+      "attempted": 31,
+      "attempted_unique": 31,
+      "completed": 31,
+      "recorded_completed": 31,
+      "unattempted": 1,
+      "failed": 0,
+      "failure_status_counts": {},
+      "attempted_layouts": 16,
+      "completed_layouts": 16,
+      "fully_completed_layouts": 15,
+      "exits": 0,
+      "survived": 10,
+      "deaths": 21,
+      "exit_rate": 0.0,
+      "survival_rate": 0.3225806451612903,
+      "mean_decisions": 436.38709677419354,
+      "metrics": {
+        "keys": {
+          "measured": 31,
+          "total": 0,
+          "mean": 0.0
+        },
+        "unlocks": {
+          "measured": 31,
+          "total": 0,
+          "mean": 0.0
+        },
+        "doors": {
+          "measured": 31,
+          "total": 12,
+          "mean": 0.3870967741935484
+        },
+        "explored_cells_96": {
+          "measured": 31,
+          "total": 683,
+          "mean": 22.032258064516128
+        },
+        "engine_kills": {
+          "measured": 31,
+          "total": 28,
+          "mean": 0.9032258064516129
+        },
+        "health": {
+          "measured": 31,
+          "total": 689.0,
+          "mean": 22.225806451612904
+        },
+        "damage_received": {
+          "measured": 31,
+          "total": 2500.0,
+          "mean": 80.64516129032258
+        },
+        "recorded_player_hits": {
+          "measured": 31,
+          "total": 27,
+          "mean": 0.8709677419354839
+        },
+        "recorded_player_damage": {
+          "measured": 31,
+          "total": 475.0,
+          "mean": 15.32258064516129
+        }
+      },
+      "scores": {
+        "historical": 4.9154838709677415,
+        "balanced": 6.981198156682028,
+        "survival-combat": 6.672350230414747,
+        "progression": 8.438801843317972
+      }
+    },
+    "Stack26-u621": {
+      "planned": 32,
+      "attempted": 31,
+      "attempted_unique": 31,
+      "completed": 31,
+      "recorded_completed": 31,
+      "unattempted": 1,
+      "failed": 0,
+      "failure_status_counts": {},
+      "attempted_layouts": 16,
+      "completed_layouts": 16,
+      "fully_completed_layouts": 15,
+      "exits": 0,
+      "survived": 8,
+      "deaths": 23,
+      "exit_rate": 0.0,
+      "survival_rate": 0.25806451612903225,
+      "mean_decisions": 454.0967741935484,
+      "metrics": {
+        "keys": {
+          "measured": 31,
+          "total": 0,
+          "mean": 0.0
+        },
+        "unlocks": {
+          "measured": 31,
+          "total": 0,
+          "mean": 0.0
+        },
+        "doors": {
+          "measured": 31,
+          "total": 17,
+          "mean": 0.5483870967741935
+        },
+        "explored_cells_96": {
+          "measured": 31,
+          "total": 966,
+          "mean": 31.161290322580644
+        },
+        "engine_kills": {
+          "measured": 31,
+          "total": 73,
+          "mean": 2.3548387096774195
+        },
+        "health": {
+          "measured": 31,
+          "total": 455.0,
+          "mean": 14.67741935483871
+        },
+        "damage_received": {
+          "measured": 31,
+          "total": 2887.0,
+          "mean": 93.12903225806451
+        },
+        "recorded_player_hits": {
+          "measured": 31,
+          "total": 22,
+          "mean": 0.7096774193548387
+        },
+        "recorded_player_damage": {
+          "measured": 31,
+          "total": 253.0,
+          "mean": 8.161290322580646
+        }
+      },
+      "scores": {
+        "historical": 8.11483870967742,
+        "balanced": 10.5726267281106,
+        "survival-combat": 10.104147465437789,
+        "progression": 12.460276497695855
+      }
+    }
+  },
+  "matched": {
+    "status": "PARTIAL",
+    "completed_units": 31,
+    "planned_units": 32,
+    "full_rankings": {
+      "historical": [
+        {
+          "model": "Stack26-u621",
+          "exits": 0,
+          "mean_score": 8.11483870967742
+        },
+        {
+          "model": "C749",
+          "exits": 0,
+          "mean_score": 6.849032258064517
+        },
+        {
+          "model": "Stack25-u174",
+          "exits": 0,
+          "mean_score": 4.9154838709677415
+        }
+      ],
+      "balanced": [
+        {
+          "model": "Stack26-u621",
+          "exits": 0,
+          "mean_score": 10.5726267281106
+        },
+        {
+          "model": "C749",
+          "exits": 0,
+          "mean_score": 9.79188940092166
+        },
+        {
+          "model": "Stack25-u174",
+          "exits": 0,
+          "mean_score": 6.981198156682028
+        }
+      ],
+      "survival-combat": [
+        {
+          "model": "Stack26-u621",
+          "exits": 0,
+          "mean_score": 10.104147465437789
+        },
+        {
+          "model": "C749",
+          "exits": 0,
+          "mean_score": 8.641013824884793
+        },
+        {
+          "model": "Stack25-u174",
+          "exits": 0,
+          "mean_score": 6.672350230414747
+        }
+      ],
+      "progression": [
+        {
+          "model": "Stack26-u621",
+          "exits": 0,
+          "mean_score": 12.460276497695855
+        },
+        {
+          "model": "C749",
+          "exits": 0,
+          "mean_score": 11.892304147465438
+        },
+        {
+          "model": "Stack25-u174",
+          "exits": 0,
+          "mean_score": 8.438801843317972
+        }
+      ]
+    }
+  },
+  "pairwise": [
+    {
+      "left": "C749",
+      "right": "Stack25-u174",
+      "planned_pairs": 32,
+      "attempted_pairs": 31,
+      "completed_pairs": 31,
+      "paired_layouts": 16,
+      "fully_paired_layouts": 15,
+      "unattempted_pairs": 1,
+      "unpaired_attempted_pairs": 0,
+      "pairs_with_failed_attempt": 0,
+      "left_failed_attempts": 0,
+      "right_failed_attempts": 0,
+      "left_completed_right_failed": 0,
+      "right_completed_left_failed": 0,
+      "left_completed_right_unattempted": 0,
+      "right_completed_left_unattempted": 0,
+      "outcomes": {
+        "exit": {
+          "measured_pairs": 31,
+          "left_mean": 0.0,
+          "right_mean": 0.0,
+          "mean_difference": 0.0,
+          "relative_change_percent": null,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          },
+          "percentage_point_difference": 0.0
+        },
+        "alive": {
+          "measured_pairs": 31,
+          "left_mean": 0.0967741935483871,
+          "right_mean": 0.3225806451612903,
+          "mean_difference": -0.22580645161290322,
+          "relative_change_percent": -70.0,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          },
+          "percentage_point_difference": -22.58064516129032
+        },
+        "decisions": {
+          "measured_pairs": 31,
+          "left_mean": 338.96774193548384,
+          "right_mean": 436.38709677419354,
+          "mean_difference": -97.41935483870968,
+          "relative_change_percent": -22.32406859846245,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          }
+        },
+        "keys": {
+          "measured_pairs": 31,
+          "left_mean": 0.0,
+          "right_mean": 0.0,
+          "mean_difference": 0.0,
+          "relative_change_percent": null,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          }
+        },
+        "unlocks": {
+          "measured_pairs": 31,
+          "left_mean": 0.0,
+          "right_mean": 0.0,
+          "mean_difference": 0.0,
+          "relative_change_percent": null,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          }
+        },
+        "doors": {
+          "measured_pairs": 31,
+          "left_mean": 0.6451612903225806,
+          "right_mean": 0.3870967741935484,
+          "mean_difference": 0.25806451612903225,
+          "relative_change_percent": 66.66666666666666,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          }
+        },
+        "explored_cells_96": {
+          "measured_pairs": 31,
+          "left_mean": 30.64516129032258,
+          "right_mean": 22.032258064516128,
+          "mean_difference": 8.612903225806452,
+          "relative_change_percent": 39.09224011713031,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          }
+        },
+        "engine_kills": {
+          "measured_pairs": 31,
+          "left_mean": 1.8064516129032258,
+          "right_mean": 0.9032258064516129,
+          "mean_difference": 0.9032258064516129,
+          "relative_change_percent": 100.0,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          }
+        },
+        "health": {
+          "measured_pairs": 31,
+          "left_mean": -6.451612903225806,
+          "right_mean": 22.225806451612904,
+          "mean_difference": -28.677419354838708,
+          "relative_change_percent": null,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          }
+        },
+        "damage_received": {
+          "measured_pairs": 31,
+          "left_mean": 112.38709677419355,
+          "right_mean": 80.64516129032258,
+          "mean_difference": 31.741935483870968,
+          "relative_change_percent": 39.36,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          }
+        },
+        "recorded_player_hits": {
+          "measured_pairs": 31,
+          "left_mean": 0.25806451612903225,
+          "right_mean": 0.8709677419354839,
+          "mean_difference": -0.6129032258064516,
+          "relative_change_percent": -70.37037037037037,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          }
+        },
+        "recorded_player_damage": {
+          "measured_pairs": 31,
+          "left_mean": 2.129032258064516,
+          "right_mean": 15.32258064516129,
+          "mean_difference": -13.193548387096774,
+          "relative_change_percent": -86.10526315789474,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          }
+        }
+      },
+      "profiles": {
+        "historical": {
+          "measured_pairs": 31,
+          "left_mean": 6.849032258064517,
+          "right_mean": 4.9154838709677415,
+          "mean_difference": 1.9335483870967745,
+          "relative_change_percent": 39.335870849192816,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          },
+          "win_tie_loss": {
+            "wins": 21,
+            "ties": 0,
+            "losses": 10
+          }
+        },
+        "balanced": {
+          "measured_pairs": 31,
+          "left_mean": 9.79188940092166,
+          "right_mean": 6.981198156682028,
+          "mean_difference": 2.8106912442396315,
+          "relative_change_percent": 40.260871861220394,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          },
+          "win_tie_loss": {
+            "wins": 22,
+            "ties": 0,
+            "losses": 9
+          }
+        },
+        "survival-combat": {
+          "measured_pairs": 31,
+          "left_mean": 8.641013824884793,
+          "right_mean": 6.672350230414747,
+          "mean_difference": 1.9686635944700464,
+          "relative_change_percent": 29.50480005525244,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          },
+          "win_tie_loss": {
+            "wins": 20,
+            "ties": 0,
+            "losses": 11
+          }
+        },
+        "progression": {
+          "measured_pairs": 31,
+          "left_mean": 11.892304147465438,
+          "right_mean": 8.438801843317972,
+          "mean_difference": 3.4535023041474657,
+          "relative_change_percent": 40.92408339795328,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          },
+          "win_tie_loss": {
+            "wins": 21,
+            "ties": 0,
+            "losses": 10
+          }
+        }
+      }
+    },
+    {
+      "left": "C749",
+      "right": "Stack26-u621",
+      "planned_pairs": 32,
+      "attempted_pairs": 31,
+      "completed_pairs": 31,
+      "paired_layouts": 16,
+      "fully_paired_layouts": 15,
+      "unattempted_pairs": 1,
+      "unpaired_attempted_pairs": 0,
+      "pairs_with_failed_attempt": 0,
+      "left_failed_attempts": 0,
+      "right_failed_attempts": 0,
+      "left_completed_right_failed": 0,
+      "right_completed_left_failed": 0,
+      "left_completed_right_unattempted": 0,
+      "right_completed_left_unattempted": 0,
+      "outcomes": {
+        "exit": {
+          "measured_pairs": 31,
+          "left_mean": 0.0,
+          "right_mean": 0.0,
+          "mean_difference": 0.0,
+          "relative_change_percent": null,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          },
+          "percentage_point_difference": 0.0
+        },
+        "alive": {
+          "measured_pairs": 31,
+          "left_mean": 0.0967741935483871,
+          "right_mean": 0.25806451612903225,
+          "mean_difference": -0.16129032258064516,
+          "relative_change_percent": -62.5,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          },
+          "percentage_point_difference": -16.129032258064516
+        },
+        "decisions": {
+          "measured_pairs": 31,
+          "left_mean": 338.96774193548384,
+          "right_mean": 454.0967741935484,
+          "mean_difference": -115.12903225806451,
+          "relative_change_percent": -25.35341336932585,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          }
+        },
+        "keys": {
+          "measured_pairs": 31,
+          "left_mean": 0.0,
+          "right_mean": 0.0,
+          "mean_difference": 0.0,
+          "relative_change_percent": null,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          }
+        },
+        "unlocks": {
+          "measured_pairs": 31,
+          "left_mean": 0.0,
+          "right_mean": 0.0,
+          "mean_difference": 0.0,
+          "relative_change_percent": null,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          }
+        },
+        "doors": {
+          "measured_pairs": 31,
+          "left_mean": 0.6451612903225806,
+          "right_mean": 0.5483870967741935,
+          "mean_difference": 0.0967741935483871,
+          "relative_change_percent": 17.647058823529413,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          }
+        },
+        "explored_cells_96": {
+          "measured_pairs": 31,
+          "left_mean": 30.64516129032258,
+          "right_mean": 31.161290322580644,
+          "mean_difference": -0.5161290322580645,
+          "relative_change_percent": -1.6563146997929608,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          }
+        },
+        "engine_kills": {
+          "measured_pairs": 31,
+          "left_mean": 1.8064516129032258,
+          "right_mean": 2.3548387096774195,
+          "mean_difference": -0.5483870967741935,
+          "relative_change_percent": -23.287671232876708,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          }
+        },
+        "health": {
+          "measured_pairs": 31,
+          "left_mean": -6.451612903225806,
+          "right_mean": 14.67741935483871,
+          "mean_difference": -21.129032258064516,
+          "relative_change_percent": null,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          }
+        },
+        "damage_received": {
+          "measured_pairs": 31,
+          "left_mean": 112.38709677419355,
+          "right_mean": 93.12903225806451,
+          "mean_difference": 19.258064516129032,
+          "relative_change_percent": 20.678905438171114,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          }
+        },
+        "recorded_player_hits": {
+          "measured_pairs": 31,
+          "left_mean": 0.25806451612903225,
+          "right_mean": 0.7096774193548387,
+          "mean_difference": -0.45161290322580644,
+          "relative_change_percent": -63.63636363636363,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          }
+        },
+        "recorded_player_damage": {
+          "measured_pairs": 31,
+          "left_mean": 2.129032258064516,
+          "right_mean": 8.161290322580646,
+          "mean_difference": -6.032258064516129,
+          "relative_change_percent": -73.91304347826086,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          }
+        }
+      },
+      "profiles": {
+        "historical": {
+          "measured_pairs": 31,
+          "left_mean": 6.849032258064517,
+          "right_mean": 8.11483870967742,
+          "mean_difference": -1.2658064516129033,
+          "relative_change_percent": -15.598664334552392,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          },
+          "win_tie_loss": {
+            "wins": 12,
+            "ties": 1,
+            "losses": 18
+          }
+        },
+        "balanced": {
+          "measured_pairs": 31,
+          "left_mean": 9.79188940092166,
+          "right_mean": 10.5726267281106,
+          "mean_difference": -0.7807373271889404,
+          "relative_change_percent": -7.384516140280528,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          },
+          "win_tie_loss": {
+            "wins": 12,
+            "ties": 1,
+            "losses": 18
+          }
+        },
+        "survival-combat": {
+          "measured_pairs": 31,
+          "left_mean": 8.641013824884793,
+          "right_mean": 10.104147465437789,
+          "mean_difference": -1.4631336405529956,
+          "relative_change_percent": -14.480525403630393,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          },
+          "win_tie_loss": {
+            "wins": 13,
+            "ties": 1,
+            "losses": 17
+          }
+        },
+        "progression": {
+          "measured_pairs": 31,
+          "left_mean": 11.892304147465438,
+          "right_mean": 12.460276497695855,
+          "mean_difference": -0.5679723502304148,
+          "relative_change_percent": -4.55826442001864,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          },
+          "win_tie_loss": {
+            "wins": 12,
+            "ties": 1,
+            "losses": 18
+          }
+        }
+      }
+    },
+    {
+      "left": "Stack25-u174",
+      "right": "Stack26-u621",
+      "planned_pairs": 32,
+      "attempted_pairs": 31,
+      "completed_pairs": 31,
+      "paired_layouts": 16,
+      "fully_paired_layouts": 15,
+      "unattempted_pairs": 1,
+      "unpaired_attempted_pairs": 0,
+      "pairs_with_failed_attempt": 0,
+      "left_failed_attempts": 0,
+      "right_failed_attempts": 0,
+      "left_completed_right_failed": 0,
+      "right_completed_left_failed": 0,
+      "left_completed_right_unattempted": 0,
+      "right_completed_left_unattempted": 0,
+      "outcomes": {
+        "exit": {
+          "measured_pairs": 31,
+          "left_mean": 0.0,
+          "right_mean": 0.0,
+          "mean_difference": 0.0,
+          "relative_change_percent": null,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          },
+          "percentage_point_difference": 0.0
+        },
+        "alive": {
+          "measured_pairs": 31,
+          "left_mean": 0.3225806451612903,
+          "right_mean": 0.25806451612903225,
+          "mean_difference": 0.06451612903225806,
+          "relative_change_percent": 25.0,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          },
+          "percentage_point_difference": 6.451612903225806
+        },
+        "decisions": {
+          "measured_pairs": 31,
+          "left_mean": 436.38709677419354,
+          "right_mean": 454.0967741935484,
+          "mean_difference": -17.70967741935484,
+          "relative_change_percent": -3.899978688641046,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          }
+        },
+        "keys": {
+          "measured_pairs": 31,
+          "left_mean": 0.0,
+          "right_mean": 0.0,
+          "mean_difference": 0.0,
+          "relative_change_percent": null,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          }
+        },
+        "unlocks": {
+          "measured_pairs": 31,
+          "left_mean": 0.0,
+          "right_mean": 0.0,
+          "mean_difference": 0.0,
+          "relative_change_percent": null,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          }
+        },
+        "doors": {
+          "measured_pairs": 31,
+          "left_mean": 0.3870967741935484,
+          "right_mean": 0.5483870967741935,
+          "mean_difference": -0.16129032258064516,
+          "relative_change_percent": -29.411764705882355,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          }
+        },
+        "explored_cells_96": {
+          "measured_pairs": 31,
+          "left_mean": 22.032258064516128,
+          "right_mean": 31.161290322580644,
+          "mean_difference": -9.129032258064516,
+          "relative_change_percent": -29.296066252587995,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          }
+        },
+        "engine_kills": {
+          "measured_pairs": 31,
+          "left_mean": 0.9032258064516129,
+          "right_mean": 2.3548387096774195,
+          "mean_difference": -1.4516129032258065,
+          "relative_change_percent": -61.64383561643836,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          }
+        },
+        "health": {
+          "measured_pairs": 31,
+          "left_mean": 22.225806451612904,
+          "right_mean": 14.67741935483871,
+          "mean_difference": 7.548387096774194,
+          "relative_change_percent": 51.42857142857144,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          }
+        },
+        "damage_received": {
+          "measured_pairs": 31,
+          "left_mean": 80.64516129032258,
+          "right_mean": 93.12903225806451,
+          "mean_difference": -12.483870967741936,
+          "relative_change_percent": -13.404918600623486,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          }
+        },
+        "recorded_player_hits": {
+          "measured_pairs": 31,
+          "left_mean": 0.8709677419354839,
+          "right_mean": 0.7096774193548387,
+          "mean_difference": 0.16129032258064516,
+          "relative_change_percent": 22.727272727272727,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          }
+        },
+        "recorded_player_damage": {
+          "measured_pairs": 31,
+          "left_mean": 15.32258064516129,
+          "right_mean": 8.161290322580646,
+          "mean_difference": 7.161290322580645,
+          "relative_change_percent": 87.74703557312252,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          }
+        }
+      },
+      "profiles": {
+        "historical": {
+          "measured_pairs": 31,
+          "left_mean": 4.9154838709677415,
+          "right_mean": 8.11483870967742,
+          "mean_difference": -3.1993548387096777,
+          "relative_change_percent": -39.42598187311179,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          },
+          "win_tie_loss": {
+            "wins": 8,
+            "ties": 2,
+            "losses": 21
+          }
+        },
+        "balanced": {
+          "measured_pairs": 31,
+          "left_mean": 6.981198156682028,
+          "right_mean": 10.5726267281106,
+          "mean_difference": -3.5914285714285716,
+          "relative_change_percent": -33.96912294160208,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          },
+          "win_tie_loss": {
+            "wins": 7,
+            "ties": 2,
+            "losses": 22
+          }
+        },
+        "survival-combat": {
+          "measured_pairs": 31,
+          "left_mean": 6.672350230414747,
+          "right_mean": 10.104147465437789,
+          "mean_difference": -3.4317972350230415,
+          "relative_change_percent": -33.96424336404269,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          },
+          "win_tie_loss": {
+            "wins": 11,
+            "ties": 2,
+            "losses": 18
+          }
+        },
+        "progression": {
+          "measured_pairs": 31,
+          "left_mean": 8.438801843317972,
+          "right_mean": 12.460276497695855,
+          "mean_difference": -4.02147465437788,
+          "relative_change_percent": -32.27436128822285,
+          "layout_bootstrap_95": {
+            "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+            "complete_layouts": 15,
+            "minimum_complete_layouts": 16,
+            "confidence": 0.95,
+            "interval": null
+          },
+          "win_tie_loss": {
+            "wins": 7,
+            "ties": 2,
+            "losses": 22
+          }
+        }
+      }
+    }
+  ],
+  "tiers": {
+    "1": {
+      "counts": {
+        "planned_episodes": 24,
+        "attempted_episodes": 24,
+        "recorded_completed_episodes": 24,
+        "completed_episodes": 24,
+        "failed_or_excluded_units": 0,
+        "unattempted_episodes": 0,
+        "expected_layouts": 4,
+        "attempted_layouts": 4,
+        "completed_layouts": 4,
+        "fully_matched_layouts": 4
+      },
+      "models": {
+        "C749": {
+          "planned": 8,
+          "attempted": 8,
+          "attempted_unique": 8,
+          "completed": 8,
+          "recorded_completed": 8,
+          "unattempted": 0,
+          "failed": 0,
+          "failure_status_counts": {},
+          "attempted_layouts": 4,
+          "completed_layouts": 4,
+          "fully_completed_layouts": 4,
+          "exits": 0,
+          "survived": 0,
+          "deaths": 8,
+          "exit_rate": 0.0,
+          "survival_rate": 0.0,
+          "mean_decisions": 173.375,
+          "metrics": {
+            "keys": {
+              "measured": 8,
+              "total": 0,
+              "mean": 0.0
+            },
+            "unlocks": {
+              "measured": 8,
+              "total": 0,
+              "mean": 0.0
+            },
+            "doors": {
+              "measured": 8,
+              "total": 3,
+              "mean": 0.375
+            },
+            "explored_cells_96": {
+              "measured": 8,
+              "total": 187,
+              "mean": 23.375
+            },
+            "engine_kills": {
+              "measured": 8,
+              "total": 19,
+              "mean": 2.375
+            },
+            "health": {
+              "measured": 8,
+              "total": -91.0,
+              "mean": -11.375
+            },
+            "damage_received": {
+              "measured": 8,
+              "total": 970.0,
+              "mean": 121.25
+            },
+            "recorded_player_hits": {
+              "measured": 8,
+              "total": 0,
+              "mean": 0.0
+            },
+            "recorded_player_damage": {
+              "measured": 8,
+              "total": 0.0,
+              "mean": 0.0
+            }
+          },
+          "scores": {
+            "historical": 5.1475,
+            "balanced": 8.272976190476191,
+            "survival-combat": 7.9261904761904765,
+            "progression": 9.571607142857143
+          }
+        },
+        "Stack25-u174": {
+          "planned": 8,
+          "attempted": 8,
+          "attempted_unique": 8,
+          "completed": 8,
+          "recorded_completed": 8,
+          "unattempted": 0,
+          "failed": 0,
+          "failure_status_counts": {},
+          "attempted_layouts": 4,
+          "completed_layouts": 4,
+          "fully_completed_layouts": 4,
+          "exits": 0,
+          "survived": 0,
+          "deaths": 8,
+          "exit_rate": 0.0,
+          "survival_rate": 0.0,
+          "mean_decisions": 94.625,
+          "metrics": {
+            "keys": {
+              "measured": 8,
+              "total": 0,
+              "mean": 0.0
+            },
+            "unlocks": {
+              "measured": 8,
+              "total": 0,
+              "mean": 0.0
+            },
+            "doors": {
+              "measured": 8,
+              "total": 1,
+              "mean": 0.125
+            },
+            "explored_cells_96": {
+              "measured": 8,
+              "total": 104,
+              "mean": 13.0
+            },
+            "engine_kills": {
+              "measured": 8,
+              "total": 15,
+              "mean": 1.875
+            },
+            "health": {
+              "measured": 8,
+              "total": -77.0,
+              "mean": -9.625
+            },
+            "damage_received": {
+              "measured": 8,
+              "total": 888.0,
+              "mean": 111.0
+            },
+            "recorded_player_hits": {
+              "measured": 8,
+              "total": 6,
+              "mean": 0.75
+            },
+            "recorded_player_damage": {
+              "measured": 8,
+              "total": 238.0,
+              "mean": 29.75
+            }
+          },
+          "scores": {
+            "historical": 2.3125,
+            "balanced": 5.02297619047619,
+            "survival-combat": 5.138690476190476,
+            "progression": 5.566607142857143
+          }
+        },
+        "Stack26-u621": {
+          "planned": 8,
+          "attempted": 8,
+          "attempted_unique": 8,
+          "completed": 8,
+          "recorded_completed": 8,
+          "unattempted": 0,
+          "failed": 0,
+          "failure_status_counts": {},
+          "attempted_layouts": 4,
+          "completed_layouts": 4,
+          "fully_completed_layouts": 4,
+          "exits": 0,
+          "survived": 0,
+          "deaths": 8,
+          "exit_rate": 0.0,
+          "survival_rate": 0.0,
+          "mean_decisions": 185.125,
+          "metrics": {
+            "keys": {
+              "measured": 8,
+              "total": 0,
+              "mean": 0.0
+            },
+            "unlocks": {
+              "measured": 8,
+              "total": 0,
+              "mean": 0.0
+            },
+            "doors": {
+              "measured": 8,
+              "total": 1,
+              "mean": 0.125
+            },
+            "explored_cells_96": {
+              "measured": 8,
+              "total": 215,
+              "mean": 26.875
+            },
+            "engine_kills": {
+              "measured": 8,
+              "total": 32,
+              "mean": 4.0
+            },
+            "health": {
+              "measured": 8,
+              "total": -84.0,
+              "mean": -10.5
+            },
+            "damage_received": {
+              "measured": 8,
+              "total": 946.0,
+              "mean": 118.25
+            },
+            "recorded_player_hits": {
+              "measured": 8,
+              "total": 7,
+              "mean": 0.875
+            },
+            "recorded_player_damage": {
+              "measured": 8,
+              "total": 91.0,
+              "mean": 11.375
+            }
+          },
+          "scores": {
+            "historical": 7.05,
+            "balanced": 10.267738095238096,
+            "survival-combat": 10.575595238095238,
+            "progression": 11.303928571428573
+          }
+        }
+      },
+      "matched": {
+        "status": "COMPLETE",
+        "completed_units": 8,
+        "planned_units": 8,
+        "full_rankings": {
+          "historical": [
+            {
+              "model": "Stack26-u621",
+              "exits": 0,
+              "mean_score": 7.05
+            },
+            {
+              "model": "C749",
+              "exits": 0,
+              "mean_score": 5.1475
+            },
+            {
+              "model": "Stack25-u174",
+              "exits": 0,
+              "mean_score": 2.3125
+            }
+          ],
+          "balanced": [
+            {
+              "model": "Stack26-u621",
+              "exits": 0,
+              "mean_score": 10.267738095238096
+            },
+            {
+              "model": "C749",
+              "exits": 0,
+              "mean_score": 8.272976190476191
+            },
+            {
+              "model": "Stack25-u174",
+              "exits": 0,
+              "mean_score": 5.02297619047619
+            }
+          ],
+          "survival-combat": [
+            {
+              "model": "Stack26-u621",
+              "exits": 0,
+              "mean_score": 10.575595238095238
+            },
+            {
+              "model": "C749",
+              "exits": 0,
+              "mean_score": 7.9261904761904765
+            },
+            {
+              "model": "Stack25-u174",
+              "exits": 0,
+              "mean_score": 5.138690476190476
+            }
+          ],
+          "progression": [
+            {
+              "model": "Stack26-u621",
+              "exits": 0,
+              "mean_score": 11.303928571428573
+            },
+            {
+              "model": "C749",
+              "exits": 0,
+              "mean_score": 9.571607142857143
+            },
+            {
+              "model": "Stack25-u174",
+              "exits": 0,
+              "mean_score": 5.566607142857143
+            }
+          ]
+        }
+      },
+      "pairwise": [
+        {
+          "left": "C749",
+          "right": "Stack25-u174",
+          "planned_pairs": 8,
+          "attempted_pairs": 8,
+          "completed_pairs": 8,
+          "paired_layouts": 4,
+          "fully_paired_layouts": 4,
+          "unattempted_pairs": 0,
+          "unpaired_attempted_pairs": 0,
+          "pairs_with_failed_attempt": 0,
+          "left_failed_attempts": 0,
+          "right_failed_attempts": 0,
+          "left_completed_right_failed": 0,
+          "right_completed_left_failed": 0,
+          "left_completed_right_unattempted": 0,
+          "right_completed_left_unattempted": 0,
+          "outcomes": {
+            "exit": {
+              "measured_pairs": 8,
+              "left_mean": 0.0,
+              "right_mean": 0.0,
+              "mean_difference": 0.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "percentage_point_difference": 0.0
+            },
+            "alive": {
+              "measured_pairs": 8,
+              "left_mean": 0.0,
+              "right_mean": 0.0,
+              "mean_difference": 0.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "percentage_point_difference": 0.0
+            },
+            "decisions": {
+              "measured_pairs": 8,
+              "left_mean": 173.375,
+              "right_mean": 94.625,
+              "mean_difference": 78.75,
+              "relative_change_percent": 83.22324966974901,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "keys": {
+              "measured_pairs": 8,
+              "left_mean": 0.0,
+              "right_mean": 0.0,
+              "mean_difference": 0.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "unlocks": {
+              "measured_pairs": 8,
+              "left_mean": 0.0,
+              "right_mean": 0.0,
+              "mean_difference": 0.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "doors": {
+              "measured_pairs": 8,
+              "left_mean": 0.375,
+              "right_mean": 0.125,
+              "mean_difference": 0.25,
+              "relative_change_percent": 200.0,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "explored_cells_96": {
+              "measured_pairs": 8,
+              "left_mean": 23.375,
+              "right_mean": 13.0,
+              "mean_difference": 10.375,
+              "relative_change_percent": 79.8076923076923,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "engine_kills": {
+              "measured_pairs": 8,
+              "left_mean": 2.375,
+              "right_mean": 1.875,
+              "mean_difference": 0.5,
+              "relative_change_percent": 26.666666666666668,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "health": {
+              "measured_pairs": 8,
+              "left_mean": -11.375,
+              "right_mean": -9.625,
+              "mean_difference": -1.75,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "damage_received": {
+              "measured_pairs": 8,
+              "left_mean": 121.25,
+              "right_mean": 111.0,
+              "mean_difference": 10.25,
+              "relative_change_percent": 9.234234234234235,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "recorded_player_hits": {
+              "measured_pairs": 8,
+              "left_mean": 0.0,
+              "right_mean": 0.75,
+              "mean_difference": -0.75,
+              "relative_change_percent": -100.0,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "recorded_player_damage": {
+              "measured_pairs": 8,
+              "left_mean": 0.0,
+              "right_mean": 29.75,
+              "mean_difference": -29.75,
+              "relative_change_percent": -100.0,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            }
+          },
+          "profiles": {
+            "historical": {
+              "measured_pairs": 8,
+              "left_mean": 5.1475,
+              "right_mean": 2.3125,
+              "mean_difference": 2.835,
+              "relative_change_percent": 122.59459459459458,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 7,
+                "ties": 0,
+                "losses": 1
+              }
+            },
+            "balanced": {
+              "measured_pairs": 8,
+              "left_mean": 8.272976190476191,
+              "right_mean": 5.02297619047619,
+              "mean_difference": 3.250000000000001,
+              "relative_change_percent": 64.70267579930322,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 7,
+                "ties": 0,
+                "losses": 1
+              }
+            },
+            "survival-combat": {
+              "measured_pairs": 8,
+              "left_mean": 7.9261904761904765,
+              "right_mean": 5.138690476190476,
+              "mean_difference": 2.7875000000000005,
+              "relative_change_percent": 54.24533765782464,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 6,
+                "ties": 0,
+                "losses": 2
+              }
+            },
+            "progression": {
+              "measured_pairs": 8,
+              "left_mean": 9.571607142857143,
+              "right_mean": 5.566607142857143,
+              "mean_difference": 4.005000000000001,
+              "relative_change_percent": 71.94687710518718,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 7,
+                "ties": 0,
+                "losses": 1
+              }
+            }
+          }
+        },
+        {
+          "left": "C749",
+          "right": "Stack26-u621",
+          "planned_pairs": 8,
+          "attempted_pairs": 8,
+          "completed_pairs": 8,
+          "paired_layouts": 4,
+          "fully_paired_layouts": 4,
+          "unattempted_pairs": 0,
+          "unpaired_attempted_pairs": 0,
+          "pairs_with_failed_attempt": 0,
+          "left_failed_attempts": 0,
+          "right_failed_attempts": 0,
+          "left_completed_right_failed": 0,
+          "right_completed_left_failed": 0,
+          "left_completed_right_unattempted": 0,
+          "right_completed_left_unattempted": 0,
+          "outcomes": {
+            "exit": {
+              "measured_pairs": 8,
+              "left_mean": 0.0,
+              "right_mean": 0.0,
+              "mean_difference": 0.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "percentage_point_difference": 0.0
+            },
+            "alive": {
+              "measured_pairs": 8,
+              "left_mean": 0.0,
+              "right_mean": 0.0,
+              "mean_difference": 0.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "percentage_point_difference": 0.0
+            },
+            "decisions": {
+              "measured_pairs": 8,
+              "left_mean": 173.375,
+              "right_mean": 185.125,
+              "mean_difference": -11.75,
+              "relative_change_percent": -6.347062795408507,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "keys": {
+              "measured_pairs": 8,
+              "left_mean": 0.0,
+              "right_mean": 0.0,
+              "mean_difference": 0.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "unlocks": {
+              "measured_pairs": 8,
+              "left_mean": 0.0,
+              "right_mean": 0.0,
+              "mean_difference": 0.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "doors": {
+              "measured_pairs": 8,
+              "left_mean": 0.375,
+              "right_mean": 0.125,
+              "mean_difference": 0.25,
+              "relative_change_percent": 200.0,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "explored_cells_96": {
+              "measured_pairs": 8,
+              "left_mean": 23.375,
+              "right_mean": 26.875,
+              "mean_difference": -3.5,
+              "relative_change_percent": -13.023255813953488,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "engine_kills": {
+              "measured_pairs": 8,
+              "left_mean": 2.375,
+              "right_mean": 4.0,
+              "mean_difference": -1.625,
+              "relative_change_percent": -40.625,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "health": {
+              "measured_pairs": 8,
+              "left_mean": -11.375,
+              "right_mean": -10.5,
+              "mean_difference": -0.875,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "damage_received": {
+              "measured_pairs": 8,
+              "left_mean": 121.25,
+              "right_mean": 118.25,
+              "mean_difference": 3.0,
+              "relative_change_percent": 2.536997885835095,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "recorded_player_hits": {
+              "measured_pairs": 8,
+              "left_mean": 0.0,
+              "right_mean": 0.875,
+              "mean_difference": -0.875,
+              "relative_change_percent": -100.0,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "recorded_player_damage": {
+              "measured_pairs": 8,
+              "left_mean": 0.0,
+              "right_mean": 11.375,
+              "mean_difference": -11.375,
+              "relative_change_percent": -100.0,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            }
+          },
+          "profiles": {
+            "historical": {
+              "measured_pairs": 8,
+              "left_mean": 5.1475,
+              "right_mean": 7.05,
+              "mean_difference": -1.9024999999999999,
+              "relative_change_percent": -26.985815602836876,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 3,
+                "ties": 0,
+                "losses": 5
+              }
+            },
+            "balanced": {
+              "measured_pairs": 8,
+              "left_mean": 8.272976190476191,
+              "right_mean": 10.267738095238096,
+              "mean_difference": -1.9947619047619045,
+              "relative_change_percent": -19.42747162285939,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 3,
+                "ties": 0,
+                "losses": 5
+              }
+            },
+            "survival-combat": {
+              "measured_pairs": 8,
+              "left_mean": 7.9261904761904765,
+              "right_mean": 10.575595238095238,
+              "mean_difference": -2.6494047619047616,
+              "relative_change_percent": -25.05206281308043,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 3,
+                "ties": 0,
+                "losses": 5
+              }
+            },
+            "progression": {
+              "measured_pairs": 8,
+              "left_mean": 9.571607142857143,
+              "right_mean": 11.303928571428573,
+              "mean_difference": -1.7323214285714286,
+              "relative_change_percent": -15.324950238539065,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 3,
+                "ties": 0,
+                "losses": 5
+              }
+            }
+          }
+        },
+        {
+          "left": "Stack25-u174",
+          "right": "Stack26-u621",
+          "planned_pairs": 8,
+          "attempted_pairs": 8,
+          "completed_pairs": 8,
+          "paired_layouts": 4,
+          "fully_paired_layouts": 4,
+          "unattempted_pairs": 0,
+          "unpaired_attempted_pairs": 0,
+          "pairs_with_failed_attempt": 0,
+          "left_failed_attempts": 0,
+          "right_failed_attempts": 0,
+          "left_completed_right_failed": 0,
+          "right_completed_left_failed": 0,
+          "left_completed_right_unattempted": 0,
+          "right_completed_left_unattempted": 0,
+          "outcomes": {
+            "exit": {
+              "measured_pairs": 8,
+              "left_mean": 0.0,
+              "right_mean": 0.0,
+              "mean_difference": 0.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "percentage_point_difference": 0.0
+            },
+            "alive": {
+              "measured_pairs": 8,
+              "left_mean": 0.0,
+              "right_mean": 0.0,
+              "mean_difference": 0.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "percentage_point_difference": 0.0
+            },
+            "decisions": {
+              "measured_pairs": 8,
+              "left_mean": 94.625,
+              "right_mean": 185.125,
+              "mean_difference": -90.5,
+              "relative_change_percent": -48.88588791357191,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "keys": {
+              "measured_pairs": 8,
+              "left_mean": 0.0,
+              "right_mean": 0.0,
+              "mean_difference": 0.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "unlocks": {
+              "measured_pairs": 8,
+              "left_mean": 0.0,
+              "right_mean": 0.0,
+              "mean_difference": 0.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "doors": {
+              "measured_pairs": 8,
+              "left_mean": 0.125,
+              "right_mean": 0.125,
+              "mean_difference": 0.0,
+              "relative_change_percent": 0.0,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "explored_cells_96": {
+              "measured_pairs": 8,
+              "left_mean": 13.0,
+              "right_mean": 26.875,
+              "mean_difference": -13.875,
+              "relative_change_percent": -51.627906976744185,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "engine_kills": {
+              "measured_pairs": 8,
+              "left_mean": 1.875,
+              "right_mean": 4.0,
+              "mean_difference": -2.125,
+              "relative_change_percent": -53.125,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "health": {
+              "measured_pairs": 8,
+              "left_mean": -9.625,
+              "right_mean": -10.5,
+              "mean_difference": 0.875,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "damage_received": {
+              "measured_pairs": 8,
+              "left_mean": 111.0,
+              "right_mean": 118.25,
+              "mean_difference": -7.25,
+              "relative_change_percent": -6.13107822410148,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "recorded_player_hits": {
+              "measured_pairs": 8,
+              "left_mean": 0.75,
+              "right_mean": 0.875,
+              "mean_difference": -0.125,
+              "relative_change_percent": -14.285714285714285,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "recorded_player_damage": {
+              "measured_pairs": 8,
+              "left_mean": 29.75,
+              "right_mean": 11.375,
+              "mean_difference": 18.375,
+              "relative_change_percent": 161.53846153846155,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            }
+          },
+          "profiles": {
+            "historical": {
+              "measured_pairs": 8,
+              "left_mean": 2.3125,
+              "right_mean": 7.05,
+              "mean_difference": -4.7375,
+              "relative_change_percent": -67.19858156028369,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 0,
+                "ties": 0,
+                "losses": 8
+              }
+            },
+            "balanced": {
+              "measured_pairs": 8,
+              "left_mean": 5.02297619047619,
+              "right_mean": 10.267738095238096,
+              "mean_difference": -5.244761904761905,
+              "relative_change_percent": -51.08001252188431,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 0,
+                "ties": 0,
+                "losses": 8
+              }
+            },
+            "survival-combat": {
+              "measured_pairs": 8,
+              "left_mean": 5.138690476190476,
+              "right_mean": 10.575595238095238,
+              "mean_difference": -5.436904761904762,
+              "relative_change_percent": -51.4099172623403,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 1,
+                "ties": 0,
+                "losses": 7
+              }
+            },
+            "progression": {
+              "measured_pairs": 8,
+              "left_mean": 5.566607142857143,
+              "right_mean": 11.303928571428573,
+              "mean_difference": -5.73732142857143,
+              "relative_change_percent": -50.755110423051406,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 0,
+                "ties": 0,
+                "losses": 8
+              }
+            }
+          }
+        }
+      ]
+    },
+    "2": {
+      "counts": {
+        "planned_episodes": 24,
+        "attempted_episodes": 24,
+        "recorded_completed_episodes": 24,
+        "completed_episodes": 24,
+        "failed_or_excluded_units": 0,
+        "unattempted_episodes": 0,
+        "expected_layouts": 4,
+        "attempted_layouts": 4,
+        "completed_layouts": 4,
+        "fully_matched_layouts": 4
+      },
+      "models": {
+        "C749": {
+          "planned": 8,
+          "attempted": 8,
+          "attempted_unique": 8,
+          "completed": 8,
+          "recorded_completed": 8,
+          "unattempted": 0,
+          "failed": 0,
+          "failure_status_counts": {},
+          "attempted_layouts": 4,
+          "completed_layouts": 4,
+          "fully_completed_layouts": 4,
+          "exits": 0,
+          "survived": 2,
+          "deaths": 6,
+          "exit_rate": 0.0,
+          "survival_rate": 0.25,
+          "mean_decisions": 321.0,
+          "metrics": {
+            "keys": {
+              "measured": 8,
+              "total": 0,
+              "mean": 0.0
+            },
+            "unlocks": {
+              "measured": 8,
+              "total": 0,
+              "mean": 0.0
+            },
+            "doors": {
+              "measured": 8,
+              "total": 6,
+              "mean": 0.75
+            },
+            "explored_cells_96": {
+              "measured": 8,
+              "total": 416,
+              "mean": 52.0
+            },
+            "engine_kills": {
+              "measured": 8,
+              "total": 19,
+              "mean": 2.375
+            },
+            "health": {
+              "measured": 8,
+              "total": 44.0,
+              "mean": 5.5
+            },
+            "damage_received": {
+              "measured": 8,
+              "total": 812.0,
+              "mean": 101.5
+            },
+            "recorded_player_hits": {
+              "measured": 8,
+              "total": 2,
+              "mean": 0.25
+            },
+            "recorded_player_damage": {
+              "measured": 8,
+              "total": 24.0,
+              "mean": 3.0
+            }
+          },
+          "scores": {
+            "historical": 12.355000000000002,
+            "balanced": 15.122857142857143,
+            "survival-combat": 12.569642857142858,
+            "progression": 18.75839285714286
+          }
+        },
+        "Stack25-u174": {
+          "planned": 8,
+          "attempted": 8,
+          "attempted_unique": 8,
+          "completed": 8,
+          "recorded_completed": 8,
+          "unattempted": 0,
+          "failed": 0,
+          "failure_status_counts": {},
+          "attempted_layouts": 4,
+          "completed_layouts": 4,
+          "fully_completed_layouts": 4,
+          "exits": 0,
+          "survived": 5,
+          "deaths": 3,
+          "exit_rate": 0.0,
+          "survival_rate": 0.625,
+          "mean_decisions": 433.625,
+          "metrics": {
+            "keys": {
+              "measured": 8,
+              "total": 0,
+              "mean": 0.0
+            },
+            "unlocks": {
+              "measured": 8,
+              "total": 0,
+              "mean": 0.0
+            },
+            "doors": {
+              "measured": 8,
+              "total": 3,
+              "mean": 0.375
+            },
+            "explored_cells_96": {
+              "measured": 8,
+              "total": 293,
+              "mean": 36.625
+            },
+            "engine_kills": {
+              "measured": 8,
+              "total": 2,
+              "mean": 0.25
+            },
+            "health": {
+              "measured": 8,
+              "total": 414.0,
+              "mean": 51.75
+            },
+            "damage_received": {
+              "measured": 8,
+              "total": 417.0,
+              "mean": 52.125
+            },
+            "recorded_player_hits": {
+              "measured": 8,
+              "total": 4,
+              "mean": 0.5
+            },
+            "recorded_player_damage": {
+              "measured": 8,
+              "total": 40.0,
+              "mean": 5.0
+            }
+          },
+          "scores": {
+            "historical": 8.3175,
+            "balanced": 9.789404761904763,
+            "survival-combat": 8.542261904761904,
+            "progression": 12.431428571428572
+          }
+        },
+        "Stack26-u621": {
+          "planned": 8,
+          "attempted": 8,
+          "attempted_unique": 8,
+          "completed": 8,
+          "recorded_completed": 8,
+          "unattempted": 0,
+          "failed": 0,
+          "failure_status_counts": {},
+          "attempted_layouts": 4,
+          "completed_layouts": 4,
+          "fully_completed_layouts": 4,
+          "exits": 0,
+          "survived": 5,
+          "deaths": 3,
+          "exit_rate": 0.0,
+          "survival_rate": 0.625,
+          "mean_decisions": 421.125,
+          "metrics": {
+            "keys": {
+              "measured": 8,
+              "total": 0,
+              "mean": 0.0
+            },
+            "unlocks": {
+              "measured": 8,
+              "total": 0,
+              "mean": 0.0
+            },
+            "doors": {
+              "measured": 8,
+              "total": 6,
+              "mean": 0.75
+            },
+            "explored_cells_96": {
+              "measured": 8,
+              "total": 316,
+              "mean": 39.5
+            },
+            "engine_kills": {
+              "measured": 8,
+              "total": 29,
+              "mean": 3.625
+            },
+            "health": {
+              "measured": 8,
+              "total": 420.0,
+              "mean": 52.5
+            },
+            "damage_received": {
+              "measured": 8,
+              "total": 445.0,
+              "mean": 55.625
+            },
+            "recorded_player_hits": {
+              "measured": 8,
+              "total": 2,
+              "mean": 0.25
+            },
+            "recorded_player_damage": {
+              "measured": 8,
+              "total": 38.0,
+              "mean": 4.75
+            }
+          },
+          "scores": {
+            "historical": 12.9625,
+            "balanced": 14.254285714285714,
+            "survival-combat": 14.148214285714285,
+            "progression": 16.481964285714287
+          }
+        }
+      },
+      "matched": {
+        "status": "COMPLETE",
+        "completed_units": 8,
+        "planned_units": 8,
+        "full_rankings": {
+          "historical": [
+            {
+              "model": "Stack26-u621",
+              "exits": 0,
+              "mean_score": 12.9625
+            },
+            {
+              "model": "C749",
+              "exits": 0,
+              "mean_score": 12.355000000000002
+            },
+            {
+              "model": "Stack25-u174",
+              "exits": 0,
+              "mean_score": 8.3175
+            }
+          ],
+          "balanced": [
+            {
+              "model": "C749",
+              "exits": 0,
+              "mean_score": 15.122857142857143
+            },
+            {
+              "model": "Stack26-u621",
+              "exits": 0,
+              "mean_score": 14.254285714285714
+            },
+            {
+              "model": "Stack25-u174",
+              "exits": 0,
+              "mean_score": 9.789404761904763
+            }
+          ],
+          "survival-combat": [
+            {
+              "model": "Stack26-u621",
+              "exits": 0,
+              "mean_score": 14.148214285714285
+            },
+            {
+              "model": "C749",
+              "exits": 0,
+              "mean_score": 12.569642857142858
+            },
+            {
+              "model": "Stack25-u174",
+              "exits": 0,
+              "mean_score": 8.542261904761904
+            }
+          ],
+          "progression": [
+            {
+              "model": "C749",
+              "exits": 0,
+              "mean_score": 18.75839285714286
+            },
+            {
+              "model": "Stack26-u621",
+              "exits": 0,
+              "mean_score": 16.481964285714287
+            },
+            {
+              "model": "Stack25-u174",
+              "exits": 0,
+              "mean_score": 12.431428571428572
+            }
+          ]
+        }
+      },
+      "pairwise": [
+        {
+          "left": "C749",
+          "right": "Stack25-u174",
+          "planned_pairs": 8,
+          "attempted_pairs": 8,
+          "completed_pairs": 8,
+          "paired_layouts": 4,
+          "fully_paired_layouts": 4,
+          "unattempted_pairs": 0,
+          "unpaired_attempted_pairs": 0,
+          "pairs_with_failed_attempt": 0,
+          "left_failed_attempts": 0,
+          "right_failed_attempts": 0,
+          "left_completed_right_failed": 0,
+          "right_completed_left_failed": 0,
+          "left_completed_right_unattempted": 0,
+          "right_completed_left_unattempted": 0,
+          "outcomes": {
+            "exit": {
+              "measured_pairs": 8,
+              "left_mean": 0.0,
+              "right_mean": 0.0,
+              "mean_difference": 0.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "percentage_point_difference": 0.0
+            },
+            "alive": {
+              "measured_pairs": 8,
+              "left_mean": 0.25,
+              "right_mean": 0.625,
+              "mean_difference": -0.375,
+              "relative_change_percent": -60.0,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "percentage_point_difference": -37.5
+            },
+            "decisions": {
+              "measured_pairs": 8,
+              "left_mean": 321.0,
+              "right_mean": 433.625,
+              "mean_difference": -112.625,
+              "relative_change_percent": -25.972902853848375,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "keys": {
+              "measured_pairs": 8,
+              "left_mean": 0.0,
+              "right_mean": 0.0,
+              "mean_difference": 0.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "unlocks": {
+              "measured_pairs": 8,
+              "left_mean": 0.0,
+              "right_mean": 0.0,
+              "mean_difference": 0.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "doors": {
+              "measured_pairs": 8,
+              "left_mean": 0.75,
+              "right_mean": 0.375,
+              "mean_difference": 0.375,
+              "relative_change_percent": 100.0,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "explored_cells_96": {
+              "measured_pairs": 8,
+              "left_mean": 52.0,
+              "right_mean": 36.625,
+              "mean_difference": 15.375,
+              "relative_change_percent": 41.979522184300336,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "engine_kills": {
+              "measured_pairs": 8,
+              "left_mean": 2.375,
+              "right_mean": 0.25,
+              "mean_difference": 2.125,
+              "relative_change_percent": 850.0,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "health": {
+              "measured_pairs": 8,
+              "left_mean": 5.5,
+              "right_mean": 51.75,
+              "mean_difference": -46.25,
+              "relative_change_percent": -89.3719806763285,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "damage_received": {
+              "measured_pairs": 8,
+              "left_mean": 101.5,
+              "right_mean": 52.125,
+              "mean_difference": 49.375,
+              "relative_change_percent": 94.7242206235012,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "recorded_player_hits": {
+              "measured_pairs": 8,
+              "left_mean": 0.25,
+              "right_mean": 0.5,
+              "mean_difference": -0.25,
+              "relative_change_percent": -50.0,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "recorded_player_damage": {
+              "measured_pairs": 8,
+              "left_mean": 3.0,
+              "right_mean": 5.0,
+              "mean_difference": -2.0,
+              "relative_change_percent": -40.0,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            }
+          },
+          "profiles": {
+            "historical": {
+              "measured_pairs": 8,
+              "left_mean": 12.355000000000002,
+              "right_mean": 8.3175,
+              "mean_difference": 4.037500000000001,
+              "relative_change_percent": 48.542230237451164,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 5,
+                "ties": 0,
+                "losses": 3
+              }
+            },
+            "balanced": {
+              "measured_pairs": 8,
+              "left_mean": 15.122857142857143,
+              "right_mean": 9.789404761904763,
+              "mean_difference": 5.333452380952381,
+              "relative_change_percent": 54.481886393209365,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 5,
+                "ties": 0,
+                "losses": 3
+              }
+            },
+            "survival-combat": {
+              "measured_pairs": 8,
+              "left_mean": 12.569642857142858,
+              "right_mean": 8.542261904761904,
+              "mean_difference": 4.027380952380953,
+              "relative_change_percent": 47.14654031077974,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 5,
+                "ties": 0,
+                "losses": 3
+              }
+            },
+            "progression": {
+              "measured_pairs": 8,
+              "left_mean": 18.75839285714286,
+              "right_mean": 12.431428571428572,
+              "mean_difference": 6.326964285714286,
+              "relative_change_percent": 50.89490921627212,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 5,
+                "ties": 0,
+                "losses": 3
+              }
+            }
+          }
+        },
+        {
+          "left": "C749",
+          "right": "Stack26-u621",
+          "planned_pairs": 8,
+          "attempted_pairs": 8,
+          "completed_pairs": 8,
+          "paired_layouts": 4,
+          "fully_paired_layouts": 4,
+          "unattempted_pairs": 0,
+          "unpaired_attempted_pairs": 0,
+          "pairs_with_failed_attempt": 0,
+          "left_failed_attempts": 0,
+          "right_failed_attempts": 0,
+          "left_completed_right_failed": 0,
+          "right_completed_left_failed": 0,
+          "left_completed_right_unattempted": 0,
+          "right_completed_left_unattempted": 0,
+          "outcomes": {
+            "exit": {
+              "measured_pairs": 8,
+              "left_mean": 0.0,
+              "right_mean": 0.0,
+              "mean_difference": 0.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "percentage_point_difference": 0.0
+            },
+            "alive": {
+              "measured_pairs": 8,
+              "left_mean": 0.25,
+              "right_mean": 0.625,
+              "mean_difference": -0.375,
+              "relative_change_percent": -60.0,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "percentage_point_difference": -37.5
+            },
+            "decisions": {
+              "measured_pairs": 8,
+              "left_mean": 321.0,
+              "right_mean": 421.125,
+              "mean_difference": -100.125,
+              "relative_change_percent": -23.775601068566342,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "keys": {
+              "measured_pairs": 8,
+              "left_mean": 0.0,
+              "right_mean": 0.0,
+              "mean_difference": 0.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "unlocks": {
+              "measured_pairs": 8,
+              "left_mean": 0.0,
+              "right_mean": 0.0,
+              "mean_difference": 0.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "doors": {
+              "measured_pairs": 8,
+              "left_mean": 0.75,
+              "right_mean": 0.75,
+              "mean_difference": 0.0,
+              "relative_change_percent": 0.0,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "explored_cells_96": {
+              "measured_pairs": 8,
+              "left_mean": 52.0,
+              "right_mean": 39.5,
+              "mean_difference": 12.5,
+              "relative_change_percent": 31.645569620253166,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "engine_kills": {
+              "measured_pairs": 8,
+              "left_mean": 2.375,
+              "right_mean": 3.625,
+              "mean_difference": -1.25,
+              "relative_change_percent": -34.48275862068966,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "health": {
+              "measured_pairs": 8,
+              "left_mean": 5.5,
+              "right_mean": 52.5,
+              "mean_difference": -47.0,
+              "relative_change_percent": -89.52380952380953,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "damage_received": {
+              "measured_pairs": 8,
+              "left_mean": 101.5,
+              "right_mean": 55.625,
+              "mean_difference": 45.875,
+              "relative_change_percent": 82.47191011235955,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "recorded_player_hits": {
+              "measured_pairs": 8,
+              "left_mean": 0.25,
+              "right_mean": 0.25,
+              "mean_difference": 0.0,
+              "relative_change_percent": 0.0,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "recorded_player_damage": {
+              "measured_pairs": 8,
+              "left_mean": 3.0,
+              "right_mean": 4.75,
+              "mean_difference": -1.75,
+              "relative_change_percent": -36.84210526315789,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            }
+          },
+          "profiles": {
+            "historical": {
+              "measured_pairs": 8,
+              "left_mean": 12.355000000000002,
+              "right_mean": 12.9625,
+              "mean_difference": -0.6074999999999995,
+              "relative_change_percent": -4.686595949855348,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 4,
+                "ties": 1,
+                "losses": 3
+              }
+            },
+            "balanced": {
+              "measured_pairs": 8,
+              "left_mean": 15.122857142857143,
+              "right_mean": 14.254285714285714,
+              "mean_difference": 0.8685714285714281,
+              "relative_change_percent": 6.093405492082579,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 4,
+                "ties": 1,
+                "losses": 3
+              }
+            },
+            "survival-combat": {
+              "measured_pairs": 8,
+              "left_mean": 12.569642857142858,
+              "right_mean": 14.148214285714285,
+              "mean_difference": -1.578571428571429,
+              "relative_change_percent": -11.15738987757163,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 4,
+                "ties": 1,
+                "losses": 3
+              }
+            },
+            "progression": {
+              "measured_pairs": 8,
+              "left_mean": 18.75839285714286,
+              "right_mean": 16.481964285714287,
+              "mean_difference": 2.276428571428572,
+              "relative_change_percent": 13.811633928861639,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 4,
+                "ties": 1,
+                "losses": 3
+              }
+            }
+          }
+        },
+        {
+          "left": "Stack25-u174",
+          "right": "Stack26-u621",
+          "planned_pairs": 8,
+          "attempted_pairs": 8,
+          "completed_pairs": 8,
+          "paired_layouts": 4,
+          "fully_paired_layouts": 4,
+          "unattempted_pairs": 0,
+          "unpaired_attempted_pairs": 0,
+          "pairs_with_failed_attempt": 0,
+          "left_failed_attempts": 0,
+          "right_failed_attempts": 0,
+          "left_completed_right_failed": 0,
+          "right_completed_left_failed": 0,
+          "left_completed_right_unattempted": 0,
+          "right_completed_left_unattempted": 0,
+          "outcomes": {
+            "exit": {
+              "measured_pairs": 8,
+              "left_mean": 0.0,
+              "right_mean": 0.0,
+              "mean_difference": 0.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "percentage_point_difference": 0.0
+            },
+            "alive": {
+              "measured_pairs": 8,
+              "left_mean": 0.625,
+              "right_mean": 0.625,
+              "mean_difference": 0.0,
+              "relative_change_percent": 0.0,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "percentage_point_difference": 0.0
+            },
+            "decisions": {
+              "measured_pairs": 8,
+              "left_mean": 433.625,
+              "right_mean": 421.125,
+              "mean_difference": 12.5,
+              "relative_change_percent": 2.9682398337785694,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "keys": {
+              "measured_pairs": 8,
+              "left_mean": 0.0,
+              "right_mean": 0.0,
+              "mean_difference": 0.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "unlocks": {
+              "measured_pairs": 8,
+              "left_mean": 0.0,
+              "right_mean": 0.0,
+              "mean_difference": 0.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "doors": {
+              "measured_pairs": 8,
+              "left_mean": 0.375,
+              "right_mean": 0.75,
+              "mean_difference": -0.375,
+              "relative_change_percent": -50.0,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "explored_cells_96": {
+              "measured_pairs": 8,
+              "left_mean": 36.625,
+              "right_mean": 39.5,
+              "mean_difference": -2.875,
+              "relative_change_percent": -7.2784810126582276,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "engine_kills": {
+              "measured_pairs": 8,
+              "left_mean": 0.25,
+              "right_mean": 3.625,
+              "mean_difference": -3.375,
+              "relative_change_percent": -93.10344827586206,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "health": {
+              "measured_pairs": 8,
+              "left_mean": 51.75,
+              "right_mean": 52.5,
+              "mean_difference": -0.75,
+              "relative_change_percent": -1.4285714285714286,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "damage_received": {
+              "measured_pairs": 8,
+              "left_mean": 52.125,
+              "right_mean": 55.625,
+              "mean_difference": -3.5,
+              "relative_change_percent": -6.292134831460674,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "recorded_player_hits": {
+              "measured_pairs": 8,
+              "left_mean": 0.5,
+              "right_mean": 0.25,
+              "mean_difference": 0.25,
+              "relative_change_percent": 100.0,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "recorded_player_damage": {
+              "measured_pairs": 8,
+              "left_mean": 5.0,
+              "right_mean": 4.75,
+              "mean_difference": 0.25,
+              "relative_change_percent": 5.263157894736842,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            }
+          },
+          "profiles": {
+            "historical": {
+              "measured_pairs": 8,
+              "left_mean": 8.3175,
+              "right_mean": 12.9625,
+              "mean_difference": -4.6450000000000005,
+              "relative_change_percent": -35.83413693346191,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 4,
+                "ties": 0,
+                "losses": 4
+              }
+            },
+            "balanced": {
+              "measured_pairs": 8,
+              "left_mean": 9.789404761904763,
+              "right_mean": 14.254285714285714,
+              "mean_difference": -4.464880952380952,
+              "relative_change_percent": -31.323077437028125,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 4,
+                "ties": 0,
+                "losses": 4
+              }
+            },
+            "survival-combat": {
+              "measured_pairs": 8,
+              "left_mean": 8.542261904761904,
+              "right_mean": 14.148214285714285,
+              "mean_difference": -5.605952380952381,
+              "relative_change_percent": -39.623038411376164,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 4,
+                "ties": 0,
+                "losses": 4
+              }
+            },
+            "progression": {
+              "measured_pairs": 8,
+              "left_mean": 12.431428571428572,
+              "right_mean": 16.481964285714287,
+              "mean_difference": -4.050535714285714,
+              "relative_change_percent": -24.575564198962066,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 4,
+                "ties": 0,
+                "losses": 4
+              }
+            }
+          }
+        }
+      ]
+    },
+    "3": {
+      "counts": {
+        "planned_episodes": 24,
+        "attempted_episodes": 24,
+        "recorded_completed_episodes": 24,
+        "completed_episodes": 24,
+        "failed_or_excluded_units": 0,
+        "unattempted_episodes": 0,
+        "expected_layouts": 4,
+        "attempted_layouts": 4,
+        "completed_layouts": 4,
+        "fully_matched_layouts": 4
+      },
+      "models": {
+        "C749": {
+          "planned": 8,
+          "attempted": 8,
+          "attempted_unique": 8,
+          "completed": 8,
+          "recorded_completed": 8,
+          "unattempted": 0,
+          "failed": 0,
+          "failure_status_counts": {},
+          "attempted_layouts": 4,
+          "completed_layouts": 4,
+          "fully_completed_layouts": 4,
+          "exits": 0,
+          "survived": 0,
+          "deaths": 8,
+          "exit_rate": 0.0,
+          "survival_rate": 0.0,
+          "mean_decisions": 487.875,
+          "metrics": {
+            "keys": {
+              "measured": 8,
+              "total": 0,
+              "mean": 0.0
+            },
+            "unlocks": {
+              "measured": 8,
+              "total": 0,
+              "mean": 0.0
+            },
+            "doors": {
+              "measured": 8,
+              "total": 4,
+              "mean": 0.5
+            },
+            "explored_cells_96": {
+              "measured": 8,
+              "total": 140,
+              "mean": 17.5
+            },
+            "engine_kills": {
+              "measured": 8,
+              "total": 9,
+              "mean": 1.125
+            },
+            "health": {
+              "measured": 8,
+              "total": -119.0,
+              "mean": -14.875
+            },
+            "damage_received": {
+              "measured": 8,
+              "total": 929.0,
+              "mean": 116.125
+            },
+            "recorded_player_hits": {
+              "measured": 8,
+              "total": 4,
+              "mean": 0.5
+            },
+            "recorded_player_damage": {
+              "measured": 8,
+              "total": 29.0,
+              "mean": 3.625
+            }
+          },
+          "scores": {
+            "historical": 3.0050000000000003,
+            "balanced": 6.304285714285714,
+            "survival-combat": 6.260714285714286,
+            "progression": 7.440714285714286
+          }
+        },
+        "Stack25-u174": {
+          "planned": 8,
+          "attempted": 8,
+          "attempted_unique": 8,
+          "completed": 8,
+          "recorded_completed": 8,
+          "unattempted": 0,
+          "failed": 0,
+          "failure_status_counts": {},
+          "attempted_layouts": 4,
+          "completed_layouts": 4,
+          "fully_completed_layouts": 4,
+          "exits": 0,
+          "survived": 4,
+          "deaths": 4,
+          "exit_rate": 0.0,
+          "survival_rate": 0.5,
+          "mean_decisions": 764.0,
+          "metrics": {
+            "keys": {
+              "measured": 8,
+              "total": 0,
+              "mean": 0.0
+            },
+            "unlocks": {
+              "measured": 8,
+              "total": 0,
+              "mean": 0.0
+            },
+            "doors": {
+              "measured": 8,
+              "total": 3,
+              "mean": 0.375
+            },
+            "explored_cells_96": {
+              "measured": 8,
+              "total": 98,
+              "mean": 12.25
+            },
+            "engine_kills": {
+              "measured": 8,
+              "total": 0,
+              "mean": 0.0
+            },
+            "health": {
+              "measured": 8,
+              "total": 353.0,
+              "mean": 44.125
+            },
+            "damage_received": {
+              "measured": 8,
+              "total": 447.0,
+              "mean": 55.875
+            },
+            "recorded_player_hits": {
+              "measured": 8,
+              "total": 1,
+              "mean": 0.125
+            },
+            "recorded_player_damage": {
+              "measured": 8,
+              "total": 5.0,
+              "mean": 0.625
+            }
+          },
+          "scores": {
+            "historical": 2.9650000000000003,
+            "balanced": 4.467738095238095,
+            "survival-combat": 5.238095238095238,
+            "progression": 5.271428571428571
+          }
+        },
+        "Stack26-u621": {
+          "planned": 8,
+          "attempted": 8,
+          "attempted_unique": 8,
+          "completed": 8,
+          "recorded_completed": 8,
+          "unattempted": 0,
+          "failed": 0,
+          "failure_status_counts": {},
+          "attempted_layouts": 4,
+          "completed_layouts": 4,
+          "fully_completed_layouts": 4,
+          "exits": 0,
+          "survived": 2,
+          "deaths": 6,
+          "exit_rate": 0.0,
+          "survival_rate": 0.25,
+          "mean_decisions": 709.75,
+          "metrics": {
+            "keys": {
+              "measured": 8,
+              "total": 0,
+              "mean": 0.0
+            },
+            "unlocks": {
+              "measured": 8,
+              "total": 0,
+              "mean": 0.0
+            },
+            "doors": {
+              "measured": 8,
+              "total": 5,
+              "mean": 0.625
+            },
+            "explored_cells_96": {
+              "measured": 8,
+              "total": 210,
+              "mean": 26.25
+            },
+            "engine_kills": {
+              "measured": 8,
+              "total": 1,
+              "mean": 0.125
+            },
+            "health": {
+              "measured": 8,
+              "total": 153.0,
+              "mean": 19.125
+            },
+            "damage_received": {
+              "measured": 8,
+              "total": 692.0,
+              "mean": 86.5
+            },
+            "recorded_player_hits": {
+              "measured": 8,
+              "total": 8,
+              "mean": 1.0
+            },
+            "recorded_player_damage": {
+              "measured": 8,
+              "total": 79.0,
+              "mean": 9.875
+            }
+          },
+          "scores": {
+            "historical": 5.277500000000001,
+            "balanced": 7.664404761904763,
+            "survival-combat": 6.817261904761905,
+            "progression": 9.707678571428572
+          }
+        }
+      },
+      "matched": {
+        "status": "COMPLETE",
+        "completed_units": 8,
+        "planned_units": 8,
+        "full_rankings": {
+          "historical": [
+            {
+              "model": "Stack26-u621",
+              "exits": 0,
+              "mean_score": 5.277500000000001
+            },
+            {
+              "model": "C749",
+              "exits": 0,
+              "mean_score": 3.0050000000000003
+            },
+            {
+              "model": "Stack25-u174",
+              "exits": 0,
+              "mean_score": 2.9650000000000003
+            }
+          ],
+          "balanced": [
+            {
+              "model": "Stack26-u621",
+              "exits": 0,
+              "mean_score": 7.664404761904763
+            },
+            {
+              "model": "C749",
+              "exits": 0,
+              "mean_score": 6.304285714285714
+            },
+            {
+              "model": "Stack25-u174",
+              "exits": 0,
+              "mean_score": 4.467738095238095
+            }
+          ],
+          "survival-combat": [
+            {
+              "model": "Stack26-u621",
+              "exits": 0,
+              "mean_score": 6.817261904761905
+            },
+            {
+              "model": "C749",
+              "exits": 0,
+              "mean_score": 6.260714285714286
+            },
+            {
+              "model": "Stack25-u174",
+              "exits": 0,
+              "mean_score": 5.238095238095238
+            }
+          ],
+          "progression": [
+            {
+              "model": "Stack26-u621",
+              "exits": 0,
+              "mean_score": 9.707678571428572
+            },
+            {
+              "model": "C749",
+              "exits": 0,
+              "mean_score": 7.440714285714286
+            },
+            {
+              "model": "Stack25-u174",
+              "exits": 0,
+              "mean_score": 5.271428571428571
+            }
+          ]
+        }
+      },
+      "pairwise": [
+        {
+          "left": "C749",
+          "right": "Stack25-u174",
+          "planned_pairs": 8,
+          "attempted_pairs": 8,
+          "completed_pairs": 8,
+          "paired_layouts": 4,
+          "fully_paired_layouts": 4,
+          "unattempted_pairs": 0,
+          "unpaired_attempted_pairs": 0,
+          "pairs_with_failed_attempt": 0,
+          "left_failed_attempts": 0,
+          "right_failed_attempts": 0,
+          "left_completed_right_failed": 0,
+          "right_completed_left_failed": 0,
+          "left_completed_right_unattempted": 0,
+          "right_completed_left_unattempted": 0,
+          "outcomes": {
+            "exit": {
+              "measured_pairs": 8,
+              "left_mean": 0.0,
+              "right_mean": 0.0,
+              "mean_difference": 0.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "percentage_point_difference": 0.0
+            },
+            "alive": {
+              "measured_pairs": 8,
+              "left_mean": 0.0,
+              "right_mean": 0.5,
+              "mean_difference": -0.5,
+              "relative_change_percent": -100.0,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "percentage_point_difference": -50.0
+            },
+            "decisions": {
+              "measured_pairs": 8,
+              "left_mean": 487.875,
+              "right_mean": 764.0,
+              "mean_difference": -276.125,
+              "relative_change_percent": -36.14201570680628,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "keys": {
+              "measured_pairs": 8,
+              "left_mean": 0.0,
+              "right_mean": 0.0,
+              "mean_difference": 0.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "unlocks": {
+              "measured_pairs": 8,
+              "left_mean": 0.0,
+              "right_mean": 0.0,
+              "mean_difference": 0.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "doors": {
+              "measured_pairs": 8,
+              "left_mean": 0.5,
+              "right_mean": 0.375,
+              "mean_difference": 0.125,
+              "relative_change_percent": 33.33333333333333,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "explored_cells_96": {
+              "measured_pairs": 8,
+              "left_mean": 17.5,
+              "right_mean": 12.25,
+              "mean_difference": 5.25,
+              "relative_change_percent": 42.857142857142854,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "engine_kills": {
+              "measured_pairs": 8,
+              "left_mean": 1.125,
+              "right_mean": 0.0,
+              "mean_difference": 1.125,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "health": {
+              "measured_pairs": 8,
+              "left_mean": -14.875,
+              "right_mean": 44.125,
+              "mean_difference": -59.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "damage_received": {
+              "measured_pairs": 8,
+              "left_mean": 116.125,
+              "right_mean": 55.875,
+              "mean_difference": 60.25,
+              "relative_change_percent": 107.82997762863535,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "recorded_player_hits": {
+              "measured_pairs": 8,
+              "left_mean": 0.5,
+              "right_mean": 0.125,
+              "mean_difference": 0.375,
+              "relative_change_percent": 300.0,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "recorded_player_damage": {
+              "measured_pairs": 8,
+              "left_mean": 3.625,
+              "right_mean": 0.625,
+              "mean_difference": 3.0,
+              "relative_change_percent": 480.0,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            }
+          },
+          "profiles": {
+            "historical": {
+              "measured_pairs": 8,
+              "left_mean": 3.0050000000000003,
+              "right_mean": 2.9650000000000003,
+              "mean_difference": 0.04000000000000009,
+              "relative_change_percent": 1.3490725126475578,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 4,
+                "ties": 0,
+                "losses": 4
+              }
+            },
+            "balanced": {
+              "measured_pairs": 8,
+              "left_mean": 6.304285714285714,
+              "right_mean": 4.467738095238095,
+              "mean_difference": 1.836547619047619,
+              "relative_change_percent": 41.10687734818407,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 5,
+                "ties": 0,
+                "losses": 3
+              }
+            },
+            "survival-combat": {
+              "measured_pairs": 8,
+              "left_mean": 6.260714285714286,
+              "right_mean": 5.238095238095238,
+              "mean_difference": 1.0226190476190475,
+              "relative_change_percent": 19.522727272727273,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 5,
+                "ties": 0,
+                "losses": 3
+              }
+            },
+            "progression": {
+              "measured_pairs": 8,
+              "left_mean": 7.440714285714286,
+              "right_mean": 5.271428571428571,
+              "mean_difference": 2.1692857142857145,
+              "relative_change_percent": 41.151761517615185,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 5,
+                "ties": 0,
+                "losses": 3
+              }
+            }
+          }
+        },
+        {
+          "left": "C749",
+          "right": "Stack26-u621",
+          "planned_pairs": 8,
+          "attempted_pairs": 8,
+          "completed_pairs": 8,
+          "paired_layouts": 4,
+          "fully_paired_layouts": 4,
+          "unattempted_pairs": 0,
+          "unpaired_attempted_pairs": 0,
+          "pairs_with_failed_attempt": 0,
+          "left_failed_attempts": 0,
+          "right_failed_attempts": 0,
+          "left_completed_right_failed": 0,
+          "right_completed_left_failed": 0,
+          "left_completed_right_unattempted": 0,
+          "right_completed_left_unattempted": 0,
+          "outcomes": {
+            "exit": {
+              "measured_pairs": 8,
+              "left_mean": 0.0,
+              "right_mean": 0.0,
+              "mean_difference": 0.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "percentage_point_difference": 0.0
+            },
+            "alive": {
+              "measured_pairs": 8,
+              "left_mean": 0.0,
+              "right_mean": 0.25,
+              "mean_difference": -0.25,
+              "relative_change_percent": -100.0,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "percentage_point_difference": -25.0
+            },
+            "decisions": {
+              "measured_pairs": 8,
+              "left_mean": 487.875,
+              "right_mean": 709.75,
+              "mean_difference": -221.875,
+              "relative_change_percent": -31.261007396970765,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "keys": {
+              "measured_pairs": 8,
+              "left_mean": 0.0,
+              "right_mean": 0.0,
+              "mean_difference": 0.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "unlocks": {
+              "measured_pairs": 8,
+              "left_mean": 0.0,
+              "right_mean": 0.0,
+              "mean_difference": 0.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "doors": {
+              "measured_pairs": 8,
+              "left_mean": 0.5,
+              "right_mean": 0.625,
+              "mean_difference": -0.125,
+              "relative_change_percent": -20.0,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "explored_cells_96": {
+              "measured_pairs": 8,
+              "left_mean": 17.5,
+              "right_mean": 26.25,
+              "mean_difference": -8.75,
+              "relative_change_percent": -33.33333333333333,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "engine_kills": {
+              "measured_pairs": 8,
+              "left_mean": 1.125,
+              "right_mean": 0.125,
+              "mean_difference": 1.0,
+              "relative_change_percent": 800.0,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "health": {
+              "measured_pairs": 8,
+              "left_mean": -14.875,
+              "right_mean": 19.125,
+              "mean_difference": -34.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "damage_received": {
+              "measured_pairs": 8,
+              "left_mean": 116.125,
+              "right_mean": 86.5,
+              "mean_difference": 29.625,
+              "relative_change_percent": 34.2485549132948,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "recorded_player_hits": {
+              "measured_pairs": 8,
+              "left_mean": 0.5,
+              "right_mean": 1.0,
+              "mean_difference": -0.5,
+              "relative_change_percent": -50.0,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "recorded_player_damage": {
+              "measured_pairs": 8,
+              "left_mean": 3.625,
+              "right_mean": 9.875,
+              "mean_difference": -6.25,
+              "relative_change_percent": -63.29113924050633,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            }
+          },
+          "profiles": {
+            "historical": {
+              "measured_pairs": 8,
+              "left_mean": 3.0050000000000003,
+              "right_mean": 5.277500000000001,
+              "mean_difference": -2.2725000000000004,
+              "relative_change_percent": -43.06016106110848,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 2,
+                "ties": 0,
+                "losses": 6
+              }
+            },
+            "balanced": {
+              "measured_pairs": 8,
+              "left_mean": 6.304285714285714,
+              "right_mean": 7.664404761904763,
+              "mean_difference": -1.360119047619048,
+              "relative_change_percent": -17.745918826983118,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 2,
+                "ties": 0,
+                "losses": 6
+              }
+            },
+            "survival-combat": {
+              "measured_pairs": 8,
+              "left_mean": 6.260714285714286,
+              "right_mean": 6.817261904761905,
+              "mean_difference": -0.5565476190476193,
+              "relative_change_percent": -8.163799877761289,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 3,
+                "ties": 0,
+                "losses": 5
+              }
+            },
+            "progression": {
+              "measured_pairs": 8,
+              "left_mean": 7.440714285714286,
+              "right_mean": 9.707678571428572,
+              "mean_difference": -2.266964285714286,
+              "relative_change_percent": -23.352280043411884,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 2,
+                "ties": 0,
+                "losses": 6
+              }
+            }
+          }
+        },
+        {
+          "left": "Stack25-u174",
+          "right": "Stack26-u621",
+          "planned_pairs": 8,
+          "attempted_pairs": 8,
+          "completed_pairs": 8,
+          "paired_layouts": 4,
+          "fully_paired_layouts": 4,
+          "unattempted_pairs": 0,
+          "unpaired_attempted_pairs": 0,
+          "pairs_with_failed_attempt": 0,
+          "left_failed_attempts": 0,
+          "right_failed_attempts": 0,
+          "left_completed_right_failed": 0,
+          "right_completed_left_failed": 0,
+          "left_completed_right_unattempted": 0,
+          "right_completed_left_unattempted": 0,
+          "outcomes": {
+            "exit": {
+              "measured_pairs": 8,
+              "left_mean": 0.0,
+              "right_mean": 0.0,
+              "mean_difference": 0.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "percentage_point_difference": 0.0
+            },
+            "alive": {
+              "measured_pairs": 8,
+              "left_mean": 0.5,
+              "right_mean": 0.25,
+              "mean_difference": 0.25,
+              "relative_change_percent": 100.0,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "percentage_point_difference": 25.0
+            },
+            "decisions": {
+              "measured_pairs": 8,
+              "left_mean": 764.0,
+              "right_mean": 709.75,
+              "mean_difference": 54.25,
+              "relative_change_percent": 7.643536456498767,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "keys": {
+              "measured_pairs": 8,
+              "left_mean": 0.0,
+              "right_mean": 0.0,
+              "mean_difference": 0.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "unlocks": {
+              "measured_pairs": 8,
+              "left_mean": 0.0,
+              "right_mean": 0.0,
+              "mean_difference": 0.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "doors": {
+              "measured_pairs": 8,
+              "left_mean": 0.375,
+              "right_mean": 0.625,
+              "mean_difference": -0.25,
+              "relative_change_percent": -40.0,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "explored_cells_96": {
+              "measured_pairs": 8,
+              "left_mean": 12.25,
+              "right_mean": 26.25,
+              "mean_difference": -14.0,
+              "relative_change_percent": -53.333333333333336,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "engine_kills": {
+              "measured_pairs": 8,
+              "left_mean": 0.0,
+              "right_mean": 0.125,
+              "mean_difference": -0.125,
+              "relative_change_percent": -100.0,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "health": {
+              "measured_pairs": 8,
+              "left_mean": 44.125,
+              "right_mean": 19.125,
+              "mean_difference": 25.0,
+              "relative_change_percent": 130.718954248366,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "damage_received": {
+              "measured_pairs": 8,
+              "left_mean": 55.875,
+              "right_mean": 86.5,
+              "mean_difference": -30.625,
+              "relative_change_percent": -35.40462427745665,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "recorded_player_hits": {
+              "measured_pairs": 8,
+              "left_mean": 0.125,
+              "right_mean": 1.0,
+              "mean_difference": -0.875,
+              "relative_change_percent": -87.5,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "recorded_player_damage": {
+              "measured_pairs": 8,
+              "left_mean": 0.625,
+              "right_mean": 9.875,
+              "mean_difference": -9.25,
+              "relative_change_percent": -93.67088607594937,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            }
+          },
+          "profiles": {
+            "historical": {
+              "measured_pairs": 8,
+              "left_mean": 2.9650000000000003,
+              "right_mean": 5.277500000000001,
+              "mean_difference": -2.3125000000000004,
+              "relative_change_percent": -43.8180956892468,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 1,
+                "ties": 2,
+                "losses": 5
+              }
+            },
+            "balanced": {
+              "measured_pairs": 8,
+              "left_mean": 4.467738095238095,
+              "right_mean": 7.664404761904763,
+              "mean_difference": -3.196666666666667,
+              "relative_change_percent": -41.70795731659962,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 1,
+                "ties": 2,
+                "losses": 5
+              }
+            },
+            "survival-combat": {
+              "measured_pairs": 8,
+              "left_mean": 5.238095238095238,
+              "right_mean": 6.817261904761905,
+              "mean_difference": -1.5791666666666666,
+              "relative_change_percent": -23.164236444599666,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 2,
+                "ties": 2,
+                "losses": 4
+              }
+            },
+            "progression": {
+              "measured_pairs": 8,
+              "left_mean": 5.271428571428571,
+              "right_mean": 9.707678571428572,
+              "mean_difference": -4.43625,
+              "relative_change_percent": -45.69836101760389,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 4,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 1,
+                "ties": 2,
+                "losses": 5
+              }
+            }
+          }
+        }
+      ]
+    },
+    "4": {
+      "counts": {
+        "planned_episodes": 24,
+        "attempted_episodes": 21,
+        "recorded_completed_episodes": 21,
+        "completed_episodes": 21,
+        "failed_or_excluded_units": 0,
+        "unattempted_episodes": 3,
+        "expected_layouts": 4,
+        "attempted_layouts": 4,
+        "completed_layouts": 4,
+        "fully_matched_layouts": 3
+      },
+      "models": {
+        "C749": {
+          "planned": 8,
+          "attempted": 7,
+          "attempted_unique": 7,
+          "completed": 7,
+          "recorded_completed": 7,
+          "unattempted": 1,
+          "failed": 0,
+          "failure_status_counts": {},
+          "attempted_layouts": 4,
+          "completed_layouts": 4,
+          "fully_completed_layouts": 3,
+          "exits": 0,
+          "survived": 1,
+          "deaths": 6,
+          "exit_rate": 0.0,
+          "survival_rate": 0.14285714285714285,
+          "mean_decisions": 378.57142857142856,
+          "metrics": {
+            "keys": {
+              "measured": 7,
+              "total": 0,
+              "mean": 0.0
+            },
+            "unlocks": {
+              "measured": 7,
+              "total": 0,
+              "mean": 0.0
+            },
+            "doors": {
+              "measured": 7,
+              "total": 7,
+              "mean": 1.0
+            },
+            "explored_cells_96": {
+              "measured": 7,
+              "total": 207,
+              "mean": 29.571428571428573
+            },
+            "engine_kills": {
+              "measured": 7,
+              "total": 9,
+              "mean": 1.2857142857142858
+            },
+            "health": {
+              "measured": 7,
+              "total": -34.0,
+              "mean": -4.857142857142857
+            },
+            "damage_received": {
+              "measured": 7,
+              "total": 773.0,
+              "mean": 110.42857142857143
+            },
+            "recorded_player_hits": {
+              "measured": 7,
+              "total": 2,
+              "mean": 0.2857142857142857
+            },
+            "recorded_player_damage": {
+              "measured": 7,
+              "total": 13.0,
+              "mean": 1.8571428571428572
+            }
+          },
+          "scores": {
+            "historical": 6.894285714285714,
+            "balanced": 9.421088435374148,
+            "survival-combat": 7.688435374149661,
+            "progression": 11.785102040816327
+          }
+        },
+        "Stack25-u174": {
+          "planned": 8,
+          "attempted": 7,
+          "attempted_unique": 7,
+          "completed": 7,
+          "recorded_completed": 7,
+          "unattempted": 1,
+          "failed": 0,
+          "failure_status_counts": {},
+          "attempted_layouts": 4,
+          "completed_layouts": 4,
+          "fully_completed_layouts": 3,
+          "exits": 0,
+          "survived": 1,
+          "deaths": 6,
+          "exit_rate": 0.0,
+          "survival_rate": 0.14285714285714285,
+          "mean_decisions": 455.7142857142857,
+          "metrics": {
+            "keys": {
+              "measured": 7,
+              "total": 0,
+              "mean": 0.0
+            },
+            "unlocks": {
+              "measured": 7,
+              "total": 0,
+              "mean": 0.0
+            },
+            "doors": {
+              "measured": 7,
+              "total": 5,
+              "mean": 0.7142857142857143
+            },
+            "explored_cells_96": {
+              "measured": 7,
+              "total": 188,
+              "mean": 26.857142857142858
+            },
+            "engine_kills": {
+              "measured": 7,
+              "total": 11,
+              "mean": 1.5714285714285714
+            },
+            "health": {
+              "measured": 7,
+              "total": -1.0,
+              "mean": -0.14285714285714285
+            },
+            "damage_received": {
+              "measured": 7,
+              "total": 748.0,
+              "mean": 106.85714285714286
+            },
+            "recorded_player_hits": {
+              "measured": 7,
+              "total": 16,
+              "mean": 2.2857142857142856
+            },
+            "recorded_player_damage": {
+              "measured": 7,
+              "total": 192.0,
+              "mean": 27.428571428571427
+            }
+          },
+          "scores": {
+            "historical": 6.231428571428572,
+            "balanced": 8.882312925170067,
+            "survival-combat": 7.927210884353741,
+            "progression": 10.778163265306123
+          }
+        },
+        "Stack26-u621": {
+          "planned": 8,
+          "attempted": 7,
+          "attempted_unique": 7,
+          "completed": 7,
+          "recorded_completed": 7,
+          "unattempted": 1,
+          "failed": 0,
+          "failure_status_counts": {},
+          "attempted_layouts": 4,
+          "completed_layouts": 4,
+          "fully_completed_layouts": 3,
+          "exits": 0,
+          "survived": 1,
+          "deaths": 6,
+          "exit_rate": 0.0,
+          "survival_rate": 0.14285714285714285,
+          "mean_decisions": 507.0,
+          "metrics": {
+            "keys": {
+              "measured": 7,
+              "total": 0,
+              "mean": 0.0
+            },
+            "unlocks": {
+              "measured": 7,
+              "total": 0,
+              "mean": 0.0
+            },
+            "doors": {
+              "measured": 7,
+              "total": 5,
+              "mean": 0.7142857142857143
+            },
+            "explored_cells_96": {
+              "measured": 7,
+              "total": 225,
+              "mean": 32.142857142857146
+            },
+            "engine_kills": {
+              "measured": 7,
+              "total": 11,
+              "mean": 1.5714285714285714
+            },
+            "health": {
+              "measured": 7,
+              "total": -34.0,
+              "mean": -4.857142857142857
+            },
+            "damage_received": {
+              "measured": 7,
+              "total": 804.0,
+              "mean": 114.85714285714286
+            },
+            "recorded_player_hits": {
+              "measured": 7,
+              "total": 5,
+              "mean": 0.7142857142857143
+            },
+            "recorded_player_damage": {
+              "measured": 7,
+              "total": 45.0,
+              "mean": 6.428571428571429
+            }
+          },
+          "scores": {
+            "historical": 7.034285714285715,
+            "balanced": 10.037142857142857,
+            "survival-combat": 8.7,
+            "progression": 12.331428571428573
+          }
+        }
+      },
+      "matched": {
+        "status": "PARTIAL",
+        "completed_units": 7,
+        "planned_units": 8,
+        "full_rankings": {
+          "historical": [
+            {
+              "model": "Stack26-u621",
+              "exits": 0,
+              "mean_score": 7.034285714285715
+            },
+            {
+              "model": "C749",
+              "exits": 0,
+              "mean_score": 6.894285714285714
+            },
+            {
+              "model": "Stack25-u174",
+              "exits": 0,
+              "mean_score": 6.231428571428572
+            }
+          ],
+          "balanced": [
+            {
+              "model": "Stack26-u621",
+              "exits": 0,
+              "mean_score": 10.037142857142857
+            },
+            {
+              "model": "C749",
+              "exits": 0,
+              "mean_score": 9.421088435374148
+            },
+            {
+              "model": "Stack25-u174",
+              "exits": 0,
+              "mean_score": 8.882312925170067
+            }
+          ],
+          "survival-combat": [
+            {
+              "model": "Stack26-u621",
+              "exits": 0,
+              "mean_score": 8.7
+            },
+            {
+              "model": "Stack25-u174",
+              "exits": 0,
+              "mean_score": 7.927210884353741
+            },
+            {
+              "model": "C749",
+              "exits": 0,
+              "mean_score": 7.688435374149661
+            }
+          ],
+          "progression": [
+            {
+              "model": "Stack26-u621",
+              "exits": 0,
+              "mean_score": 12.331428571428573
+            },
+            {
+              "model": "C749",
+              "exits": 0,
+              "mean_score": 11.785102040816327
+            },
+            {
+              "model": "Stack25-u174",
+              "exits": 0,
+              "mean_score": 10.778163265306123
+            }
+          ]
+        }
+      },
+      "pairwise": [
+        {
+          "left": "C749",
+          "right": "Stack25-u174",
+          "planned_pairs": 8,
+          "attempted_pairs": 7,
+          "completed_pairs": 7,
+          "paired_layouts": 4,
+          "fully_paired_layouts": 3,
+          "unattempted_pairs": 1,
+          "unpaired_attempted_pairs": 0,
+          "pairs_with_failed_attempt": 0,
+          "left_failed_attempts": 0,
+          "right_failed_attempts": 0,
+          "left_completed_right_failed": 0,
+          "right_completed_left_failed": 0,
+          "left_completed_right_unattempted": 0,
+          "right_completed_left_unattempted": 0,
+          "outcomes": {
+            "exit": {
+              "measured_pairs": 7,
+              "left_mean": 0.0,
+              "right_mean": 0.0,
+              "mean_difference": 0.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "percentage_point_difference": 0.0
+            },
+            "alive": {
+              "measured_pairs": 7,
+              "left_mean": 0.14285714285714285,
+              "right_mean": 0.14285714285714285,
+              "mean_difference": 0.0,
+              "relative_change_percent": 0.0,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "percentage_point_difference": 0.0
+            },
+            "decisions": {
+              "measured_pairs": 7,
+              "left_mean": 378.57142857142856,
+              "right_mean": 455.7142857142857,
+              "mean_difference": -77.14285714285714,
+              "relative_change_percent": -16.927899686520377,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "keys": {
+              "measured_pairs": 7,
+              "left_mean": 0.0,
+              "right_mean": 0.0,
+              "mean_difference": 0.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "unlocks": {
+              "measured_pairs": 7,
+              "left_mean": 0.0,
+              "right_mean": 0.0,
+              "mean_difference": 0.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "doors": {
+              "measured_pairs": 7,
+              "left_mean": 1.0,
+              "right_mean": 0.7142857142857143,
+              "mean_difference": 0.2857142857142857,
+              "relative_change_percent": 40.0,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "explored_cells_96": {
+              "measured_pairs": 7,
+              "left_mean": 29.571428571428573,
+              "right_mean": 26.857142857142858,
+              "mean_difference": 2.7142857142857144,
+              "relative_change_percent": 10.106382978723405,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "engine_kills": {
+              "measured_pairs": 7,
+              "left_mean": 1.2857142857142858,
+              "right_mean": 1.5714285714285714,
+              "mean_difference": -0.2857142857142857,
+              "relative_change_percent": -18.181818181818183,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "health": {
+              "measured_pairs": 7,
+              "left_mean": -4.857142857142857,
+              "right_mean": -0.14285714285714285,
+              "mean_difference": -4.714285714285714,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "damage_received": {
+              "measured_pairs": 7,
+              "left_mean": 110.42857142857143,
+              "right_mean": 106.85714285714286,
+              "mean_difference": 3.5714285714285716,
+              "relative_change_percent": 3.342245989304813,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "recorded_player_hits": {
+              "measured_pairs": 7,
+              "left_mean": 0.2857142857142857,
+              "right_mean": 2.2857142857142856,
+              "mean_difference": -2.0,
+              "relative_change_percent": -87.5,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "recorded_player_damage": {
+              "measured_pairs": 7,
+              "left_mean": 1.8571428571428572,
+              "right_mean": 27.428571428571427,
+              "mean_difference": -25.571428571428573,
+              "relative_change_percent": -93.22916666666667,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            }
+          },
+          "profiles": {
+            "historical": {
+              "measured_pairs": 7,
+              "left_mean": 6.894285714285714,
+              "right_mean": 6.231428571428572,
+              "mean_difference": 0.6628571428571421,
+              "relative_change_percent": 10.637322329206773,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 5,
+                "ties": 0,
+                "losses": 2
+              }
+            },
+            "balanced": {
+              "measured_pairs": 7,
+              "left_mean": 9.421088435374148,
+              "right_mean": 8.882312925170067,
+              "mean_difference": 0.5387755102040817,
+              "relative_change_percent": 6.065711878685763,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 5,
+                "ties": 0,
+                "losses": 2
+              }
+            },
+            "survival-combat": {
+              "measured_pairs": 7,
+              "left_mean": 7.688435374149661,
+              "right_mean": 7.927210884353741,
+              "mean_difference": -0.23877551020408141,
+              "relative_change_percent": -3.0120998884407424,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 4,
+                "ties": 0,
+                "losses": 3
+              }
+            },
+            "progression": {
+              "measured_pairs": 7,
+              "left_mean": 11.785102040816327,
+              "right_mean": 10.778163265306123,
+              "mean_difference": 1.006938775510204,
+              "relative_change_percent": 9.342396758373884,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 4,
+                "ties": 0,
+                "losses": 3
+              }
+            }
+          }
+        },
+        {
+          "left": "C749",
+          "right": "Stack26-u621",
+          "planned_pairs": 8,
+          "attempted_pairs": 7,
+          "completed_pairs": 7,
+          "paired_layouts": 4,
+          "fully_paired_layouts": 3,
+          "unattempted_pairs": 1,
+          "unpaired_attempted_pairs": 0,
+          "pairs_with_failed_attempt": 0,
+          "left_failed_attempts": 0,
+          "right_failed_attempts": 0,
+          "left_completed_right_failed": 0,
+          "right_completed_left_failed": 0,
+          "left_completed_right_unattempted": 0,
+          "right_completed_left_unattempted": 0,
+          "outcomes": {
+            "exit": {
+              "measured_pairs": 7,
+              "left_mean": 0.0,
+              "right_mean": 0.0,
+              "mean_difference": 0.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "percentage_point_difference": 0.0
+            },
+            "alive": {
+              "measured_pairs": 7,
+              "left_mean": 0.14285714285714285,
+              "right_mean": 0.14285714285714285,
+              "mean_difference": 0.0,
+              "relative_change_percent": 0.0,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "percentage_point_difference": 0.0
+            },
+            "decisions": {
+              "measured_pairs": 7,
+              "left_mean": 378.57142857142856,
+              "right_mean": 507.0,
+              "mean_difference": -128.42857142857142,
+              "relative_change_percent": -25.331079177233022,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "keys": {
+              "measured_pairs": 7,
+              "left_mean": 0.0,
+              "right_mean": 0.0,
+              "mean_difference": 0.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "unlocks": {
+              "measured_pairs": 7,
+              "left_mean": 0.0,
+              "right_mean": 0.0,
+              "mean_difference": 0.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "doors": {
+              "measured_pairs": 7,
+              "left_mean": 1.0,
+              "right_mean": 0.7142857142857143,
+              "mean_difference": 0.2857142857142857,
+              "relative_change_percent": 40.0,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "explored_cells_96": {
+              "measured_pairs": 7,
+              "left_mean": 29.571428571428573,
+              "right_mean": 32.142857142857146,
+              "mean_difference": -2.5714285714285716,
+              "relative_change_percent": -8.0,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "engine_kills": {
+              "measured_pairs": 7,
+              "left_mean": 1.2857142857142858,
+              "right_mean": 1.5714285714285714,
+              "mean_difference": -0.2857142857142857,
+              "relative_change_percent": -18.181818181818183,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "health": {
+              "measured_pairs": 7,
+              "left_mean": -4.857142857142857,
+              "right_mean": -4.857142857142857,
+              "mean_difference": 0.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "damage_received": {
+              "measured_pairs": 7,
+              "left_mean": 110.42857142857143,
+              "right_mean": 114.85714285714286,
+              "mean_difference": -4.428571428571429,
+              "relative_change_percent": -3.8557213930348255,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "recorded_player_hits": {
+              "measured_pairs": 7,
+              "left_mean": 0.2857142857142857,
+              "right_mean": 0.7142857142857143,
+              "mean_difference": -0.42857142857142855,
+              "relative_change_percent": -60.0,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "recorded_player_damage": {
+              "measured_pairs": 7,
+              "left_mean": 1.8571428571428572,
+              "right_mean": 6.428571428571429,
+              "mean_difference": -4.571428571428571,
+              "relative_change_percent": -71.1111111111111,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            }
+          },
+          "profiles": {
+            "historical": {
+              "measured_pairs": 7,
+              "left_mean": 6.894285714285714,
+              "right_mean": 7.034285714285715,
+              "mean_difference": -0.1400000000000007,
+              "relative_change_percent": -1.990251827782301,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 3,
+                "ties": 0,
+                "losses": 4
+              }
+            },
+            "balanced": {
+              "measured_pairs": 7,
+              "left_mean": 9.421088435374148,
+              "right_mean": 10.037142857142857,
+              "mean_difference": -0.6160544217687081,
+              "relative_change_percent": -6.137746872161907,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 3,
+                "ties": 0,
+                "losses": 4
+              }
+            },
+            "survival-combat": {
+              "measured_pairs": 7,
+              "left_mean": 7.688435374149661,
+              "right_mean": 8.7,
+              "mean_difference": -1.0115646258503401,
+              "relative_change_percent": -11.627179607475174,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 3,
+                "ties": 0,
+                "losses": 4
+              }
+            },
+            "progression": {
+              "measured_pairs": 7,
+              "left_mean": 11.785102040816327,
+              "right_mean": 12.331428571428573,
+              "mean_difference": -0.5463265306122455,
+              "relative_change_percent": -4.430358797828681,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 3,
+                "ties": 0,
+                "losses": 4
+              }
+            }
+          }
+        },
+        {
+          "left": "Stack25-u174",
+          "right": "Stack26-u621",
+          "planned_pairs": 8,
+          "attempted_pairs": 7,
+          "completed_pairs": 7,
+          "paired_layouts": 4,
+          "fully_paired_layouts": 3,
+          "unattempted_pairs": 1,
+          "unpaired_attempted_pairs": 0,
+          "pairs_with_failed_attempt": 0,
+          "left_failed_attempts": 0,
+          "right_failed_attempts": 0,
+          "left_completed_right_failed": 0,
+          "right_completed_left_failed": 0,
+          "left_completed_right_unattempted": 0,
+          "right_completed_left_unattempted": 0,
+          "outcomes": {
+            "exit": {
+              "measured_pairs": 7,
+              "left_mean": 0.0,
+              "right_mean": 0.0,
+              "mean_difference": 0.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "percentage_point_difference": 0.0
+            },
+            "alive": {
+              "measured_pairs": 7,
+              "left_mean": 0.14285714285714285,
+              "right_mean": 0.14285714285714285,
+              "mean_difference": 0.0,
+              "relative_change_percent": 0.0,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "percentage_point_difference": 0.0
+            },
+            "decisions": {
+              "measured_pairs": 7,
+              "left_mean": 455.7142857142857,
+              "right_mean": 507.0,
+              "mean_difference": -51.285714285714285,
+              "relative_change_percent": -10.115525500140885,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "keys": {
+              "measured_pairs": 7,
+              "left_mean": 0.0,
+              "right_mean": 0.0,
+              "mean_difference": 0.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "unlocks": {
+              "measured_pairs": 7,
+              "left_mean": 0.0,
+              "right_mean": 0.0,
+              "mean_difference": 0.0,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "doors": {
+              "measured_pairs": 7,
+              "left_mean": 0.7142857142857143,
+              "right_mean": 0.7142857142857143,
+              "mean_difference": 0.0,
+              "relative_change_percent": 0.0,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "explored_cells_96": {
+              "measured_pairs": 7,
+              "left_mean": 26.857142857142858,
+              "right_mean": 32.142857142857146,
+              "mean_difference": -5.285714285714286,
+              "relative_change_percent": -16.444444444444443,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "engine_kills": {
+              "measured_pairs": 7,
+              "left_mean": 1.5714285714285714,
+              "right_mean": 1.5714285714285714,
+              "mean_difference": 0.0,
+              "relative_change_percent": 0.0,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "health": {
+              "measured_pairs": 7,
+              "left_mean": -0.14285714285714285,
+              "right_mean": -4.857142857142857,
+              "mean_difference": 4.714285714285714,
+              "relative_change_percent": null,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "damage_received": {
+              "measured_pairs": 7,
+              "left_mean": 106.85714285714286,
+              "right_mean": 114.85714285714286,
+              "mean_difference": -8.0,
+              "relative_change_percent": -6.965174129353234,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "recorded_player_hits": {
+              "measured_pairs": 7,
+              "left_mean": 2.2857142857142856,
+              "right_mean": 0.7142857142857143,
+              "mean_difference": 1.5714285714285714,
+              "relative_change_percent": 219.99999999999997,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            },
+            "recorded_player_damage": {
+              "measured_pairs": 7,
+              "left_mean": 27.428571428571427,
+              "right_mean": 6.428571428571429,
+              "mean_difference": 21.0,
+              "relative_change_percent": 326.6666666666667,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              }
+            }
+          },
+          "profiles": {
+            "historical": {
+              "measured_pairs": 7,
+              "left_mean": 6.231428571428572,
+              "right_mean": 7.034285714285715,
+              "mean_difference": -0.8028571428571428,
+              "relative_change_percent": -11.413484971567831,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 3,
+                "ties": 0,
+                "losses": 4
+              }
+            },
+            "balanced": {
+              "measured_pairs": 7,
+              "left_mean": 8.882312925170067,
+              "right_mean": 10.037142857142857,
+              "mean_difference": -1.1548299319727897,
+              "relative_change_percent": -11.505564366367105,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 2,
+                "ties": 0,
+                "losses": 5
+              }
+            },
+            "survival-combat": {
+              "measured_pairs": 7,
+              "left_mean": 7.927210884353741,
+              "right_mean": 8.7,
+              "mean_difference": -0.7727891156462589,
+              "relative_change_percent": -8.882633513175389,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 4,
+                "ties": 0,
+                "losses": 3
+              }
+            },
+            "progression": {
+              "measured_pairs": 7,
+              "left_mean": 10.778163265306123,
+              "right_mean": 12.331428571428573,
+              "mean_difference": -1.5532653061224495,
+              "relative_change_percent": -12.5959883490004,
+              "layout_bootstrap_95": {
+                "status": "UNVERIFIED_INSUFFICIENT_COMPLETE_LAYOUTS",
+                "complete_layouts": 3,
+                "minimum_complete_layouts": 16,
+                "confidence": 0.95,
+                "interval": null
+              },
+              "win_tie_loss": {
+                "wins": 2,
+                "ties": 0,
+                "losses": 5
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "attempt_issues": [],
+  "episode_source": "episodes/blind-episodes.jsonl",
+  "map_manifest": "manifests/map_manifest.json",
+  "input_issues": []
+}

@@ -1,0 +1,80 @@
+{
+  "predeclared_ist": "2026-11-27 03:45 IST",
+  "release": {
+    "commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+    "checkout": "D:/Doom/DevForge_DOOM/submission_artifacts/github-fresh-6c2d549-20261127-022250050",
+    "weight_sha256": "0b8f290cfe36a25f8593da925d4a4a0ddb8790b37f9319a019aed276a73f5e61"
+  },
+  "storage": {
+    "absolute_decline_limit_bytes": 7000000000,
+    "start_reserve_bytes": 500000000
+  },
+  "replay_rule": "One attempt per invocation. Use the fixed seed and cap. Show the result as it occurs.",
+  "render_rule": "Prior diagnostics turned RGB/depth filling off. The viewer turns official buffer filling on for live pixels. C749 pack uses rays, entities, vitals and previous actions.",
+  "modes": {
+    "Progression": {
+      "display_name": "Progression demonstration",
+      "map": "MAP01",
+      "wad": "D:/Doom/DevForge_DOOM/submission_artifacts/final-functional-audit/diagnostics-20261127-024526163/layouts/locked_progression.wad",
+      "wad_sha256": "3a959dfb181acfddfd9b78d16b5f7312f6d6094f874a031fef3df383718f7e84",
+      "seed": 3103,
+      "tick_cap": 1024,
+      "mid_decision": 14,
+      "scope": "Generated local diagnostic layout",
+      "seed_basis": "Fastest of the three previously recorded successful C749 diagnostic seeds on this fixture.",
+      "prior": {
+        "decisions": 28,
+        "keys": 1,
+        "doors": 1,
+        "unlocks": 1,
+        "exit": true,
+        "survived": true,
+        "fixture_exits": 3,
+        "fixture_episodes": 3
+      },
+      "prior_report": "D:/Doom/DevForge_DOOM/submission_artifacts/final-functional-audit/diagnostics-20261127-024526163/episodes.jsonl"
+    },
+    "Complex": {
+      "display_name": "Complex gameplay demonstration",
+      "map": "MAP08",
+      "wad": "D:/Doom/DevForge_DOOM/environments/competition/Lib/site-packages/vizdoom/freedoom2.wad",
+      "wad_sha256": "a8772e088847032510d97ba2312406a6998f21cbab44d4ff10696faa9c0ecd4b",
+      "seed": 3101,
+      "tick_cap": 2100,
+      "mid_decision": 100,
+      "scope": "Previously used Freedoom development map",
+      "seed_basis": "First recorded C749 diagnostic seed on MAP08. It provides a combat and failure contrast.",
+      "prior": {
+        "decisions": 201,
+        "player_hits": 1,
+        "player_damage_dealt": 6,
+        "engine_kills": 2,
+        "survived": false,
+        "exit": false
+      },
+      "prior_report": "D:/Doom/DevForge_DOOM/submission_artifacts/final-functional-audit/diagnostics-20261127-024526163/episodes.jsonl"
+    },
+    "Backtracking": {
+      "display_name": "Backtracking diagnostic demonstration",
+      "map": "MAP01",
+      "wad": "D:/Doom/DevForge_DOOM/submission_artifacts/final-functional-audit/backtrack-20261127-025005478/layouts/key_behind_spawn.wad",
+      "wad_sha256": "1686fc6d31c6bd74380f04c6ca9f89323679f11bc1397623400ec0009fa4392e",
+      "seed": 3102,
+      "tick_cap": 1400,
+      "mid_decision": 116,
+      "scope": "Generated local backtracking diagnostic layout",
+      "seed_basis": "Only recorded C749 diagnostic seed that retrieved the key behind spawn, returned to the lock and exited. The other two attempts timed out.",
+      "prior": {
+        "decisions": 231,
+        "keys": 1,
+        "doors": 1,
+        "unlocks": 1,
+        "exit": true,
+        "survived": true,
+        "fixture_exits": 1,
+        "fixture_episodes": 3
+      },
+      "prior_report": "D:/Doom/DevForge_DOOM/submission_artifacts/final-functional-audit/backtrack-20261127-025005478/episodes.jsonl"
+    }
+  }
+}

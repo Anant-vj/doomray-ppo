@@ -1,0 +1,22 @@
+{
+  "observed_at_local": "2026-11-27T04:29:12+05:30",
+  "classification": "Frozen local assessment snapshot with unofficial local scores",
+  "subject_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+  "c749_weight_sha256": "0b8f290cfe36a25f8593da925d4a4a0ddb8790b37f9319a019aed276a73f5e61",
+  "assessment_status": "PARTIAL",
+  "ledger_sha256": "8852eb79e532d403c1a15d289a4c87f920797f87af1e54ed25857aa3947959ec",
+  "matched_summary_sha256": "4726c2adda791bf0bd7d995c77e299471c102d87191d3bd2b35735936c03e51e",
+  "scoring_manifest_sha256": "1ca7aeb19af8b5a787bd66cd86234690764689c5979876fdcb04a0b8f9bfc9fd",
+  "map_manifest_sha256": "5e3f7d1e96f578d4bdb37d44ce3ce78c557e990929940a0c8918fe0c4f34ab7c",
+  "ledger_rows": 93,
+  "planned_episodes": 96,
+  "attempted_episodes": 93,
+  "recorded_completed_episodes": 93,
+  "completed_episodes": 93,
+  "failed_or_excluded_units": 0,
+  "unattempted_episodes": 3,
+  "expected_layouts": 16,
+  "attempted_layouts": 16,
+  "completed_layouts": 16,
+  "fully_matched_layouts": 15
+}

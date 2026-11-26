@@ -1,0 +1,157 @@
+{
+  "commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+  "seed": 3102,
+  "wad": "key_behind_spawn.wad",
+  "map": "MAP01",
+  "decisions": 231,
+  "tick": 0,
+  "outcome": "Exit reached",
+  "kills": 0,
+  "final_health": 100.0,
+  "damage": 0.0,
+  "invalid_actions": 0,
+  "distinct_rgb_frames": 230,
+  "valid_rgb_native_input": [
+    120,
+    160,
+    3
+  ],
+  "display_driver": "windows",
+  "display_size": [
+    1120,
+    704
+  ],
+  "p99_inference_ms": 5.490200002532218,
+  "gameplay_seconds": 26.37331699999777,
+  "polls": 378,
+  "poll_timer_events": 119,
+  "live_marker_samples": 24,
+  "live_marker_matches": 24,
+  "storage_before": 5049167872,
+  "storage_after": 5049966592,
+  "captures": [
+    {
+      "path": "audit-begin.png",
+      "phase": "begin",
+      "decision": 1,
+      "tic": 5,
+      "rgb_roundtrip": true
+    },
+    {
+      "path": "audit-mid.png",
+      "phase": "mid",
+      "decision": 116,
+      "tic": 465,
+      "rgb_roundtrip": true
+    },
+    {
+      "path": "audit-key.png",
+      "phase": "key",
+      "decision": 177,
+      "tic": 709,
+      "rgb_roundtrip": true
+    },
+    {
+      "path": "audit-door.png",
+      "phase": "door",
+      "decision": 211,
+      "tic": 845,
+      "rgb_roundtrip": true
+    },
+    {
+      "path": "audit-unlock.png",
+      "phase": "unlock",
+      "decision": 211,
+      "tic": 845,
+      "rgb_roundtrip": true
+    },
+    {
+      "path": "audit-exit.png",
+      "phase": "exit",
+      "decision": 231,
+      "tic": 0,
+      "rgb_roundtrip": true
+    },
+    {
+      "path": "audit-end.png",
+      "phase": "end",
+      "decision": 231,
+      "tic": 0,
+      "rgb_roundtrip": true
+    }
+  ],
+  "engine_closed_at": "04:04:47",
+  "mode": "Backtracking",
+  "scope": "Generated local backtracking diagnostic layout",
+  "seed_basis": "Only recorded C749 diagnostic seed that retrieved the key behind spawn, returned to the lock and exited. The other two attempts timed out.",
+  "release_checkout": "D:\\Doom\\DevForge_DOOM\\submission_artifacts\\github-fresh-6c2d549-20261127-022250050",
+  "manifest": "D:\\Doom\\DevForge_DOOM\\submission_artifacts\\c749-demonstration-manifest.json",
+  "wad_sha256": "1686fc6d31c6bd74380f04c6ca9f89323679f11bc1397623400ec0009fa4392e",
+  "tick_cap": 1400,
+  "start_tick": 1,
+  "elapsed_ticks_through_last_report": 920,
+  "terminal_tick_regressed": true,
+  "nominal_requested_ticks": 924,
+  "last_legal_observation_vitals": {
+    "health": 100,
+    "armor": 0,
+    "selected_weapon": 2,
+    "selected_weapon_ammo": 44,
+    "ammo_bullets": 44,
+    "ammo_shells": 0,
+    "ammo_rockets": 0,
+    "ammo_cells": 0,
+    "key_blue_card": 0,
+    "key_yellow_card": 0,
+    "key_red_card": 1,
+    "key_blue_skull": 0,
+    "key_yellow_skull": 0,
+    "key_red_skull": 0,
+    "vel_forward": 4,
+    "vel_right": -1,
+    "vel_up": 0
+  },
+  "keys_acquired": [
+    "red_card"
+  ],
+  "doors": 1,
+  "unlocks": 1,
+  "last_unlock_decision": 211,
+  "exit_reached": true,
+  "events": [
+    {
+      "event": "key",
+      "value": [
+        "red_card"
+      ],
+      "decision": 177,
+      "raw_tic": 709,
+      "elapsed_ticks_through_last_report": 708
+    },
+    {
+      "event": "door",
+      "value": [
+        1
+      ],
+      "decision": 211,
+      "raw_tic": 845,
+      "elapsed_ticks_through_last_report": 844
+    },
+    {
+      "event": "unlock",
+      "value": [
+        1
+      ],
+      "decision": 211,
+      "raw_tic": 845,
+      "elapsed_ticks_through_last_report": 844
+    },
+    {
+      "event": "exit",
+      "value": true,
+      "decision": 231,
+      "raw_tic": 0,
+      "elapsed_ticks_through_last_report": 920
+    }
+  ]
+}

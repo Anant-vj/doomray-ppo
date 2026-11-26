@@ -1,0 +1,228 @@
+{
+  "schema_version": 1,
+  "frozen_at": "2026-11-27T03:59:15.4938862+05:30",
+  "assessment_episodes_before_freeze": 0,
+  "approved_release": {
+    "commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+    "public_url": "https://github.com/Anant-vj/doomray-ppo",
+    "default_branch": "main",
+    "lfs_oid": "0b8f290cfe36a25f8593da925d4a4a0ddb8790b37f9319a019aed276a73f5e61",
+    "local_clones": [
+      "D:\\Doom\\DevForge_DOOM\\submission_artifacts\\final-code-staging",
+      "D:\\Doom\\DevForge_DOOM\\submission_artifacts\\github-fresh-6c2d549-20261127-022250050"
+    ],
+    "original_brief": "D:\\Doom\\DevForge_DOOM\\submission_artifacts\\DoomRay_PPO_project_brief.pdf",
+    "original_brief_sha256": "f7510313bd1f952deee4c7020ff367a624ab1b7a07292648a4da48d82909942a",
+    "original_brief_bytes": 48855,
+    "exact_starter_zip_count": 18,
+    "exact_starter_zip_files": [
+      "env/doom_env/wad.py",
+      "env/doom_env/limits.py",
+      "uv.lock",
+      "docs/RULES.md",
+      "validate.py",
+      "docker/requirements.in",
+      "docker/requirements.lock",
+      "env/doom_env/spaces.py",
+      "env/doom_env/sensors.py",
+      "docs/EVALUATION.md",
+      "docs/SUBMISSION.md",
+      "env/doom_env/wrapper.py",
+      "docs/CONTRACT.md",
+      ".python-version",
+      "env/doom_env/__init__.py",
+      "env/pyproject.toml",
+      "env/doom_env/mapinfo.py",
+      "env/doom_env/remote.py"
+    ],
+    "last_verified_remote_head_ist": "2026-11-27T03:44:40.0211108+05:30",
+    "organizer_submission_status": "pending, no portal supplied"
+  },
+  "storage_at_freeze": {
+    "baseline_c_free_bytes": 34039721984,
+    "c_free_preflight_bytes": 28988866560,
+    "c_free_at_freeze_bytes": 28988866560,
+    "c_decline_at_freeze_bytes": 5050855424,
+    "launch_gate_decline_bytes": 4500000000,
+    "approved_cap_bytes": 5000000000,
+    "launch_allowed": false,
+    "d_free_at_freeze_bytes": 60443377664
+  },
+  "development_preselection": "D:\\Doom\\DevForge_DOOM\\evaluations\\mission-wide-dev-ranking.md",
+  "candidates": [
+    {
+      "id": "A",
+      "name": "Published C749",
+      "update": 749,
+      "source_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+      "source_checkpoint_path": "D:\\Doom\\DevForge_DOOM\\evaluations\\candidates\\mission-progression-43-update-749.pt",
+      "source_checkpoint_sha256": "1c741cae310c3b169a18ad86a34c25c7371a6be47dcbefbcce8ba43077e36930",
+      "inference_source_path": "D:\\Doom\\DevForge_DOOM\\submission_artifacts\\final-code-staging\\submission\\weights\\policy.pt",
+      "inference_sha256": "0b8f290cfe36a25f8593da925d4a4a0ddb8790b37f9319a019aed276a73f5e61",
+      "training_lineage": [
+        {
+          "log": "D:\\Doom\\DevForge_DOOM\\logs\\stack-23.jsonl",
+          "update": 32,
+          "decisions_in_segment": 4096,
+          "optimizer_steps_in_lineage": 96
+        },
+        {
+          "log": "D:\\Doom\\DevForge_DOOM\\logs\\stack-24.jsonl",
+          "update": 110,
+          "decisions_in_segment": 9984,
+          "optimizer_steps_in_lineage": 330
+        },
+        {
+          "log": "D:\\Doom\\DevForge_DOOM\\logs\\stack-25.jsonl",
+          "update": 243,
+          "decisions_in_segment": 68096,
+          "optimizer_steps_in_lineage": 1926
+        },
+        {
+          "log": "D:\\Doom\\DevForge_DOOM\\logs\\stack-26.jsonl",
+          "update": 621,
+          "decisions_in_segment": 193536,
+          "optimizer_steps_in_lineage": 6462
+        },
+        {
+          "log": "D:\\Doom\\DevForge_DOOM\\logs\\mission-progression-43.jsonl",
+          "update": 749,
+          "decisions_in_segment": 49152,
+          "optimizer_steps_in_lineage": 7614
+        }
+      ],
+      "preselection": "Exact user-approved public policy. No newly observed assessment outcomes.",
+      "frozen_inference_path": "D:\\Doom\\DevForge_DOOM\\submission_artifacts\\final-blind-assessment\\checkpoints\\model-A.pt",
+      "weight_bytes": 395269,
+      "source_checkpoint_bytes": 396681,
+      "parameter_count": 97208,
+      "parameter_count_evidence": "22 float32 storages, 388832 payload bytes. All storage IDs, sizes and SHA-256 match the training source. No Torch, pickle loading or ViZDoom import.",
+      "architecture": "Four-encoding feed-forward temporal stack, shared structured encoder and six categorical actor heads",
+      "training_transitions": 324864,
+      "optimizer_steps": 7614,
+      "inference_configuration": {
+        "repository": "D:\\Doom\\DevForge_DOOM\\submission_artifacts\\final-code-staging",
+        "code_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+        "agent": "submission.agent.DoomAgent",
+        "precision": "float32",
+        "device": "cpu",
+        "memory": "stack",
+        "history_frames": 4,
+        "previous_action_context": true,
+        "sampling": "unchanged stochastic learned categorical heads",
+        "buttons": 9,
+        "official_ticks_per_decision": 4
+      }
+    },
+    {
+      "id": "B",
+      "name": "Original Stack-25 update 174",
+      "update": 174,
+      "source_commit": "0664d64cb8c0b7d2733908d7ffb2eb99ad3e700f",
+      "source_checkpoint_path": "D:\\Doom\\DevForge_DOOM\\evaluations\\candidates\\stack-25-update-174.pt",
+      "source_checkpoint_sha256": "ca4ddb772286881bf1609693470760838df5e0143c3e31985914ce4643ca5a6e",
+      "inference_source_path": "D:\\Doom\\DevForge_DOOM\\submission_artifacts\\final-code-staging\\.git\\lfs\\objects\\80\\48\\804857cd43d4e9ad806feb8647ff1859a76b798b13573e5185de08d10af48ee2",
+      "inference_sha256": "804857cd43d4e9ad806feb8647ff1859a76b798b13573e5185de08d10af48ee2",
+      "training_lineage": [
+        {
+          "log": "D:\\Doom\\DevForge_DOOM\\logs\\stack-23.jsonl",
+          "update": 32,
+          "decisions_in_segment": 4096,
+          "optimizer_steps_in_lineage": 96
+        },
+        {
+          "log": "D:\\Doom\\DevForge_DOOM\\logs\\stack-24.jsonl",
+          "update": 110,
+          "decisions_in_segment": 9984,
+          "optimizer_steps_in_lineage": 330
+        },
+        {
+          "log": "D:\\Doom\\DevForge_DOOM\\logs\\stack-25.jsonl",
+          "update": 174,
+          "decisions_in_segment": 32768,
+          "optimizer_steps_in_lineage": 1098
+        }
+      ],
+      "preselection": "User-specified original trained baseline.",
+      "frozen_inference_path": "D:\\Doom\\DevForge_DOOM\\submission_artifacts\\final-blind-assessment\\checkpoints\\model-B.pt",
+      "weight_bytes": 395269,
+      "source_checkpoint_bytes": 396681,
+      "parameter_count": 97208,
+      "parameter_count_evidence": "22 float32 storages, 388832 payload bytes. All storage IDs, sizes and SHA-256 match the training source. No Torch, pickle loading or ViZDoom import.",
+      "architecture": "Four-encoding feed-forward temporal stack, shared structured encoder and six categorical actor heads",
+      "training_transitions": 46848,
+      "optimizer_steps": 1098,
+      "inference_configuration": {
+        "repository": "D:\\Doom\\DevForge_DOOM\\submission_artifacts\\final-code-staging",
+        "code_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+        "agent": "submission.agent.DoomAgent",
+        "precision": "float32",
+        "device": "cpu",
+        "memory": "stack",
+        "history_frames": 4,
+        "previous_action_context": true,
+        "sampling": "unchanged stochastic learned categorical heads",
+        "buttons": 9,
+        "official_ticks_per_decision": 4
+      }
+    },
+    {
+      "id": "C",
+      "name": "Stack-26 update 621",
+      "update": 621,
+      "source_commit": "40218823c3a337fa8df04ac0cad2381f051ebce8",
+      "source_checkpoint_path": "D:\\Doom\\DevForge_DOOM\\checkpoints\\mission-archive\\stack-26-update-621-policy.pt",
+      "source_checkpoint_sha256": "5d90001f01beb4e43560fde4037667e7f440e797b6f86f2ee91a1e12c40d46e8",
+      "inference_source_path": "D:\\Doom\\DevForge_DOOM\\submission_artifacts\\qualified-stack26-621\\submission\\weights\\policy.pt",
+      "inference_sha256": "5b7dca6d1bcce1569ac9164b2461bec9e11622c31a793047046790d0c76f32fd",
+      "training_lineage": [
+        {
+          "log": "D:\\Doom\\DevForge_DOOM\\logs\\stack-23.jsonl",
+          "update": 32,
+          "decisions_in_segment": 4096,
+          "optimizer_steps_in_lineage": 96
+        },
+        {
+          "log": "D:\\Doom\\DevForge_DOOM\\logs\\stack-24.jsonl",
+          "update": 110,
+          "decisions_in_segment": 9984,
+          "optimizer_steps_in_lineage": 330
+        },
+        {
+          "log": "D:\\Doom\\DevForge_DOOM\\logs\\stack-25.jsonl",
+          "update": 243,
+          "decisions_in_segment": 68096,
+          "optimizer_steps_in_lineage": 1926
+        },
+        {
+          "log": "D:\\Doom\\DevForge_DOOM\\logs\\stack-26.jsonl",
+          "update": 621,
+          "decisions_in_segment": 193536,
+          "optimizer_steps_in_lineage": 6462
+        }
+      ],
+      "preselection": "User-preferred trained reference. Second-ranked checkpoint on previous 16-episode four-map development set (unofficial proxy 9.85375). No new assessment data used.",
+      "frozen_inference_path": "D:\\Doom\\DevForge_DOOM\\submission_artifacts\\final-blind-assessment\\checkpoints\\model-C.pt",
+      "weight_bytes": 395269,
+      "source_checkpoint_bytes": 396681,
+      "parameter_count": 97208,
+      "parameter_count_evidence": "22 float32 storages, 388832 payload bytes. All storage IDs, sizes and SHA-256 match the training source. No Torch, pickle loading or ViZDoom import.",
+      "architecture": "Four-encoding feed-forward temporal stack, shared structured encoder and six categorical actor heads",
+      "training_transitions": 275712,
+      "optimizer_steps": 6462,
+      "inference_configuration": {
+        "repository": "D:\\Doom\\DevForge_DOOM\\submission_artifacts\\final-code-staging",
+        "code_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+        "agent": "submission.agent.DoomAgent",
+        "precision": "float32",
+        "device": "cpu",
+        "memory": "stack",
+        "history_frames": 4,
+        "previous_action_context": true,
+        "sampling": "unchanged stochastic learned categorical heads",
+        "buttons": 9,
+        "official_ticks_per_decision": 4
+      }
+    }
+  ]
+}

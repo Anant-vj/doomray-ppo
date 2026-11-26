@@ -1,0 +1,21 @@
+{
+  "python": "3.13.12",
+  "python_executable": "D:\\Doom\\DevForge_DOOM\\environments\\competition\\Scripts\\python.exe",
+  "vizdoom": "1.3.3",
+  "torch": "2.15.0+cpu",
+  "cuda_available": false,
+  "torch_threads": 1,
+  "wrapper": "D:\\Doom\\DevForge_DOOM\\submission_artifacts\\final-code-staging\\env\\doom_env\\wrapper.py",
+  "headless": true,
+  "startup_storage": {
+    "decline_bytes": 5076774912,
+    "threshold_bytes": 6500000000,
+    "c_free_bytes": 28962947072,
+    "d_free_bytes": 60437307392,
+    "physical_available_bytes": 918671360,
+    "commit_available_bytes": 2473099264,
+    "required_available_memory_bytes": 805306368,
+    "original_baseline_free_bytes": 34039721984,
+    "allowed": true
+  }
+}
