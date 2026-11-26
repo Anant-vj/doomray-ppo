@@ -32,7 +32,10 @@ def main():
     parser.add_argument("--headless", action="store_true", help="Run without game windows.")
     parser.add_argument("--parallel", action="store_true", help="Run headless simulation in spawned workers.")
     parser.add_argument("--no-render-buffers", action="store_true", help="Skip unused RGB and depth buffers.")
-    parser.add_argument("--curriculum", action="store_true", help="Include targeted practice maps in training.")
+    parser.add_argument(
+        "--curriculum", nargs="?", choices=("expanded", "progression"), const="expanded",
+        help="Include practice maps. Choose progression to add the starter's key-and-lock fixture.",
+    )
     parser.add_argument("--checkpoint-seconds", type=float, help="Rotate checkpoints at this elapsed interval.")
     parser.add_argument("--max-seconds", type=float, help="Save and exit at the first update after this time limit.")
     parser.add_argument("--stop-file", type=Path, help="Save and exit after the next PPO update if this file appears.")
@@ -70,7 +73,7 @@ def main():
     torch.set_num_threads(1)
     dev = torch.device(args.device)
     rng = np.random.default_rng(args.seed)
-    split = "curriculum" if args.curriculum else "train"
+    split = {"expanded": "curriculum", "progression": "progression"}.get(args.curriculum, "train")
     pool = maps(split)
     policy = Policy(args.memory).to(dev)
     optimizer = torch.optim.Adam(policy.parameters(), lr=3e-4, eps=1e-5)

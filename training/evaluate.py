@@ -123,7 +123,10 @@ def main():
         print(dest, "proxy", report["proxy"], "latency_ms", report["latency_ms"], flush=True)
         reports.append((path, report))
     if args.promote:
-        best, report = max((r for r in reports if r[0] is not None), key=lambda r: r[1]["proxy"])
+        eligible = [(path, report) for path, report in reports if path is not None and not report["invalid_actions"]]
+        if not eligible:
+            parser.exit(1, "No candidate completed the development suite with valid actions.\n")
+        best, report = max(eligible, key=lambda r: r[1]["proxy"])
         contents = best.read_bytes()
         if hashlib.sha256(contents).hexdigest() != report["checkpoint_metadata"]["sha256"]:
             parser.exit(1, "The selected checkpoint rotated during evaluation. Rerun with a fixed copy.\n")

@@ -26,7 +26,8 @@ inference. `--no-render-buffers` skips the wrapper's RGB and depth observation
 copies. In parallel mode it also disables native depth generation inside the
 training workers. The policy uses rays, entities and vitals.
 `--curriculum` adds ViZDoom Basic, My Way Home and Freedoom MAP31. Select the
-worker count using local throughput measurements.
+worker count using local throughput measurements. `--curriculum progression`
+also adds the starter's small red key, locked door and exit test layout.
 
 Use `--checkpoint-seconds 360` for six-minute checkpoint rotation. The trainer
 saves after the first and last update as well. For a run with `--stop-file PATH`,

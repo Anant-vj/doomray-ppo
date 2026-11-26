@@ -14,16 +14,20 @@ SPLITS = {"train": (1, 2, 3, 4, 5, 6), "dev": (7, 8), "holdout": (9, 10)}
 def maps(split):
     assets = Path(vizdoom.__file__).parent
     iwad = assets / "freedoom2.wad"
-    map_numbers = SPLITS["train" if split == "curriculum" else split]
+    expanded = split in ("curriculum", "progression")
+    map_numbers = SPLITS["train" if expanded else split]
     items = [(iwad, f"MAP{i:02}") for i in map_numbers]
-    if split in ("train", "curriculum"):
+    if split == "train" or expanded:
         items.insert(0, (REPO / "maps/two_rooms.wad", "MAP01"))
-    if split == "curriculum":
+    if expanded:
         items.extend([
             (assets / "scenarios" / "basic.wad", "MAP01"),
             (assets / "scenarios" / "my_way_home.wad", "MAP01"),
             (iwad, "MAP31"),
         ])
+    if split == "progression":
+        # The official key-pickup/locked-door/exit regression layout.
+        items.append((REPO / "tests/fixtures/e7ab54fb6834ffa3.wad", "MAP01"))
     return items
 
 
