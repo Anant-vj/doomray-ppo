@@ -12,17 +12,25 @@ SPLITS = {"train": (1, 2, 3, 4, 5, 6), "dev": (7, 8), "holdout": (9, 10)}
 
 
 def maps(split):
-    iwad = Path(vizdoom.__file__).parent / "freedoom2.wad"
-    items = [(iwad, f"MAP{i:02}") for i in SPLITS[split]]
-    if split == "train":
+    assets = Path(vizdoom.__file__).parent
+    iwad = assets / "freedoom2.wad"
+    map_numbers = SPLITS["train" if split == "curriculum" else split]
+    items = [(iwad, f"MAP{i:02}") for i in map_numbers]
+    if split in ("train", "curriculum"):
         items.insert(0, (REPO / "maps/two_rooms.wad", "MAP01"))
+    if split == "curriculum":
+        items.extend([
+            (assets / "scenarios" / "basic.wad", "MAP01"),
+            (assets / "scenarios" / "my_way_home.wad", "MAP01"),
+            (iwad, "MAP31"),
+        ])
     return items
 
 
 class Episode:
-    def __init__(self, layout, ticks):
+    def __init__(self, layout, ticks, *, render_buffers=True):
         self.path, self.map_name = layout
-        self.env = make_env(str(self.path), self.map_name, episode_ticks=ticks)
+        self.env = make_env(str(self.path), self.map_name, episode_ticks=ticks, render_buffers=render_buffers)
 
     def reset(self, seed):
         obs, _ = self.env.reset(seed=seed)
@@ -32,6 +40,7 @@ class Episode:
         self.unlocked = set()
         self.initial_ceilings = self.last["sector_ceiling"].copy()
         self.native = 0.
+        self.shaped = 0.
         self.steps = 0
         return obs
 
@@ -56,6 +65,7 @@ class Episode:
         shaped = (reward + 2. * s["exit_reached"] + .035 * new_cell + .3 * keys +
                   .15 * len(distinct) + .15 * sum(locks[i] > 0 for i in distinct) - .003 * damage)
         self.native += reward
+        self.shaped += shaped
         self.steps += 1
         self.last = s
         return obs, float(shaped), term, trunc
@@ -65,7 +75,54 @@ class Episode:
         return dict(wad=self.path.name, map=self.map_name, steps=self.steps, exit=bool(s["exit_reached"]),
                     alive=not s["dead"], health=s["health"], kills=s["kills"], damage=s["damage_taken"],
                     keys=int(s["keys"].sum()), door_sectors_raised=len(self.raised),
-                    locked_sectors_raised=len(self.unlocked), cells_96=len(self.cells), wrapper_return=self.native)
+                    locked_sectors_raised=len(self.unlocked), cells_96=len(self.cells),
+                    wrapper_return=self.native, shaped_return=float(self.shaped))
 
     def close(self):
         self.env.close()
+
+
+class SerialEpisodes:
+    """Run the rollout environments in the learner process."""
+
+    def __init__(self, layouts, ticks, seeds, *, render_buffers=True):
+        self._ticks = ticks
+        self._render_buffers = render_buffers
+        self._games = [None] * len(layouts)
+        try:
+            starts = dict(enumerate(zip(layouts, seeds, strict=True)))
+            self.observations = list(self.reset(starts).values())
+        except BaseException:
+            self.close()
+            raise
+
+    def step(self, actions):
+        results = []
+        for game, action in zip(self._games, actions, strict=True):
+            obs, reward, terminated, truncated = game.step(action)
+            metrics = game.metrics() if terminated or truncated else None
+            results.append((obs, reward, terminated, truncated, metrics))
+        return results
+
+    def reset(self, starts):
+        obs = {}
+        for index, (layout, seed) in starts.items():
+            game = self._games[index]
+            if game is None or (game.path, game.map_name) != layout:
+                if game is not None:
+                    game.close()
+                game = Episode(layout, self._ticks, render_buffers=self._render_buffers)
+                self._games[index] = game
+            obs[index] = game.reset(seed)
+        return obs
+
+    def close(self):
+        for game in self._games:
+            if game is not None:
+                game.close()
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *exc):
+        self.close()
