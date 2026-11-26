@@ -22,8 +22,9 @@ $resume = Join-Path $env:DOOM_WORK 'checkpoints\stack-23\resume.pt'
 ```
 
 Add `--parallel` for independent spawned simulation workers with batched policy
-inference. `--no-render-buffers` disables the wrapper's RGB and depth observation
-copies. The policy uses rays, entities and vitals, so its input stays the same.
+inference. `--no-render-buffers` skips the wrapper's RGB and depth observation
+copies. In parallel mode it also disables native depth generation inside the
+training workers. The policy uses rays, entities and vitals.
 `--curriculum` adds ViZDoom Basic, My Way Home and Freedoom MAP31. Select the
 worker count using local throughput measurements.
 
