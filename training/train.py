@@ -3,7 +3,9 @@ import argparse
 import json
 import math
 import os
+import re
 import time
+from collections import deque
 from pathlib import Path
 
 from training.storage import project_root, snapshot
@@ -28,23 +30,31 @@ def main():
     parser.add_argument("--memory", choices=("stack", "gru"), default="stack")
     parser.add_argument("--device", choices=("cpu", "cuda"), default="cpu")
     parser.add_argument("--seed", type=int, default=17)
-    parser.add_argument("--resume", type=Path)
+    initialization = parser.add_mutually_exclusive_group()
+    initialization.add_argument("--resume", type=Path, help="Restore policy and optimizer state.")
+    initialization.add_argument("--initialize", type=Path, help="Start from saved policy weights with a fresh optimizer.")
+    parser.add_argument("--learning-rate", type=float, help="Override the optimizer learning rate.")
+    parser.add_argument("--run-name", help="Name for logs and checkpoints, independent of the random seed.")
+    parser.add_argument("--reward-profile", choices=("control", "survival", "progression", "combat"), default="control")
     parser.add_argument("--headless", action="store_true", help="Run without game windows.")
     parser.add_argument("--parallel", action="store_true", help="Run headless simulation in spawned workers.")
     parser.add_argument("--no-render-buffers", action="store_true", help="Skip unused RGB and depth buffers.")
     parser.add_argument(
-        "--curriculum", nargs="?", choices=("expanded", "progression"), const="expanded",
-        help="Include practice maps. Choose progression to add the starter's key-and-lock fixture.",
+        "--curriculum", nargs="?", choices=("expanded", "progression", "mixed"), const="expanded",
+        help="Add practice maps, key-and-lock progression, or the mixed arena and resource lessons.",
     )
     parser.add_argument("--checkpoint-seconds", type=float, help="Rotate checkpoints at this elapsed interval.")
     parser.add_argument("--max-seconds", type=float, help="Save and exit at the first update after this time limit.")
     parser.add_argument("--stop-file", type=Path, help="Save and exit after the next PPO update if this file appears.")
+    parser.add_argument("--storage-stop-bytes", type=int,
+                        help="Save and exit at this soft limit on internal disk usage increase.")
     args = parser.parse_args()
     if min(args.workers, args.horizon, args.updates, args.ticks) <= 0 or args.horizon % 16:
         parser.error("Use positive values and a horizon divisible by 16.")
     for option, duration in (
         ("--checkpoint-seconds", args.checkpoint_seconds),
         ("--max-seconds", args.max_seconds),
+        ("--learning-rate", args.learning_rate),
     ):
         if duration is not None and (not math.isfinite(duration) or duration <= 0):
             parser.error(f"{option} must be a positive finite number.")
@@ -52,10 +62,18 @@ def main():
         parser.error("--parallel requires --headless.")
     if args.stop_file is not None and args.stop_file.exists():
         parser.error("Choose a stop file that does not already exist.")
+    if args.run_name and not re.fullmatch(r"[a-zA-Z0-9][a-zA-Z0-9_-]*", args.run_name):
+        parser.error("Use only letters, digits, hyphens and underscores in --run-name.")
+    soft_limit = args.storage_stop_bytes
+    if soft_limit is not None and not 0 < soft_limit < 2_000_000_000:
+        parser.error("--storage-stop-bytes must be below the 2 GB hard limit.")
+    if soft_limit is not None and snapshot()["internal_delta_bytes"] >= soft_limit:
+        parser.error("Internal drive usage is already above the configured soft stop limit.")
 
     import numpy as np
     import torch
 
+    from doom_env.spaces import BUTTONS
     from submission.policy import Policy, buttons, pack
     from training.game import SerialEpisodes, maps
     from training.ppo import advantages, optimize
@@ -73,23 +91,33 @@ def main():
     torch.set_num_threads(1)
     dev = torch.device(args.device)
     rng = np.random.default_rng(args.seed)
-    split = {"expanded": "curriculum", "progression": "progression"}.get(args.curriculum, "train")
+    split = "curriculum" if args.curriculum == "expanded" else args.curriculum or "train"
     pool = maps(split)
     policy = Policy(args.memory).to(dev)
-    optimizer = torch.optim.Adam(policy.parameters(), lr=3e-4, eps=1e-5)
+    optimizer = torch.optim.Adam(policy.parameters(), lr=args.learning_rate or 3e-4, eps=1e-5)
     counter = gradients = 0
-    if args.resume:
-        saved = torch.load(args.resume, map_location=dev, weights_only=True)
+    source = args.resume or args.initialize
+    if source:
+        saved = torch.load(source, map_location=dev, weights_only=True)
         if saved["memory"] != args.memory:
             parser.error("Choose the memory architecture of the saved checkpoint.")
         policy.load_state_dict(saved["weights"])
-        optimizer.load_state_dict(saved["optimizer"])
-        counter, gradients = saved["updates"], saved["gradients"]
+        if args.resume:
+            if "optimizer" not in saved:
+                parser.error("--resume requires optimizer state. Use --initialize for policy weights.")
+            optimizer.load_state_dict(saved["optimizer"])
+            if args.learning_rate is not None:
+                for group in optimizer.param_groups:
+                    group["lr"] = args.learning_rate
+        counter, gradients = saved.get("updates", 0), saved.get("gradients", 0)
         rng = np.random.default_rng(args.seed + counter)
         torch.manual_seed(args.seed + counter)
     root = project_root()
-    checkpoint = root / "checkpoints" / f"{args.memory}-{args.seed}"
+    run_name = args.run_name or f"{args.memory}-{args.seed}"
+    checkpoint = root / "checkpoints" / run_name
     logdir = root / "logs"
+    if args.initialize and (checkpoint.exists() or (logdir / f"{run_name}.jsonl").exists()):
+        parser.error("Choose a new --run-name when initializing a separate run from weights.")
     logdir.mkdir(parents=True, exist_ok=True)
     snapshot()
     started = time.monotonic()
@@ -97,14 +125,17 @@ def main():
     rotation = 0
     layouts = [pool[i % len(pool)] for i in range(args.workers)]
     seeds = [int(rng.integers(2**30)) for _ in layouts]
-    with backend(layouts, args.ticks, seeds, render_buffers=not args.no_render_buffers) as games:
+    with backend(layouts, args.ticks, seeds, render_buffers=not args.no_render_buffers,
+                 reward_profile=args.reward_profile) as games:
         obs = games.observations
         previous = np.zeros((args.workers, 9), np.int8)
         h = policy.initial(args.workers, dev)
         starts = torch.ones(args.workers, device=dev)
+        stack_context = deque(maxlen=3)
         episodes = []
         for update in range(counter + 1, counter + args.updates + 1):
             rows = []
+            rollout_started = time.monotonic()
             with torch.no_grad():
                 for _ in range(args.horizon):
                     x = torch.as_tensor(np.stack([pack(o, p) for o, p in zip(obs, previous)]), device=dev)
@@ -113,12 +144,11 @@ def main():
                     press = buttons(a.cpu().numpy())
                     obs, reward, term, trunc, completed = map(list, zip(*games.step(press)))
                     boundary = np.logical_or(term, trunc)
-                    # Capture the final observation before resetting a timed-out worker.
-                    end_x = torch.as_tensor(np.stack([pack(o, p) for o, p in zip(obs, press)]), device=dev)
-                    next_output, _ = policy.advance(policy.encode(end_x), h_next)
-                    following = policy.critic(next_output).squeeze(-1) * torch.tensor(np.logical_not(term), device=dev)
                     done = torch.as_tensor(boundary.astype(np.float32), device=dev)
-                    rows.append((x, h, starts, a, logp, value, torch.tensor(reward, device=dev), following, done))
+                    ongoing = 1 - done
+                    rows.append((x, h, starts, a, logp, value, torch.tensor(reward, device=dev), done))
+                    if args.memory == "stack":
+                        stack_context.append((x, ongoing))
                     previous = press.copy()
                     pending_resets = {}
                     for i in np.flatnonzero(boundary):
@@ -129,19 +159,41 @@ def main():
                     if pending_resets:
                         for i, observation in games.reset(pending_resets).items():
                             obs[i] = observation
-                    h, starts = h_next * (1 - done[:, None]), done
-            x, states, resets, actions, old_logp, values, rewards, following, done = map(torch.stack, zip(*rows))
+                    h, starts = h_next * ongoing[:, None], done
+                end_x = torch.as_tensor(
+                    np.stack([pack(o, p) for o, p in zip(obs, previous)]), device=dev
+                )
+                end_output, _ = policy.advance(policy.encode(end_x), h)
+                final_value = policy.critic(end_output).squeeze(-1)
+            x, states, resets, actions, old_logp, values, rewards, done = map(torch.stack, zip(*rows))
+            # A capped game has ended. Its wrapper observation is the pre-action frame.
+            # At rollout boundaries within a game, the actual successor is available.
+            following = torch.cat((values[1:], final_value[None])) * (1 - done)
             adv = advantages(rewards, values, following, done)
-            n, loss = optimize(policy, optimizer, (x, states, resets, actions, old_logp, values + adv, adv))
+            optimize_started = time.monotonic()
+            n, loss, ppo = optimize(
+                policy, optimizer, (x, states, resets, actions, old_logp, values + adv, adv), diagnostics=True
+            )
+            optimize_seconds = time.monotonic() - optimize_started
+            if stack_context:
+                # Rebuild the three carried feature frames with the updated encoder.
+                with torch.no_grad():
+                    frames, ongoing = zip(*stack_context)
+                    encoded = policy.encode(torch.cat(frames)).reshape(len(frames), args.workers, -1)
+                    valid = torch.stack(ongoing).flip(0).cumprod(0).flip(0)
+                    h = (encoded * valid[..., None]).transpose(0, 1).reshape(args.workers, -1)
             gradients += n
             payload = dict(memory=args.memory, weights=policy.state_dict(), updates=update, gradients=gradients)
             now = time.monotonic()
             time_limit = args.max_seconds is not None and now - started >= args.max_seconds
             stop_requested = args.stop_file is not None and args.stop_file.exists()
-            stopping = time_limit or stop_requested
+            storage = snapshot()
+            storage_limit = soft_limit is not None and storage["internal_delta_bytes"] >= soft_limit
+            stopping = time_limit or stop_requested or storage_limit
             interval_elapsed = (
                 now - checkpointed >= args.checkpoint_seconds if args.checkpoint_seconds else update % 8 == 0
             )
+            checkpoint_write_seconds = 0.
             if update == counter + 1 or interval_elapsed or update == counter + args.updates or stopping:
                 save(checkpoint / "resume.pt", dict(**payload, optimizer=optimizer.state_dict()))
                 # Keep the first fallback and four recent candidate slots.
@@ -151,6 +203,7 @@ def main():
                 if slot != "first":
                     rotation += 1
                 checkpointed = now
+                checkpoint_write_seconds = time.monotonic() - now
             transitions = (update - counter) * args.workers * args.horizon
             elapsed = time.monotonic() - started
             stats = dict(update=update, gradients=gradients, memory=args.memory, seed=args.seed, loss=loss,
@@ -158,13 +211,24 @@ def main():
                          sps=round(transitions / elapsed, 2), rollout_mean_shaped_reward=float(rewards.mean()),
                          backend="parallel" if args.parallel else "serial", workers=args.workers,
                          horizon=args.horizon, ticks=args.ticks, split=split,
+                         reward_profile=args.reward_profile, source_checkpoint=str(source) if source else None,
+                         optimizer_restored=bool(args.resume), learning_rate=optimizer.param_groups[0]["lr"],
+                         rollout_seconds=round(optimize_started - rollout_started, 4),
+                         optimize_seconds=round(optimize_seconds, 4),
+                         checkpoint_write_seconds=round(checkpoint_write_seconds, 4), ppo=ppo,
+                         button_frequencies=dict(zip(
+                             BUTTONS, buttons(actions.cpu().numpy()).mean(axis=(0, 1)).tolist(), strict=True
+                         )),
+                         internal_delta_bytes=storage["internal_delta_bytes"],
+                         stopped_for_storage=storage_limit,
                          render_buffers=not args.no_render_buffers, episodes=episodes)
             episodes = []
-            with (logdir / f"{args.memory}-{args.seed}.jsonl").open("a", encoding="utf-8") as f:
+            with (logdir / f"{run_name}.jsonl").open("a", encoding="utf-8") as f:
                 f.write(json.dumps(stats) + "\n")
             print({k:v for k,v in stats.items() if k != "episodes"}, flush=True)
-            snapshot()
             if stopping:
+                if storage_limit:
+                    print("Saved and stopped at the internal drive's soft storage limit.", flush=True)
                 break
 
 

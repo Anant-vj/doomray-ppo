@@ -1,34 +1,42 @@
-# DevForge DOOM
+# DoomRay PPO
 
-Neural agent for **Yugaantar 2026 · DevForge Track 1, “Can It Play DOOM?”**
+A compact neural ViZDoom player for **Yugaantar 2026 · DevForge Track 1,
+Can It Play DOOM?** The task is to navigate, survive, fight, and progress in
+unseen maps using the official ego-centric observations.
 
-The policy learns through live ViZDoom gameplay using PPO. It encodes the
-official raycast, entity and vital readings and combines four frames of
-features before choosing a legal button combination.
+The policy combines an ordered circular ray encoder, masked entity pooling,
+player vitals, and a four-frame history. Its six trained categorical heads
+produce the official nine-button action. We trained the model from
+simulator rollouts using a custom PyTorch implementation of PPO and batched
+inference across separate environment workers. The evaluation agent
+reads the official observation and loads the committed Git LFS weights.
 
 ## Quickstart
 
-Use the project’s Python 3.13 environment with PyTorch and the official wrapper
-installed. Fetch the trained weights through Git LFS and run the native validator.
+Clone with Git LFS enabled. For a fresh native environment with Python 3.13
+and [uv](https://docs.astral.sh/uv/), run the following.
 
 ```bash
 git lfs pull
-python validate.py --device cpu
+uv sync --locked --no-dev
+uv pip install torch --index-url https://download.pytorch.org/whl/cpu
+uv run --no-sync python validate.py --device cpu
 ```
 
-See the local training guide for the installed package versions, commands to
-resume the PPO run, and the fixed-map evaluation procedure. [Training guide](training/LOCAL.md)
+Training and evaluation commands for the existing D: environment are in
+[training/LOCAL.md](training/LOCAL.md). The official Linux image can be
+used with the validator’s Docker mode when that image and engine are available.
 
-For container validation, use the organizer’s image or build it from a
-separate checkout of the official starter. Pass the image to
-`python validate.py --docker --image IMAGE`. The official evaluation runs on Linux.
+**Platforms:** Linux (x86-64/ARM), macOS on Apple Silicon (macOS 15+) and Windows (x86-64) all
+work with `uv sync` and `validate.py`. Intel Macs have no `vizdoom` 1.3.3 wheel: use Docker or a
+Linux machine. Evaluation runs on Linux, so `validate.py --docker` is the closest check.
 
 ## Repository layout
 
 ```
 env/                  official ViZDoom Gymnasium wrapper (doom_env): spaces, sensors, protocol, limits
-maps/                 small starter validation map
-submission/agent.py   official DoomAgent entry point
+maps/                 one small test map (NOT an evaluation map); bring your own for training
+submission/agent.py   your DoomAgent: the evaluation entry point
 submission/weights/   model weights (Git LFS)
 training/             your training pipeline
 validate.py           run before submitting
@@ -50,16 +58,16 @@ Observations are a dict of `rgb`, `depth`, `vitals`, `rays` and `visible_entitie
 ego-centric and partially observable. See [docs/CONTRACT.md](docs/CONTRACT.md).
 The wrapper's `reward` is a basic default for convenience. Shape your own reward for training.
 
-**Compute tip:** training only on raw pixels is expensive. The `rays`, `visible_entities` and
-`vitals` signals run thousands of steps per second on a CPU. Hybrid pixel + spatial models are welcome.
+Headless training uses rays, visible entities, and vitals. Local checkpoint
+selection uses matched seeds, maps, and tick caps. The reports separate
+development, inspected diagnostic maps, and the final untouched holdout.
 
 ## Hardware at evaluation
 
 One NVIDIA **RTX 3090 (24 GB)** shared between evaluation workers. Each agent gets **2 GB VRAM,
 8 GB RAM and 1 CPU thread**, so keep models compact and inference fast
 (see [hardware](docs/EVALUATION.md#hardware) and [timeouts](docs/EVALUATION.md#timeouts)).
-Native validation reports the resource checks available on its host. Use the official Linux
-image to check the scoring environment.
+`validate.py` runs your agent under the same CPU/RAM limits and reports GPU memory.
 
 ## Documentation
 

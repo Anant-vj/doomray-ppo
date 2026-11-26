@@ -90,7 +90,12 @@ def evaluate(path, split, seeds, ticks, delay):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--split", choices=["dev", "holdout"], default="dev")
+    parser.add_argument(
+        "--split",
+        choices=["dev", "dev-wide", "diagnostic", "final-holdout", "holdout"],
+        default="dev",
+        help="Reserve final-holdout for the frozen selection. holdout is the historical diagnostic alias.",
+    )
     parser.add_argument("--checkpoint", type=Path, action="append", default=[])
     parser.add_argument("--random", action="store_true")
     parser.add_argument("--promote", action="store_true", help="Export the best development checkpoint.")

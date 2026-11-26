@@ -31,7 +31,7 @@ def _disable_native_depth():
     wrapper.vd = engine
 
 
-def _episode_worker(connection, ticks, render_buffers, workdir):
+def _episode_worker(connection, ticks, render_buffers, workdir, reward_profile):
     from training.game import Episode
 
     game = None
@@ -48,7 +48,7 @@ def _episode_worker(connection, ticks, render_buffers, workdir):
                 if game is None or (game.path, game.map_name) != layout:
                     if game is not None:
                         game.close()
-                    game = Episode(layout, ticks, render_buffers=render_buffers)
+                    game = Episode(layout, ticks, render_buffers=render_buffers, reward_profile=reward_profile)
                 result = _policy_observation(game.reset(seed))
             else:
                 obs, reward, terminated, truncated = game.step(data)
@@ -73,7 +73,7 @@ def _episode_worker(connection, ticks, render_buffers, workdir):
 class ParallelEpisodes:
     """Keep an independent ViZDoom episode in each Windows-spawned worker."""
 
-    def __init__(self, layouts, ticks, seeds, *, render_buffers=False, timeout=45):
+    def __init__(self, layouts, ticks, seeds, *, render_buffers=False, reward_profile="control", timeout=45):
         ctx = mp.get_context("spawn")
         self._workers = []
         self._timeout = timeout
@@ -85,7 +85,8 @@ class ParallelEpisodes:
                 workdir = Path(self._workdir.name) / str(index)
                 workdir.mkdir()
                 parent, child = ctx.Pipe()
-                process = ctx.Process(target=_episode_worker, args=(child, ticks, render_buffers, workdir), daemon=True)
+                worker_args = (child, ticks, render_buffers, workdir, reward_profile)
+                process = ctx.Process(target=_episode_worker, args=worker_args, daemon=True)
                 try:
                     process.start()
                 except BaseException:
