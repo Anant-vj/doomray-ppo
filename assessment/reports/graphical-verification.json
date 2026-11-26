@@ -1,0 +1,38 @@
+{
+  "scope": "Native viewer verification separate from the 96 matched blind episodes.",
+  "live": {
+    "model": "C749",
+    "tier": 1,
+    "map": "MAP18",
+    "seed": 9101,
+    "display": "SDL Windows 1200x720, foreground visible and responsive",
+    "pause_and_resume_observed": true,
+    "completed_frame_observed_after_engine_close": true,
+    "escape_closed_cleanly": true,
+    "decisions": 174,
+    "invalid_actions": 0,
+    "termination": "death",
+    "exit": false,
+    "player_hits": 0,
+    "player_damage_dealt": 0,
+    "engine_kills": 2,
+    "p99_ms": 6.125,
+    "evidence_folder": "D:/Doom/DevForge_DOOM/submission_artifacts/final-blind-assessment/recordings/graphical/MAP18-C749-9101-1795734095700033000"
+  },
+  "recorded_replay": {
+    "native_menu_observed": true,
+    "successful_progression_frames": 15,
+    "failed_complex_frames": 101,
+    "pause_speed_controls_observed": true,
+    "engine_used": false
+  },
+  "preflight_only": [
+    "Individual tier and map selections for the archived references",
+    "AllTiers queue",
+    "The remaining recorded episode selectors"
+  ],
+  "end": {
+    "time_ist": "2026-11-27T04:32:56+05:30",
+    "native_python_or_vizdoom_processes": 0
+  }
+}

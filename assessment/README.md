@@ -1,20 +1,23 @@
-# DoomRay PPO assessment snapshot
+# DoomRay PPO assessment
 
-**Partial minimum examination.** Captured at 2026-11-27T04:29:12+05:30. The ledger contains 93 attempts and 93 completed gameplay episodes out of 96 planned. 15 of 16 independent layouts have complete results for all three models and both seeds.
+The minimum matched examination finished all 96 gameplay episodes across 16 independent layout families. All three frozen policies ran the same two seeds per layout. All 96 engine resets succeeded, and no episode was excluded. The earlier 93-episode capture is preserved in branch history.
 
-This branch adds assessment tooling and evidence beside the frozen submission. C749, the official environment and validator, and the submitted files are identical to commit `6c2d5499f973c77b4a239f778837280edf64e57b`. This assessment measures local gameplay and reports unofficial scores.
+Public main retains the approved C749 submission at `6c2d5499f973c77b4a239f778837280edf64e57b`. The official environment, validator and inference weights match that commit.
 
+## Results
+
+On these unfamiliar layouts, C749 averaged 9.895 on the predeclared unofficial Balanced score and survived 3/32 episodes. Stack-26 update 621 averaged 10.542 and survived 8/32. The layout-paired 95% confidence interval for C749 minus u621 was −3.770 to +3.071. Stack-25 update 174 averaged 7.057 and survived 11/32. All three policies recorded zero exits, acquired keys and unlocks.
+
+C749 was frozen and approved from the earlier development record and exact native validation before this assessment. The three candidate policies, maps, seeds and score formulas were frozen before the new comparison. The branch provides supplementary evidence for the approved C749 handoff. The score profiles are local, and official leaderboard results remain unknown.
+
+- [Offline examination report](reports/report.html). Download and open the file in a browser.
 - [Snapshot provenance and hashes](SNAPSHOT.json)
-- [Captured gameplay ledger](episodes/blind-episodes.jsonl) and [matched comparison](reports/matched-summary.json)
-- [Predeclared map and seed schedule](manifests/map_manifest.json), [checkpoint identities](manifests/checkpoint_manifest.json), and [scoring formulas](manifests/scoring_manifest.json)
-- [Native examination controls](graphical-exam/README.md), [fixed C749 demonstration guide](demos/C749-demonstration-modes.md), and [frozen inference audit](audit/source-trace.md)
+- [Gameplay ledger](episodes/blind-episodes.jsonl), [episode CSV](reports/episodes.csv), and [matched statistics](reports/matched-summary.json)
+- [Engine and model verification](reports/engine-verification.json), [score definitions](manifests/scoring_manifest.json), and [map schedule](manifests/map_manifest.json)
+- [Failure analysis](reports/failure_analysis.md), [progression funnel](reports/progression_funnel.md), and [storage audit](reports/storage_audit.json)
 
-## Read the snapshot
+## Reproduction and visible gameplay
 
-Open the evidence files directly or run `python -B assessment/evaluator/comparison.py` from the repository root to regenerate the matched aggregates from the included ledger. The comparison reports each profile separately, ranks exits first, and groups repeated seeds by layout. Incomplete layout pairs remain visible. Confidence intervals require 16 fully paired layouts.
+Run `python -B assessment/evaluator/comparison.py` from the repository root to regenerate paired aggregates from the bundled ledger. The native launchers document the original Windows D-drive setup. Fresh runs require its matching Python environment, Freedoom WAD and archived reference checkpoints. The structured files retain their original local provenance paths for traces, videos and other evidence kept on D.
 
-The assessment selection comes from verified static map geometry and the available project history. The four difficulty tiers are local definitions. The launcher scripts and exact manifests document the original Windows D-drive setup. Interactive or fresh matched runs require the existing local environment, local archived reference checkpoints, and installed Freedoom WAD identified in those manifests. Native replay also requires the original local captured media. The per-episode trace paths in the captured ledger refer to the original local evidence folder.
-
-## Previously verified live C749 demonstrations
-
-On native Windows, Progression exited with a red key and one unlock after 28 legal decisions. Complex ended in death after 201 legal decisions, with two engine-reported kills. Backtracking exited with a red key and one unlock after 231 legal decisions. These are fixed demonstrations from separate known layouts and do not count toward the assessment ledger. The three [demo evidence folders](demos/c749-demonstration-runs) contain compact measured run and responsiveness reports.
+The separate [graphical examination guide](graphical-exam/README.md) records a verified native C749 session on MAP18 with an authentic [final HUD](recordings/graphical/MAP18-C749-9101-1795734095700033000/audit-end.png), a successful replay and a failed replay. Those visual checks are outside the matched ledger. The fixed [C749 demo guide](demos/C749-demonstration-modes.md) documents two local progression successes and one complex gameplay failure. See the [frozen inference audit](audit/source-trace.md) for what the official actor reads and returns.

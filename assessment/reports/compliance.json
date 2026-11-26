@@ -1,0 +1,90 @@
+{
+  "source_scope": "Historical tests of the exact frozen public release on native Windows; not new blind gameplay.",
+  "commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+  "lfs_sha256": "0b8f290cfe36a25f8593da925d4a4a0ddb8790b37f9319a019aed276a73f5e61",
+  "official_requirements": {
+    "python": "3.13",
+    "vizdoom": "1.3.3",
+    "gpu_vram_gib": 2,
+    "ram_gib": 8,
+    "cpu_threads": 1,
+    "approx_average_decision_ms": 40,
+    "init_seconds": 60,
+    "reset_seconds": 10,
+    "first_decision_seconds": 10,
+    "later_decision_seconds": 5,
+    "repository_limit_bytes": 1000000000
+  },
+  "validated_runtime": {
+    "python": "3.13.12",
+    "vizdoom": "1.3.3",
+    "pytorch": "2.15.0+cpu",
+    "gymnasium": "1.4.0"
+  },
+  "native_validator": {
+    "status": "passed",
+    "decisions": 525,
+    "invalid_actions": 0,
+    "init_seconds": 2.7,
+    "p50_ms": 2.5,
+    "p99_ms": 12.1,
+    "agent_compute_seconds": 2.0,
+    "compute_budget_seconds": 21.0,
+    "repository_kb": 685.3,
+    "reset_separate_measurement": "unavailable",
+    "first_ms": 13,
+    "max_ms": 24,
+    "warnings": [
+      "CPU pinning",
+      "peak RAM"
+    ],
+    "evidence": "mission-release-6c2d549-validator.txt"
+  },
+  "resource_check": {
+    "status": "passed_native_windows_resource_check",
+    "public_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+    "weight_sha256": "0b8f290cfe36a25f8593da925d4a4a0ddb8790b37f9319a019aed276a73f5e61",
+    "runtime": "D:\\Doom\\DevForge_DOOM\\environments\\competition\\Scripts\\python.exe",
+    "device": "cpu",
+    "map": "two_rooms.wad:MAP01",
+    "seed": 0,
+    "decisions": 451,
+    "outcome": "death",
+    "init_seconds": 8.703,
+    "agent_compute_seconds": 2.912,
+    "agent_compute_budget_seconds": 21.0,
+    "decision_p99_ms": 11.13,
+    "agent_thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "XLA_FLAGS": "--xla_cpu_multi_thread_eigen=false intra_op_parallelism_threads=1"
+    },
+    "agent_cpu_affinity_mask": "0x8000",
+    "sample_count": 31,
+    "agent_process_ids": [
+      3084,
+      19580
+    ],
+    "peak_sampled_agent_tree_working_set_bytes": 228540416,
+    "highest_agent_process_peak_working_set_bytes": 221749248,
+    "windows_ram_limit_comparison_bytes": 8589934592,
+    "internal_decline_before_bytes": 3272683520,
+    "internal_decline_after_bytes": 3273265152,
+    "scope": "Native Windows agent server, Linux Docker and GPU VRAM unverified."
+  },
+  "inference_guard": {
+    "status": "passed",
+    "decisions": 100,
+    "audited_network_attempts": 0,
+    "audited_child_process_attempts": 0,
+    "audited_repository_writes": 0,
+    "scope": "Python process-local; simulator and torch loaded before guard"
+  },
+  "lfs": "Verified downloaded weights and exact public default branch in a fresh anonymous clone",
+  "official_source": "Environment and validator Git blobs match starter ZIP",
+  "docker": "UNVERIFIED; official image absent and anonymous registry metadata returned HTTP 403",
+  "gpu": "UNVERIFIED; CPU-only runtime; no RTX 3090 retest or VRAM measurement",
+  "linux_resources": "UNVERIFIED; standalone Windows measurements do not establish official sandbox RAM or affinity compliance"
+}

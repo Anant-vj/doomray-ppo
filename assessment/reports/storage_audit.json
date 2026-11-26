@@ -1,0 +1,119 @@
+{
+  "status": "complete_within_authorized_cap",
+  "sample_local_ist": "2026-11-27T03:58:07+05:30",
+  "original_baseline": {
+    "path": "D:/Doom/DevForge_DOOM/logs/storage-baseline.json",
+    "sha256": "a158265c2cae0ad6d50818bae6e01387d6215f8a20a494115128bdc3a7fa9ccb",
+    "last_modified": "2026-11-26T23:24:10.2367838+05:30",
+    "c_baseline_free_bytes": 34039721984,
+    "d_baseline_free_bytes": 54287249408
+  },
+  "measurement": {
+    "c_free_bytes": 28990111744,
+    "c_capacity_bytes": 510986809344,
+    "c_net_decline_bytes": 5049610240,
+    "c_approved_max_decline_bytes": 5000000000,
+    "c_decline_gate_bytes": 4500000000,
+    "c_start_reserve_bytes": 500000000,
+    "bytes_over_hard_cap": 49610240,
+    "bytes_required_to_pass_gate": 549610240,
+    "d_free_bytes": 60444647424,
+    "d_capacity_bytes": 61528338432,
+    "space_recovered_by_this_audit_bytes": 0
+  },
+  "memory": {
+    "sample_local_ist": "2026-11-27T03:56:53+05:30",
+    "available_mib": 1094,
+    "physical_bytes": 16869351424,
+    "committed_bytes": 30079000576,
+    "commit_limit_bytes": 32438607872,
+    "committed_percent": 92,
+    "pagefile_automatic_management": true,
+    "pagefile_path": "C:/pagefile.sys",
+    "pagefile_allocated_mib": 14848,
+    "pagefile_current_usage_mib": 3922,
+    "pagefile_peak_usage_mib": 4798,
+    "project_python_or_vizdoom_processes": 0
+  },
+  "read_only_findings": {
+    "project_named_user_or_windows_temp_candidates": 0,
+    "project_named_crash_dump_candidates": 0,
+    "large_top_level_files_in_user_and_windows_temp": 0,
+    "named_project_pip_or_uv_cache_candidates": 0,
+    "named_project_browser_cache_candidates": 0,
+    "downloads": "Only protected original starter and supplied documents matched the project names. No matching partial wheel download was found.",
+    "nvidia_dxcache_named_project_matches": 0,
+    "nvidia_dxcache_large_unnamed_files_bytes": 3489660928,
+    "docker_vhdx_logical_bytes": 88994742272,
+    "other_wsl_vhdx_logical_bytes": 40338718720,
+    "docker_vhdx_last_write_advancing_during_read_only_samples": true,
+    "docker_vhdx_same_logical_length_in_both_samples": true,
+    "scope_limit": "The inspection was targeted and nonrecursive. The sandbox online account temp directory denied access. Browser cache entries, shared GPU caches, virtual disks and large unrelated downloads lack positive project attribution."
+  },
+  "approved_change": {
+    "sample_local_ist": "2026-11-27T04:01:09+05:30",
+    "user_authorization": "Raise the cap to 7 GB and keep the reserve",
+    "previous_limit_bytes": 5000000000,
+    "authorized_limit_bytes": 7000000000,
+    "unchanged_start_reserve_bytes": 500000000,
+    "new_start_gate_bytes": 6500000000,
+    "baseline_changed": false,
+    "c_free_bytes": 28996096000,
+    "c_net_decline_bytes": 5043625984,
+    "c_headroom_under_cap_bytes": 1956374016,
+    "d_free_bytes": 60442525696,
+    "physical_memory_available_mib": 1303,
+    "committed_bytes": 30321532928,
+    "commit_limit_bytes": 32438607872,
+    "active_simulators": 0,
+    "space_intentionally_recovered_bytes": 0
+  },
+  "assessment_memory_pauses": [
+    {
+      "after_completed_episodes": 24,
+      "physical_available_bytes_at_pause": 795004928,
+      "required_available_bytes_at_start": 805306368,
+      "commit_available_bytes_at_pause": 1542205440,
+      "c_decline_bytes_at_pause": 5055766528,
+      "outcome": "The assessment closed between episodes. A fresh process passed with 2,058,616,832 available physical bytes and continued from the same ledger without rerunning completed episodes."
+    },
+    {
+      "after_completed_episodes": 58,
+      "physical_available_bytes_at_pause": 479744000,
+      "required_available_bytes_at_start": 805306368,
+      "commit_available_bytes_at_pause": 2130862080,
+      "c_decline_bytes_at_pause": 5064269824,
+      "outcome": "A second between-episode pause preserved 58 results. A new process passed the startup gate with approximately 1.07 GB of available physical memory and resumed the pending case ordering."
+    },
+    {
+      "after_completed_episodes": 59,
+      "physical_available_bytes_at_pause": 700149760,
+      "required_available_bytes_at_start": 805306368,
+      "commit_available_bytes_at_pause": 2031427584,
+      "c_decline_bytes_at_pause": 5066305536,
+      "outcome": "The third pause occurred because the process-start memory threshold was also applied after Torch and all actor classes were resident. Subsequent starts retain the 768 MiB process-start floor. A single additional engine inside an existing evaluator requires 512 MiB physical and 1 GB commit headroom. The running stop checks use a 256 MiB physical floor and retain all C: limits."
+    }
+  ],
+  "single_engine_sample": {
+    "sample_local_ist": "2026-11-27T04:20:44+05:30",
+    "python_actor_and_evaluator_working_set_bytes": 230223872,
+    "python_launcher_working_set_bytes": 6815744,
+    "vizdoom_child_working_set_bytes": 62341120,
+    "scope": "A working-set sample during a matched case. This is not a peak measurement or a Docker resource-cap check."
+  },
+  "post_gameplay_storage": {
+    "sample_local_ist": "2026-11-27T04:32:56+05:30",
+    "original_baseline_hash_unchanged": true,
+    "c_free_bytes": 28959686656,
+    "c_net_decline_bytes": 5080035328,
+    "c_cap_bytes": 7000000000,
+    "c_headroom_under_cap_bytes": 1919964672,
+    "c_headroom_before_launch_gate_bytes": 1419964672,
+    "d_free_bytes": 60432740352,
+    "python_or_vizdoom_processes": 0,
+    "space_intentionally_recovered_bytes": 0
+  },
+  "diagnosis": "The original-baseline whole-drive decline exceeded the hard cap even with no DoomRay process active. C: still had about 29 GB of absolute free space. Docker/WSL virtual disks were active and Windows memory pressure was high. Neither activity is sufficient to attribute the historical free-space decline to a specific service or to DoomRay, because comparable allocation data at the original baseline is unavailable. The project runtime and new artifacts remain on D:.",
+  "recovery": "No positively identified disposable project-generated C: files were found to safely recover enough space. No files were removed or relocated. No system or pagefile settings were changed. The user explicitly approved increasing the task-specific C: decline cap without changing the original baseline or reserve.",
+  "gate": "Do not start any simulator, actor, or examination workload until at least 500,000,000 bytes remain under the authorized 7 GB C: decline cap and sufficient memory and absolute space are confirmed."
+}

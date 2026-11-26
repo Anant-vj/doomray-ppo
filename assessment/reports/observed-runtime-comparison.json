@@ -1,0 +1,209 @@
+{
+  "scope": "Matched native CPU gameplay. All-action latencies use millisecond values rounded to 0.001 in saved traces.",
+  "models": [
+    {
+      "model": "C749",
+      "decisions": 11446,
+      "invalid_actions": 0,
+      "init_max_ms": 33.817,
+      "reset_max_ms": 0.275,
+      "latency_ms": {
+        "mean": 2.22,
+        "median": 1.483,
+        "p95": 6.439,
+        "p99": 8.836,
+        "max": 29.432
+      },
+      "attack_decisions": 5280,
+      "attack_enemy_visible": 2151,
+      "attacks_without_enemy_cues": 1964,
+      "ammo_units_lower_bound": 233,
+      "recorded_player_hits": 8,
+      "recorded_player_damage": 66.0,
+      "engine_kills": 58,
+      "blocked_moves": 1473,
+      "move_requests": 11398,
+      "keys": 0,
+      "unlocks": 0,
+      "exits": 0,
+      "alive": 3,
+      "action_pct": {
+        "MOVE_FORWARD": 46.348,
+        "MOVE_BACKWARD": 47.431,
+        "MOVE_LEFT": 92.006,
+        "MOVE_RIGHT": 1.948,
+        "TURN_LEFT": 66.469,
+        "TURN_RIGHT": 12.633,
+        "ATTACK": 46.13,
+        "USE": 34.388,
+        "SELECT_NEXT_WEAPON": 40.573
+      },
+      "tier": [
+        {
+          "id": 1,
+          "episodes": 8,
+          "alive": 0,
+          "exits": 0,
+          "balanced_mean": 8.273
+        },
+        {
+          "id": 2,
+          "episodes": 8,
+          "alive": 2,
+          "exits": 0,
+          "balanced_mean": 15.123
+        },
+        {
+          "id": 3,
+          "episodes": 8,
+          "alive": 0,
+          "exits": 0,
+          "balanced_mean": 6.304
+        },
+        {
+          "id": 4,
+          "episodes": 8,
+          "alive": 1,
+          "exits": 0,
+          "balanced_mean": 9.879
+        }
+      ]
+    },
+    {
+      "model": "Stack25-u174",
+      "decisions": 14578,
+      "invalid_actions": 0,
+      "init_max_ms": 265.683,
+      "reset_max_ms": 0.104,
+      "latency_ms": {
+        "mean": 1.978,
+        "median": 1.476,
+        "p95": 5.346,
+        "p99": 7.535,
+        "max": 211.998
+      },
+      "attack_decisions": 9374,
+      "attack_enemy_visible": 3122,
+      "attacks_without_enemy_cues": 5632,
+      "ammo_units_lower_bound": 295,
+      "recorded_player_hits": 42,
+      "recorded_player_damage": 610.0,
+      "engine_kills": 29,
+      "blocked_moves": 928,
+      "move_requests": 13951,
+      "keys": 0,
+      "unlocks": 0,
+      "exits": 0,
+      "alive": 11,
+      "action_pct": {
+        "MOVE_FORWARD": 55.392,
+        "MOVE_BACKWARD": 9.343,
+        "MOVE_LEFT": 68.171,
+        "MOVE_RIGHT": 20.003,
+        "TURN_LEFT": 15.215,
+        "TURN_RIGHT": 68.686,
+        "ATTACK": 64.302,
+        "USE": 31.678,
+        "SELECT_NEXT_WEAPON": 47.002
+      },
+      "tier": [
+        {
+          "id": 1,
+          "episodes": 8,
+          "alive": 0,
+          "exits": 0,
+          "balanced_mean": 5.023
+        },
+        {
+          "id": 2,
+          "episodes": 8,
+          "alive": 5,
+          "exits": 0,
+          "balanced_mean": 9.789
+        },
+        {
+          "id": 3,
+          "episodes": 8,
+          "alive": 4,
+          "exits": 0,
+          "balanced_mean": 4.468
+        },
+        {
+          "id": 4,
+          "episodes": 8,
+          "alive": 2,
+          "exits": 0,
+          "balanced_mean": 8.947
+        }
+      ]
+    },
+    {
+      "model": "Stack26-u621",
+      "decisions": 15011,
+      "invalid_actions": 0,
+      "init_max_ms": 13.569,
+      "reset_max_ms": 0.046,
+      "latency_ms": {
+        "mean": 2.08,
+        "median": 1.481,
+        "p95": 5.623,
+        "p99": 7.793,
+        "max": 47.576
+      },
+      "attack_decisions": 3660,
+      "attack_enemy_visible": 1563,
+      "attacks_without_enemy_cues": 1747,
+      "ammo_units_lower_bound": 226,
+      "recorded_player_hits": 30,
+      "recorded_player_damage": 343.0,
+      "engine_kills": 74,
+      "blocked_moves": 1335,
+      "move_requests": 14722,
+      "keys": 0,
+      "unlocks": 0,
+      "exits": 0,
+      "alive": 8,
+      "action_pct": {
+        "MOVE_FORWARD": 70.368,
+        "MOVE_BACKWARD": 13.463,
+        "MOVE_LEFT": 88.695,
+        "MOVE_RIGHT": 1.912,
+        "TURN_LEFT": 26.887,
+        "TURN_RIGHT": 64.992,
+        "ATTACK": 24.382,
+        "USE": 43.775,
+        "SELECT_NEXT_WEAPON": 55.739
+      },
+      "tier": [
+        {
+          "id": 1,
+          "episodes": 8,
+          "alive": 0,
+          "exits": 0,
+          "balanced_mean": 10.268
+        },
+        {
+          "id": 2,
+          "episodes": 8,
+          "alive": 5,
+          "exits": 0,
+          "balanced_mean": 14.254
+        },
+        {
+          "id": 3,
+          "episodes": 8,
+          "alive": 2,
+          "exits": 0,
+          "balanced_mean": 7.664
+        },
+        {
+          "id": 4,
+          "episodes": 8,
+          "alive": 1,
+          "exits": 0,
+          "balanced_mean": 9.98
+        }
+      ]
+    }
+  ]
+}

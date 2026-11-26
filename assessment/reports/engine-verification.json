@@ -1,0 +1,139 @@
+{
+  "dataset": "Minimum matched cohort only",
+  "matched_order_and_actor_hashes_verified": true,
+  "ledger_sha256": "ed4c83f377b7044c39cc74b3030f488ac2fce91ca9d3ce1fabb1ec5681a00998",
+  "episodes": 96,
+  "independent_layouts": 16,
+  "all_required_engine_resets_successful": true,
+  "official_scoring_available": false,
+  "maps": [
+    {
+      "id": "MAP18",
+      "tier": 1,
+      "family": "freedoom2-map18-1823fba5bc7a",
+      "engine_reset_count": 6,
+      "geometry_sha256": "1526a780235d7cee5b836680324add3f845be17800e587845777bc7f1195ca2a",
+      "wad_sha256": "a8772e088847032510d97ba2312406a6998f21cbab44d4ff10696faa9c0ecd4b"
+    },
+    {
+      "id": "MAP19",
+      "tier": 1,
+      "family": "freedoom2-map19-baf8487dd59a",
+      "engine_reset_count": 6,
+      "geometry_sha256": "02d094bc902648d2709b81f81754b0bbd7ffb43996c48e6aaef856a20f94be9e",
+      "wad_sha256": "a8772e088847032510d97ba2312406a6998f21cbab44d4ff10696faa9c0ecd4b"
+    },
+    {
+      "id": "MAP21",
+      "tier": 1,
+      "family": "freedoom2-map21-13d596bd06c0",
+      "engine_reset_count": 6,
+      "geometry_sha256": "233c60514fec46b54c5cbf8d69b38962f2bc35aa99da15cadccbc8d33739a02c",
+      "wad_sha256": "a8772e088847032510d97ba2312406a6998f21cbab44d4ff10696faa9c0ecd4b"
+    },
+    {
+      "id": "MAP26",
+      "tier": 1,
+      "family": "freedoom2-map26-6183bc210350",
+      "engine_reset_count": 6,
+      "geometry_sha256": "3ba0f6b39e5ff1fd9a1114ac1be8ddf5d5bfb36e2ccd52481a3208d1e7c87270",
+      "wad_sha256": "a8772e088847032510d97ba2312406a6998f21cbab44d4ff10696faa9c0ecd4b"
+    },
+    {
+      "id": "MAP17",
+      "tier": 2,
+      "family": "freedoom2-map17-b22c789f33b2",
+      "engine_reset_count": 6,
+      "geometry_sha256": "0de89bd681439598eb808a8e1ce7948e9a8cc60ff3825f44db1b12cac7531741",
+      "wad_sha256": "a8772e088847032510d97ba2312406a6998f21cbab44d4ff10696faa9c0ecd4b"
+    },
+    {
+      "id": "MAP20",
+      "tier": 2,
+      "family": "freedoom2-map20-6011e24baf47",
+      "engine_reset_count": 6,
+      "geometry_sha256": "0775c9f8fc2509b32900c105bc21add03d5f8ffa9316c565778eef843f2b94ce",
+      "wad_sha256": "a8772e088847032510d97ba2312406a6998f21cbab44d4ff10696faa9c0ecd4b"
+    },
+    {
+      "id": "MAP23",
+      "tier": 2,
+      "family": "freedoom2-map23-ef160115421d",
+      "engine_reset_count": 6,
+      "geometry_sha256": "08eee97dacbca18380d11893db8582c1cc939340d13b2ba02ff20fe379554d0e",
+      "wad_sha256": "a8772e088847032510d97ba2312406a6998f21cbab44d4ff10696faa9c0ecd4b"
+    },
+    {
+      "id": "MAP32",
+      "tier": 2,
+      "family": "freedoom2-map32-e8475b823bdd",
+      "engine_reset_count": 6,
+      "geometry_sha256": "0af17604efc580d5b7cbb2b0675822f32fb2d63e3b5fa4d18f902cb8d34a3f13",
+      "wad_sha256": "a8772e088847032510d97ba2312406a6998f21cbab44d4ff10696faa9c0ecd4b"
+    },
+    {
+      "id": "MAP16",
+      "tier": 3,
+      "family": "freedoom2-map16-2c66c22bd89f",
+      "engine_reset_count": 6,
+      "geometry_sha256": "241c5ee292b032763e8dbb4da1c476d22f5307bdecadd6b9b088f096e5485597",
+      "wad_sha256": "a8772e088847032510d97ba2312406a6998f21cbab44d4ff10696faa9c0ecd4b"
+    },
+    {
+      "id": "MAP22",
+      "tier": 3,
+      "family": "freedoom2-map22-c83a3692d22e",
+      "engine_reset_count": 6,
+      "geometry_sha256": "03bb84f027d8c4560bb56d66b6d7ad803846af12b13eef6f165608e793d97f93",
+      "wad_sha256": "a8772e088847032510d97ba2312406a6998f21cbab44d4ff10696faa9c0ecd4b"
+    },
+    {
+      "id": "MAP24",
+      "tier": 3,
+      "family": "freedoom2-map24-8255014f2657",
+      "engine_reset_count": 6,
+      "geometry_sha256": "483b3f0c9acd2a36da46aded33d0bee6d5951c9b9397c4751dfb698d71d35b83",
+      "wad_sha256": "a8772e088847032510d97ba2312406a6998f21cbab44d4ff10696faa9c0ecd4b"
+    },
+    {
+      "id": "MAP29",
+      "tier": 3,
+      "family": "freedoom2-map29-025cd47fb0d5",
+      "engine_reset_count": 6,
+      "geometry_sha256": "11bf2a40ee2c42c988141c493d6ac55ae54e43b34e1d4b1d64d13c9464c63d31",
+      "wad_sha256": "a8772e088847032510d97ba2312406a6998f21cbab44d4ff10696faa9c0ecd4b"
+    },
+    {
+      "id": "MAP15",
+      "tier": 4,
+      "family": "freedoom2-map15-2dbcfb634fb2",
+      "engine_reset_count": 6,
+      "geometry_sha256": "3457f8805a5401deda2e015377aaefd585f984e9f32b1d04b884d4884f29483a",
+      "wad_sha256": "a8772e088847032510d97ba2312406a6998f21cbab44d4ff10696faa9c0ecd4b"
+    },
+    {
+      "id": "MAP25",
+      "tier": 4,
+      "family": "freedoom2-map25-b5465ea63a77",
+      "engine_reset_count": 6,
+      "geometry_sha256": "3179620189c7b80898e7d527539738bf519997bd9b76c2641f67d1619d4fdadf",
+      "wad_sha256": "a8772e088847032510d97ba2312406a6998f21cbab44d4ff10696faa9c0ecd4b"
+    },
+    {
+      "id": "MAP27",
+      "tier": 4,
+      "family": "freedoom2-map27-dc3a1b97bb8f",
+      "engine_reset_count": 6,
+      "geometry_sha256": "084e790f603aaf2d353fecf361b49c7c60c5b91c4025e317930268ec4018b281",
+      "wad_sha256": "a8772e088847032510d97ba2312406a6998f21cbab44d4ff10696faa9c0ecd4b"
+    },
+    {
+      "id": "MAP28",
+      "tier": 4,
+      "family": "freedoom2-map28-35792afca963",
+      "engine_reset_count": 6,
+      "geometry_sha256": "16ac60cbefbac33a082994e4d2cbb78faf2ac4175660f5a58c8f235134e8bfbd",
+      "wad_sha256": "a8772e088847032510d97ba2312406a6998f21cbab44d4ff10696faa9c0ecd4b"
+    }
+  ]
+}
