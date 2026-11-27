@@ -1,0 +1,31 @@
+{
+  "scope": "Isolated matched PPO, PBRS, and PBRS plus successful C749 anchors. Inference contract and source are frozen.",
+  "base_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+  "parent": "${DOOMRAY_PROJECT_ROOT}/evaluations/candidates/mission-progression-43-update-749.pt",
+  "parent_sha256": "1c741cae310c3b169a18ad86a34c25c7371a6be47dcbefbcce8ba43077e36930",
+  "release_weight_sha256": "0b8f290cfe36a25f8593da925d4a4a0ddb8790b37f9319a019aed276a73f5e61",
+  "screen_protocol_sha256": "da14fff9531a75678bf0b178377bbd200237d8ed26ba6622ebfc780b0b60cc57",
+  "anchors_sha256": "fd32f3c049b0c3e221ea3ba223f176ef13cae82b7759e7440f5e228322a9d87c",
+  "backtrack_sha256": "2ec2f02accdda7dd0d23fc4eb43956a075781234bcce82ee7ca299ebc2d97397",
+  "seed": 41177,
+  "workers": 4,
+  "horizon": 64,
+  "updates": 32,
+  "target_transitions_per_arm": 8192,
+  "learning_rate": 8e-05,
+  "optimizer": "Fresh Adam eps 1e-5. Unmodified joint PPO clipping and GAE.",
+  "ticks": 2100,
+  "curriculum": "Existing mixed map pool plus byte-exact previously used training key backtrack fixture. One initial worker per family. Subsequent per-worker resets use 25% probability for each of combat, navigation, progression, mixed-survival and uniform probability within a family.",
+  "spawn_policy": "Existing immutable training WAD positions and headings, identical choice streams per worker in all arms.",
+  "reward": "Unchanged progression profile in all arms. PBRS applies only on the two exact allowlisted red key training fixtures at gamma .99.",
+  "potential_maximum_magnitude": 0.25,
+  "anchor_beta": 0.04,
+  "loss": "C adds beta times mean sum of six head KLs from fixed C749 targets drawn evenly from present success categories. Anchor replay has no PPO importance ratio.",
+  "instability": {
+    "max_approx_kl": 0.025,
+    "max_clip_fraction": 0.25,
+    "max_initial_log_ratio_error": 0.01
+  },
+  "cutoff_ist": "2026-11-27T08:15:00+05:30",
+  "training_end_latest_ist": "2026-11-27T08:00:00+05:30"
+}

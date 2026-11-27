@@ -1,0 +1,23 @@
+{
+  "modes": [
+    {
+      "arm": "cache-smoke",
+      "history": "cached_chunk_start",
+      "live_transitions": 1024,
+      "optimizer_steps": 24,
+      "transitions_per_second": 86.8,
+      "optimizer_seconds": 0.076875,
+      "max_initial_joint_log_ratio_abs": 9.5367431640625e-07
+    },
+    {
+      "arm": "exact-smoke",
+      "history": "exact_raw_four",
+      "live_transitions": 1024,
+      "optimizer_steps": 24,
+      "transitions_per_second": 93.9,
+      "optimizer_seconds": 0.135825,
+      "max_initial_joint_log_ratio_abs": 9.5367431640625e-07
+    }
+  ],
+  "source": "Two short separately launched original-reward live smokes; not a policy selection benchmark."
+}

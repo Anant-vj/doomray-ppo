@@ -1,0 +1,412 @@
+diff --git a/training/ppo.py b/training/ppo.py
+index 3194d80..ee3a4f2 100644
+--- a/training/ppo.py
++++ b/training/ppo.py
+@@ -13,7 +13,7 @@ def advantages(rewards, values, following, boundaries, gamma=.99, decay=.95):
+     return result
+ 
+ 
+-def optimize(policy, optimizer, batch, chunk=16, epochs=3, *, diagnostics=False):
++def optimize(policy, optimizer, batch, chunk=16, epochs=3, *, diagnostics=False, auxiliary=None):
+     """Update the policy, optionally returning run diagnostics as a third result."""
+     obs, initial, starts, actions, old_logp, returns, adv = batch
+     time, workers = starts.shape
+@@ -48,6 +48,8 @@ def optimize(policy, optimizer, batch, chunk=16, epochs=3, *, diagnostics=False)
+             critic = (value - returns[indices, worker].flatten()).square().mean()
+             mean_entropy = entropy.mean()
+             loss = actor + .5 * critic - .01 * mean_entropy
++            if auxiliary is not None:
++                loss = loss + auxiliary(indices, worker)
+             optimizer.zero_grad(set_to_none=True)
+             loss.backward()
+             grad = torch.nn.utils.clip_grad_norm_(policy.parameters(), .5, error_if_nonfinite=True)
+diff --git a/training/reference.py b/training/reference.py
+new file mode 100644
+index 0000000..4256235
+--- /dev/null
++++ b/training/reference.py
+@@ -0,0 +1,83 @@
++"""Training losses for a frozen teacher and reflected four-frame context."""
++
++from copy import deepcopy
++
++import torch
++from torch.nn import functional as F
++
++from submission.policy import HEADS
++from training.reflection import reflect_logits, reflect_packed
++
++
++def context(current, carried):
++    """Recover raw frames and their validity from the existing rollout history."""
++    frames, ongoing = zip(*carried) if carried else ((), ())
++    padding = 3 - len(frames)
++    missing_frame = torch.zeros_like(current)
++    ones = current.new_ones(len(current))
++    packed = torch.stack((missing_frame,) * padding + frames + (current,), dim=1)
++    valid = torch.stack((torch.zeros_like(ones),) * padding + ongoing + (ones,), dim=1)
++    return packed, valid.flip(1).cumprod(1).flip(1)
++
++
++def stacked_logits(policy, frames, valid):
++    encoded = policy.encode(frames.flatten(0, 1)).unflatten(0, frames.shape[:2])
++    encoded = encoded * valid[..., None]
++    output, _ = policy.advance(encoded[:, -1], encoded[:, :-1].flatten(1))
++    return policy.actor(output)
++
++
++def distribution(logits):
++    return tuple(head.log_softmax(-1) for head in logits.split(HEADS, dim=-1))
++
++
++def divergence(target, predicted):
++    return sum(F.kl_div(q, p, reduction="batchmean", log_target=True) for p, q in zip(target, predicted))
++
++
++class ReferenceRollout:
++    def __init__(self, policy, teacher, histories, valid, reference_coef, symmetry_coef):
++        self.policy = policy
++        self.histories = histories
++        self.valid = valid
++        self.reference_coef = reference_coef
++        self.symmetry_coef = symmetry_coef
++        with torch.no_grad():
++            self.reference = tuple(
++                head.unflatten(0, histories.shape[:2])
++                for head in distribution(stacked_logits(teacher, histories.flatten(0, 1), valid.flatten(0, 1)))
++            )
++        self.mirrored = reflect_packed(histories) if symmetry_coef else None
++
++    def loss(self, indices, worker):
++        frames = self.histories[indices, worker].flatten(0, 1)
++        valid = self.valid[indices, worker].flatten(0, 1)
++        original = distribution(stacked_logits(self.policy, frames, valid))
++        target = tuple(head[indices, worker].flatten(0, 1) for head in self.reference)
++        loss = self.reference_coef * divergence(target, original)
++        if self.mirrored is not None:
++            mirrored = distribution(reflect_logits(stacked_logits(
++                self.policy, self.mirrored[indices, worker].flatten(0, 1), valid
++            )))
++            loss = loss + self.symmetry_coef * self.consistency(original, mirrored)
++        return loss
++
++    @staticmethod
++    def consistency(original, mirrored):
++        return .5 * (divergence(tuple(p.detach() for p in original), mirrored) +
++                     divergence(tuple(p.detach() for p in mirrored), original))
++
++    @torch.no_grad()
++    def measure(self):
++        valid = self.valid.flatten(0, 1)
++        original = distribution(stacked_logits(self.policy, self.histories.flatten(0, 1), valid))
++        reference = tuple(head.flatten(0, 1) for head in self.reference)
++        # Measure both arms on the same real and reflected histories after each PPO update.
++        frames = self.mirrored if self.mirrored is not None else reflect_packed(self.histories)
++        mirrored = distribution(reflect_logits(stacked_logits(self.policy, frames.flatten(0, 1), valid)))
++        return {"reference_kl_nats": float(divergence(reference, original)),
++                "reflection_kl_nats": float(self.consistency(original, mirrored))}
++
++
++def frozen_teacher(policy):
++    return deepcopy(policy).eval().requires_grad_(False)
+diff --git a/training/reflection.py b/training/reflection.py
+new file mode 100644
+index 0000000..bec6199
+--- /dev/null
++++ b/training/reflection.py
+@@ -0,0 +1,96 @@
++"""Training-only left/right reflection for the official structured observation."""
++
++import numpy as np
++
++from doom_env.spaces import BUTTONS, ENTITY_FEATURES, MAX_ENTITIES, NUM_RAYS, VITALS_FIELDS
++from submission.policy import HEADS
++
++# Ray 0 faces forward and positive ray indices rotate toward the player's left.
++RAY_REFLECTION = tuple((-index) % NUM_RAYS for index in range(NUM_RAYS))
++BUTTON_REFLECTION = (0, 1, 3, 2, 5, 4, 6, 7, 8)
++_DIRECTION_HEADS = (1, 2)
++_HEAD_STARTS = np.cumsum((0, *HEADS[:-1])).tolist()
++LOGIT_REFLECTION = tuple(
++    start + label
++    for head, (start, size) in enumerate(zip(_HEAD_STARTS, HEADS, strict=True))
++    for label in ((0, 2, 1) if head in _DIRECTION_HEADS else range(size))
++)
++
++_ENTITY_WIDTH = len(ENTITY_FEATURES)
++_ENTITY_SIGNS = tuple(ENTITY_FEATURES.index(name) for name in ("sin_rel_angle", "rel_vel_right"))
++_RIGHT_VITAL = VITALS_FIELDS.index("vel_right")
++
++# The offsets follow submission.policy.pack, including its flattened entity rows.
++_ENTITIES_START = 2 * NUM_RAYS
++_ENTITIES_END = _ENTITIES_START + MAX_ENTITIES * _ENTITY_WIDTH
++_MASK_START = _ENTITIES_END + MAX_ENTITIES
++_VITALS_START = _MASK_START + MAX_ENTITIES
++_BUTTONS_START = _VITALS_START + len(VITALS_FIELDS)
++_PACKED_REFLECTION = (
++    *RAY_REFLECTION,
++    *(NUM_RAYS + index for index in RAY_REFLECTION),
++    *range(_ENTITIES_START, _BUTTONS_START),
++    *(_BUTTONS_START + index for index in BUTTON_REFLECTION),
++)
++
++
++def _last_dim(values, expected):
++    if not hasattr(values, "shape"):
++        values = np.asarray(values)
++    if not values.ndim or values.shape[-1] != expected:
++        raise ValueError(f"Expected a final dimension of {expected}, got {values.shape}.")
++    return values
++
++
++def reflect_observation(obs):
++    """Reflect the structured input. Carry the policy's unused pixel fields through."""
++    rays = obs["rays"]
++    entities = obs["visible_entities"]
++    features = entities["features"].copy()
++    mask = entities["mask"]
++    features[..., _ENTITY_SIGNS] *= np.where(mask[..., None], -1, 1)
++    vitals = obs["vitals"].copy()
++    vitals[..., _RIGHT_VITAL] *= -1
++    return {
++        **obs,
++        "rays": {
++            "distance": rays["distance"][..., RAY_REFLECTION],
++            "hit_type": rays["hit_type"][..., RAY_REFLECTION],
++        },
++        "visible_entities": {
++            "features": features,
++            "entity_type": entities["entity_type"].copy(),
++            "mask": mask.copy(),
++        },
++        "vitals": vitals,
++    }
++
++
++def reflect_buttons(buttons):
++    """Swap strafe-left/right and turn-left/right in NumPy or Torch actions."""
++    return _last_dim(buttons, len(BUTTONS))[..., BUTTON_REFLECTION]
++
++
++def reflect_choices(choices):
++    """Reflect the six categorical labels, preserving a neutral direction."""
++    choices = _last_dim(choices, len(HEADS))
++    result = choices.copy() if isinstance(choices, np.ndarray) else choices.clone()
++    directions = choices[..., _DIRECTION_HEADS]
++    result[..., _DIRECTION_HEADS] = (3 - directions) * (directions != 0)
++    return result
++
++
++def reflect_logits(logits):
++    """Align flat categorical logits with the opposite observation orientation."""
++    return _last_dim(logits, sum(HEADS))[..., LOGIT_REFLECTION]
++
++
++def reflect_packed(packed):
++    """Reflect packed policy inputs, including previous buttons, frame by frame."""
++    packed = _last_dim(packed, len(_PACKED_REFLECTION))
++    result = packed[..., _PACKED_REFLECTION]
++    entity_sign = 1 - 2 * packed[..., _MASK_START:_VITALS_START]
++    for feature in _ENTITY_SIGNS:
++        result[..., _ENTITIES_START + feature:_ENTITIES_END:_ENTITY_WIDTH] *= entity_sign
++    result[..., _VITALS_START + _RIGHT_VITAL] *= -1
++    return result
+diff --git a/training/storage.py b/training/storage.py
+index 275c03c..caaeca9 100644
+--- a/training/storage.py
++++ b/training/storage.py
+@@ -1,5 +1,7 @@
+ """USB workspace usage and internal-drive budget, in bytes."""
+ import json
++import ctypes
++import hashlib
+ import os
+ import shutil
+ import sys
+@@ -12,23 +14,43 @@ def project_root():
+ 
+ def internal_limit():
+     limit = int(os.environ.get("DOOM_INTERNAL_LIMIT_BYTES", "2000000000"))
+-    if not 500_000_000 < limit <= 5_000_000_000:
+-        raise ValueError("Choose an internal storage budget between 0.5 and 5 GB.")
++    if not 500_000_000 < limit <= 7_000_000_000:
++        raise ValueError("Choose an internal storage budget between 0.5 and 7 GB.")
+     return limit
+ 
+ 
++def _windows_memory():
++    class Status(ctypes.Structure):
++        _fields_ = [("length", ctypes.c_uint32), ("load", ctypes.c_uint32)] + [
++            (key, ctypes.c_uint64) for key in
++            ("physical", "available", "pagefile", "commit_available", "virtual", "free_virtual", "extended")
++        ]
++
++    state = Status(length=ctypes.sizeof(Status))
++    if not ctypes.windll.kernel32.GlobalMemoryStatusEx(ctypes.byref(state)):
++        raise RuntimeError("Windows memory measurement is unavailable.")
++    return {"physical_available_bytes": state.available, "commit_available_bytes": state.commit_available}
++
++
+ def snapshot(detailed=False):
+     root = project_root()
+     disk = os.environ.get("SystemDrive", root.anchor) if os.name == "nt" else root.anchor
+     free = shutil.disk_usage(disk + "/" if disk.endswith(":") else disk).free
+-    path = root / "logs" / "storage-baseline.json"
+-    path.parent.mkdir(parents=True, exist_ok=True)
+-    if not path.exists():
+-        path.write_text(json.dumps({"internal_free_bytes": free}), encoding="utf-8")
+-    delta = max(0, json.loads(path.read_text())["internal_free_bytes"] - free)
++    external_baseline = os.environ.get("DOOM_STORAGE_BASELINE")
++    path = Path(external_baseline) if external_baseline else root / "logs" / "storage-baseline.json"
++    if not external_baseline:
++        path.parent.mkdir(parents=True, exist_ok=True)
++        if not path.exists():
++            path.write_text(json.dumps({"internal_free_bytes": free}), encoding="utf-8")
++    baseline = path.read_bytes()
++    if external_baseline and hashlib.sha256(baseline).hexdigest() != os.environ.get("DOOM_STORAGE_BASELINE_SHA256"):
++        raise RuntimeError("Original drive baseline hash mismatch.")
++    delta = max(0, json.loads(baseline)["internal_free_bytes"] - free)
+     limit = internal_limit()
+     data = dict(internal_free_bytes=free, internal_delta_bytes=delta,
+                 external_free_bytes=shutil.disk_usage(root).free, internal_limit_bytes=limit)
++    if os.name == "nt":
++        data.update(_windows_memory())
+     if detailed:
+         for name in ("checkpoints", "logs", "."):
+             data[name] = sum(p.stat().st_size for p in (root / name).rglob("*") if p.is_file())
+diff --git a/training/train.py b/training/train.py
+index 78433e3..796f597 100644
+--- a/training/train.py
++++ b/training/train.py
+@@ -48,6 +48,8 @@ def main():
+     parser.add_argument("--stop-file", type=Path, help="Save and exit after the next PPO update if this file appears.")
+     parser.add_argument("--storage-stop-bytes", type=int,
+                         help="Save and exit at this soft limit on internal disk usage increase.")
++    parser.add_argument("--reference-coef", type=float, help="Monitor KL to the initialization policy and weight its loss.")
++    parser.add_argument("--symmetry-coef", type=float, default=0., help="Weight the training-only reflection consistency loss.")
+     args = parser.parse_args()
+     if min(args.workers, args.horizon, args.updates, args.ticks) <= 0 or args.horizon % 16:
+         parser.error("Use positive values and a horizon divisible by 16.")
+@@ -60,6 +62,14 @@ def main():
+             parser.error(f"{option} must be a positive finite number.")
+     if args.parallel and not args.headless:
+         parser.error("--parallel requires --headless.")
++    reference_enabled = args.reference_coef is not None
++    if reference_enabled and (args.initialize is None or args.memory != "stack" or args.device != "cpu"):
++        parser.error("Reference monitoring requires --initialize and the CPU stack policy.")
++    if args.symmetry_coef and not reference_enabled:
++        parser.error("Symmetry tuning requires reference monitoring.")
++    if any(coef is not None and (not math.isfinite(coef) or not 0 <= coef <= 1)
++           for coef in (args.reference_coef, args.symmetry_coef)):
++        parser.error("Auxiliary loss coefficients must be finite and between zero and one.")
+     if args.stop_file is not None and args.stop_file.exists():
+         parser.error("Choose a stop file that does not already exist.")
+     if args.run_name and not re.fullmatch(r"[a-zA-Z0-9][a-zA-Z0-9_-]*", args.run_name):
+@@ -78,6 +88,10 @@ def main():
+     from training.game import SerialEpisodes, maps
+     from training.ppo import advantages, optimize
+ 
++    if reference_enabled:
++        from doom_env.remote import validate_action
++        from training.reference import ReferenceRollout, context, frozen_teacher
++
+     backend = SerialEpisodes
+     if args.parallel:
+         from training.parallel import ParallelEpisodes
+@@ -112,6 +126,7 @@ def main():
+         counter, gradients = saved.get("updates", 0), saved.get("gradients", 0)
+         rng = np.random.default_rng(args.seed + counter)
+         torch.manual_seed(args.seed + counter)
++    teacher = frozen_teacher(policy) if reference_enabled else None
+     root = project_root()
+     run_name = args.run_name or f"{args.memory}-{args.seed}"
+     checkpoint = root / "checkpoints" / run_name
+@@ -135,6 +150,7 @@ def main():
+         episodes = []
+         for update in range(counter + 1, counter + args.updates + 1):
+             rows = []
++            auxiliary_rows = []
+             rollout_started = time.monotonic()
+             with torch.no_grad():
+                 for _ in range(args.horizon):
+@@ -142,6 +158,10 @@ def main():
+                     output, h_next = policy.advance(policy.encode(x), h)
+                     a, logp, _, value = policy.decision(output)
+                     press = buttons(a.cpu().numpy())
++                    if reference_enabled:
++                        auxiliary_rows.append(context(x, stack_context))
++                        for row in press:
++                            validate_action(row)
+                     obs, reward, term, trunc, completed = map(list, zip(*games.step(press)))
+                     boundary = np.logical_or(term, trunc)
+                     done = torch.as_tensor(boundary.astype(np.float32), device=dev)
+@@ -171,9 +191,28 @@ def main():
+             following = torch.cat((values[1:], final_value[None])) * (1 - done)
+             adv = advantages(rewards, values, following, done)
+             optimize_started = time.monotonic()
++            auxiliary = None
++            reference_rollout = None
++            initial_reference_kl = None
++            if reference_enabled:
++                histories, valid = map(torch.stack, zip(*auxiliary_rows))
++                reference_rollout = ReferenceRollout(
++                    policy, teacher, histories, valid, args.reference_coef, args.symmetry_coef
++                )
++                if update == counter + 1:
++                    initial_reference_kl = reference_rollout.measure()["reference_kl_nats"]
++                    if abs(initial_reference_kl) > 1e-6:
++                        raise RuntimeError("Learner and frozen teacher differ before the first PPO update.")
++                if args.reference_coef or args.symmetry_coef:
++                    auxiliary = reference_rollout.loss
+             n, loss, ppo = optimize(
+-                policy, optimizer, (x, states, resets, actions, old_logp, values + adv, adv), diagnostics=True
++                policy, optimizer, (x, states, resets, actions, old_logp, values + adv, adv),
++                diagnostics=True, auxiliary=auxiliary
+             )
++            if reference_rollout is not None:
++                ppo.update(reference_rollout.measure())
++                if initial_reference_kl is not None:
++                    ppo["initial_reference_kl_nats"] = initial_reference_kl
+             optimize_seconds = time.monotonic() - optimize_started
+             if stack_context:
+                 # Rebuild the three carried feature frames with the updated encoder.
+@@ -189,7 +228,16 @@ def main():
+             stop_requested = args.stop_file is not None and args.stop_file.exists()
+             storage = snapshot()
+             storage_limit = soft_limit is not None and storage["internal_delta_bytes"] >= soft_limit
+-            stopping = time_limit or stop_requested or storage_limit
++            memory_limit = reference_enabled and (
++                storage.get("physical_available_bytes", math.inf) < 536_870_912 or
++                storage.get("commit_available_bytes", math.inf) < 1_000_000_000
++            )
++            unstable = reference_enabled and (
++                not all(math.isfinite(ppo[key]) for key in ("approx_kl", "reference_kl_nats", "reflection_kl_nats"))
++                or ppo["approx_kl"] > .025 or ppo["clip_fraction"] > .25 or ppo["reference_kl_nats"] > .15
++                or ppo["initial_log_ratio_abs_max"] > .01
++            )
++            stopping = time_limit or stop_requested or storage_limit or memory_limit or unstable
+             interval_elapsed = (
+                 now - checkpointed >= args.checkpoint_seconds if args.checkpoint_seconds else update % 8 == 0
+             )
+@@ -222,6 +270,12 @@ def main():
+                          internal_delta_bytes=storage["internal_delta_bytes"],
+                          stopped_for_storage=storage_limit,
+                          render_buffers=not args.no_render_buffers, episodes=episodes)
++            if reference_enabled:
++                stats.update(reference_coef=args.reference_coef, symmetry_coef=args.symmetry_coef,
++                             stopped_for_memory=memory_limit, stopped_for_instability=unstable,
++                             stopped_for_time=time_limit, stopped_by_request=stop_requested,
++                             physical_available_bytes=storage.get("physical_available_bytes"),
++                             commit_available_bytes=storage.get("commit_available_bytes"))
+             episodes = []
+             with (logdir / f"{run_name}.jsonl").open("a", encoding="utf-8") as f:
+                 f.write(json.dumps(stats) + "\n")
+@@ -229,6 +283,8 @@ def main():
+             if stopping:
+                 if storage_limit:
+                     print("Saved and stopped at the internal drive's soft storage limit.", flush=True)
++                if unstable:
++                    raise RuntimeError("Stopped at the predeclared PPO stability limit.")
+                 break
+ 
+ 

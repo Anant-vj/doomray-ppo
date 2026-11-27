@@ -1,0 +1,48 @@
+{
+  "frozen_at_ist": "2026-11-27T06:01:40+05:30",
+  "scope": "Fresh matched local screen of four fixed output decoders on identical frozen C749 parameters.",
+  "prior_static_reference_count": 96,
+  "order": "Listed map order, listed identical engine/policy seeds, then exact frozen roster order. One attempt per identity.",
+  "scoring_manifest_sha256": "1ca7aeb19af8b5a787bd66cd86234690764689c5979876fdcb04a0b8f9bfc9fd",
+  "decoder_sha256": "2a1b7504129cb4c1643be1d7af1d7fdd2ff276ef72bbeb1576e4b950b14a5195",
+  "decoder_freeze_sha256": "4f652f3243a65f07e87c57cf62cd06d0c76ea45678ab7fe974da7e5c71789136",
+  "expected_episodes": 32,
+  "withheld_confirmation_manifest_sha256": "5f1a99094ca2f837ace2748e3c7bdef15fe1191ad8b2589a59d191cd5ec28ce6",
+  "withheld_confirmation_policy": "Two fresh families and two pair seeds each. Only an approved qualified nominee and T1-control may run in a new authorized phase. Confirm no regression in exit/survival/key/unlock per family and meaningful gain on both families.",
+  "roster": [
+    {
+      "id": "T1-control",
+      "source_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+      "checkout": "${DOOMRAY_PROJECT_ROOT}/submission_artifacts/github-fresh-6c2d549-20261127-022250050",
+      "weight_source": "${DOOMRAY_PROJECT_ROOT}/submission_artifacts/github-fresh-6c2d549-20261127-022250050/submission/weights/policy.pt",
+      "expected_sha256": "0b8f290cfe36a25f8593da925d4a4a0ddb8790b37f9319a019aed276a73f5e61"
+    },
+    {
+      "id": "T07",
+      "source_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+      "checkout": "${DOOMRAY_PROJECT_ROOT}/submission_artifacts/github-fresh-6c2d549-20261127-022250050",
+      "weight_source": "${DOOMRAY_PROJECT_ROOT}/submission_artifacts/github-fresh-6c2d549-20261127-022250050/submission/weights/policy.pt",
+      "expected_sha256": "0b8f290cfe36a25f8593da925d4a4a0ddb8790b37f9319a019aed276a73f5e61"
+    },
+    {
+      "id": "T13",
+      "source_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+      "checkout": "${DOOMRAY_PROJECT_ROOT}/submission_artifacts/github-fresh-6c2d549-20261127-022250050",
+      "weight_source": "${DOOMRAY_PROJECT_ROOT}/submission_artifacts/github-fresh-6c2d549-20261127-022250050/submission/weights/policy.pt",
+      "expected_sha256": "0b8f290cfe36a25f8593da925d4a4a0ddb8790b37f9319a019aed276a73f5e61"
+    },
+    {
+      "id": "argmax",
+      "source_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+      "checkout": "${DOOMRAY_PROJECT_ROOT}/submission_artifacts/github-fresh-6c2d549-20261127-022250050",
+      "weight_source": "${DOOMRAY_PROJECT_ROOT}/submission_artifacts/github-fresh-6c2d549-20261127-022250050/submission/weights/policy.pt",
+      "expected_sha256": "0b8f290cfe36a25f8593da925d4a4a0ddb8790b37f9319a019aed276a73f5e61"
+    }
+  ],
+  "promotion_gate": {
+    "legal": "Eight completed legal episodes per model, paired with T1-control; zero invalid actions or timeouts.",
+    "preserve": "Match or exceed T1-control exits, survivals, collected keys and verified unlocks on every family. No net loss of measured player damage.",
+    "material_outcome": "On two independent families improve exits, keys, unlocks, player-attributed damage, or coverage with a lower blocked-move fraction. At least one gain family must show a gain on both predeclared seeds. Fewer attacks or lower bias alone are diagnostic.",
+    "decision": "If the gate fails, retain T1-control. A qualifying variant also requires untouched confirmation, exact official validator and explicit approval for any replacement."
+  }
+}

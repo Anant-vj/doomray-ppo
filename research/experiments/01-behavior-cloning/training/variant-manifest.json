@@ -1,0 +1,10 @@
+{
+  "sha256_by_original_filename": {
+    "red_key_backtrack.wad": "2ec2f02accdda7dd0d23fc4eb43956a075781234bcce82ee7ca299ebc2d97397",
+    "train-only-basic-yaw270.wad": "84ae6febeec249c26fa7b8c0e79deb2a0bf94fcbfefa201aa2af3b680fc164be",
+    "train-only-basic-yaw90.wad": "bbec785155883619200ae4ea7d1eb97d4cedb841c7445f3e1e3b70c463e89840",
+    "train-only-e7ab54fb6834ffa3-yaw270.wad": "90d5517759761045259f54d60362b1c45ba76e5235456d9b6a1d1d2faa43e218",
+    "train-only-e7ab54fb6834ffa3-yaw90.wad": "f2761982b6a64357b48c79711083282e27d9f2c3cad3dcd3ee712ccc547eb7d5"
+  },
+  "source": "Generated training variants from the original official fixture and existing ViZDoom bundled scenario. Regeneration code is in the training patch."
+}

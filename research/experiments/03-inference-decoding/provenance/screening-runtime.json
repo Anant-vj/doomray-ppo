@@ -1,0 +1,12 @@
+{
+  "python": "3.13.12",
+  "python_executable": "${DOOMRAY_PROJECT_ROOT}/environments/competition/Scripts/python.exe",
+  "torch": "2.15.0+cpu",
+  "vizdoom": "1.3.3",
+  "cuda_available": false,
+  "wrapper": "${DOOMRAY_PROJECT_ROOT}/submission_artifacts/github-fresh-6c2d549-20261127-022250050/env/doom_env/wrapper.py",
+  "cpu_threads": 1,
+  "headless": true,
+  "decoder_sha256": "2a1b7504129cb4c1643be1d7af1d7fdd2ff276ef72bbeb1576e4b950b14a5195",
+  "decoder_freeze_sha256": "4f652f3243a65f07e87c57cf62cd06d0c76ea45678ab7fe974da7e5c71789136"
+}

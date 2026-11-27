@@ -1,0 +1,14 @@
+{
+  "arm": "ppo-control",
+  "started_ist": "2026-11-27T06:43:06.7797802+05:30",
+  "plan_sha256": "f628195a84e2371e5b82316fae6fa6f149f4e47faee0861af4f47a1a407f3707",
+  "parent_sha256": "1c741cae310c3b169a18ad86a34c25c7371a6be47dcbefbcce8ba43077e36930",
+  "storage": {
+    "internal_free_bytes": 28845613056,
+    "internal_delta_bytes": 5194108928,
+    "external_free_bytes": 60373942272,
+    "internal_limit_bytes": 7000000000,
+    "physical_available_bytes": 2404843520,
+    "commit_available_bytes": 3140722688
+  }
+}

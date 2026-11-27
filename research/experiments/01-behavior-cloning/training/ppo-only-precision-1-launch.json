@@ -1,0 +1,22 @@
+{
+  "name": "ppo-only-precision-1",
+  "seed": 2207,
+  "workers": 4,
+  "horizon": 64,
+  "updates": 128,
+  "target_transitions": 32768,
+  "max_seconds": 900,
+  "learning_rate": 8e-05,
+  "ticks": 1050,
+  "profile": "precision",
+  "initial_path": "local-checkpoint-archive/checkpoints/mission-archive/stack-26-update-621-policy.pt",
+  "initial_sha256": "5d90001f01beb4e43560fde4037667e7f440e797b6f86f2ee91a1e12c40d46e8",
+  "preflight": {
+    "internal_free_bytes": 28928323584,
+    "internal_delta_bytes": 5111398400,
+    "external_free_bytes": 60420333568,
+    "internal_limit_bytes": 7000000000,
+    "physical_available_bytes": 2480103424,
+    "commit_available_bytes": 3431825408
+  }
+}

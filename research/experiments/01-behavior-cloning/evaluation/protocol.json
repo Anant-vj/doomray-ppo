@@ -1,0 +1,243 @@
+{
+  "frozen_at_ist": "2026-11-27T05:09:40+05:30",
+  "scope": "Original local synthetic fixtures with fresh geometry and sector graphs. Engine gameplay and solvability pending first use.",
+  "prior_reference_maps_checked": 83,
+  "prior_reference_static_errors": [],
+  "novelty": "Same normalized geometry and sector-graph fingerprints as the earlier assessment. Neither fingerprint matches a checked prior layout or another new layout. MAP11 and MAP12 excluded from inspection.",
+  "score_source_sha256": "1ca7aeb19af8b5a787bd66cd86234690764689c5979876fdcb04a0b8f9bfc9fd",
+  "score_source": "evaluation/scoring_manifest.json",
+  "order": "Roster frozen per batch before simulation. Map order, listed seed order, then roster order. One attempt per model/map/seed.",
+  "archive_roster": [
+    {
+      "id": "C749",
+      "assessment_id": "A",
+      "name": "Published C749",
+      "checkout": "approved-release",
+      "source_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+      "weight_path": "historical-local-reference/submission_artifacts/final-blind-assessment/checkpoints/model-A.pt",
+      "sha256": "0b8f290cfe36a25f8593da925d4a4a0ddb8790b37f9319a019aed276a73f5e61",
+      "parameter_count": 97208,
+      "training_transitions": 324864,
+      "optimizer_steps": 7614,
+      "architecture": "Four-encoding feed-forward temporal stack, shared structured encoder and six categorical actor heads",
+      "weight_bytes": 395269
+    },
+    {
+      "id": "Stack26-u621",
+      "assessment_id": "C",
+      "name": "Stack-26 update 621",
+      "checkout": "local-u621-checkout",
+      "source_commit": "40218823c3a337fa8df04ac0cad2381f051ebce8",
+      "weight_path": "historical-local-reference/submission_artifacts/final-blind-assessment/checkpoints/model-C.pt",
+      "sha256": "5b7dca6d1bcce1569ac9164b2461bec9e11622c31a793047046790d0c76f32fd",
+      "parameter_count": 97208,
+      "training_transitions": 275712,
+      "optimizer_steps": 6462,
+      "architecture": "Four-encoding feed-forward temporal stack, shared structured encoder and six categorical actor heads",
+      "weight_bytes": 395269
+    }
+  ],
+  "screening_maps": [
+    {
+      "geometry_sha256": "294c7afcb6b2fbaa68771f9cadbd395624aa523327cd5a1cc88a894cbbcace05",
+      "sector_graph_sha256": "dc4cf201ba03040d9195652fa3bdb483dcf576b5095d133b430580c5fa50d119",
+      "format": "udmf",
+      "sectors": 8,
+      "lines": 25,
+      "graph_edges": 7,
+      "graph_components": 1,
+      "graph_cycle_rank": 0,
+      "key_colors": [],
+      "player_starts": null,
+      "placed_monsters_skill3": null,
+      "placed_monsters_within_768_euclidean": null,
+      "placed_resources_skill3": null,
+      "static_exit_triggers": [
+        {
+          "linedef": 17,
+          "special": 243,
+          "activation": "cross",
+          "destination": "normal",
+          "from_xy": [
+            512,
+            384
+          ],
+          "to_xy": [
+            512,
+            256
+          ]
+        }
+      ],
+      "id": "aim-fork",
+      "map": "MAP01",
+      "family": "local-aim-fork-dc4cf201ba03",
+      "wad": "evaluation/maps/aim-fork.wad",
+      "wad_sha256": "16019d644f47d21f400dd13a82785ae09551b4d05a7be0d534f30e75bc550144",
+      "tier": 1,
+      "skill": 3,
+      "seeds": [
+        55021,
+        55022
+      ],
+      "tick_cap": 760,
+      "engine_solvability": "UNVERIFIED_STATIC_ONLY"
+    },
+    {
+      "geometry_sha256": "8e3daa5a14830fc155dca3f7ae2104cfe29124d89d7b27b5f7287a9d4aa0300d",
+      "sector_graph_sha256": "dcee916856275f71645d2821391123721a89174d2fc7880da0581651e8f748d5",
+      "format": "udmf",
+      "sectors": 14,
+      "lines": 39,
+      "graph_edges": 17,
+      "graph_components": 1,
+      "graph_cycle_rank": 4,
+      "key_colors": [],
+      "player_starts": null,
+      "placed_monsters_skill3": null,
+      "placed_monsters_within_768_euclidean": null,
+      "placed_resources_skill3": null,
+      "static_exit_triggers": [
+        {
+          "linedef": 28,
+          "special": 243,
+          "activation": "cross",
+          "destination": "normal",
+          "from_xy": [
+            384,
+            384
+          ],
+          "to_xy": [
+            512,
+            384
+          ]
+        },
+        {
+          "linedef": 36,
+          "special": 243,
+          "activation": "cross",
+          "destination": "normal",
+          "from_xy": [
+            384,
+            512
+          ],
+          "to_xy": [
+            384,
+            384
+          ]
+        }
+      ],
+      "id": "occluded-combat-loop",
+      "map": "MAP01",
+      "family": "local-occluded-combat-loop-dcee91685627",
+      "wad": "evaluation/maps/occluded-combat-loop.wad",
+      "wad_sha256": "6c85786be39fa5b5911a1f63f7b92d39ffad1d24c131b7ea9af43eef137e39e7",
+      "tier": 1,
+      "skill": 3,
+      "seeds": [
+        55021,
+        55022
+      ],
+      "tick_cap": 840,
+      "engine_solvability": "UNVERIFIED_STATIC_ONLY"
+    },
+    {
+      "geometry_sha256": "07fa80f4235a7ae23dcc1ade0ebe85e7b04660e5902a3dc1b32c1dd0bcd64153",
+      "sector_graph_sha256": "82ac3d2f494162089bf66d9bdc77b12dc7dd253b29bfe800a4ee66db7ef2ac13",
+      "format": "udmf",
+      "sectors": 15,
+      "lines": 46,
+      "graph_edges": 14,
+      "graph_components": 1,
+      "graph_cycle_rank": 0,
+      "key_colors": [],
+      "player_starts": null,
+      "placed_monsters_skill3": null,
+      "placed_monsters_within_768_euclidean": null,
+      "placed_resources_skill3": null,
+      "static_exit_triggers": [
+        {
+          "linedef": 23,
+          "special": 243,
+          "activation": "cross",
+          "destination": "normal",
+          "from_xy": [
+            640,
+            384
+          ],
+          "to_xy": [
+            512,
+            384
+          ]
+        }
+      ],
+      "id": "branch-recovery",
+      "map": "MAP01",
+      "family": "local-branch-recovery-82ac3d2f4941",
+      "wad": "evaluation/maps/branch-recovery.wad",
+      "wad_sha256": "3303b036bfabe4fffd13bf56168fee22f7d4bea5ef5dc878a99b685322ef7195",
+      "tier": 2,
+      "skill": 3,
+      "seeds": [
+        55021,
+        55022
+      ],
+      "tick_cap": 960,
+      "engine_solvability": "UNVERIFIED_STATIC_ONLY"
+    },
+    {
+      "geometry_sha256": "0cd33f7b3b2686bd7731e7b3b87d161ff3eeba3406b682688b2450ff529959e6",
+      "sector_graph_sha256": "f198f655755891ecec28e47c5e6f158a53271527004874547a423419897923dd",
+      "format": "udmf",
+      "sectors": 14,
+      "lines": 43,
+      "graph_edges": 13,
+      "graph_components": 1,
+      "graph_cycle_rank": 0,
+      "key_colors": [],
+      "player_starts": null,
+      "placed_monsters_skill3": null,
+      "placed_monsters_within_768_euclidean": null,
+      "placed_resources_skill3": null,
+      "static_exit_triggers": [
+        {
+          "linedef": 29,
+          "special": 243,
+          "activation": "cross",
+          "destination": "normal",
+          "from_xy": [
+            800,
+            256
+          ],
+          "to_xy": [
+            800,
+            384
+          ]
+        }
+      ],
+      "id": "key-return-lock",
+      "map": "MAP01",
+      "family": "local-key-return-lock-f198f6557558",
+      "wad": "evaluation/maps/key-return-lock.wad",
+      "wad_sha256": "1d90716d6ebe0155dae831192773e8db82efc461e92bdb8413ebf207c5cbeee6",
+      "tier": 3,
+      "skill": 3,
+      "seeds": [
+        55021,
+        55022
+      ],
+      "tick_cap": 1050,
+      "engine_solvability": "UNVERIFIED_STATIC_ONLY"
+    }
+  ],
+  "sealed_confirmation_manifest_sha256": "dadc40db8cc0629797aa45820dc52110dce5f1915269d047258f6e939f0ed117",
+  "sealed_confirmation_size": {
+    "layouts": 2,
+    "seeds_each": 2
+  },
+  "candidate_slots": [
+    "behavioral-cloning",
+    "behavioral-cloning-plus-ppo",
+    "ppo-only"
+  ],
+  "selection": "Compare all available candidates on complete matched screening. Exits and preregistered Balanced score are descriptive; also require independent evidence of combat or route gain, no unacceptable survival regression, and zero invalid actions. Reserve two new cases for confirmation of the nominated candidate and both archived controls. Retain C749 if ambiguous. No statistical generalization claim from two to four local layouts."
+}

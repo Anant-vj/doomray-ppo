@@ -1,0 +1,248 @@
+{
+  "release_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+  "release_weights_sha256": "0b8f290cfe36a25f8593da925d4a4a0ddb8790b37f9319a019aed276a73f5e61",
+  "counts": {
+    "screening": {
+      "episodes": 32,
+      "legal_actions": 4845,
+      "invalid_actions": 0
+    },
+    "confirmation": {
+      "episodes": 8,
+      "legal_actions": 1576,
+      "invalid_actions": 0
+    }
+  },
+  "hashes": "Original SHA-256 identifies source archive bytes. Published SHA-256 covers the sanitized branch copy.",
+  "omitted": "Weights, WAD files, fixture geometry and private per-step evaluation traces.",
+  "artifacts": [
+    {
+      "path": "README.md",
+      "published_bytes": 3433,
+      "published_sha256": "2cce3b197d9c30035ba298c25b3f075114666deddd2ae80b51353261f4b878d5",
+      "origin": "Publication README or portable offline verification source."
+    },
+    {
+      "path": "evaluation/confirmation-maps.json",
+      "archived_source": "experiments/inference-decoding-20261127/screening/withheld_confirmation/manifest.json",
+      "original_sha256": "5f1a99094ca2f837ace2748e3c7bdef15fe1191ad8b2589a59d191cd5ec28ce6",
+      "published_sha256": "c94c59496e7ca58ff9a2a40de23d3b8578d54f125bef6276404305322ea50774",
+      "original_bytes": 3071,
+      "published_bytes": 953,
+      "byte_identical": false
+    },
+    {
+      "path": "evaluation/confirmation-summary.json",
+      "archived_source": "experiments/inference-decoding-20261127/screening/confirmation-results/summary.json",
+      "original_sha256": "f2636cde469914c91955085353350f7215e48365e9f398e952e7d1169de350a9",
+      "published_sha256": "f2636cde469914c91955085353350f7215e48365e9f398e952e7d1169de350a9",
+      "original_bytes": 46353,
+      "published_bytes": 46353,
+      "byte_identical": true
+    },
+    {
+      "path": "evaluation/confirmation.jsonl",
+      "archived_source": "experiments/inference-decoding-20261127/screening/confirmation-results/episodes.jsonl",
+      "original_sha256": "fd28907c1a0ae8832460bf15cc1fe19e28596dc3e6140923efe6d7cb82ae4bbe",
+      "published_sha256": "03f0192b6d22caf36eb4e84bdbe6972aa0ae7361165a9ccbc084c824742dac97",
+      "original_bytes": 20281,
+      "published_bytes": 18383,
+      "byte_identical": false
+    },
+    {
+      "path": "evaluation/scoring-manifest.json",
+      "archived_source": "experiments/inference-decoding-20261127/screening/manifests/scoring_manifest.json",
+      "original_sha256": "1ca7aeb19af8b5a787bd66cd86234690764689c5979876fdcb04a0b8f9bfc9fd",
+      "published_sha256": "4ab6abdfa1d044c94eab63c80f5c7ba5c4a2cd8ea16c2c94b03277c20c564fed",
+      "original_bytes": 2892,
+      "published_bytes": 3138,
+      "byte_identical": false
+    },
+    {
+      "path": "evaluation/screening-maps.json",
+      "archived_source": "experiments/inference-decoding-20261127/screening/manifests/protocol.json",
+      "original_sha256": "c83cfebbf32c26e97f7e9de8cdae7501a4149ab80207dc40f5a1dde49a4b4a66",
+      "published_sha256": "194d8b9c0de48d94e808204e6c77d657e91901171f2ff7535b68e1421c57df28",
+      "original_bytes": 9503,
+      "published_bytes": 1780,
+      "byte_identical": false
+    },
+    {
+      "path": "evaluation/screening-summary.json",
+      "archived_source": "experiments/inference-decoding-20261127/screening/results/summary.json",
+      "original_sha256": "7e8d14b6d8decbf673219f5cb86436b2aee10bbbff062d611313e7478cb2bd11",
+      "published_sha256": "7e8d14b6d8decbf673219f5cb86436b2aee10bbbff062d611313e7478cb2bd11",
+      "original_bytes": 280046,
+      "published_bytes": 280046,
+      "byte_identical": true
+    },
+    {
+      "path": "evaluation/screening.jsonl",
+      "archived_source": "experiments/inference-decoding-20261127/screening/results/episodes.jsonl",
+      "original_sha256": "31954cb637341aa01000202073271471df6a904874f5bc6a7546f025d0792dc9",
+      "published_sha256": "ae3c73300568ac6852eb3ba9c17834a7f9262045a3ed1610e73cf6e3f45936d4",
+      "original_bytes": 78731,
+      "published_bytes": 71705,
+      "byte_identical": false
+    },
+    {
+      "path": "provenance/confirmation-roster.json",
+      "archived_source": "experiments/inference-decoding-20261127/screening/confirmation-results/roster.json",
+      "original_sha256": "ef106485a2b4d0f95a5a96d7923e332536a3870900421426bc1b16e5f51b5923",
+      "published_sha256": "8b03cd08b73f1fb294763383bfc143267a2d1c8a65a99c26d0a9c408cb4d4181",
+      "original_bytes": 1505,
+      "published_bytes": 1481,
+      "byte_identical": false
+    },
+    {
+      "path": "provenance/confirmation-runtime.json",
+      "archived_source": "experiments/inference-decoding-20261127/screening/confirmation-results/runtime.json",
+      "original_sha256": "f8c6dfe5d0e3864bb960f23804748bcd65c0a7df3d932bf56f617ba6087c0de6",
+      "published_sha256": "2fb283dd4b44a1dd0e71600fa9ef1682a74fc6e8b3c73efe1f1c78bc964be9f7",
+      "original_bytes": 551,
+      "published_bytes": 542,
+      "byte_identical": false
+    },
+    {
+      "path": "provenance/decoder-freeze.json",
+      "archived_source": "experiments/inference-decoding-20261127/decoding-freeze.json",
+      "original_sha256": "4f652f3243a65f07e87c57cf62cd06d0c76ea45678ab7fe974da7e5c71789136",
+      "published_sha256": "6ef60dfaaf62bb45bf52d2db7ed9f394e94b554c128c04b670d34a2aeb67fe44",
+      "original_bytes": 1456,
+      "published_bytes": 1414,
+      "byte_identical": false
+    },
+    {
+      "path": "provenance/nomination.json",
+      "archived_source": "experiments/inference-decoding-20261127/screening/confirmation-results/nomination.json",
+      "original_sha256": "a87e7ffa3b75a8af66b0a2217895abb968c370707809cc29bb2c2b62375ccc1a",
+      "published_sha256": "3226fb7b5c6aa07be1b6448676e02cc85fa2134aec48d2813bf8800a24970059",
+      "original_bytes": 1847,
+      "published_bytes": 1833,
+      "byte_identical": false
+    },
+    {
+      "path": "provenance/screening-protocol.json",
+      "archived_source": "experiments/inference-decoding-20261127/screening/manifests/protocol.json",
+      "original_sha256": "c83cfebbf32c26e97f7e9de8cdae7501a4149ab80207dc40f5a1dde49a4b4a66",
+      "published_sha256": "41e7e87f70acab00945913eaec509b7cb8eeca6999dc39cc92382d683e330663",
+      "original_bytes": 9503,
+      "published_bytes": 3544,
+      "byte_identical": false
+    },
+    {
+      "path": "provenance/screening-roster.json",
+      "archived_source": "experiments/inference-decoding-20261127/screening/results/roster.json",
+      "original_sha256": "7b9a96d1dad3a0203086a88b64b4a8e9f2e65557a79f3e32e707e6ed77475808",
+      "published_sha256": "a7609c7c85c029a42472f99efc3e4bbd1ddbccee8115d06aa84a0f29ca491891",
+      "original_bytes": 2896,
+      "published_bytes": 2848,
+      "byte_identical": false
+    },
+    {
+      "path": "provenance/screening-runtime.json",
+      "archived_source": "experiments/inference-decoding-20261127/screening/results/runtime.json",
+      "original_sha256": "f8c6dfe5d0e3864bb960f23804748bcd65c0a7df3d932bf56f617ba6087c0de6",
+      "published_sha256": "2fb283dd4b44a1dd0e71600fa9ef1682a74fc6e8b3c73efe1f1c78bc964be9f7",
+      "original_bytes": 551,
+      "published_bytes": 542,
+      "byte_identical": false
+    },
+    {
+      "path": "provenance/storage-policy.json",
+      "archived_source": "experiments/inference-decoding-20261127/screening/manifests/storage_policy.json",
+      "original_sha256": "a9d503df7d96b07555b9bb7140299855d0e697c136e09631aa20d67e4dc39baf",
+      "published_sha256": "df9322c8cd142e799aea67a076dbb8f92d40ddeea9c56b272b3584cf3b7ebee7",
+      "original_bytes": 639,
+      "published_bytes": 641,
+      "byte_identical": false
+    },
+    {
+      "path": "source/decoding.py",
+      "archived_source": "experiments/inference-decoding-20261127/decoding.py",
+      "original_sha256": "2a1b7504129cb4c1643be1d7af1d7fdd2ff276ef72bbeb1576e4b950b14a5195",
+      "published_sha256": "2a1b7504129cb4c1643be1d7af1d7fdd2ff276ef72bbeb1576e4b950b14a5195",
+      "original_bytes": 1798,
+      "published_bytes": 1798,
+      "byte_identical": true
+    },
+    {
+      "path": "source/native-t07/submission/agent.py",
+      "archived_source": "experiments/inference-decoding-20261127/native-validation-t07/submission/agent.py",
+      "original_sha256": "6c2430f10969cbd13abc3d0a2702f2485baea614b818ff0daa9bef0c1c99abee",
+      "published_sha256": "6c2430f10969cbd13abc3d0a2702f2485baea614b818ff0daa9bef0c1c99abee",
+      "original_bytes": 1588,
+      "published_bytes": 1588,
+      "byte_identical": true
+    },
+    {
+      "path": "source/native-t07/submission/decoding.py",
+      "archived_source": "experiments/inference-decoding-20261127/native-validation-t07/submission/decoding.py",
+      "original_sha256": "2a1b7504129cb4c1643be1d7af1d7fdd2ff276ef72bbeb1576e4b950b14a5195",
+      "published_sha256": "2a1b7504129cb4c1643be1d7af1d7fdd2ff276ef72bbeb1576e4b950b14a5195",
+      "original_bytes": 1798,
+      "published_bytes": 1798,
+      "byte_identical": true
+    },
+    {
+      "path": "source/screening/confirm_t07.py",
+      "archived_source": "experiments/inference-decoding-20261127/screening/confirm_t07.py",
+      "original_sha256": "4c874cc9a0be927ccb88e915ec8e1ebad1322f7e4f4dfd35a5764675bb9264be",
+      "published_sha256": "4c874cc9a0be927ccb88e915ec8e1ebad1322f7e4f4dfd35a5764675bb9264be",
+      "original_bytes": 5940,
+      "published_bytes": 5940,
+      "byte_identical": true
+    },
+    {
+      "path": "source/screening/evaluate_screen.py",
+      "archived_source": "experiments/inference-decoding-20261127/screening/evaluate_screen.py",
+      "original_sha256": "5afe7c62f1847625aa334cf2be14de260a29b223febff2e19acfbc0d49d1be4e",
+      "published_sha256": "5afe7c62f1847625aa334cf2be14de260a29b223febff2e19acfbc0d49d1be4e",
+      "original_bytes": 15100,
+      "published_bytes": 15100,
+      "byte_identical": true
+    },
+    {
+      "path": "source/screening/evaluator/comparison.py",
+      "archived_source": "experiments/inference-decoding-20261127/screening/evaluator/comparison.py",
+      "original_sha256": "f54b51f360416ff1773518b9aace5fd547b241767dc886fa01fa2d6aca845e08",
+      "published_sha256": "f54b51f360416ff1773518b9aace5fd547b241767dc886fa01fa2d6aca845e08",
+      "original_bytes": 17073,
+      "published_bytes": 17073,
+      "byte_identical": true
+    },
+    {
+      "path": "source/screening/evaluator/run_matched.py",
+      "archived_source": "experiments/inference-decoding-20261127/screening/evaluator/run_matched.py",
+      "original_sha256": "cac6282d3bed37d6bdfc90b7b9d614908ffe806543c78cb22a35e6e318b49c9e",
+      "published_sha256": "cac6282d3bed37d6bdfc90b7b9d614908ffe806543c78cb22a35e6e318b49c9e",
+      "original_bytes": 22393,
+      "published_bytes": 22393,
+      "byte_identical": true
+    },
+    {
+      "path": "source/screening/evaluator/storage_gate.py",
+      "archived_source": "experiments/inference-decoding-20261127/screening/evaluator/storage_gate.py",
+      "original_sha256": "5f0b7bfe666873478bf3ffb521b2bcd88c2983e8101d265097a03f5bf352066a",
+      "published_sha256": "5f0b7bfe666873478bf3ffb521b2bcd88c2983e8101d265097a03f5bf352066a",
+      "original_bytes": 2699,
+      "published_bytes": 2699,
+      "byte_identical": true
+    },
+    {
+      "path": "validation/frozen-t1-validator.txt",
+      "archived_source": "logs/mission-release-6c2d549-validator.txt",
+      "original_sha256": "52d96af42707c1999a6b402d9dba2503a282fbc13109c1ab924cef33fc04f48b",
+      "published_sha256": "4e4acfb395441e3bec83d7d11668a3fe9931680cf909ab387ef4cce55870f32e",
+      "original_bytes": 1204,
+      "published_bytes": 1202,
+      "byte_identical": false
+    },
+    {
+      "path": "verify-scores.py",
+      "published_bytes": 1997,
+      "published_sha256": "37a7a697fb64cd773f23281ba7ae07599fb178452bb2c3f1ada4d60bbe9652cc",
+      "origin": "Publication README or portable offline verification source."
+    }
+  ]
+}

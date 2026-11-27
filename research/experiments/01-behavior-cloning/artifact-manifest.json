@@ -1,0 +1,1191 @@
+{
+  "source_training_commit": "c581d613430d40ba66644dfe8a2681b26feb1985",
+  "base_release": "6c2d5499f973c77b4a239f778837280edf64e57b",
+  "original_seal_commitment_sha256": "dadc40db8cc0629797aa45820dc52110dce5f1915269d047258f6e939f0ed117",
+  "source_scope": "Allowed screening maps, provenance hashes and data with machine paths normalized. The private generator and confirmation geometry are withheld.",
+  "screening_ledger_counts": {
+    "original_source_ledger_sha256": "d11ba6e32f2b1f99f923a54187b3fa4b827a21e7f8329d909b4248d03b070a78",
+    "published_normalized_ledger_sha256": "f1ee547649ef619996dc1c75dd943f5df11bc769a641e4fa0aa4ae5c522a4d9f",
+    "episode_count": 40,
+    "legal_action_count": 6352,
+    "invalid_actions": 0,
+    "layout_count": 4
+  },
+  "private_local_checkpoint_bytes_withheld": true,
+  "files": [
+    {
+      "published_path": "README.md",
+      "published_sha256": "7358a1856100e01d30f5180089918ea4257d34850061ac8ec948b227fc21d0c5",
+      "bytes": 3585
+    },
+    {
+      "published_path": "REPRODUCTION.md",
+      "published_sha256": "1d894f5175106abac28c391c0071bc3bec2e865b6faf5b7a27426f62791c7bb6",
+      "bytes": 3057
+    },
+    {
+      "published_path": "demonstrations/frozen-human-dataset.json",
+      "published_sha256": "609775921e304e35cba6ceef1c9397ac6addfda95069e2d7d5c083a50837bee5",
+      "bytes": 17930,
+      "original_sha256": "627d1182e382a15c0daf47f129f3452ee1e66fa1b2e4b125b9af081c3c966f7f",
+      "original_source_label": "demonstrations/frozen-human-dataset.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/BasicAim/episode-0000/episode.json",
+      "published_sha256": "8cdfa3e3f34e3505e5137247e40fed56776a0db0c49f4eefddcdae674929b357",
+      "bytes": 1649,
+      "original_sha256": "bcf29941d2e94b24562fffc65b76152f72cf0b27f455f6d2b12917bb9b10b566",
+      "original_source_label": "demonstrations/human/BasicAim-1795736838268139200/episode-0000/episode.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/BasicAim/episode-0000/start.json",
+      "published_sha256": "9d29b3f536e4d06e782bd276620156a6c2a927ff35e75aa5cc4b72f3b560ce45",
+      "bytes": 1311,
+      "original_sha256": "651839f61917c38ba74ba8c646a0fcb1cf39a4b94965c4eadd2788d1d1509a1a",
+      "original_source_label": "demonstrations/human/BasicAim-1795736838268139200/episode-0000/start.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/BasicAim/episode-0000/steps.npz",
+      "published_sha256": "23e38ccdc0f03a1ae89f51fba221768e2b6ac8f5d212d9a99621bfd38140287e",
+      "bytes": 16621,
+      "original_sha256": "23e38ccdc0f03a1ae89f51fba221768e2b6ac8f5d212d9a99621bfd38140287e",
+      "original_source_label": "demonstrations/human/BasicAim-1795736838268139200/episode-0000/steps.npz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "demonstrations/human/BasicAim/episode-0001/episode.json",
+      "published_sha256": "f2551ab7ae8e371a781a1f995ce529182e42797afceadc9c8bebae0ff68c4be7",
+      "bytes": 1649,
+      "original_sha256": "ad2b32d17b52083746cc130c774aeaafdd5f5a50e4486c7fd61321bc0eb5f6a6",
+      "original_source_label": "demonstrations/human/BasicAim-1795736838268139200/episode-0001/episode.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/BasicAim/episode-0001/start.json",
+      "published_sha256": "a4f445b23f6b4aa1a380d456f07ffcb0d6a8e0894dafa7d015306ab251083daa",
+      "bytes": 1311,
+      "original_sha256": "1a9f55c97f23d09e70620b2ed1f0ad45a8cd905e1c03c6b99cb7c602e9bf7c2a",
+      "original_source_label": "demonstrations/human/BasicAim-1795736838268139200/episode-0001/start.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/BasicAim/episode-0001/steps.npz",
+      "published_sha256": "3bfd64e2737ea9afb851acb394efcd6129e054c669313dac7b02bb98a6190488",
+      "bytes": 8689,
+      "original_sha256": "3bfd64e2737ea9afb851acb394efcd6129e054c669313dac7b02bb98a6190488",
+      "original_source_label": "demonstrations/human/BasicAim-1795736838268139200/episode-0001/steps.npz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "demonstrations/human/BasicAim/episode-0002/episode.json",
+      "published_sha256": "98d8470287cf4ff2ced6e1b1a1872082c700b252207ba1a1cf2ae43061888291",
+      "bytes": 1649,
+      "original_sha256": "5232fb417fc8f76ff574ea650e62ed483c3f4ef3288cd085bb8307ddb718941e",
+      "original_source_label": "demonstrations/human/BasicAim-1795736838268139200/episode-0002/episode.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/BasicAim/episode-0002/start.json",
+      "published_sha256": "2193fd6d1f7b9a1d9847418c2abf388d8a0fe32211403bb1e27aead16e938d57",
+      "bytes": 1311,
+      "original_sha256": "343c42d640222398c719465d25e3fcf3a4210c36f8a4186fcd2fbbd81091757e",
+      "original_source_label": "demonstrations/human/BasicAim-1795736838268139200/episode-0002/start.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/BasicAim/episode-0002/steps.npz",
+      "published_sha256": "3c761831a1f875568ed708d95360da07cc3478c8978eefb0b1e59ebf6d9a50a4",
+      "bytes": 19050,
+      "original_sha256": "3c761831a1f875568ed708d95360da07cc3478c8978eefb0b1e59ebf6d9a50a4",
+      "original_source_label": "demonstrations/human/BasicAim-1795736838268139200/episode-0002/steps.npz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "demonstrations/human/BasicAim/episode-0003/episode.json",
+      "published_sha256": "b27896df41de57c065b89fc0a04bb87a0d3634aaba095a2490843d49d503cc01",
+      "bytes": 1651,
+      "original_sha256": "5bd361bd87a5044a99947c0373066497f28ebf72dc4decac334d92a743530e4d",
+      "original_source_label": "demonstrations/human/BasicAim-1795736838268139200/episode-0003/episode.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/BasicAim/episode-0003/start.json",
+      "published_sha256": "8834233d23145c54a5621fd260dc884016361c181c0747694b0d2fa40e24c693",
+      "bytes": 1311,
+      "original_sha256": "7991494b9ae15ed8da968391703bc0ae919dd35249924f10dff5789d62e3c797",
+      "original_source_label": "demonstrations/human/BasicAim-1795736838268139200/episode-0003/start.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/BasicAim/episode-0003/steps.npz",
+      "published_sha256": "bbe7b70b9361908e7497242a96d6a56c13575aeffbccecd118209faf59ed66f5",
+      "bytes": 27141,
+      "original_sha256": "bbe7b70b9361908e7497242a96d6a56c13575aeffbccecd118209faf59ed66f5",
+      "original_source_label": "demonstrations/human/BasicAim-1795736838268139200/episode-0003/steps.npz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "demonstrations/human/BasicAim/session.json",
+      "published_sha256": "d439598cba234f6f13cae05e4498b4634c3dde77510ec6c9010f0fa59308a3a9",
+      "bytes": 819,
+      "original_sha256": "cd279ede6ace4d6d4ce48ae8a8f9e8ba7aa57631814de5362e16688ff09579c7",
+      "original_source_label": "demonstrations/human/BasicAim-1795736838268139200/session.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/CenterCombat/episode-0000/episode.json",
+      "published_sha256": "836d52739511670b86602aa55bf5e431f131bd244a11babaa3c716ad0b418852",
+      "bytes": 1677,
+      "original_sha256": "815cc31ad4ade1fc82e9191b3f92b06dcebb7fdcc626dc550029ae4f1e4d4a18",
+      "original_source_label": "demonstrations/human/CenterCombat-1795736920351156100/episode-0000/episode.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/CenterCombat/episode-0000/start.json",
+      "published_sha256": "087f348c4be34f6ae96c9403b5e642ba30b4cc6d8571f55f4c4b2bd447f0597b",
+      "bytes": 1335,
+      "original_sha256": "e237bf5f09525a7ce6fa28915389bc6a8b9b681433c4dad7b5967f5c4a001a42",
+      "original_source_label": "demonstrations/human/CenterCombat-1795736920351156100/episode-0000/start.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/CenterCombat/episode-0000/steps.npz",
+      "published_sha256": "5c61497ac8e17a7ac047895ac322c7f22b9a3640744d5ef1e1704641c484d9e8",
+      "bytes": 78724,
+      "original_sha256": "5c61497ac8e17a7ac047895ac322c7f22b9a3640744d5ef1e1704641c484d9e8",
+      "original_source_label": "demonstrations/human/CenterCombat-1795736920351156100/episode-0000/steps.npz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "demonstrations/human/CenterCombat/episode-0001/episode.json",
+      "published_sha256": "4246a991019254e52a2bdcbf7cf61a3ca00a14eb0bb6b3f88d6b0d6de891375e",
+      "bytes": 1679,
+      "original_sha256": "ff51557ec77a3b488c514ade59a23c3c6da46b472a7427179dcdf1af154b434d",
+      "original_source_label": "demonstrations/human/CenterCombat-1795736920351156100/episode-0001/episode.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/CenterCombat/episode-0001/start.json",
+      "published_sha256": "b22e612b310d414a8a84d20242360973c849e0e23261c74644616e5b450ed912",
+      "bytes": 1335,
+      "original_sha256": "0f741a0f004d9ae8cfbd2a0935557cf01bc22bf1c2aeaeba08d6ad01ae6198e9",
+      "original_source_label": "demonstrations/human/CenterCombat-1795736920351156100/episode-0001/start.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/CenterCombat/episode-0001/steps.npz",
+      "published_sha256": "a69672e26936fa263f9d125164638ebca3b403b3b1069dd4f2d91a9b896f8af5",
+      "bytes": 84736,
+      "original_sha256": "a69672e26936fa263f9d125164638ebca3b403b3b1069dd4f2d91a9b896f8af5",
+      "original_source_label": "demonstrations/human/CenterCombat-1795736920351156100/episode-0001/steps.npz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "demonstrations/human/CenterCombat/episode-0002/episode.json",
+      "published_sha256": "bb8f43eec4a0427ca679098703c94d2eb7f7895fb07ffe0c5fa8ca7ac19acec8",
+      "bytes": 1679,
+      "original_sha256": "d18807512cc61f3f71a8e4df903a4b76eef0b7179ee854b845220f993ec70cda",
+      "original_source_label": "demonstrations/human/CenterCombat-1795736920351156100/episode-0002/episode.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/CenterCombat/episode-0002/start.json",
+      "published_sha256": "83848e45a6d0aeeca099cdafeabd125ed2a783b27b9613727717a42c8deb82b6",
+      "bytes": 1335,
+      "original_sha256": "7dd083d01521a0b3e56ea7dc355aee21eb8b964b7ea4b5210995fe2d663a55a4",
+      "original_source_label": "demonstrations/human/CenterCombat-1795736920351156100/episode-0002/start.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/CenterCombat/episode-0002/steps.npz",
+      "published_sha256": "a8e51ab5716767ea4737950f9d03cd82a39ebf473253e6edbd9bd2e4a1707dd7",
+      "bytes": 64841,
+      "original_sha256": "a8e51ab5716767ea4737950f9d03cd82a39ebf473253e6edbd9bd2e4a1707dd7",
+      "original_source_label": "demonstrations/human/CenterCombat-1795736920351156100/episode-0002/steps.npz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "demonstrations/human/CenterCombat/episode-0003/episode.json",
+      "published_sha256": "76f31c37cc1e3d7a1f0b8ad5e6580222111d87d6770f369d24453ed8ba43cd31",
+      "bytes": 1678,
+      "original_sha256": "1bdd552341de4de6f4daae6318478ae59191fd0356141d35447c177b38636b1f",
+      "original_source_label": "demonstrations/human/CenterCombat-1795736920351156100/episode-0003/episode.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/CenterCombat/episode-0003/start.json",
+      "published_sha256": "dd10108e4f02bb36d555e4580a3464a78665ed2236dbf5b3260d1a9f52d23b2a",
+      "bytes": 1335,
+      "original_sha256": "79cfd797b1d849430e93431c011a8b7f75b82e21d232de2b11004fb9aa26d28b",
+      "original_source_label": "demonstrations/human/CenterCombat-1795736920351156100/episode-0003/start.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/CenterCombat/episode-0003/steps.npz",
+      "published_sha256": "a54dd39b98b13bcc00613a61b5e72cf139ebd2843aab63838dcb8d451d39dfdc",
+      "bytes": 60008,
+      "original_sha256": "a54dd39b98b13bcc00613a61b5e72cf139ebd2843aab63838dcb8d451d39dfdc",
+      "original_source_label": "demonstrations/human/CenterCombat-1795736920351156100/episode-0003/steps.npz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "demonstrations/human/CenterCombat/episode-0004/episode.json",
+      "published_sha256": "795cdadca2172b05bfba79bde05100a984813e114d829dc60df572446aa461f3",
+      "bytes": 1679,
+      "original_sha256": "1849fa45f5fe0ab0dc6ba410c93c94eb1b42482eeb34e6f626e4f487eac5a902",
+      "original_source_label": "demonstrations/human/CenterCombat-1795736920351156100/episode-0004/episode.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/CenterCombat/episode-0004/start.json",
+      "published_sha256": "c47dcf38ab0ac8c6bef0fe33d91c6c0434922d8ef33e0b08d3b5ce9e109ce586",
+      "bytes": 1335,
+      "original_sha256": "fcf85afb34ec9d97011525edb180f26be84acd61320f62352be328c629843adf",
+      "original_source_label": "demonstrations/human/CenterCombat-1795736920351156100/episode-0004/start.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/CenterCombat/episode-0004/steps.npz",
+      "published_sha256": "42dc6b811f76bea2b9036c2ea9a319da9f3df7299e5d3d195504add8df9c0636",
+      "bytes": 84056,
+      "original_sha256": "42dc6b811f76bea2b9036c2ea9a319da9f3df7299e5d3d195504add8df9c0636",
+      "original_source_label": "demonstrations/human/CenterCombat-1795736920351156100/episode-0004/steps.npz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "demonstrations/human/CenterCombat/session.json",
+      "published_sha256": "0e0a7a59fda82e5b5c20eff491af903c06eca0a4b54b39793bfc2d02ace4ab20",
+      "bytes": 843,
+      "original_sha256": "9340eb6c90cdd9a3300ae8ed1f2192941ed900e8bda52f7780349a9888c7b947",
+      "original_source_label": "demonstrations/human/CenterCombat-1795736920351156100/session.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0000/episode.json",
+      "published_sha256": "e315cb169992f59e4acd6e2e0228e6f41db32513845700cb41586b07c726e402",
+      "bytes": 1669,
+      "original_sha256": "9d0c782bc0b835e4392c9aecc89a83fb2f35f868b9966cf31df5b8b79759dd32",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0000/episode.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0000/start.json",
+      "published_sha256": "3c45145d81d1ea5cc8aafbecfbad111c4ade63423c3e9fec661b3f4b8a80d491",
+      "bytes": 1343,
+      "original_sha256": "b329d821208c092162b64b2528358095e1603bf2bd253f5780cb1e68aac6e8ae",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0000/start.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0000/steps.npz",
+      "published_sha256": "7ea4fbf0ced78a7a41879c77bbcbd9bc75cd5af0e10c4d519d15945f55686d22",
+      "bytes": 23645,
+      "original_sha256": "7ea4fbf0ced78a7a41879c77bbcbd9bc75cd5af0e10c4d519d15945f55686d22",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0000/steps.npz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0001/episode.json",
+      "published_sha256": "f80056f60bd2858052e49f548dfea7a64f9a7874261f0a24d1c1827b16952188",
+      "bytes": 1667,
+      "original_sha256": "a8df8503e178989c57237cee10c15745f250bb711d144b66a8eaa4c810d6fe2b",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0001/episode.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0001/start.json",
+      "published_sha256": "d8a6c9d2352d66672d584b9346ee9f9abe032514a603714879f00c26915b32e6",
+      "bytes": 1343,
+      "original_sha256": "370a414fb14289acf82853e92a4879117243f6590d65f82b74a12d2238d93769",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0001/start.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0001/steps.npz",
+      "published_sha256": "a6a7f4ed5d1ed282595273efcecd3bfe7515c5e9b19b108e4010b15e289e8a83",
+      "bytes": 6986,
+      "original_sha256": "a6a7f4ed5d1ed282595273efcecd3bfe7515c5e9b19b108e4010b15e289e8a83",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0001/steps.npz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0002/episode.json",
+      "published_sha256": "26deab51834ec7e185931f4b50fa458f92a221d2188ca6129a73ea2bce44902c",
+      "bytes": 1673,
+      "original_sha256": "4fa0af941941540457afe5cd9cc5ab9ea10d45149cd5dd5a58bc0060c99b7602",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0002/episode.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0002/start.json",
+      "published_sha256": "e632b3006836e5f742a56ab477fe80346dfef5a111418918b649fb7ee20c3627",
+      "bytes": 1343,
+      "original_sha256": "48bc6556a0351f1cc9b6cbc7566d73e6bede45ceb2fe92ed30453ed1200c17aa",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0002/start.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0002/steps.npz",
+      "published_sha256": "00b00106d0a8b3b558bd2c50287631b1908d2433ff3e56a7ac82c915caa99db2",
+      "bytes": 97386,
+      "original_sha256": "00b00106d0a8b3b558bd2c50287631b1908d2433ff3e56a7ac82c915caa99db2",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0002/steps.npz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0003/episode.json",
+      "published_sha256": "90e8e81a1d65b8358fca8ec9bdfafb013799adf278785f9b135d9c1efeeda4ce",
+      "bytes": 1669,
+      "original_sha256": "7be1de799774dfe13e531b028c257d986af8762e1f990c655852000767661d4c",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0003/episode.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0003/start.json",
+      "published_sha256": "4850987e7bd66d7bbd8bd9ed3a7daa6abad79dfea0d057fe98fadd2722b6cb94",
+      "bytes": 1343,
+      "original_sha256": "41d725010ef89a6aab57dcbb46ff546f5563c17c5804cbe048420b51980189ec",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0003/start.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0003/steps.npz",
+      "published_sha256": "bb61fc2018a5b45a3d9094c4d17d811f379ea1699303798a8a4a5aab6a64783f",
+      "bytes": 53630,
+      "original_sha256": "bb61fc2018a5b45a3d9094c4d17d811f379ea1699303798a8a4a5aab6a64783f",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0003/steps.npz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0004/episode.json",
+      "published_sha256": "0ff94cd3b7fabbd5861caa6385fb3d1614f5a2fd0c9b328d9a3fd3edac64f8e3",
+      "bytes": 1669,
+      "original_sha256": "df327b8ea4ff0260028ffb85217d5c5fb02acf31e85c455807380fe07236a485",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0004/episode.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0004/start.json",
+      "published_sha256": "9bfaf2f61636105e7dc230b8d7d17fca81142ee054d9da55f22e7d9167ce421d",
+      "bytes": 1343,
+      "original_sha256": "369fdfc066f17a15a0cb7d1fe222545a68a6f091a0773468e953cd22e6bf0ff8",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0004/start.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0004/steps.npz",
+      "published_sha256": "7c9c65efc50c1d2afc1c1233e6d32344a266af2051748fdb4f2e5b9628639a5e",
+      "bytes": 55154,
+      "original_sha256": "7c9c65efc50c1d2afc1c1233e6d32344a266af2051748fdb4f2e5b9628639a5e",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0004/steps.npz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0005/episode.json",
+      "published_sha256": "b649c191e811f7c8f2037b0516eb7bcf215b8657de8a12514e32fc3cc8c8d23d",
+      "bytes": 1669,
+      "original_sha256": "ea60a1902db62e2c471c1d8377729c00772631d6190d59739e9aa881e9a8a8fa",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0005/episode.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0005/start.json",
+      "published_sha256": "a098b45f57c01b20f978d127e84fd4784d275932307f62cfa7f50db89fd7d025",
+      "bytes": 1343,
+      "original_sha256": "3e51887ec51f6db266111f1503bf11e77f6e9f20c94aa45e23c8f661f6bf4868",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0005/start.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0005/steps.npz",
+      "published_sha256": "db4270d76f9585a586376dc769d44c15b15fb9529f4d0eb36afb7a35902ccaa8",
+      "bytes": 56021,
+      "original_sha256": "db4270d76f9585a586376dc769d44c15b15fb9529f4d0eb36afb7a35902ccaa8",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0005/steps.npz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0006/episode.json",
+      "published_sha256": "a5781c227a85c6e042d05a147a28cce756491ae72903f90cd78a8d20b92ee1d6",
+      "bytes": 1669,
+      "original_sha256": "bf885fea4d7b77b951623c89f0d283cd64106e3a218fc60f6692d6f558e9bcd5",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0006/episode.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0006/start.json",
+      "published_sha256": "09816e7ba9168f3f7b5c944c7866dc8fa4f865f684c3788b5ec5ed95ffe920d5",
+      "bytes": 1343,
+      "original_sha256": "12af5150cb0aa9eeef7396bc0e4259f4b4424b53f16b01f795186a5544156f69",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0006/start.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0006/steps.npz",
+      "published_sha256": "993266805f197fc7e08e7c02df022eaf75afe05f5cf2fb8f703f96425e4c58b3",
+      "bytes": 60828,
+      "original_sha256": "993266805f197fc7e08e7c02df022eaf75afe05f5cf2fb8f703f96425e4c58b3",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0006/steps.npz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0007/episode.json",
+      "published_sha256": "4ea8fdd4d648e45e0afeba1b05e8bfc7ad6b4d53d6ebd70326703546b3ad5026",
+      "bytes": 1667,
+      "original_sha256": "ec33666c611d7d930bee4771327a7d98904b1d96c7c94f9860ceb83518785bac",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0007/episode.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0007/start.json",
+      "published_sha256": "cfbc2cab3a8c035f7992f51bfd2bae76d7d29875d5e0afb55504573e0efd2428",
+      "bytes": 1343,
+      "original_sha256": "47753464ab54f9f3c79d6b858b257e44f59c37d43ec78fad626d324f9e4e5068",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0007/start.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0007/steps.npz",
+      "published_sha256": "2ea6cdffa5179f4c94d980606b2ef889aedc3c67c0ddb3b6c5c488183fe0729e",
+      "bytes": 11204,
+      "original_sha256": "2ea6cdffa5179f4c94d980606b2ef889aedc3c67c0ddb3b6c5c488183fe0729e",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0007/steps.npz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0008/episode.json",
+      "published_sha256": "7227362eb55421806358a36a7564a9ec3b4e28ccfea2cf1819660959fd5ecf37",
+      "bytes": 1667,
+      "original_sha256": "ede88648d452acf6d3ec046476fb07f9f835a4251e7f1ec93f3b1684cc9ba6a3",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0008/episode.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0008/start.json",
+      "published_sha256": "19aba6d8cbed4e584dd1c861f9db73b3366539c73aa90638dad19fca3365fd63",
+      "bytes": 1343,
+      "original_sha256": "02b8f061a78017aa591cb8cec5dab3ab171a5401a6a400ca40b4cc0ef5085f2c",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0008/start.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0008/steps.npz",
+      "published_sha256": "1ea92b4db055ba7b94a2f5f7a4e05a5497ef9d79544c1bf4a08fdd1e88c22954",
+      "bytes": 25560,
+      "original_sha256": "1ea92b4db055ba7b94a2f5f7a4e05a5497ef9d79544c1bf4a08fdd1e88c22954",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0008/steps.npz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0009/episode.json",
+      "published_sha256": "2e27748092689406c694ce7a7903b56df281400f388a26fe9ba2b60df84ccaf3",
+      "bytes": 1669,
+      "original_sha256": "b4c8b88ea3836dacb5febaafe60320ac2a379a5964f61c173dde82fd533d0e69",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0009/episode.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0009/start.json",
+      "published_sha256": "8ee8b2f6e7e10ca1b5eea12b7fdb296d43e2616f5cad6e69d76ab43191a2f8b1",
+      "bytes": 1343,
+      "original_sha256": "f1031a1d74073030eb5b905191f5ac5f4e905c66aaf5362d51823590ad90d190",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0009/start.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0009/steps.npz",
+      "published_sha256": "b747a109db008ef54ec3982d4c40c5204b45be9a9f9461693ddfcab39650e7a3",
+      "bytes": 39016,
+      "original_sha256": "b747a109db008ef54ec3982d4c40c5204b45be9a9f9461693ddfcab39650e7a3",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0009/steps.npz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0010/episode.json",
+      "published_sha256": "55b67c2c9ab41ebb046e03d42176c22242f14b8cfd9821e6597aa11b758b2cab",
+      "bytes": 1668,
+      "original_sha256": "1f5862ad37b4e1bc733c650464a99017e050920e56d66c25c007d8c22d113e9d",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0010/episode.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0010/start.json",
+      "published_sha256": "7d2be763beed7f42fd93ff256e1b529c75c7f2ba35504b66dd98debc75081eba",
+      "bytes": 1344,
+      "original_sha256": "2b67304658cdb8786dd5fc763f27de95294797665aedc5bd20f9b1ed3ef55e70",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0010/start.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0010/steps.npz",
+      "published_sha256": "5c4a026c0d4e6f0e070f607f760aac6a17144f378484d89637501b364efb16db",
+      "bytes": 28658,
+      "original_sha256": "5c4a026c0d4e6f0e070f607f760aac6a17144f378484d89637501b364efb16db",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0010/steps.npz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0011/episode.json",
+      "published_sha256": "3f2dd23434e898a8b096a982851bb54eba6c34716d06ceefe587c8abf7f82532",
+      "bytes": 1670,
+      "original_sha256": "5f10329bc069b47f1cf6a0f26351737c73e563b7123c4395ceb494c38b695315",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0011/episode.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0011/start.json",
+      "published_sha256": "477ce0b7690abeae27791c6c1d694bc3b155244125b1d05b61b083145494a16e",
+      "bytes": 1344,
+      "original_sha256": "28b11cc755ddc2b5e9f443babfdc613d566c532c14c0a2b9c0c2317c2bb72b7c",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0011/start.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0011/steps.npz",
+      "published_sha256": "8aec5628c3835b2370a060bab93d057ac6d7b526a809609a4c9ada9bcc23c999",
+      "bytes": 36966,
+      "original_sha256": "8aec5628c3835b2370a060bab93d057ac6d7b526a809609a4c9ada9bcc23c999",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0011/steps.npz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0012/episode.json",
+      "published_sha256": "aec21998f7f820cc9927776f34b371af1fcd930da2a962e086a7e0d1a865136f",
+      "bytes": 1668,
+      "original_sha256": "70a0dfbdeacd60dd143490b7a2046b6c257b16c1103eefc02a6bb1f5622b09e3",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0012/episode.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0012/start.json",
+      "published_sha256": "ed2d33e582dbaa888dc1eacbac42be4048119749626f8c0c9d843b285ea978e3",
+      "bytes": 1344,
+      "original_sha256": "979f2a552ed6ad46476613b2b78fd1d9c408631e535569259a0c88517a2cefbc",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0012/start.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0012/steps.npz",
+      "published_sha256": "9cc305d0c32d02f8eb322e289053f7a96a3cf8c2e95790bb3c03521ecd463656",
+      "bytes": 8548,
+      "original_sha256": "9cc305d0c32d02f8eb322e289053f7a96a3cf8c2e95790bb3c03521ecd463656",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0012/steps.npz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0013/episode.json",
+      "published_sha256": "e6df9656ca4b1f08d221de9288bfca5e2da54267e7abf1ebe5881436b5182456",
+      "bytes": 1668,
+      "original_sha256": "68dc3107a34529e7b292c5674578b7634e95f08d49b655faf38c6c03acf27783",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0013/episode.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0013/start.json",
+      "published_sha256": "589cfb3688561d964ecef8e501ada3bd380c7543aedec4e0b958012d22fdada4",
+      "bytes": 1344,
+      "original_sha256": "e4e9047c5c4738b5ec8190c86097e60145ff99f170609170764080a8f1c145f5",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0013/start.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/episode-0013/steps.npz",
+      "published_sha256": "2e0a9fb7d0ec6fa8cc8cd0ca2086440358bb43fca4e6a7c9d5d3575ef4128aa4",
+      "bytes": 30317,
+      "original_sha256": "2e0a9fb7d0ec6fa8cc8cd0ca2086440358bb43fca4e6a7c9d5d3575ef4128aa4",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/episode-0013/steps.npz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "demonstrations/human/KeyDoor/session.json",
+      "published_sha256": "87ea13d1121db25d881f0565d58c6f58019f5d96072cae600816091988330788",
+      "bytes": 851,
+      "original_sha256": "998199f6836d0a1ccc94555fcf37f93bdc4bb36ce29b975763cb91a04129afd5",
+      "original_source_label": "demonstrations/human/KeyDoor-1795736439999221900/session.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "evaluation/batches/6a70447b7d4e64415731673b68b5e32965f690d379910b5f019c744df93f6b18.json",
+      "published_sha256": "d9cad41bff30d4815cafbb1541a1a8ac7a4783e22924861c7db58b763bf48a85",
+      "bytes": 3150,
+      "original_sha256": "6a70447b7d4e64415731673b68b5e32965f690d379910b5f019c744df93f6b18",
+      "original_source_label": "screening-results/batches/6a70447b7d4e64415731673b68b5e32965f690d379910b5f019c744df93f6b18.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "evaluation/batches/afe07ebdb0ba354f23caf9f8cd38c4663b505d33fba9bb7773c8eaaabe23530d.json",
+      "published_sha256": "5ba9a31fec45091f4fafa1768fd12328f7a1dcfff7acdf1e5a8f91b3b48970a0",
+      "bytes": 2627,
+      "original_sha256": "afe07ebdb0ba354f23caf9f8cd38c4663b505d33fba9bb7773c8eaaabe23530d",
+      "original_source_label": "screening-results/batches/afe07ebdb0ba354f23caf9f8cd38c4663b505d33fba9bb7773c8eaaabe23530d.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "evaluation/batches/e4b082bac258ade6f20a3005fa79798b6a1d81f28387a3ccfc12c243fee13611.json",
+      "published_sha256": "cccaa0c9e9d2a01395b7d5895573058b2df9b0770215f64e06f005837bc6fa64",
+      "bytes": 1576,
+      "original_sha256": "e4b082bac258ade6f20a3005fa79798b6a1d81f28387a3ccfc12c243fee13611",
+      "original_source_label": "screening-results/batches/e4b082bac258ade6f20a3005fa79798b6a1d81f28387a3ccfc12c243fee13611.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "evaluation/candidate-manifest.json",
+      "published_sha256": "ce2002021c4e916fcbecfd33856ad14a710dfe5ebbad869d8601d7894ed3dd27",
+      "bytes": 3084
+    },
+    {
+      "published_path": "evaluation/maps/aim-fork.wad",
+      "published_sha256": "16019d644f47d21f400dd13a82785ae09551b4d05a7be0d534f30e75bc550144",
+      "bytes": 6725,
+      "original_sha256": "16019d644f47d21f400dd13a82785ae09551b4d05a7be0d534f30e75bc550144",
+      "original_source_label": "screening_maps/aim-fork.wad",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/maps/branch-recovery.wad",
+      "published_sha256": "3303b036bfabe4fffd13bf56168fee22f7d4bea5ef5dc878a99b685322ef7195",
+      "bytes": 11489,
+      "original_sha256": "3303b036bfabe4fffd13bf56168fee22f7d4bea5ef5dc878a99b685322ef7195",
+      "original_source_label": "screening_maps/branch-recovery.wad",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/maps/key-return-lock.wad",
+      "published_sha256": "1d90716d6ebe0155dae831192773e8db82efc461e92bdb8413ebf207c5cbeee6",
+      "bytes": 11149,
+      "original_sha256": "1d90716d6ebe0155dae831192773e8db82efc461e92bdb8413ebf207c5cbeee6",
+      "original_source_label": "screening_maps/key-return-lock.wad",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/maps/occluded-combat-loop.wad",
+      "published_sha256": "6c85786be39fa5b5911a1f63f7b92d39ffad1d24c131b7ea9af43eef137e39e7",
+      "bytes": 10807,
+      "original_sha256": "6c85786be39fa5b5911a1f63f7b92d39ffad1d24c131b7ea9af43eef137e39e7",
+      "original_source_label": "screening_maps/occluded-combat-loop.wad",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/promotion-rules.json",
+      "published_sha256": "63b8426c254a205ba92d2ccc256d5ed3cb8e288538dc3a3f3b62c9a0c45d2c28",
+      "bytes": 1000,
+      "original_sha256": "63b8426c254a205ba92d2ccc256d5ed3cb8e288538dc3a3f3b62c9a0c45d2c28",
+      "original_source_label": "promotion-rules.json",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/protocol.json",
+      "published_sha256": "c37bc3d286eb30e39c32771c2a97afee5537242714e19c567768afaca5458638",
+      "bytes": 8189,
+      "original_sha256": "e9ec321a8f28bc5381f130b09ef2ded9cfb4c2f3d418a08575d4ab4f0844f7dd",
+      "original_source_label": "evaluation-protocol.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "evaluation/scoring_manifest.json",
+      "published_sha256": "4ab6abdfa1d044c94eab63c80f5c7ba5c4a2cd8ea16c2c94b03277c20c564fed",
+      "bytes": 3138,
+      "original_sha256": "1ca7aeb19af8b5a787bd66cd86234690764689c5979876fdcb04a0b8f9bfc9fd",
+      "original_source_label": "shared/scoring_manifest.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "evaluation/screening.jsonl",
+      "published_sha256": "f1ee547649ef619996dc1c75dd943f5df11bc769a641e4fa0aa4ae5c522a4d9f",
+      "bytes": 85336,
+      "original_sha256": "d11ba6e32f2b1f99f923a54187b3fa4b827a21e7f8329d909b4248d03b070a78",
+      "original_source_label": "screening-results/episodes.jsonl",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "evaluation/summary.json",
+      "published_sha256": "a21d2141832f48ff532bf613c48495b35f5780d8070a2408cf387f8161b3a545",
+      "bytes": 433182,
+      "original_sha256": "a21d2141832f48ff532bf613c48495b35f5780d8070a2408cf387f8161b3a545",
+      "original_source_label": "screening-results/summary.json",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/traces/BC-PPO-aim-fork-55021.json.gz",
+      "published_sha256": "315e6c53202fe5578a39a5f754107d61259102908f7a59c6bb43b661bac02c79",
+      "bytes": 2764,
+      "original_sha256": "315e6c53202fe5578a39a5f754107d61259102908f7a59c6bb43b661bac02c79",
+      "original_source_label": "screening-results/traces/BC-PPO-aim-fork-55021.json.gz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/traces/BC-PPO-aim-fork-55022.json.gz",
+      "published_sha256": "881a1d9a51e0c8d55ee3c0211c305a07f8fe982595325de4a905eab1c7311685",
+      "bytes": 3031,
+      "original_sha256": "881a1d9a51e0c8d55ee3c0211c305a07f8fe982595325de4a905eab1c7311685",
+      "original_source_label": "screening-results/traces/BC-PPO-aim-fork-55022.json.gz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/traces/BC-PPO-branch-recovery-55021.json.gz",
+      "published_sha256": "3f1c7bf1a92f634153b1f6b886e3ded0aff68336be348036aa2a660d500ec202",
+      "bytes": 5037,
+      "original_sha256": "3f1c7bf1a92f634153b1f6b886e3ded0aff68336be348036aa2a660d500ec202",
+      "original_source_label": "screening-results/traces/BC-PPO-branch-recovery-55021.json.gz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/traces/BC-PPO-branch-recovery-55022.json.gz",
+      "published_sha256": "728502cf9d76556046d3f7bdb373dd656563e1f3bf39d3f674c1d1adf7409d79",
+      "bytes": 4924,
+      "original_sha256": "728502cf9d76556046d3f7bdb373dd656563e1f3bf39d3f674c1d1adf7409d79",
+      "original_source_label": "screening-results/traces/BC-PPO-branch-recovery-55022.json.gz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/traces/BC-PPO-key-return-lock-55021.json.gz",
+      "published_sha256": "86325ad300a98449dd8f628dc5543aa9d91c3a0fed72f1c9c40683449922b192",
+      "bytes": 4327,
+      "original_sha256": "86325ad300a98449dd8f628dc5543aa9d91c3a0fed72f1c9c40683449922b192",
+      "original_source_label": "screening-results/traces/BC-PPO-key-return-lock-55021.json.gz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/traces/BC-PPO-key-return-lock-55022.json.gz",
+      "published_sha256": "201ce492d0ab7dc1f96f4b2ec40fcf88c872f306d1fe156435dc8958e46fe814",
+      "bytes": 5002,
+      "original_sha256": "201ce492d0ab7dc1f96f4b2ec40fcf88c872f306d1fe156435dc8958e46fe814",
+      "original_source_label": "screening-results/traces/BC-PPO-key-return-lock-55022.json.gz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/traces/BC-PPO-occluded-combat-loop-55021.json.gz",
+      "published_sha256": "08e16850bfbc025aca87c728d14bb589c73fab459fe76cca46cb0b737814462f",
+      "bytes": 3484,
+      "original_sha256": "08e16850bfbc025aca87c728d14bb589c73fab459fe76cca46cb0b737814462f",
+      "original_source_label": "screening-results/traces/BC-PPO-occluded-combat-loop-55021.json.gz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/traces/BC-PPO-occluded-combat-loop-55022.json.gz",
+      "published_sha256": "d202da5604e1422d93d8a33b1035176e07a1ea6566b112ac012c58e9412975dd",
+      "bytes": 1957,
+      "original_sha256": "d202da5604e1422d93d8a33b1035176e07a1ea6566b112ac012c58e9412975dd",
+      "original_source_label": "screening-results/traces/BC-PPO-occluded-combat-loop-55022.json.gz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/traces/BC-only-aim-fork-55021.json.gz",
+      "published_sha256": "d5933aa6e401331ad5737dde85fae0deb464aedfe0ae75821a66bfb9face68e5",
+      "bytes": 1844,
+      "original_sha256": "d5933aa6e401331ad5737dde85fae0deb464aedfe0ae75821a66bfb9face68e5",
+      "original_source_label": "screening-results/traces/BC-only-aim-fork-55021.json.gz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/traces/BC-only-aim-fork-55022.json.gz",
+      "published_sha256": "e35500bfee4f11551a07350eed602890a95641b239c510e199f373093dcae057",
+      "bytes": 2624,
+      "original_sha256": "e35500bfee4f11551a07350eed602890a95641b239c510e199f373093dcae057",
+      "original_source_label": "screening-results/traces/BC-only-aim-fork-55022.json.gz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/traces/BC-only-branch-recovery-55021.json.gz",
+      "published_sha256": "06518f31cbeb1b950d7ca1f6a173c6697d95d41702d597fbe3b164f20c320a27",
+      "bytes": 4706,
+      "original_sha256": "06518f31cbeb1b950d7ca1f6a173c6697d95d41702d597fbe3b164f20c320a27",
+      "original_source_label": "screening-results/traces/BC-only-branch-recovery-55021.json.gz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/traces/BC-only-branch-recovery-55022.json.gz",
+      "published_sha256": "12ba8e84974e1010a9f3c98624c847d742f7d5c80d966b5bd25ffbde1376e551",
+      "bytes": 4521,
+      "original_sha256": "12ba8e84974e1010a9f3c98624c847d742f7d5c80d966b5bd25ffbde1376e551",
+      "original_source_label": "screening-results/traces/BC-only-branch-recovery-55022.json.gz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/traces/BC-only-key-return-lock-55021.json.gz",
+      "published_sha256": "b741fe50a58026dba2302d5b9777e983a43d8144d4a279b599e6c58777c01467",
+      "bytes": 3027,
+      "original_sha256": "b741fe50a58026dba2302d5b9777e983a43d8144d4a279b599e6c58777c01467",
+      "original_source_label": "screening-results/traces/BC-only-key-return-lock-55021.json.gz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/traces/BC-only-key-return-lock-55022.json.gz",
+      "published_sha256": "bd84302217ed174e8337cec09dfce08cd736744b1ebdbc706936265e09843407",
+      "bytes": 2908,
+      "original_sha256": "bd84302217ed174e8337cec09dfce08cd736744b1ebdbc706936265e09843407",
+      "original_source_label": "screening-results/traces/BC-only-key-return-lock-55022.json.gz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/traces/BC-only-occluded-combat-loop-55021.json.gz",
+      "published_sha256": "16b9f79f9a1abd6aab9b952b0b34da3b23719fc7bae43d312f10d6fcb87e69df",
+      "bytes": 4420,
+      "original_sha256": "16b9f79f9a1abd6aab9b952b0b34da3b23719fc7bae43d312f10d6fcb87e69df",
+      "original_source_label": "screening-results/traces/BC-only-occluded-combat-loop-55021.json.gz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/traces/BC-only-occluded-combat-loop-55022.json.gz",
+      "published_sha256": "6d1d47acf73f003fe00f25dfb0a6e19fb1ca2e9dc02be5f7bb7bd3e918ebfb53",
+      "bytes": 1172,
+      "original_sha256": "6d1d47acf73f003fe00f25dfb0a6e19fb1ca2e9dc02be5f7bb7bd3e918ebfb53",
+      "original_source_label": "screening-results/traces/BC-only-occluded-combat-loop-55022.json.gz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/traces/C749-aim-fork-55021.json.gz",
+      "published_sha256": "c69bfc484d0774d3e24ee0a2ec018ff017b83955109b564145e82a8dc608375b",
+      "bytes": 1947,
+      "original_sha256": "c69bfc484d0774d3e24ee0a2ec018ff017b83955109b564145e82a8dc608375b",
+      "original_source_label": "screening-results/traces/C749-aim-fork-55021.json.gz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/traces/C749-aim-fork-55022.json.gz",
+      "published_sha256": "ecee8c36bed21991f90e134fd06fbc524f7b18b65440dfbe58b0b229bb6a9e8b",
+      "bytes": 2260,
+      "original_sha256": "ecee8c36bed21991f90e134fd06fbc524f7b18b65440dfbe58b0b229bb6a9e8b",
+      "original_source_label": "screening-results/traces/C749-aim-fork-55022.json.gz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/traces/C749-branch-recovery-55021.json.gz",
+      "published_sha256": "57a416083bfa2356b5020bdc2608e3e0c4f8471dbd3329537c892ff440b56455",
+      "bytes": 5101,
+      "original_sha256": "57a416083bfa2356b5020bdc2608e3e0c4f8471dbd3329537c892ff440b56455",
+      "original_source_label": "screening-results/traces/C749-branch-recovery-55021.json.gz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/traces/C749-branch-recovery-55022.json.gz",
+      "published_sha256": "8c92b541ac43b384c4c9deb939a017805360ae242267aee2235fae57defe64f1",
+      "bytes": 5018,
+      "original_sha256": "8c92b541ac43b384c4c9deb939a017805360ae242267aee2235fae57defe64f1",
+      "original_source_label": "screening-results/traces/C749-branch-recovery-55022.json.gz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/traces/C749-key-return-lock-55021.json.gz",
+      "published_sha256": "c98c7feefcb6c61c1e66dacdd1937e9a4377a177321d37a81839370665019f7a",
+      "bytes": 4576,
+      "original_sha256": "c98c7feefcb6c61c1e66dacdd1937e9a4377a177321d37a81839370665019f7a",
+      "original_source_label": "screening-results/traces/C749-key-return-lock-55021.json.gz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/traces/C749-key-return-lock-55022.json.gz",
+      "published_sha256": "12c287134399e36e05ff0eb6901d6d349cf822af65d3c9437827c556d8dc43d9",
+      "bytes": 4724,
+      "original_sha256": "12c287134399e36e05ff0eb6901d6d349cf822af65d3c9437827c556d8dc43d9",
+      "original_source_label": "screening-results/traces/C749-key-return-lock-55022.json.gz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/traces/C749-occluded-combat-loop-55021.json.gz",
+      "published_sha256": "c270859cc08bc5220829b0e70690eb6a5e4f4623bcb796862c69df40a2fea14b",
+      "bytes": 880,
+      "original_sha256": "c270859cc08bc5220829b0e70690eb6a5e4f4623bcb796862c69df40a2fea14b",
+      "original_source_label": "screening-results/traces/C749-occluded-combat-loop-55021.json.gz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/traces/C749-occluded-combat-loop-55022.json.gz",
+      "published_sha256": "8886ad086bfd9a898ac0600d464b178f2987616fed0c014a7c89e49fef6aa1da",
+      "bytes": 4506,
+      "original_sha256": "8886ad086bfd9a898ac0600d464b178f2987616fed0c014a7c89e49fef6aa1da",
+      "original_source_label": "screening-results/traces/C749-occluded-combat-loop-55022.json.gz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/traces/PPO-only-aim-fork-55021.json.gz",
+      "published_sha256": "2286c658f760559db2661d6b291b7e9909b0db9e36d995b6e859731ad5ea3dcc",
+      "bytes": 3314,
+      "original_sha256": "2286c658f760559db2661d6b291b7e9909b0db9e36d995b6e859731ad5ea3dcc",
+      "original_source_label": "screening-results/traces/PPO-only-aim-fork-55021.json.gz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/traces/PPO-only-aim-fork-55022.json.gz",
+      "published_sha256": "bd7691de08a18f643b8fab8c8e7f5de6e410a8f54def2b9f44268f8a906cb877",
+      "bytes": 4078,
+      "original_sha256": "bd7691de08a18f643b8fab8c8e7f5de6e410a8f54def2b9f44268f8a906cb877",
+      "original_source_label": "screening-results/traces/PPO-only-aim-fork-55022.json.gz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/traces/PPO-only-branch-recovery-55021.json.gz",
+      "published_sha256": "8a0ce03bbfe4b2e9e9961ae7ff871bd8e03c2e856e39870142e847e362b47796",
+      "bytes": 5216,
+      "original_sha256": "8a0ce03bbfe4b2e9e9961ae7ff871bd8e03c2e856e39870142e847e362b47796",
+      "original_source_label": "screening-results/traces/PPO-only-branch-recovery-55021.json.gz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/traces/PPO-only-branch-recovery-55022.json.gz",
+      "published_sha256": "d1aa9e3364d9488e53609b6df51e5704c48fbef9ee9893accb6a0d560645f6a9",
+      "bytes": 4699,
+      "original_sha256": "d1aa9e3364d9488e53609b6df51e5704c48fbef9ee9893accb6a0d560645f6a9",
+      "original_source_label": "screening-results/traces/PPO-only-branch-recovery-55022.json.gz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/traces/PPO-only-key-return-lock-55021.json.gz",
+      "published_sha256": "624618a6f796ea17cc95b6f4e56d899a5683f055fe7a0f1f356e0e3c4b5b05d9",
+      "bytes": 5112,
+      "original_sha256": "624618a6f796ea17cc95b6f4e56d899a5683f055fe7a0f1f356e0e3c4b5b05d9",
+      "original_source_label": "screening-results/traces/PPO-only-key-return-lock-55021.json.gz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/traces/PPO-only-key-return-lock-55022.json.gz",
+      "published_sha256": "d46090d3e9616837b6051710aa596920b49a0de04196130d2d0f3c4911eb5bc6",
+      "bytes": 3434,
+      "original_sha256": "d46090d3e9616837b6051710aa596920b49a0de04196130d2d0f3c4911eb5bc6",
+      "original_source_label": "screening-results/traces/PPO-only-key-return-lock-55022.json.gz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/traces/PPO-only-occluded-combat-loop-55021.json.gz",
+      "published_sha256": "21316737909019e9f3363a86b4e3825f30e8639713f07e19ca0e08b0658cdf16",
+      "bytes": 834,
+      "original_sha256": "21316737909019e9f3363a86b4e3825f30e8639713f07e19ca0e08b0658cdf16",
+      "original_source_label": "screening-results/traces/PPO-only-occluded-combat-loop-55021.json.gz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/traces/PPO-only-occluded-combat-loop-55022.json.gz",
+      "published_sha256": "289b39ff03fb4f7974cc013dd207bff091933b96dc46e945fd600d4e21780f61",
+      "bytes": 975,
+      "original_sha256": "289b39ff03fb4f7974cc013dd207bff091933b96dc46e945fd600d4e21780f61",
+      "original_source_label": "screening-results/traces/PPO-only-occluded-combat-loop-55022.json.gz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/traces/Stack26-u621-aim-fork-55021.json.gz",
+      "published_sha256": "16176a0baa075c6500240ee2903440f9c897ec0d62854a11f48b568757c44c2d",
+      "bytes": 3189,
+      "original_sha256": "16176a0baa075c6500240ee2903440f9c897ec0d62854a11f48b568757c44c2d",
+      "original_source_label": "screening-results/traces/Stack26-u621-aim-fork-55021.json.gz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/traces/Stack26-u621-aim-fork-55022.json.gz",
+      "published_sha256": "aa3017175e8291b9b9c1f515e11c74c109a64445a55d98a24bebc5867e4101d8",
+      "bytes": 2512,
+      "original_sha256": "aa3017175e8291b9b9c1f515e11c74c109a64445a55d98a24bebc5867e4101d8",
+      "original_source_label": "screening-results/traces/Stack26-u621-aim-fork-55022.json.gz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/traces/Stack26-u621-branch-recovery-55021.json.gz",
+      "published_sha256": "c603cdfe5c97729aa268b69710371483f565ee329326c64ee67814cd89ca6f67",
+      "bytes": 5056,
+      "original_sha256": "c603cdfe5c97729aa268b69710371483f565ee329326c64ee67814cd89ca6f67",
+      "original_source_label": "screening-results/traces/Stack26-u621-branch-recovery-55021.json.gz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/traces/Stack26-u621-branch-recovery-55022.json.gz",
+      "published_sha256": "cd93214e49b8c0a2eca486a33f57098db5cdb247750837e582586838cd10084d",
+      "bytes": 5003,
+      "original_sha256": "cd93214e49b8c0a2eca486a33f57098db5cdb247750837e582586838cd10084d",
+      "original_source_label": "screening-results/traces/Stack26-u621-branch-recovery-55022.json.gz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/traces/Stack26-u621-key-return-lock-55021.json.gz",
+      "published_sha256": "763ef66ff8375feeefaf7b09a3d8342e961b6f5663bf62aae10d215f91cba5f9",
+      "bytes": 4930,
+      "original_sha256": "763ef66ff8375feeefaf7b09a3d8342e961b6f5663bf62aae10d215f91cba5f9",
+      "original_source_label": "screening-results/traces/Stack26-u621-key-return-lock-55021.json.gz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/traces/Stack26-u621-key-return-lock-55022.json.gz",
+      "published_sha256": "e0ca2f335c0f7e860f4fc1eafd7b72a681a3bde02042878745523bc13f628d75",
+      "bytes": 2894,
+      "original_sha256": "e0ca2f335c0f7e860f4fc1eafd7b72a681a3bde02042878745523bc13f628d75",
+      "original_source_label": "screening-results/traces/Stack26-u621-key-return-lock-55022.json.gz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/traces/Stack26-u621-occluded-combat-loop-55021.json.gz",
+      "published_sha256": "7594739c9011030dd616eeb193ce220178629ba5d541a2fcb7f4f81d34485220",
+      "bytes": 2754,
+      "original_sha256": "7594739c9011030dd616eeb193ce220178629ba5d541a2fcb7f4f81d34485220",
+      "original_source_label": "screening-results/traces/Stack26-u621-occluded-combat-loop-55021.json.gz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/traces/Stack26-u621-occluded-combat-loop-55022.json.gz",
+      "published_sha256": "3e0a84dd17c7e2d5e8e85546768d40146b9ac2ba6a94804441d3dd22533c6910",
+      "bytes": 914,
+      "original_sha256": "3e0a84dd17c7e2d5e8e85546768d40146b9ac2ba6a94804441d3dd22533c6910",
+      "original_source_label": "screening-results/traces/Stack26-u621-occluded-combat-loop-55022.json.gz",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "evaluation/verified-counts.json",
+      "published_sha256": "d6e5bfbbcbd9088465d112163284b10fc18eaef90035ccba1fb8542009d9ef60",
+      "bytes": 2217
+    },
+    {
+      "published_path": "source/evaluate_candidates.py",
+      "published_sha256": "01688c8ac262ec75aea530bef0b80fd7655f13c4a3523edffcb73fe045ab227e",
+      "bytes": 14353,
+      "original_sha256": "d37b133e04d7999c128f963ea9f4664b16af8710fa21d64ee7a00562b332534a",
+      "original_source_label": "evaluate_candidates.py",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "source/evaluator/comparison.py",
+      "published_sha256": "f54b51f360416ff1773518b9aace5fd547b241767dc886fa01fa2d6aca845e08",
+      "bytes": 17073,
+      "original_sha256": "f54b51f360416ff1773518b9aace5fd547b241767dc886fa01fa2d6aca845e08",
+      "original_source_label": "shared/comparison.py",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "source/evaluator/run_matched.py",
+      "published_sha256": "cac6282d3bed37d6bdfc90b7b9d614908ffe806543c78cb22a35e6e318b49c9e",
+      "bytes": 22393,
+      "original_sha256": "cac6282d3bed37d6bdfc90b7b9d614908ffe806543c78cb22a35e6e318b49c9e",
+      "original_source_label": "shared/run_matched.py",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "source/evaluator/storage_gate.py",
+      "published_sha256": "6a166d01a30cc5e49e81989b881d3237415af3887363c2eb492eb4126fc00427",
+      "bytes": 2709,
+      "original_sha256": "5f0b7bfe666873478bf3ffb521b2bcd88c2983e8101d265097a03f5bf352066a",
+      "original_source_label": "shared/storage_gate.py",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "source/implementation.patch",
+      "published_sha256": "96fc99b43e03b1f0436d51ee1dfa0a74a6ac2a10e394c098a25964dd32ab86eb",
+      "bytes": 24774,
+      "original_sha256": "96fc99b43e03b1f0436d51ee1dfa0a74a6ac2a10e394c098a25964dd32ab86eb",
+      "original_source_label": "git diff 6c2d5499f973c77b4a239f778837280edf64e57b..c581d613430d40ba66644dfe8a2681b26feb1985 -- training/",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "source/record-human-demo.py",
+      "published_sha256": "be608f80da33a09331987dd894d84a7a0af45465757d21d9cb56885206633cb0",
+      "bytes": 17271,
+      "original_sha256": "8afe9e3ab22589919f46014c272a59d1ffb882e7d529e15c2dbd723265b966a6",
+      "original_source_label": "record-human-demo.py",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "source/run-human-bc.ps1",
+      "published_sha256": "2bad3959e7aa119a2444d2d441e8b1fa55b692321c15f3befda00ba6a95df795",
+      "bytes": 1916,
+      "original_sha256": "a7ce9438abc2f08ecf7a14e396af0b1a9cb120c1a0e5c8ef5bbcf31786cab2f1",
+      "original_source_label": "run-human-bc.ps1",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "source/run-human-demonstrations.ps1",
+      "published_sha256": "b4255d8b5ce59fe84bad35b0658bda53d6354f0f9acd7b16cf80e85940a6bc32",
+      "bytes": 2460,
+      "original_sha256": "98d5d8f6367c4c119eb2185cba914f664493fad642ac5b558baf8eccb14c9ee3",
+      "original_source_label": "run-human-demonstrations.ps1",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "source/run-precision-ppo.ps1",
+      "published_sha256": "4d121c8158dd5a59107d71499d5708179e1ce7c78b26077bcbefb9a7f5ebf7fa",
+      "bytes": 3439,
+      "original_sha256": "570e9a5671af761d56644c8203be1b31cbd246f776502b6e03063623f09f885e",
+      "original_source_label": "run-precision-ppo.ps1",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "source/training/behavioral_clone.py",
+      "published_sha256": "76c364a2cc6deae7b575ba8b7bc716cfc28a3732215971a1e6814e34d4a39359",
+      "bytes": 9767,
+      "original_sha256": "76c364a2cc6deae7b575ba8b7bc716cfc28a3732215971a1e6814e34d4a39359",
+      "original_source_label": "policy-worktree/training/behavioral_clone.py",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "source/training/game.py",
+      "published_sha256": "77899011d6a3135c0f2688058abcf5a16fe7a46087729b9565fc07d939296206",
+      "bytes": 12584,
+      "original_sha256": "77899011d6a3135c0f2688058abcf5a16fe7a46087729b9565fc07d939296206",
+      "original_source_label": "policy-worktree/training/game.py",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "source/training/storage.py",
+      "published_sha256": "6f252b7ea7aa94ac816222a3a69804c14e12816a2c4d9818e315693c06303287",
+      "bytes": 2865,
+      "original_sha256": "6f252b7ea7aa94ac816222a3a69804c14e12816a2c4d9818e315693c06303287",
+      "original_source_label": "policy-worktree/training/storage.py",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "source/training/train.py",
+      "published_sha256": "fd526313e04fc06c5e639da31167fde5d1b965aede249706d75bad42a51119fb",
+      "bytes": 14391,
+      "original_sha256": "fd526313e04fc06c5e639da31167fde5d1b965aede249706d75bad42a51119fb",
+      "original_source_label": "policy-worktree/training/train.py",
+      "bytes_unchanged": true
+    },
+    {
+      "published_path": "training/bc-ppo-precision-launch.json",
+      "published_sha256": "b1fbed64ca73a6f580151bf6a19f11acdd4b922f6f95e534a75d8698e1e9ec0c",
+      "bytes": 658,
+      "original_sha256": "b31cda6350942a3725d970bc13ae9dd6284be8df98f99d119436f95fc02b8895",
+      "original_source_label": "logs/bc-ppo-precision-launch.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "training/bc-ppo-precision.jsonl",
+      "published_sha256": "1912ea82b1d8447bd051f8764048d11b89e91f6f058f9a45b7a63e07553512e8",
+      "bytes": 247784,
+      "original_sha256": "be2b061ad68a6253df3ff96d059cdd3f395ee1fa3e0b20fcc04c2cf49f5db4f8",
+      "original_source_label": "logs/bc-ppo-precision.jsonl",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "training/behavioral-cloning-summary.json",
+      "published_sha256": "e34063a45022932206e1d6faabbf149f01311b46322a7f6153b74465d51f06f0",
+      "bytes": 15485,
+      "original_sha256": "e0a19ab393c48c57d73226c19c2516a4a972f24547aed29eed62b378e8436592",
+      "original_source_label": "checkpoints/bc-precision/summary.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "training/ppo-only-precision-1-launch.json",
+      "published_sha256": "7055c5c2d54cc852f4de1b9786f504582b64d7dc0a9c1663a21202dbb40e8d59",
+      "bytes": 685,
+      "original_sha256": "ec20228df1b7cc2cc52b383d0243d01b54b39481884ae1c55fdf5e9cb2f9feb9",
+      "original_source_label": "logs/ppo-only-precision-1-launch.json",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "training/ppo-only-precision-1.jsonl",
+      "published_sha256": "62050475412bfbc77be5c8ab50259d8f837bf839481d2493d727e0caec2fcfee",
+      "bytes": 264963,
+      "original_sha256": "4a3f251c04a2c25f263c67354c79ea9a854ba4858d1c289061c2e5b5cb330b78",
+      "original_source_label": "logs/ppo-only-precision-1.jsonl",
+      "bytes_unchanged": false
+    },
+    {
+      "published_path": "training/variant-manifest.json",
+      "published_sha256": "85794ac607da678d0bba172922af00680a472b6f277f0f73dfe47bf97d62cf05",
+      "bytes": 732
+    },
+    {
+      "published_path": "verification/check-dataset.py",
+      "published_sha256": "ffa886f4cc50b48f46b58065c655a4099732b7db01820dc8714d23ffcf5b4518",
+      "bytes": 2320
+    }
+  ]
+}

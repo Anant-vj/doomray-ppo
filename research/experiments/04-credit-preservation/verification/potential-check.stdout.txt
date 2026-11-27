@@ -1,0 +1,1 @@
+PASS: 2 hashed training WADs, actual key/lock/exit geometry, 128 discounted trajectories, terminal/truncation, reset, and same-door loop. No engine launched.

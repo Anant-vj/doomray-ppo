@@ -1,0 +1,37 @@
+{
+  "frozen_at_ist": "2026-11-27T06:01:13+05:30",
+  "source_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+  "weights_sha256": "0b8f290cfe36a25f8593da925d4a4a0ddb8790b37f9319a019aed276a73f5e61",
+  "decoder_sha256": "2a1b7504129cb4c1643be1d7af1d7fdd2ff276ef72bbeb1576e4b950b14a5195",
+  "rules_sha256": "0648c4375ec491fc206a26f7f245f12d92274979d120a792aa242a573e3fb1d3",
+  "contract_sha256": "482a4773bbdcbe4e810b0eaf081eea3706b90a12b664ffe7523730db70c8652a",
+  "written_rule_interpretation": "Fixed learned-logit temperature or per-head argmax fits RULES section 1 and unchanged CONTRACT sections 3 and 6.",
+  "modes": {
+    "T1-control": {
+      "method": "categorical",
+      "temperature": 1.0
+    },
+    "T07": {
+      "method": "categorical",
+      "temperature": 0.7
+    },
+    "T13": {
+      "method": "categorical",
+      "temperature": 1.3
+    },
+    "argmax": {
+      "method": "argmax",
+      "temperature": null
+    }
+  },
+  "offline_verification": {
+    "unmodified_control_class": true,
+    "unit_temperature_exact_control_parity": true,
+    "learned_tensors_identical": 22,
+    "history_reset_verified": true,
+    "observation_fixture": "${DOOMRAY_PROJECT_ROOT}/experiments/final-competitive-20261127/demonstrations/human/KeyDoor-1795736439999221900/episode-0000/steps.npz",
+    "offline_action_checks": 72,
+    "temperature_and_argmax_match_reference": true,
+    "live_games_started": 0
+  }
+}

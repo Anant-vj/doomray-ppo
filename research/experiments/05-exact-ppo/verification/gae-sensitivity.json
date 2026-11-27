@@ -1,0 +1,395 @@
+{
+  "scope": "Offline finite-episode GAE sensitivity. Archived native rewards and exact frozen critic held fixed. No gameplay, optimization, or changes to experiment arms.",
+  "limitations": [
+    "The C749 critic was fit on shaped training rewards. Absolute advantage statistics here describe the archived native reward scale.",
+    "The calculation uses complete recorded attempts, with no artificial PPO rollout cuts. It does not predict improvement on hidden maps.",
+    "Wrapper-classified successful Basic combat finishes appear separately from navigational exits."
+  ],
+  "release_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+  "weight_sha256": "0b8f290cfe36a25f8593da925d4a4a0ddb8790b37f9319a019aed276a73f5e61",
+  "policy_source_sha256": "3d759688cd9ac103624548610a9a0cad7ce551be4148b4b95dff35eb99b3ef80",
+  "attempt_ledger_sha256": "dc01156366d879564f74e3da24161abc3067f2ef234ec32a0d7d002bb897a41f",
+  "collection_manifest_sha256": "39aa7e48b602ac56545bc69cddab5f0045f5e8704f598d08b0fbd354eea756cd",
+  "gamma": 0.99,
+  "lambdas": [
+    0.95,
+    0.97
+  ],
+  "gae_weights": {
+    "0.95": {
+      "gamma_times_lambda": 0.9405,
+      "geometric_horizon_decisions": 16.80672268907563,
+      "half_life_decisions": 11.29941573128618
+    },
+    "0.97": {
+      "gamma_times_lambda": 0.9602999999999999,
+      "geometric_horizon_decisions": 25.188916876574265,
+      "half_life_decisions": 17.110713265092375
+    }
+  },
+  "live_gameplay_decisions": 0,
+  "optimizer_steps": 0,
+  "threads": 1,
+  "frozen_policy_max_archived_logit_error": 1.6689300537109375e-06,
+  "frozen_policy_max_archived_joint_logp_error": 1.9073486328125e-06,
+  "all": {
+    "attempts": 20,
+    "decisions": 3417,
+    "ends": {
+      "exit": 16,
+      "cap": 4
+    },
+    "mean_native_reward": 0.004799531752999707,
+    "frozen_critic_mean": 0.5414141347778447,
+    "advantage": {
+      "0.95": {
+        "mean": -0.06977224674479664,
+        "population_variance": 0.019764941206999675,
+        "population_std": 0.14058784160445623,
+        "p05": -0.2595801652099841,
+        "p95": 0.16221046017552043,
+        "mean_within_episode_population_variance": 0.025163408013617123
+      },
+      "0.97": {
+        "mean": -0.10044972112094538,
+        "population_variance": 0.02598949504453483,
+        "population_std": 0.16121257719090912,
+        "p05": -0.32198701432842874,
+        "p95": 0.2147412038562829,
+        "mean_within_episode_population_variance": 0.029177304843321206
+      }
+    },
+    "variance_difference": 0.006224553837535153,
+    "variance_relative_percent": 31.492903380510697,
+    "advantage_rms_difference": 0.04571819892102643,
+    "advantage_sign_change_fraction": 0.03980099502487562
+  },
+  "by_training_family": {
+    "combat": {
+      "attempts": 4,
+      "decisions": 99,
+      "ends": {
+        "exit": 4
+      },
+      "mean_native_reward": 0.044444444444444446,
+      "frozen_critic_mean": 0.5441648358046406,
+      "advantage": {
+        "0.95": {
+          "mean": 0.1726067649555921,
+          "population_variance": 0.06056250331042001,
+          "population_std": 0.24609450077240655,
+          "p05": -0.25245127515839944,
+          "p95": 0.5177070991915464,
+          "mean_within_episode_population_variance": 0.022592877031548782
+        },
+        "0.97": {
+          "mean": 0.2175057575901116,
+          "population_variance": 0.062287788458437944,
+          "population_std": 0.24957521603404043,
+          "p05": -0.24299013582768686,
+          "p95": 0.530591834092021,
+          "mean_within_episode_population_variance": 0.022840934610782918
+        }
+      },
+      "variance_difference": 0.0017252851480179313,
+      "variance_relative_percent": 2.8487678905457114,
+      "advantage_rms_difference": 0.054542799715873926,
+      "advantage_sign_change_fraction": 0.050505050505050504
+    },
+    "key progression": {
+      "attempts": 12,
+      "decisions": 1714,
+      "ends": {
+        "exit": 11,
+        "cap": 1
+      },
+      "mean_native_reward": 0.006417736289381563,
+      "frozen_critic_mean": 0.5928584850081345,
+      "advantage": {
+        "0.95": {
+          "mean": -0.06553052599657018,
+          "population_variance": 0.026604456714514033,
+          "population_std": 0.1631087266657245,
+          "p05": -0.2792310531122034,
+          "p95": 0.19801278955638837,
+          "mean_within_episode_population_variance": 0.03171086899695211
+        },
+        "0.97": {
+          "mean": -0.08855036892661823,
+          "population_variance": 0.034228912938688585,
+          "population_std": 0.18501057520771236,
+          "p05": -0.34746603304192725,
+          "p95": 0.24294753599290125,
+          "mean_within_episode_population_variance": 0.03849977215387617
+        }
+      },
+      "variance_difference": 0.007624456224174552,
+      "variance_relative_percent": 28.658567645228537,
+      "advantage_rms_difference": 0.043815178146169066,
+      "advantage_sign_change_fraction": 0.061260210035005834
+    },
+    "navigation": {
+      "attempts": 4,
+      "decisions": 1604,
+      "ends": {
+        "exit": 1,
+        "cap": 3
+      },
+      "mean_native_reward": 0.0006234413965087282,
+      "frozen_critic_mean": 0.4862720302289858,
+      "advantage": {
+        "0.95": {
+          "mean": -0.08926466041112996,
+          "population_variance": 0.005913205348031374,
+          "population_std": 0.07689736892788579,
+          "p05": -0.1998467088111041,
+          "p95": -0.010787386605503324,
+          "mean_within_episode_population_variance": 0.008091556045680504
+        },
+        "0.97": {
+          "mean": -0.13278954783757346,
+          "population_variance": 0.007507808089503079,
+          "population_std": 0.08664760867734943,
+          "p05": -0.2654463698870577,
+          "p95": -0.049121498551468405,
+          "mean_within_episode_population_variance": 0.007546273144194615
+        }
+      },
+      "variance_difference": 0.0015946027414717049,
+      "variance_relative_percent": 26.9668081458152,
+      "advantage_rms_difference": 0.04709154978401066,
+      "advantage_sign_change_fraction": 0.016209476309226933
+    }
+  },
+  "by_recorded_layout": {
+    "key-lesson": {
+      "attempts": 6,
+      "decisions": 219,
+      "ends": {
+        "exit": 6
+      },
+      "mean_native_reward": 0.0273972602739726,
+      "frozen_critic_mean": 1.1925477657688264,
+      "advantage": {
+        "0.95": {
+          "mean": -0.2215530279244489,
+          "population_variance": 0.03986382622112139,
+          "population_std": 0.19965927531953379,
+          "p05": -0.6814154242323884,
+          "p95": 0.027453121731072148,
+          "mean_within_episode_population_variance": 0.03994214515275391
+        },
+        "0.97": {
+          "mean": -0.2609073128650427,
+          "population_variance": 0.045697258369191314,
+          "population_std": 0.21376917076414764,
+          "p05": -0.7316436768230934,
+          "p95": -0.00659576544567099,
+          "mean_within_episode_population_variance": 0.04570984427925017
+        }
+      },
+      "variance_difference": 0.005833432148069924,
+      "variance_relative_percent": 14.633397496046552,
+      "advantage_rms_difference": 0.047029879951696954,
+      "advantage_sign_change_fraction": 0.0319634703196347
+    },
+    "backtrack-lesson": {
+      "attempts": 6,
+      "decisions": 1495,
+      "ends": {
+        "exit": 5,
+        "cap": 1
+      },
+      "mean_native_reward": 0.0033444816053511705,
+      "frozen_critic_mean": 0.5050110251508828,
+      "advantage": {
+        "0.95": {
+          "mean": -0.042675055814492956,
+          "population_variance": 0.020573774134017463,
+          "population_std": 0.143435609713967,
+          "p05": -0.2473955486551557,
+          "p95": 0.227626477450168,
+          "mean_within_episode_population_variance": 0.0234795928411503
+        },
+        "0.97": {
+          "mean": -0.06330209419583899,
+          "population_variance": 0.027559743728770354,
+          "population_std": 0.16601127590850676,
+          "p05": -0.31027990496278307,
+          "p95": 0.2716342961396352,
+          "mean_within_episode_population_variance": 0.03128970002850217
+        }
+      },
+      "variance_difference": 0.006985969594752891,
+      "variance_relative_percent": 33.95570277600171,
+      "advantage_rms_difference": 0.0433242360332613,
+      "advantage_sign_change_fraction": 0.06555183946488294
+    },
+    "basic-combat": {
+      "attempts": 4,
+      "decisions": 99,
+      "ends": {
+        "exit": 4
+      },
+      "mean_native_reward": 0.044444444444444446,
+      "frozen_critic_mean": 0.5441648358046406,
+      "advantage": {
+        "0.95": {
+          "mean": 0.1726067649555921,
+          "population_variance": 0.06056250331042001,
+          "population_std": 0.24609450077240655,
+          "p05": -0.25245127515839944,
+          "p95": 0.5177070991915464,
+          "mean_within_episode_population_variance": 0.022592877031548782
+        },
+        "0.97": {
+          "mean": 0.2175057575901116,
+          "population_variance": 0.062287788458437944,
+          "population_std": 0.24957521603404043,
+          "p05": -0.24299013582768686,
+          "p95": 0.530591834092021,
+          "mean_within_episode_population_variance": 0.022840934610782918
+        }
+      },
+      "variance_difference": 0.0017252851480179313,
+      "variance_relative_percent": 2.8487678905457114,
+      "advantage_rms_difference": 0.054542799715873926,
+      "advantage_sign_change_fraction": 0.050505050505050504
+    },
+    "way-home": {
+      "attempts": 4,
+      "decisions": 1604,
+      "ends": {
+        "exit": 1,
+        "cap": 3
+      },
+      "mean_native_reward": 0.0006234413965087282,
+      "frozen_critic_mean": 0.4862720302289858,
+      "advantage": {
+        "0.95": {
+          "mean": -0.08926466041112996,
+          "population_variance": 0.005913205348031374,
+          "population_std": 0.07689736892788579,
+          "p05": -0.1998467088111041,
+          "p95": -0.010787386605503324,
+          "mean_within_episode_population_variance": 0.008091556045680504
+        },
+        "0.97": {
+          "mean": -0.13278954783757346,
+          "population_variance": 0.007507808089503079,
+          "population_std": 0.08664760867734943,
+          "p05": -0.2654463698870577,
+          "p95": -0.049121498551468405,
+          "mean_within_episode_population_variance": 0.007546273144194615
+        }
+      },
+      "variance_difference": 0.0015946027414717049,
+      "variance_relative_percent": 26.9668081458152,
+      "advantage_rms_difference": 0.04709154978401066,
+      "advantage_sign_change_fraction": 0.016209476309226933
+    }
+  },
+  "terminal_reward_propagation": {
+    "navigational_exit": [
+      {
+        "lag_decisions": 0,
+        "matched_attempts": 12,
+        "mean_native_terminal_reward": 1.0,
+        "mean_terminal_pulse_contribution_lambda_.95": 1.0,
+        "mean_terminal_pulse_contribution_lambda_.97": 1.0,
+        "terminal_pulse_magnitude_ratio": 1.0
+      },
+      {
+        "lag_decisions": 4,
+        "matched_attempts": 12,
+        "mean_native_terminal_reward": 1.0,
+        "mean_terminal_pulse_contribution_lambda_.95": 0.7824114538700626,
+        "mean_terminal_pulse_contribution_lambda_.97": 0.8504087409676879,
+        "terminal_pulse_magnitude_ratio": 1.0869073257571682
+      },
+      {
+        "lag_decisions": 8,
+        "matched_attempts": 12,
+        "mean_native_terminal_reward": 1.0,
+        "mean_terminal_pulse_contribution_lambda_.95": 0.6121676831470647,
+        "mean_terminal_pulse_contribution_lambda_.97": 0.7231950267142481,
+        "terminal_pulse_magnitude_ratio": 1.1813675347845989
+      },
+      {
+        "lag_decisions": 16,
+        "matched_attempts": 12,
+        "mean_native_terminal_reward": 1.0,
+        "mean_terminal_pulse_contribution_lambda_.95": 0.3747492722896453,
+        "mean_terminal_pulse_contribution_lambda_.97": 0.523011046664222,
+        "terminal_pulse_magnitude_ratio": 1.3956292522430405
+      },
+      {
+        "lag_decisions": 32,
+        "matched_attempts": 10,
+        "mean_native_terminal_reward": 1.0,
+        "mean_terminal_pulse_contribution_lambda_.95": 0.14043701708161868,
+        "mean_terminal_pulse_contribution_lambda_.97": 0.27354055493280494,
+        "terminal_pulse_magnitude_ratio": 1.9477810097164683
+      },
+      {
+        "lag_decisions": 64,
+        "matched_attempts": 5,
+        "mean_native_terminal_reward": 1.0,
+        "mean_terminal_pulse_contribution_lambda_.95": 0.019722555766782855,
+        "mean_terminal_pulse_contribution_lambda_.97": 0.07482443519294679,
+        "terminal_pulse_magnitude_ratio": 3.7938508618121047
+      },
+      {
+        "lag_decisions": 128,
+        "matched_attempts": 5,
+        "mean_native_terminal_reward": 1.0,
+        "mean_terminal_pulse_contribution_lambda_.95": 0.0003889792059738377,
+        "mean_terminal_pulse_contribution_lambda_.97": 0.005598696101943515,
+        "terminal_pulse_magnitude_ratio": 14.393304361672449
+      }
+    ],
+    "basic_combat_finish": [
+      {
+        "lag_decisions": 0,
+        "matched_attempts": 4,
+        "mean_native_terminal_reward": 1.1,
+        "mean_terminal_pulse_contribution_lambda_.95": 1.1,
+        "mean_terminal_pulse_contribution_lambda_.97": 1.1,
+        "terminal_pulse_magnitude_ratio": 1.0
+      },
+      {
+        "lag_decisions": 4,
+        "matched_attempts": 4,
+        "mean_native_terminal_reward": 1.1,
+        "mean_terminal_pulse_contribution_lambda_.95": 0.8606525992570688,
+        "mean_terminal_pulse_contribution_lambda_.97": 0.9354496150644567,
+        "terminal_pulse_magnitude_ratio": 1.0869073257571682
+      },
+      {
+        "lag_decisions": 8,
+        "matched_attempts": 3,
+        "mean_native_terminal_reward": 1.1,
+        "mean_terminal_pulse_contribution_lambda_.95": 0.6733844514617715,
+        "mean_terminal_pulse_contribution_lambda_.97": 0.7955145293856728,
+        "terminal_pulse_magnitude_ratio": 1.1813675347845989
+      },
+      {
+        "lag_decisions": 16,
+        "matched_attempts": 2,
+        "mean_native_terminal_reward": 1.1,
+        "mean_terminal_pulse_contribution_lambda_.95": 0.4122241995186099,
+        "mean_terminal_pulse_contribution_lambda_.97": 0.5753121513306441,
+        "terminal_pulse_magnitude_ratio": 1.3956292522430405
+      },
+      {
+        "lag_decisions": 32,
+        "matched_attempts": 1,
+        "mean_native_terminal_reward": 1.1,
+        "mean_terminal_pulse_contribution_lambda_.95": 0.1544807187897806,
+        "mean_terminal_pulse_contribution_lambda_.97": 0.30089461042608534,
+        "terminal_pulse_magnitude_ratio": 1.9477810097164683
+      }
+    ],
+    "death": []
+  }
+}

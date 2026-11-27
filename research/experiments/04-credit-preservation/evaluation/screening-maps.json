@@ -1,0 +1,75 @@
+{
+  "scope": "Public match identities. Coordinates and topology remain private.",
+  "maps": [
+    {
+      "id": "aim-lane-cover",
+      "map": "MAP01",
+      "family": "local-aim-lane-cover-d07abe62d2fc",
+      "tier": 1,
+      "skill": 3,
+      "seeds": [
+        63741,
+        63742
+      ],
+      "tick_cap": 760,
+      "wad_sha256": "7375fc82d709545b5e4ea295fb94b5130bb1a76145c20ad43219efb42b113d13",
+      "geometry_sha256": "4dc444a872965341be5262eca16c0219ac4f2817977eb9cea5cd330d3ea53505"
+    },
+    {
+      "id": "fork-left-right",
+      "map": "MAP01",
+      "family": "local-fork-left-right-2ab5f07fb950",
+      "tier": 2,
+      "skill": 3,
+      "seeds": [
+        63741,
+        63742
+      ],
+      "tick_cap": 960,
+      "wad_sha256": "1902e5af3a4a78d1fa2698793760db694864987ce06ca039e1b75f606b1f815b",
+      "geometry_sha256": "24405e4aa8abdfbefe39031d1334c197ed71ef7eb92dd0532850a91f546a1120"
+    },
+    {
+      "id": "lock-recovery-return",
+      "map": "MAP01",
+      "family": "local-lock-recovery-return-96b16a6799f2",
+      "tier": 3,
+      "skill": 3,
+      "seeds": [
+        63741,
+        63742
+      ],
+      "tick_cap": 1160,
+      "wad_sha256": "deb92027e760c7f401d83bed4cd248047f4041b785dd4ce3307ccfb28f9c05db",
+      "geometry_sha256": "0b5208cd59d77861c2b131ec89c2b9daddc59c166fbf2ca550b0557bd7511206"
+    },
+    {
+      "id": "split-shelters",
+      "map": "MAP01",
+      "family": "local-split-shelters-2e074a56616c",
+      "tier": 4,
+      "skill": 3,
+      "seeds": [
+        63741,
+        63742
+      ],
+      "tick_cap": 920,
+      "wad_sha256": "c08cd9cd41e9939e73f4a5deb06c04d95940681ffbc46f517c57095a44023e74",
+      "geometry_sha256": "08b1acfd8b32a0e46c58bb68365d9cbaabe2bc069fd266e1696ed62e37148781"
+    },
+    {
+      "id": "two-lock-relay",
+      "map": "MAP01",
+      "family": "local-two-lock-relay-980649845847",
+      "tier": 3,
+      "skill": 3,
+      "seeds": [
+        63741,
+        63742
+      ],
+      "tick_cap": 1400,
+      "wad_sha256": "3ad890e4d31825d706f312d4aba20ec47a6f51631aa0eb2ca916b0440445a812",
+      "geometry_sha256": "16c41c97363331e80458b2f7bd9aa27e70655e02b79d7d6b279c3dd4450266bc"
+    }
+  ]
+}

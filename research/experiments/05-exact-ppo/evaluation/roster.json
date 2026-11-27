@@ -1,0 +1,42 @@
+{
+  "protocol_sha256": "8d5f3de975c3924edb0acb2c1e96e97e3d6b6a45178ea44b1dbaa0413b9382df",
+  "models": [
+    {
+      "id": "C749",
+      "source_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+      "checkout": "release/",
+      "weight_source": "release/submission/weights/policy.pt",
+      "expected_sha256": "0b8f290cfe36a25f8593da925d4a4a0ddb8790b37f9319a019aed276a73f5e61",
+      "weight_path": "release/submission/weights/policy.pt",
+      "sha256": "0b8f290cfe36a25f8593da925d4a4a0ddb8790b37f9319a019aed276a73f5e61",
+      "bytes": 395269
+    },
+    {
+      "id": "Exact-PPO",
+      "source_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+      "checkout": "release/",
+      "weight_source": "local-not-published/checkpoints/exact-ppo/resume.pt",
+      "weight_path": "local-not-published/policy.pt",
+      "sha256": "74b3d16ec883bf9754d1de7698eb94e32e92b0f85e72d3e9e504a834750398fc",
+      "bytes": 1188221
+    },
+    {
+      "id": "Balanced-Reward",
+      "source_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+      "checkout": "release/",
+      "weight_source": "local-not-published/checkpoints/balanced-reward/resume.pt",
+      "weight_path": "local-not-published/policy.pt",
+      "sha256": "e93a1e849df5c6cc68e95796cb232e93219fa3f55bf1bc15172e55355ec55756",
+      "bytes": 1188221
+    },
+    {
+      "id": "Balanced-PBRS-Anchor",
+      "source_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+      "checkout": "release/",
+      "weight_source": "local-not-published/checkpoints/balanced-pbrs-anchor/resume.pt",
+      "weight_path": "local-not-published/policy.pt",
+      "sha256": "bc69e73781ecf0f382c74133d0eae51859512edbb11642d53102d56e3a170792",
+      "bytes": 1188221
+    }
+  ]
+}

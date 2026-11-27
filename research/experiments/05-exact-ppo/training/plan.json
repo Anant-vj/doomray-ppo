@@ -1,0 +1,54 @@
+{
+  "scope": "Exact temporal PPO smoke pair, then three staged arms from frozen C749. Keep the submission untouched.",
+  "release_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+  "parent": "local-not-published/mission-progression-43-update-749.pt",
+  "parent_sha256": "1c741cae310c3b169a18ad86a34c25c7371a6be47dcbefbcce8ba43077e36930",
+  "release_weight_sha256": "0b8f290cfe36a25f8593da925d4a4a0ddb8790b37f9319a019aed276a73f5e61",
+  "screening_protocol_sha256": "8d5f3de975c3924edb0acb2c1e96e97e3d6b6a45178ea44b1dbaa0413b9382df",
+  "anchors": "../04-credit-preservation/anchors/anchor-data.npz",
+  "anchors_sha256": "fd32f3c049b0c3e221ea3ba223f176ef13cae82b7759e7440f5e228322a9d87c",
+  "variants": {
+    "red_key_backtrack.wad": "2ec2f02accdda7dd0d23fc4eb43956a075781234bcce82ee7ca299ebc2d97397",
+    "train-only-basic-yaw90.wad": "bbec785155883619200ae4ea7d1eb97d4cedb841c7445f3e1e3b70c463e89840",
+    "train-only-basic-yaw270.wad": "84ae6febeec249c26fa7b8c0e79deb2a0bf94fcbfefa201aa2af3b680fc164be"
+  },
+  "seed": 66143,
+  "workers": 4,
+  "horizon": 64,
+  "smoke_updates_per_arm": 4,
+  "updates_per_primary_arm": 48,
+  "intended_primary_transitions": 12288,
+  "learning_rate": 8e-05,
+  "tick_cap": 2100,
+  "optimizer": "Fresh Adam with eps 1e-5, 3 PPO epochs, 16-decision chunks and up to 8 chunks per minibatch",
+  "credit": {
+    "gamma": 0.99,
+    "gae_lambda": 0.95,
+    "pbrs_bound": 0.25,
+    "anchor_beta": 0.04
+  },
+  "revised_reward": {
+    "coverage_per_new_96_unit_cell": 0.012,
+    "native_map_kill_coefficient": 0,
+    "player_damage_rate": 0.006,
+    "player_damage_step_cap": 20,
+    "player_damage_episode_reward_cap": 0.6,
+    "unchanged": "Death, exit, key, first door rise, first lock rise and received damage coefficients retained. No new heal or repeated interaction reward."
+  },
+  "targets": {
+    "combat": 0.3,
+    "navigation": 0.25,
+    "progression": 0.3,
+    "mixed-survival": 0.15
+  },
+  "arms": {
+    "cache-smoke": "Cached beginning-of-chunk history, exact original reward and mixed reset distribution.",
+    "exact-smoke": "Current-learner raw frame recomputation, otherwise matched cached smoke.",
+    "exact-ppo": "Current-learner raw frame recomputation, exact original reward and uniform 14-map mixed curriculum.",
+    "balanced-reward": "Exact histories, revised reward and transition-aware allocation on the mixed pool plus three prior training-only variants.",
+    "balanced-pbrs-anchor": "Same as Balanced-Reward plus verified PBRS on two hashed progression fixtures and frozen C749 success KL."
+  },
+  "causal_scope": "A versus B tests a bundle of reward and curriculum changes including previously used spawn position and heading variants. B versus C estimates the combined contribution of PBRS and anchors. Either contrast cannot separate its individual interventions.",
+  "cutoff_ist": "2026-11-27T08:15:00+05:30",
+  "training_end_latest_ist": "2026-11-27T08:00:00+05:30"
+}

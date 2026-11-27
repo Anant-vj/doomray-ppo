@@ -1,0 +1,66 @@
+{
+  "original_source_ledger_sha256": "e6e282e81fb5cf71003eddbd074ec224c308e4fd0e04315be28743758ed48e46",
+  "published_normalized_ledger_sha256": "e55ec6901975d11aa2f44a96227995f9c7bad02861e218b812823cd17d12536a",
+  "episode_count": 24,
+  "legal_action_count": 4542,
+  "invalid_actions": 0,
+  "layout_count": 4,
+  "by_model": {
+    "C749": {
+      "episodes": 8,
+      "exits": 2,
+      "survived": 8,
+      "decisions": 1711,
+      "invalid_actions": 0,
+      "balanced_mean": 8.875,
+      "player_hits": 2,
+      "player_damage": 15.0,
+      "keys": 2,
+      "unlocks": 2,
+      "move_left": 1404,
+      "move_right": 29
+    },
+    "PPO-control": {
+      "episodes": 8,
+      "exits": 4,
+      "survived": 8,
+      "decisions": 1457,
+      "invalid_actions": 0,
+      "balanced_mean": 5.625,
+      "player_hits": 0,
+      "player_damage": 0.0,
+      "keys": 0,
+      "unlocks": 0,
+      "move_left": 1103,
+      "move_right": 26
+    },
+    "Symmetry-KL": {
+      "episodes": 8,
+      "exits": 3,
+      "survived": 8,
+      "decisions": 1374,
+      "invalid_actions": 0,
+      "balanced_mean": 5.4,
+      "player_hits": 1,
+      "player_damage": 5.0,
+      "keys": 0,
+      "unlocks": 0,
+      "move_left": 1001,
+      "move_right": 40
+    }
+  },
+  "budget": {
+    "ppo-control": {
+      "updates": 24,
+      "new_transitions": 6144,
+      "new_optimizer_steps": 144,
+      "final_sps": 96.31
+    },
+    "symmetry-kl": {
+      "updates": 24,
+      "new_transitions": 6144,
+      "new_optimizer_steps": 144,
+      "final_sps": 91.3
+    }
+  }
+}

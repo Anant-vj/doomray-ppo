@@ -1,0 +1,13 @@
+{
+  "selection_fixed_before_experimental_screening": true,
+  "protected_release": "C749 at 6c2d5499f973c77b4a239f778837280edf64e57b",
+  "screening_protocol": "evaluation-protocol.json",
+  "screening_minimum": {
+    "all_eight_cases_complete_and_legal": true,
+    "minimum_exits_relative_to_c749": 0,
+    "minimum_survivors_relative_to_c749": -1,
+    "requires_material_gain": "At least two more exits or survivals, or a net increase in recorded player damage or confirmed key/lock progress with a gain on at least two layout families."
+  },
+  "confirmation": "Compare only one nominated alternative to C749 on the two sealed layouts. Require zero invalid or failed matches and no loss of exits or survivals, with an actual progression or player-combat gain on both layouts before proposing replacement.",
+  "promotion": "An unchanged official-validator pass, exact inference export and LFS and size checks are prerequisites. Preserve public main and require explicit approval for any replacement."
+}

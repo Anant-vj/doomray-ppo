@@ -1,0 +1,178 @@
+{
+  "source_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+  "weight_sha256": "0b8f290cfe36a25f8593da925d4a4a0ddb8790b37f9319a019aed276a73f5e61",
+  "source_attempt_ledger_sha256": "dc01156366d879564f74e3da24161abc3067f2ef234ec32a0d7d002bb897a41f",
+  "complete_attempts": 20,
+  "decisions": 3417,
+  "exposure": {
+    "visible_entities": 67,
+    "enemy_rays": 99,
+    "enemy_cues": 99,
+    "attack": 1216,
+    "attack_without_cue": 1170,
+    "end_exit": 16,
+    "end_cap": 4
+  },
+  "player_hits": 4,
+  "player_damage_episode_totals_only": 25.0,
+  "objectives": {
+    "native_map_deaths_reward": {
+      "nonzero": 4,
+      "total": 0.4,
+      "description": "Exact native 0.1 × change in the map-wide monster death counter."
+    },
+    "native_key_route_exit": {
+      "nonzero": 11,
+      "total": 11.0,
+      "description": "Native +1 exit reward on the two key-route training fixtures."
+    },
+    "native_way_home_exit": {
+      "nonzero": 1,
+      "total": 1.0,
+      "description": "Native +1 exit reward on WayHome."
+    },
+    "native_basic_exit": {
+      "nonzero": 4,
+      "total": 4.0,
+      "description": "Native +1 exit reward on BasicCombat."
+    },
+    "native_death": {
+      "nonzero": 0,
+      "total": 0.0,
+      "description": "Exact native -1 terminal death reward."
+    },
+    "key_acquisition_event": {
+      "nonzero": 11,
+      "total": 11.0,
+      "description": "Unit pulse on a recorded key-count increase."
+    },
+    "lock_sector_rise_proxy": {
+      "nonzero": 11,
+      "total": 11.0,
+      "description": "Unit pulse on a newly raised tagged locked sector."
+    },
+    "joint_hit_damage_event": {
+      "nonzero": 4,
+      "total": 4.0,
+      "description": "Binary recorded simultaneous increases of player hit and damage counters. Not damage magnitude or shot attribution."
+    },
+    "net_health_loss_proxy": {
+      "nonzero": 0,
+      "total": 0.0,
+      "description": "Negative visible net HP loss across two consecutive pre-action snapshots. Terminal HP is unavailable."
+    },
+    "attack_without_cue_proxy": {
+      "nonzero": 1170,
+      "total": -1170.0,
+      "description": "Hypothetical -1 on ATTACK when the preceding observation has neither an enemy entity nor an enemy ray."
+    }
+  },
+  "identical_nonzero_support_pairs": [
+    [
+      "native_map_deaths_reward",
+      "native_basic_exit"
+    ],
+    [
+      "native_map_deaths_reward",
+      "joint_hit_damage_event"
+    ],
+    [
+      "native_basic_exit",
+      "joint_hit_damage_event"
+    ]
+  ],
+  "gamma": 0.99,
+  "unavailable_measurements": [
+    "exact player damage or damage received per decision",
+    "actual shots fired",
+    "per-decision world positions and unique-cell coverage reward",
+    "terminal post-action vitals"
+  ],
+  "estimator": "Mean over complete collected episodes of sum_t gamma^t grad(log pi(a_t|h_t)) G_t over actor-connected parameters; zero baseline. Descriptive, small training-only suite.",
+  "actor_gradient_norms": {
+    "native_map_deaths_reward": 0.7640793163170593,
+    "native_key_route_exit": 11.78138123725448,
+    "native_way_home_exit": 3.054334181198852,
+    "native_basic_exit": 7.64079421089158,
+    "native_death": 0.0,
+    "key_acquisition_event": 8.517478005165914,
+    "lock_sector_rise_proxy": 8.932325511809479,
+    "joint_hit_damage_event": 7.64079421089158,
+    "net_health_loss_proxy": 0.0,
+    "attack_without_cue_proxy": 558.3468352696249
+  },
+  "cosines": {
+    "native_map_deaths_reward__vs__native_key_route_exit": -0.39067704912332046,
+    "native_map_deaths_reward__vs__native_way_home_exit": -0.18429079991882968,
+    "native_map_deaths_reward__vs__native_basic_exit": 0.9999999999997068,
+    "native_map_deaths_reward__vs__key_acquisition_event": -0.10321009763929127,
+    "native_map_deaths_reward__vs__lock_sector_rise_proxy": -0.21853379194074402,
+    "native_map_deaths_reward__vs__joint_hit_damage_event": 0.9999999999997068,
+    "native_map_deaths_reward__vs__attack_without_cue_proxy": 0.47656024742063396,
+    "native_key_route_exit__vs__native_way_home_exit": -0.18238112256068695,
+    "native_key_route_exit__vs__native_basic_exit": -0.3906770820062875,
+    "native_key_route_exit__vs__key_acquisition_event": 0.5348130153008678,
+    "native_key_route_exit__vs__lock_sector_rise_proxy": 0.6578892341085517,
+    "native_key_route_exit__vs__joint_hit_damage_event": -0.3906770820062875,
+    "native_key_route_exit__vs__attack_without_cue_proxy": -0.6842669250021298,
+    "native_way_home_exit__vs__native_basic_exit": -0.1842908394861486,
+    "native_way_home_exit__vs__key_acquisition_event": -0.11099476640195674,
+    "native_way_home_exit__vs__lock_sector_rise_proxy": -0.035138586873560404,
+    "native_way_home_exit__vs__joint_hit_damage_event": -0.1842908394861486,
+    "native_way_home_exit__vs__attack_without_cue_proxy": -0.16797617679081112,
+    "native_basic_exit__vs__key_acquisition_event": -0.10321009092818063,
+    "native_basic_exit__vs__lock_sector_rise_proxy": -0.21853377150334172,
+    "native_basic_exit__vs__joint_hit_damage_event": 1.0000000000000013,
+    "native_basic_exit__vs__attack_without_cue_proxy": 0.4765602847230005,
+    "key_acquisition_event__vs__lock_sector_rise_proxy": 0.7351145528039541,
+    "key_acquisition_event__vs__joint_hit_damage_event": -0.10321009092818063,
+    "key_acquisition_event__vs__attack_without_cue_proxy": -0.37489625246174557,
+    "lock_sector_rise_proxy__vs__joint_hit_damage_event": -0.21853377150334172,
+    "lock_sector_rise_proxy__vs__attack_without_cue_proxy": -0.3876688039274579,
+    "joint_hit_damage_event__vs__attack_without_cue_proxy": 0.4765602847230005
+  },
+  "unavailable_zero_support_pairs": [
+    "native_map_deaths_reward__vs__native_death",
+    "native_map_deaths_reward__vs__net_health_loss_proxy",
+    "native_key_route_exit__vs__native_death",
+    "native_key_route_exit__vs__net_health_loss_proxy",
+    "native_way_home_exit__vs__native_death",
+    "native_way_home_exit__vs__net_health_loss_proxy",
+    "native_basic_exit__vs__native_death",
+    "native_basic_exit__vs__net_health_loss_proxy",
+    "native_death__vs__key_acquisition_event",
+    "native_death__vs__lock_sector_rise_proxy",
+    "native_death__vs__joint_hit_damage_event",
+    "native_death__vs__net_health_loss_proxy",
+    "native_death__vs__attack_without_cue_proxy",
+    "key_acquisition_event__vs__net_health_loss_proxy",
+    "lock_sector_rise_proxy__vs__net_health_loss_proxy",
+    "joint_hit_damage_event__vs__net_health_loss_proxy",
+    "net_health_loss_proxy__vs__attack_without_cue_proxy"
+  ],
+  "maximum_logit_error": 1.6689300537109375e-06,
+  "maximum_chosen_log_probability_error": 1.9073486328125e-06,
+  "storage_before": {
+    "decline_bytes": 5197631488,
+    "threshold_bytes": 6500000000,
+    "c_free_bytes": 28842090496,
+    "d_free_bytes": 60364496896,
+    "physical_available_bytes": 2736758784,
+    "commit_available_bytes": 3015393280,
+    "required_available_memory_bytes": 805306368,
+    "original_baseline_free_bytes": 34039721984,
+    "allowed": true
+  },
+  "storage_after": {
+    "decline_bytes": 5198483456,
+    "threshold_bytes": 6800000000,
+    "c_free_bytes": 28841238528,
+    "d_free_bytes": 60364496896,
+    "physical_available_bytes": 2714103808,
+    "commit_available_bytes": 3004567552,
+    "required_available_memory_bytes": 268435456,
+    "original_baseline_free_bytes": 34039721984,
+    "allowed": true
+  },
+  "seconds": 10.981278700004623
+}

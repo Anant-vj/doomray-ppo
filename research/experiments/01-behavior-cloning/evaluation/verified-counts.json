@@ -1,0 +1,94 @@
+{
+  "original_source_ledger_sha256": "d11ba6e32f2b1f99f923a54187b3fa4b827a21e7f8329d909b4248d03b070a78",
+  "published_normalized_ledger_sha256": "f1ee547649ef619996dc1c75dd943f5df11bc769a641e4fa0aa4ae5c522a4d9f",
+  "episode_count": 40,
+  "legal_action_count": 6352,
+  "invalid_actions": 0,
+  "layout_count": 4,
+  "by_model": {
+    "C749": {
+      "episodes": 8,
+      "exits": 5,
+      "survived": 8,
+      "decisions": 1328,
+      "invalid_actions": 0,
+      "balanced_mean": 6.225,
+      "player_hits": 0,
+      "player_damage": 0.0,
+      "keys": 1,
+      "unlocks": 1,
+      "move_left": 1152,
+      "move_right": 26
+    },
+    "Stack26-u621": {
+      "episodes": 8,
+      "exits": 2,
+      "survived": 5,
+      "decisions": 1236,
+      "invalid_actions": 0,
+      "balanced_mean": 3.9879027416449873,
+      "player_hits": 1,
+      "player_damage": 8.0,
+      "keys": 0,
+      "unlocks": 0,
+      "move_left": 1109,
+      "move_right": 28
+    },
+    "BC-only": {
+      "episodes": 8,
+      "exits": 2,
+      "survived": 5,
+      "decisions": 1173,
+      "invalid_actions": 0,
+      "balanced_mean": 3.8538022813688215,
+      "player_hits": 0,
+      "player_damage": 0.0,
+      "keys": 0,
+      "unlocks": 0,
+      "move_left": 219,
+      "move_right": 83
+    },
+    "PPO-only": {
+      "episodes": 8,
+      "exits": 3,
+      "survived": 5,
+      "decisions": 1238,
+      "invalid_actions": 0,
+      "balanced_mean": 4.611812087252352,
+      "player_hits": 0,
+      "player_damage": 0.0,
+      "keys": 0,
+      "unlocks": 0,
+      "move_left": 908,
+      "move_right": 49
+    },
+    "BC-PPO": {
+      "episodes": 8,
+      "exits": 2,
+      "survived": 4,
+      "decisions": 1377,
+      "invalid_actions": 0,
+      "balanced_mean": 4.811817090254152,
+      "player_hits": 3,
+      "player_damage": 40.0,
+      "keys": 0,
+      "unlocks": 0,
+      "move_left": 1014,
+      "move_right": 60
+    }
+  },
+  "budget": {
+    "ppo-only-precision-1": {
+      "updates": 128,
+      "new_transitions": 32768,
+      "new_optimizer_steps": 768,
+      "final_sps": 61.15
+    },
+    "bc-ppo-precision": {
+      "updates": 128,
+      "new_transitions": 32768,
+      "new_optimizer_steps": 768,
+      "final_sps": 92.63
+    }
+  }
+}

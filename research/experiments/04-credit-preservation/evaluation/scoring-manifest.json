@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "frozen_source_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+  "classification": "Unofficial local score proxies. Official scoring weights are private.",
+  "historical": {
+    "source": "training/evaluate.py:72-74",
+    "formula": "100*exit + 8*keys + 4*unlocks + 2*doors + 0.2*min(explored_cells_96,100) + engine_kills + 0.02*health - 0.02*damage_received",
+    "inputs": "Doors include unlocked door events, matching the historical implementation."
+  },
+  "secondary": {
+    "source": "training/rank.py:13-18,33-38",
+    "features": [
+      "keys",
+      "unlocks",
+      "ordinary_doors",
+      "capped_explored_cells_96",
+      "engine_kills",
+      "safety"
+    ],
+    "ordinary_doors": "max(0,doors-unlocks)",
+    "capped_explored_cells_96": "min(explored_cells_96,100)",
+    "safety": "1 if alive else min(1,decisions/ceil(tick_cap/4))",
+    "weights": {
+      "balanced": [
+        7,
+        4,
+        1.5,
+        0.2,
+        1,
+        2
+      ],
+      "survival-combat": [
+        4,
+        3,
+        1,
+        0.1,
+        1.5,
+        5
+      ],
+      "progression": [
+        10,
+        6,
+        2,
+        0.28,
+        0.75,
+        1.5
+      ]
+    },
+    "formula": "Dot product of weights and features in the listed order."
+  },
+  "comparison": {
+    "unit": [
+      "tier",
+      "map_id",
+      "layout_family",
+      "engine_seed",
+      "policy_seed"
+    ],
+    "completion_status": "completed",
+    "ranking": "For comparable policies on identical valid completed rows, descending total exits and then descending mean of each profile. Historical score remains unchanged.",
+    "paired_win_tie_loss": "Compare (exit difference, score difference rounded to 9 decimal places) lexicographically with (0,0), independently for each profile.",
+    "failure_handling": "Retain attempt and failure counts separately. Never impute an episode result. Exact repeated attempt keys invalidate that model/key for a matched comparison.",
+    "global_ranking_scope": "Only shared valid completed units across all compared policies. Preserve failed, missing and unmatched units separately.",
+    "pairwise_scope": "Only shared valid completed units across the two named policies. Reports are descriptive if the minimum frozen suite was not completed."
+  },
+  "bootstrap": {
+    "scope": "Mean left-minus-right paired differences for raw outcomes and unofficial numerical scores.",
+    "unit": "Independent layout family. Calculate each layout mean over its matched engine and policy seed pairs, then resample complete layout groups with replacement.",
+    "minimum_complete_layouts": 16,
+    "minimum_matched_seed_pairs_per_layout": 2,
+    "resamples": 4096,
+    "confidence": 0.95,
+    "method": "Equal-tailed percentile interval, linear interpolation between adjacent order statistics.",
+    "random_seed": 20261127,
+    "incomplete_layout_policy": "All planned seed pairs for the layout are required for an interval. Display matched point estimates on observed pairs separately.",
+    "small_sample_policy": "Mark the interval unverified and expose actual layout and pair counts."
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "stage": "confirmation",
+  "scope": "Match identities only. Layout geometry and assets are withheld.",
+  "maps": [
+    {
+      "id": "broken-rampart",
+      "map": "MAP01",
+      "family": "local-broken-rampart-eb0e0377a2bd",
+      "tier": 1,
+      "skill": 3,
+      "seeds": [
+        59651,
+        59652
+      ],
+      "tick_cap": 780,
+      "wad_sha256": "4f2837a0699c04badee82a21407a3e761bb9ac7f09073616c01bc669902b8f03",
+      "geometry_sha256": "01d319367a75f3cbb8b72c687930dc3d76a3a1d33fd33b5f9b9b1ad8de5137ef"
+    },
+    {
+      "id": "red-corner-return",
+      "map": "MAP01",
+      "family": "local-red-corner-return-52c815d2d94f",
+      "tier": 3,
+      "skill": 3,
+      "seeds": [
+        59651,
+        59652
+      ],
+      "tick_cap": 1040,
+      "wad_sha256": "d8b219eedc7f8cc418bd90cc16a5c0317327c74acc83b660e4c2f470407c877e",
+      "geometry_sha256": "1ae436f3d27be32c17bd556336cb51a81e136a472fed357f470083ef21056da4"
+    }
+  ]
+}

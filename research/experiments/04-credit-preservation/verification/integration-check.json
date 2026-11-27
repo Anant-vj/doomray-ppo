@@ -1,0 +1,35 @@
+{
+  "matched_worker_schedule": true,
+  "map_counts_by_family": {
+    "navigation": 4,
+    "mixed-survival": 6,
+    "combat": 3,
+    "progression": 2
+  },
+  "parent_equal_to_released_tensors": 22,
+  "initial_anchor_kl": {
+    "combat": {
+      "anchors": 47,
+      "kl_nats": 1.9934759620809928e-08
+    },
+    "exit": {
+      "anchors": 192,
+      "kl_nats": -1.0075463130476692e-08
+    },
+    "key": {
+      "anchors": 128,
+      "kl_nats": 1.024390794412966e-09
+    },
+    "navigation": {
+      "anchors": 16,
+      "kl_nats": -1.9182753163704547e-09
+    },
+    "unlock": {
+      "anchors": 173,
+      "kl_nats": -1.3789272275081817e-08
+    }
+  },
+  "ledger_shape_verified": true,
+  "gae_reset_and_bootstrap_verified": true,
+  "live_games_started": 0
+}
