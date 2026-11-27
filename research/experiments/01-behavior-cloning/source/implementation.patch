@@ -1,0 +1,478 @@
+diff --git a/training/behavioral_clone.py b/training/behavioral_clone.py
+new file mode 100644
+index 0000000..cf720f1
+--- /dev/null
++++ b/training/behavioral_clone.py
+@@ -0,0 +1,191 @@
++"""Supervise the exact stacked policy on registered-team keyboard recordings."""
++
++import argparse
++from collections import Counter
++import hashlib
++import json
++from pathlib import Path
++import random
++import time
++
++import numpy as np
++import torch
++from torch.nn import functional as F
++
++from submission.policy import HEADS, Policy, buttons, pack
++from training.storage import project_root, snapshot
++from training.train import save
++
++
++OFFICIAL_SOURCE = "6c2d5499f973c77b4a239f778837280edf64e57b"
++
++
++def sha(path):
++    with path.open("rb") as handle:
++        return hashlib.file_digest(handle, "sha256").hexdigest()
++
++
++def load_episodes(root):
++    episodes = []
++    for path in sorted(root.rglob("episode.json")):
++        meta = json.loads(path.read_text(encoding="utf-8-sig"))
++        if not (meta.get("eligible_for_bc") and meta.get("complete_episode")):
++            continue
++        n = meta["decisions"]
++        if (meta.get("source") != "registered_team_member_keyboard" or not meta.get("attestations") or
++                not meta.get("permission_reference") or meta.get("frozen_wrapper_commit") != OFFICIAL_SOURCE or
++                n <= 0 or meta.get("exact_engine_matches") != n or not meta.get("previous_action_chain_valid")):
++            raise ValueError(f"Invalid human provenance or readback receipt: {path}")
++        payload = path.parent / "steps.npz"
++        if sha(payload) != meta["payload_sha256"]:
++            raise ValueError(f"Demonstration payload digest changed: {path}")
++        with np.load(payload, allow_pickle=False) as data:
++            x, y = data["packed"], data["action_heads"]
++            actions, previous = data["actions"], data["previous_actions"]
++            boundaries = data["terminated"] | data["truncated"]
++            if (x.shape != (n, 378) or y.shape != (n, 6) or actions.shape != (n, 9) or
++                    not np.isfinite(x).all() or not np.all((actions == 0) | (actions == 1)) or
++                    not np.array_equal(actions, data["engine_actions"]) or
++                    not np.array_equal(actions, buttons(y)) or
++                    np.any(y < 0) or np.any(y >= np.array(HEADS)) or
++                    not np.array_equal(previous[0], np.zeros(9)) or not np.array_equal(previous[1:], actions[:-1]) or
++                    boundaries.shape != (n,) or not boundaries[-1] or boundaries[:-1].any()):
++                raise ValueError(f"Invalid action/history/episode boundary: {path}")
++            rays = data["ray_distance"], data["ray_hit_type"]
++            entities = data["entity_features"], data["entity_type"], data["entity_mask"]
++            vitals = data["vitals"]
++            for i in range(n):
++                wrapped = {"rays": {"distance": rays[0][i], "hit_type": rays[1][i]},
++                           "visible_entities": {"features": entities[0][i], "entity_type": entities[1][i],
++                                                "mask": entities[2][i]}, "vitals": vitals[i]}
++                if not np.array_equal(pack(wrapped, previous[i]), x[i]):
++                    raise ValueError(f"Feature pack differs at row {i}: {path}")
++        episodes.append((meta, path, torch.tensor(x, dtype=torch.float32), torch.tensor(y, dtype=torch.long)))
++    return episodes
++
++
++def stacked_output(policy, features, start, stop):
++    left = max(0, start - 3)
++    encoded = policy.encode(features[left:stop])
++    missing = 3 - (start - left)
++    sequence = torch.cat((encoded.new_zeros((missing, encoded.shape[-1])), encoded))
++    windows = sequence.unfold(0, 4, 1).transpose(1, 2)
++    history = windows[:, :3, :].reshape(len(windows), -1)
++    return policy.advance(windows[:, 3, :], history)[0]
++
++
++@torch.no_grad()
++def verify_temporal_parity(policy, features):
++    sample = features[:12]
++    sequential = []
++    history = policy.initial(1, sample.device)
++    for row in sample:
++        output, history = policy.advance(policy.encode(row.unsqueeze(0)), history)
++        sequential.append(output)
++    expected = torch.cat(sequential)
++    torch.testing.assert_close(stacked_output(policy, sample, 0, len(sample)), expected, atol=2e-6, rtol=2e-5)
++    if len(sample) > 4:
++        torch.testing.assert_close(stacked_output(policy, sample, 4, len(sample)), expected[4:], atol=2e-6, rtol=2e-5)
++
++
++def pass_episodes(policy, episodes, optimizer=None, batch=96):
++    labels_correct = torch.zeros(len(HEADS), dtype=torch.long)
++    total_loss = 0.
++    decisions = updates = 0
++    for _, _, x, y in episodes:
++        for start in range(0, len(x), batch):
++            end = min(start + batch, len(x))
++            with torch.set_grad_enabled(optimizer is not None):
++                output = stacked_output(policy, x, start, end)
++                labels = y[start:end]
++                logits = policy.actor(output).split(HEADS, dim=-1)
++                loss = torch.stack([F.cross_entropy(head, labels[:, i])
++                                    for i, head in enumerate(logits)]).mean()
++                if optimizer is not None:
++                    optimizer.zero_grad(set_to_none=True)
++                    loss.backward()
++                    torch.nn.utils.clip_grad_norm_(policy.parameters(), .5)
++                    optimizer.step()
++                    updates += 1
++            n = len(labels)
++            decisions += n
++            total_loss += float(loss.detach()) * n
++            labels_correct += torch.stack([(head.detach().argmax(-1) == labels[:, i]).sum()
++                                            for i, head in enumerate(logits)])
++    return {"loss": total_loss / decisions, "decisions": decisions,
++            "head_accuracy": (labels_correct / decisions).tolist(), "optimizer_updates": updates}
++
++
++def main():
++    parser = argparse.ArgumentParser(description=__doc__)
++    parser.add_argument("--initialize", required=True, type=Path)
++    parser.add_argument("--validation-family", required=True)
++    parser.add_argument("--epochs", default=10, type=int)
++    parser.add_argument("--max-seconds", default=360, type=int)
++    args = parser.parse_args()
++    torch.set_num_threads(1)
++    torch.manual_seed(2207)
++    root = project_root()
++    storage = snapshot()
++    if (storage["internal_delta_bytes"] > 6_500_000_000 or
++            storage.get("physical_available_bytes", float("inf")) < 805_306_368 or
++            storage.get("commit_available_bytes", float("inf")) < 1_000_000_000):
++        raise RuntimeError("Supervised startup requires additional storage or memory headroom.")
++    data = load_episodes(root / "demonstrations/human")
++    training = [row for row in data if row[0]["layout_family"] != args.validation_family]
++    valid = [row for row in data if row[0]["layout_family"] == args.validation_family]
++    if not (training and valid):
++        raise RuntimeError("Record complete episodes in at least two disjoint layout families.")
++    destination = root / "checkpoints/bc-precision"
++    if destination.exists():
++        raise RuntimeError("A supervised snapshot already exists in this campaign.")
++    destination.mkdir(parents=True)
++    saved = torch.load(args.initialize, map_location="cpu", weights_only=True)
++    if saved["memory"] != "stack":
++        raise RuntimeError("Only the existing four-decision stack is supported.")
++    policy = Policy("stack")
++    policy.load_state_dict(saved["weights"])
++    verify_temporal_parity(policy, max(training, key=lambda row: len(row[2]))[2])
++    optimizer = torch.optim.Adam(policy.parameters(), lr=.00015, eps=1e-5)
++    selection = {key: [{"path": str(path), "layout_family": m["layout_family"], "seed": m["seed"],
++                        "payload_sha256": m["payload_sha256"], "decisions": m["decisions"],
++                        "outcome": m["outcome"]} for m, path, _, _ in episodes]
++                 for key, episodes in (("train", training), ("validation", valid))}
++    summary = {"parent_sha256": sha(args.initialize), "seed": 2207, "learning_rate": .00015,
++               "batched_history_matches_sequential_actor": True,
++               "whole_episode_layout_split": selection,
++               "eligible_episode_outcomes": dict(Counter(row[0]["outcome"] for row in data)),
++               "parent_train": pass_episodes(policy, training), "parent_validation": pass_episodes(policy, valid),
++               "epochs": []}
++    rng = random.Random(2207)
++    best = float("inf")
++    total_updates = 0
++    began = time.monotonic()
++    for epoch in range(1, args.epochs + 1):
++        rng.shuffle(training)
++        trained = pass_episodes(policy, training, optimizer)
++        held = pass_episodes(policy, valid)
++        total_updates += trained["optimizer_updates"]
++        row = {"epoch": epoch, "train": trained, "validation": held, "bc_optimizer_updates": total_updates}
++        summary["epochs"].append(row)
++        if held["loss"] < best:
++            best = held["loss"]
++            summary["best_epoch"] = epoch
++            summary["best_validation"] = held
++            save(destination / "policy.pt",
++                 {"memory": "stack", "weights": policy.state_dict(), "updates": saved.get("updates", 0),
++                  "gradients": saved.get("gradients", 0), "bc_optimizer_updates": total_updates, "bc_epoch": epoch})
++        temporary = destination / "summary.tmp"
++        temporary.write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
++        temporary.replace(destination / "summary.json")
++        print(json.dumps(row), flush=True)
++        storage = snapshot()
++        if (time.monotonic() - began >= args.max_seconds or storage["internal_delta_bytes"] >= 6_800_000_000 or
++                storage.get("physical_available_bytes", float("inf")) < 536_870_912 or
++                storage.get("commit_available_bytes", float("inf")) < 1_000_000_000 or
++                (root / "bc-precision.stop").exists()):
++            break
++
++
++if __name__ == "__main__":
++    main()
+diff --git a/training/game.py b/training/game.py
+index f0af653..a4dd6b2 100644
+--- a/training/game.py
++++ b/training/game.py
+@@ -1,11 +1,14 @@
+ """Local map pools, episode metrics, and training-only rewards."""
+ import math
+ import os
++import re
++import struct
+ from pathlib import Path
+ from typing import NamedTuple
+ 
+ import numpy as np
+ from doom_env import make_env
++from doom_env.spaces import BUTTONS, ENTITY_TYPES, RAY_HIT_TYPES, VITALS_INDEX
+ from doom_env.wad import Lump, read_wad, write_wad
+ import vizdoom
+ 
+@@ -28,6 +31,9 @@ class RewardProfile(NamedTuple):
+     unlock: float
+     dealt: float = 0.
+     healed: float = 0.
++    blind_attack: float = 0.
++    unchanged_switch: float = 0.
++    neutralize_map_deaths: bool = False
+ 
+ 
+ REWARD_PROFILES = {
+@@ -35,12 +41,20 @@ REWARD_PROFILES = {
+     "survival": RewardProfile(.008, .35, .3, .15),
+     "progression": RewardProfile(.006, .35, .45, .25),
+     "combat": RewardProfile(.006, .35, .45, .25, dealt=.002, healed=.004),
++    "precision": RewardProfile(.008, .35, .45, .25, dealt=.006, healed=.003,
++                               blind_attack=.006, unchanged_switch=.002, neutralize_map_deaths=True),
+ }
+ REWARD_TERMS = (
+     "native", "exit_bonus", "coverage", "keys", "doors", "unlocks", "damage", "dealt", "healed",
++    "map_death_adjustment", "blind_attack", "unchanged_switch",
+ )
+ PRACTICE_WADS = {"basic.wad", "my_way_home.wad", "e7ab54fb6834ffa3.wad", "red_key_backtrack.wad"}
+ MIXED_SCENARIOS = ("defend_the_center", "health_gathering", "deadly_corridor")
++ENEMY_ENTITIES = [i for i, name in enumerate(ENTITY_TYPES) if name.startswith("enemy_")]
++ENEMY_RAY = RAY_HIT_TYPES.index("enemy")
++ATTACK = BUTTONS.index("ATTACK")
++SWITCH = BUTTONS.index("SELECT_NEXT_WEAPON")
++WEAPON = VITALS_INDEX["selected_weapon"]
+ 
+ 
+ def backtrack_lesson(source):
+@@ -59,9 +73,54 @@ def backtrack_lesson(source):
+     return path
+ 
+ 
++def training_yaw(source, angle):
++    """Change just the player-one start angle in a training-only copy."""
++    lumps = read_wad(source)
++    indices = [i for i, lump in enumerate(lumps) if lump.name in ("TEXTMAP", "THINGS")]
++    if len(indices) != 1:
++        raise ValueError(f"Expected one map definition in {source.name}.")
++    index = indices[0]
++    lump = lumps[index]
++    if lump.name == "TEXTMAP":
++        starts = [block for block in re.findall(rb"\bthing\s*\{[^{}]*\}", lump.data)
++                  if re.search(rb"\btype\s*=\s*1\s*;", block)]
++        angle_field = rb"\bangle\s*=\s*-?\d+(?:\.\d+)?\s*;"
++        if len(starts) != 1 or len(re.findall(angle_field, starts[0])) > 1:
++            raise ValueError(f"Cannot identify the player-one angle in {source.name}.")
++        replacement = f"angle = {angle};".encode()
++        updated, replaced = re.subn(angle_field, replacement, starts[0])
++        if not replaced:
++            # UDMF can omit the angle to indicate the default east-facing start.
++            updated = starts[0][:-1] + b"\n" + replacement + b"\n}"
++        data = lump.data.replace(starts[0], updated, 1)
++    else:
++        hexen = any(lump.name == "BEHAVIOR" for lump in lumps)
++        stride, angle_offset, type_offset = (20, 8, 10) if hexen else (10, 4, 6)
++        if len(lump.data) % stride:
++            raise ValueError(f"Malformed thing records in {source.name}.")
++        starts = [i for i in range(0, len(lump.data), stride)
++                  if struct.unpack_from("<h", lump.data, i + type_offset)[0] == 1]
++        if len(starts) != 1:
++            raise ValueError(f"Cannot identify the player-one start in {source.name}.")
++        writable = bytearray(lump.data)
++        struct.pack_into("<h", writable, starts[0] + angle_offset, angle)
++        data = bytes(writable)
++    lumps[index] = Lump(lump.name, data)
++    dest = project_root() / "maps" / "curriculum" / f"train-only-{source.stem}-yaw{angle}.wad"
++    dest.parent.mkdir(parents=True, exist_ok=True)
++    temporary = dest.with_suffix(f".{os.getpid()}.tmp")
++    write_wad(temporary, lumps)
++    os.replace(temporary, dest)
++    return dest
++
++
+ def maps(split):
+     assets = Path(vizdoom.__file__).parent
+     iwad = assets / "freedoom2.wad"
++    if split == "precision":
++        existing = maps("varied")
++        varied_sources = [assets / "scenarios/basic.wad", REPO / "tests/fixtures/e7ab54fb6834ffa3.wad"]
++        return existing + [(training_yaw(path, angle), "MAP01") for path in varied_sources for angle in (90, 270)]
+     expanded = split in ("curriculum", "progression", "mixed", "varied")
+     map_numbers = SPLITS["train" if expanded else split]
+     items = [(iwad, f"MAP{i:02}") for i in map_numbers]
+@@ -89,10 +148,12 @@ class Episode:
+         self.path, self.map_name = layout
+         self.env = make_env(str(self.path), self.map_name, episode_ticks=ticks, render_buffers=render_buffers)
+         self.reward_profile = REWARD_PROFILES[reward_profile]
+-        self.exit_bonus = self.reward_profile.lesson_finish if self.path.name in PRACTICE_WADS else 2.
++        practice = self.path.name in PRACTICE_WADS or self.path.name.startswith("train-only-")
++        self.exit_bonus = self.reward_profile.lesson_finish if practice else 2.
+ 
+     def reset(self, seed):
+         obs, _ = self.env.reset(seed=seed)
++        self.observation = obs
+         self.last = self.env.privileged_state()
+         self.cells = {self.cell(self.last)}
+         self.raised = set()
+@@ -113,7 +174,10 @@ class Episode:
+         return float(self.env._game.get_game_variable(vizdoom.GameVariable.DAMAGECOUNT))
+ 
+     def step(self, action):
++        before = self.observation
++        profile = self.reward_profile
+         obs, reward, term, trunc, _ = self.env.step(action)
++        self.observation = obs
+         s = self.env.privileged_state()
+         cell = self.cell(s)
+         new_cell = cell not in self.cells
+@@ -126,17 +190,27 @@ class Episode:
+         self.unlocked.update(i for i in distinct if locks[i] > 0)
+         keys = float(s["keys"].sum() - self.last["keys"].sum())
+         damage = max(0, s["damage_taken"] - self.last["damage_taken"])
+-        profile = self.reward_profile
+         dealt = 0.
+         if profile.dealt:
+             current = self._damage_dealt()
+             dealt = min(max(current - self.damage_dealt, 0.), 60.)
+             self.damage_dealt = current
+         healed = min(max(s["health"] - self.last["health"], 0.), 25.)
++        map_death_adjustment = -.1 * (s["kills"] - self.last["kills"]) if profile.neutralize_map_deaths else 0.
++        blind_attack = 0.
++        if profile.blind_attack and action[ATTACK] and dealt == 0:
++            entities = before["visible_entities"]
++            has_entity = np.any(entities["mask"].astype(bool) & np.isin(entities["entity_type"], ENEMY_ENTITIES))
++            has_ray = np.any(before["rays"]["hit_type"] == ENEMY_RAY)
++            blind_attack = -profile.blind_attack if not (has_entity or has_ray) else 0.
++        unchanged_switch = -profile.unchanged_switch if (
++            action[SWITCH] and not (term or trunc) and before["vitals"][WEAPON] == obs["vitals"][WEAPON]
++        ) else 0.
+         terms = (
+             reward, self.exit_bonus * s["exit_reached"], .035 * new_cell, profile.key * keys,
+             .15 * len(distinct), profile.unlock * sum(locks[i] > 0 for i in distinct),
+             -profile.damage_cost * damage, profile.dealt * dealt, profile.healed * healed,
++            map_death_adjustment, blind_attack, unchanged_switch,
+         )
+         shaped = sum(terms)
+         self.reward_terms += terms
+diff --git a/training/storage.py b/training/storage.py
+index 275c03c..caaeca9 100644
+--- a/training/storage.py
++++ b/training/storage.py
+@@ -1,5 +1,7 @@
+ """USB workspace usage and internal-drive budget, in bytes."""
+ import json
++import ctypes
++import hashlib
+ import os
+ import shutil
+ import sys
+@@ -12,23 +14,43 @@ def project_root():
+ 
+ def internal_limit():
+     limit = int(os.environ.get("DOOM_INTERNAL_LIMIT_BYTES", "2000000000"))
+-    if not 500_000_000 < limit <= 5_000_000_000:
+-        raise ValueError("Choose an internal storage budget between 0.5 and 5 GB.")
++    if not 500_000_000 < limit <= 7_000_000_000:
++        raise ValueError("Choose an internal storage budget between 0.5 and 7 GB.")
+     return limit
+ 
+ 
++def _windows_memory():
++    class Status(ctypes.Structure):
++        _fields_ = [("length", ctypes.c_uint32), ("load", ctypes.c_uint32)] + [
++            (key, ctypes.c_uint64) for key in
++            ("physical", "available", "pagefile", "commit_available", "virtual", "free_virtual", "extended")
++        ]
++
++    state = Status(length=ctypes.sizeof(Status))
++    if not ctypes.windll.kernel32.GlobalMemoryStatusEx(ctypes.byref(state)):
++        raise RuntimeError("Windows memory measurement is unavailable.")
++    return {"physical_available_bytes": state.available, "commit_available_bytes": state.commit_available}
++
++
+ def snapshot(detailed=False):
+     root = project_root()
+     disk = os.environ.get("SystemDrive", root.anchor) if os.name == "nt" else root.anchor
+     free = shutil.disk_usage(disk + "/" if disk.endswith(":") else disk).free
+-    path = root / "logs" / "storage-baseline.json"
+-    path.parent.mkdir(parents=True, exist_ok=True)
+-    if not path.exists():
+-        path.write_text(json.dumps({"internal_free_bytes": free}), encoding="utf-8")
+-    delta = max(0, json.loads(path.read_text())["internal_free_bytes"] - free)
++    external_baseline = os.environ.get("DOOM_STORAGE_BASELINE")
++    path = Path(external_baseline) if external_baseline else root / "logs" / "storage-baseline.json"
++    if not external_baseline:
++        path.parent.mkdir(parents=True, exist_ok=True)
++        if not path.exists():
++            path.write_text(json.dumps({"internal_free_bytes": free}), encoding="utf-8")
++    baseline = path.read_bytes()
++    if external_baseline and hashlib.sha256(baseline).hexdigest() != os.environ.get("DOOM_STORAGE_BASELINE_SHA256"):
++        raise RuntimeError("Original drive baseline hash mismatch.")
++    delta = max(0, json.loads(baseline)["internal_free_bytes"] - free)
+     limit = internal_limit()
+     data = dict(internal_free_bytes=free, internal_delta_bytes=delta,
+                 external_free_bytes=shutil.disk_usage(root).free, internal_limit_bytes=limit)
++    if os.name == "nt":
++        data.update(_windows_memory())
+     if detailed:
+         for name in ("checkpoints", "logs", "."):
+             data[name] = sum(p.stat().st_size for p in (root / name).rglob("*") if p.is_file())
+diff --git a/training/train.py b/training/train.py
+index 78433e3..4d2641b 100644
+--- a/training/train.py
++++ b/training/train.py
+@@ -35,12 +35,12 @@ def main():
+     initialization.add_argument("--initialize", type=Path, help="Start from saved policy weights with a fresh optimizer.")
+     parser.add_argument("--learning-rate", type=float, help="Override the optimizer learning rate.")
+     parser.add_argument("--run-name", help="Name for logs and checkpoints, independent of the random seed.")
+-    parser.add_argument("--reward-profile", choices=("control", "survival", "progression", "combat"), default="control")
++    parser.add_argument("--reward-profile", choices=("control", "survival", "progression", "combat", "precision"), default="control")
+     parser.add_argument("--headless", action="store_true", help="Run without game windows.")
+     parser.add_argument("--parallel", action="store_true", help="Run headless simulation in spawned workers.")
+     parser.add_argument("--no-render-buffers", action="store_true", help="Skip unused RGB and depth buffers.")
+     parser.add_argument(
+-        "--curriculum", nargs="?", choices=("expanded", "progression", "mixed", "varied"), const="expanded",
++        "--curriculum", nargs="?", choices=("expanded", "progression", "mixed", "varied", "precision"), const="expanded",
+         help="Add practice maps, key-and-lock progression, or the mixed arena and resource lessons.",
+     )
+     parser.add_argument("--checkpoint-seconds", type=float, help="Rotate checkpoints at this elapsed interval.")
+@@ -48,6 +48,10 @@ def main():
+     parser.add_argument("--stop-file", type=Path, help="Save and exit after the next PPO update if this file appears.")
+     parser.add_argument("--storage-stop-bytes", type=int,
+                         help="Save and exit at this soft limit on internal disk usage increase.")
++    parser.add_argument("--memory-stop-bytes", type=int, default=0,
++                        help="Save and exit below this much available physical memory.")
++    parser.add_argument("--commit-stop-bytes", type=int, default=0,
++                        help="Save and exit below this much available commit.")
+     args = parser.parse_args()
+     if min(args.workers, args.horizon, args.updates, args.ticks) <= 0 or args.horizon % 16:
+         parser.error("Use positive values and a horizon divisible by 16.")
+@@ -189,7 +193,9 @@ def main():
+             stop_requested = args.stop_file is not None and args.stop_file.exists()
+             storage = snapshot()
+             storage_limit = soft_limit is not None and storage["internal_delta_bytes"] >= soft_limit
+-            stopping = time_limit or stop_requested or storage_limit
++            memory_limit = (storage.get("physical_available_bytes", math.inf) < args.memory_stop_bytes or
++                            storage.get("commit_available_bytes", math.inf) < args.commit_stop_bytes)
++            stopping = time_limit or stop_requested or storage_limit or memory_limit
+             interval_elapsed = (
+                 now - checkpointed >= args.checkpoint_seconds if args.checkpoint_seconds else update % 8 == 0
+             )
+@@ -221,6 +227,8 @@ def main():
+                          )),
+                          internal_delta_bytes=storage["internal_delta_bytes"],
+                          stopped_for_storage=storage_limit,
++                         physical_available_bytes=storage.get("physical_available_bytes"),
++                         commit_available_bytes=storage.get("commit_available_bytes"), stopped_for_memory=memory_limit,
+                          render_buffers=not args.no_render_buffers, episodes=episodes)
+             episodes = []
+             with (logdir / f"{run_name}.jsonl").open("a", encoding="utf-8") as f:
+@@ -229,6 +237,8 @@ def main():
+             if stopping:
+                 if storage_limit:
+                     print("Saved and stopped at the internal drive's soft storage limit.", flush=True)
++                if memory_limit:
++                    print("Saved and stopped at the memory floor.", flush=True)
+                 break
+ 
+ 

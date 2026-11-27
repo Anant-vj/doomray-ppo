@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "verified_at": "2026-11-27T05:55:38+05:30",
+  "runtime": {
+    "python_executable": "configured-runtime/python.exe",
+    "python_version": "3.13.12",
+    "device": "cpu",
+    "torch_threads": 1,
+    "packages": {
+      "numpy": "2.5.5",
+      "torch": "2.15.0+cpu",
+      "vizdoom": "1.3.3",
+      "gymnasium": "1.4.0"
+    }
+  },
+  "implementation": {
+    "source_path": "reproduction-checkout/training/reflection.py",
+    "sha256": "c1de6b223d07c2374543ec65f190d752cadbdda3161dca516b3db4b140277d5e",
+    "archived_copy": "reflection-under-test.py"
+  },
+  "official_sensor_source": {
+    "path": "reproduction-checkout/env/doom_env/sensors.py",
+    "sha256": "8fcc0d2faed1daab4a897f9f8deddfdbb6c4d091b4c08faf46ac38474954f4b1"
+  },
+  "policy_packing_source": {
+    "path": "reproduction-checkout/submission/policy.py",
+    "sha256": "3d759688cd9ac103624548610a9a0cad7ce551be4148b4b95dff35eb99b3ef80"
+  },
+  "files_sha256": {
+    "README.md": "d6a06e6d750dc6e76a2c6744cc907e53512973fd6d841b299c5b801b3ad24584",
+    "check-reflection.py": "a5d3fdfe73fd96d1510760832fadfd6da961c0f18e5feb3f6ecf4f30364d19a1",
+    "reflection-under-test.py": "c1de6b223d07c2374543ec65f190d752cadbdda3161dca516b3db4b140277d5e",
+    "reflection-check.stdout.txt": "2e1d4d4d1e3e64eeac8dad189a367697674474e35f70c38e95077ba69c70928f"
+  },
+  "recorded_input_samples": [
+    {
+      "path": "../01-behavior-cloning/demonstrations/human/KeyDoor/episode-0000/steps.npz",
+      "sha256": "7ea4fbf0ced78a7a41879c77bbcbd9bc75cd5af0e10c4d519d15945f55686d22",
+      "structured_frames": 174,
+      "four_frame_windows": 171
+    },
+    {
+      "path": "../01-behavior-cloning/demonstrations/human/BasicAim/episode-0000/steps.npz",
+      "sha256": "23e38ccdc0f03a1ae89f51fba221768e2b6ac8f5d212d9a99621bfd38140287e",
+      "structured_frames": 27,
+      "four_frame_windows": 24
+    },
+    {
+      "path": "../01-behavior-cloning/demonstrations/human/CenterCombat/episode-0000/steps.npz",
+      "sha256": "5c61497ac8e17a7ac047895ac322c7f22b9a3640744d5ef1e1704641c484d9e8",
+      "structured_frames": 218,
+      "four_frame_windows": 215
+    }
+  ],
+  "counts": {
+    "action_combinations": 216,
+    "structured_frames": 419,
+    "four_frame_windows": 410,
+    "live_games_started": 0,
+    "training_runs_started": 0
+  },
+  "geometry": {
+    "rays": 64,
+    "permutation": "(-i) % 64",
+    "fixed_indices": [
+      0,
+      32
+    ],
+    "exchanged_cardinal_indices": [
+      16,
+      48
+    ],
+    "world_mirror_heading_radians": 0.37,
+    "verified_fixture": "Asymmetric wall and locked-door segments, moving enemy, and lateral player velocity with two calls to official Sensors.compute."
+  },
+  "result_stdout": "PASS: official Sensors geometry, 216 action combinations, 419 recorded structured frames, 410 actual four-frame windows, padding, two reflections, and NumPy/Torch parity. No game initialized."
+}

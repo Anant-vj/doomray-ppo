@@ -1,0 +1,1495 @@
+{
+  "release_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+  "release_weights_sha256": "0b8f290cfe36a25f8593da925d4a4a0ddb8790b37f9319a019aed276a73f5e61",
+  "counts": {
+    "screening": {
+      "episodes": 40,
+      "legal_actions": 8275,
+      "invalid_actions": 0
+    },
+    "confirmation": {
+      "episodes": 0
+    },
+    "training": {
+      "ppo-control": {
+        "transitions": 8192,
+        "ppo_updates": 32,
+        "optimizer_steps": 192
+      },
+      "pbrs": {
+        "transitions": 8192,
+        "ppo_updates": 32,
+        "optimizer_steps": 192
+      },
+      "pbrs-anchor": {
+        "transitions": 8192,
+        "ppo_updates": 32,
+        "optimizer_steps": 192
+      }
+    },
+    "anchor_collection": {
+      "attempts": 20,
+      "legal_decisions": 3417,
+      "selected_training_contexts": 556
+    }
+  },
+  "hashes": "Original SHA-256 identifies source archive bytes. Published SHA-256 covers the sanitized branch copy.",
+  "omitted": "Weights, WAD files, fixture geometry and private per-step evaluation traces.",
+  "artifacts": [
+    {
+      "path": "README.md",
+      "published_bytes": 5236,
+      "published_sha256": "0d1840f28a156429a907d08baded9ebc4739342b2ebcbe84bd118ad4fd092ee7",
+      "origin": "Publication README or portable offline verification source."
+    },
+    {
+      "path": "anchors/anchor-data.npz",
+      "archived_source": "experiments/credit-preservation-20261127/anchors/anchor-data.npz",
+      "original_sha256": "fd32f3c049b0c3e221ea3ba223f176ef13cae82b7759e7440f5e228322a9d87c",
+      "published_sha256": "fd32f3c049b0c3e221ea3ba223f176ef13cae82b7759e7440f5e228322a9d87c",
+      "original_bytes": 202000,
+      "published_bytes": 202000,
+      "byte_identical": true
+    },
+    {
+      "path": "anchors/attempts.jsonl",
+      "archived_source": "experiments/credit-preservation-20261127/anchors/attempts.jsonl",
+      "original_sha256": "dc01156366d879564f74e3da24161abc3067f2ef234ec32a0d7d002bb897a41f",
+      "published_sha256": "00d1d30257fea988e8523013927673165408a53ac44c24040e73e43c0576def7",
+      "original_bytes": 18459,
+      "published_bytes": 15673,
+      "byte_identical": false
+    },
+    {
+      "path": "anchors/collection-manifest.json",
+      "archived_source": "experiments/credit-preservation-20261127/anchors/collection-manifest.json",
+      "original_sha256": "39aa7e48b602ac56545bc69cddab5f0045f5e8704f598d08b0fbd354eea756cd",
+      "published_sha256": "8c10f557802d29753be13c0ddbc1fc5a47e0315e557e743d175ec8bd519870fa",
+      "original_bytes": 2658,
+      "published_bytes": 2557,
+      "byte_identical": false
+    },
+    {
+      "path": "anchors/streams/backtrack-lesson-67101.npz",
+      "archived_source": "experiments/credit-preservation-20261127/anchors/streams/backtrack-lesson-67101.npz",
+      "original_sha256": "bbaf0b3ed153d885e5e259a863a7054cb1c78d3aabd3b4e7f8a933bceede082d",
+      "published_sha256": "bbaf0b3ed153d885e5e259a863a7054cb1c78d3aabd3b4e7f8a933bceede082d",
+      "original_bytes": 65681,
+      "published_bytes": 65681,
+      "byte_identical": true
+    },
+    {
+      "path": "anchors/streams/backtrack-lesson-67102.npz",
+      "archived_source": "experiments/credit-preservation-20261127/anchors/streams/backtrack-lesson-67102.npz",
+      "original_sha256": "568f5d3df31d7b3d3bcd6af87e1bb6c599d6d9dc4d4162a76ba268d89df060f4",
+      "published_sha256": "568f5d3df31d7b3d3bcd6af87e1bb6c599d6d9dc4d4162a76ba268d89df060f4",
+      "original_bytes": 85831,
+      "published_bytes": 85831,
+      "byte_identical": true
+    },
+    {
+      "path": "anchors/streams/backtrack-lesson-67103.npz",
+      "archived_source": "experiments/credit-preservation-20261127/anchors/streams/backtrack-lesson-67103.npz",
+      "original_sha256": "c44583e24a47a5f5ebfb7cfd7951cb2ab693acaa0f49e66e02a34a4fb7967b3b",
+      "published_sha256": "c44583e24a47a5f5ebfb7cfd7951cb2ab693acaa0f49e66e02a34a4fb7967b3b",
+      "original_bytes": 89806,
+      "published_bytes": 89806,
+      "byte_identical": true
+    },
+    {
+      "path": "anchors/streams/backtrack-lesson-67104.npz",
+      "archived_source": "experiments/credit-preservation-20261127/anchors/streams/backtrack-lesson-67104.npz",
+      "original_sha256": "3a31332451a13cda45963b3e9689f6070bff1bbcfe164931ce8ff57315d663b6",
+      "published_sha256": "3a31332451a13cda45963b3e9689f6070bff1bbcfe164931ce8ff57315d663b6",
+      "original_bytes": 79613,
+      "published_bytes": 79613,
+      "byte_identical": true
+    },
+    {
+      "path": "anchors/streams/backtrack-lesson-67105.npz",
+      "archived_source": "experiments/credit-preservation-20261127/anchors/streams/backtrack-lesson-67105.npz",
+      "original_sha256": "3ed02a0788882b37a6eaf836602d44abab310490c337a9698614569fa5f0e962",
+      "published_sha256": "3ed02a0788882b37a6eaf836602d44abab310490c337a9698614569fa5f0e962",
+      "original_bytes": 71689,
+      "published_bytes": 71689,
+      "byte_identical": true
+    },
+    {
+      "path": "anchors/streams/backtrack-lesson-67106.npz",
+      "archived_source": "experiments/credit-preservation-20261127/anchors/streams/backtrack-lesson-67106.npz",
+      "original_sha256": "d360248b62c8cb4d92b6dd585f15a61ae8120abe4c34c133aea2cc5f24bd9b35",
+      "published_sha256": "d360248b62c8cb4d92b6dd585f15a61ae8120abe4c34c133aea2cc5f24bd9b35",
+      "original_bytes": 46657,
+      "published_bytes": 46657,
+      "byte_identical": true
+    },
+    {
+      "path": "anchors/streams/basic-combat-67201.npz",
+      "archived_source": "experiments/credit-preservation-20261127/anchors/streams/basic-combat-67201.npz",
+      "original_sha256": "bed8d8d8fa94d878b0812e0f6feac872a8863692e14e7356f136af27fee327fc",
+      "published_sha256": "bed8d8d8fa94d878b0812e0f6feac872a8863692e14e7356f136af27fee327fc",
+      "original_bytes": 24183,
+      "published_bytes": 24183,
+      "byte_identical": true
+    },
+    {
+      "path": "anchors/streams/basic-combat-67202.npz",
+      "archived_source": "experiments/credit-preservation-20261127/anchors/streams/basic-combat-67202.npz",
+      "original_sha256": "b2a5e4133bf40f5e49ebd8f7a2df4f493bd71185c8fc8fc171befce85206f7bd",
+      "published_sha256": "b2a5e4133bf40f5e49ebd8f7a2df4f493bd71185c8fc8fc171befce85206f7bd",
+      "original_bytes": 3742,
+      "published_bytes": 3742,
+      "byte_identical": true
+    },
+    {
+      "path": "anchors/streams/basic-combat-67203.npz",
+      "archived_source": "experiments/credit-preservation-20261127/anchors/streams/basic-combat-67203.npz",
+      "original_sha256": "c39ea3eb2d11cc3c929cf259eabfe272bf2cc3dddc563e56b098b3eb9da8c5aa",
+      "published_sha256": "c39ea3eb2d11cc3c929cf259eabfe272bf2cc3dddc563e56b098b3eb9da8c5aa",
+      "original_bytes": 5107,
+      "published_bytes": 5107,
+      "byte_identical": true
+    },
+    {
+      "path": "anchors/streams/basic-combat-67204.npz",
+      "archived_source": "experiments/credit-preservation-20261127/anchors/streams/basic-combat-67204.npz",
+      "original_sha256": "76972060186f08d887fbd95dc47dfad2d58499be85d48a90a6b0cfaeda643905",
+      "published_sha256": "76972060186f08d887fbd95dc47dfad2d58499be85d48a90a6b0cfaeda643905",
+      "original_bytes": 11134,
+      "published_bytes": 11134,
+      "byte_identical": true
+    },
+    {
+      "path": "anchors/streams/key-lesson-67101.npz",
+      "archived_source": "experiments/credit-preservation-20261127/anchors/streams/key-lesson-67101.npz",
+      "original_sha256": "a3a2d01a1b73e2dc83cc31135bef0e77c6aca249368703cbd32dc32746e32d96",
+      "published_sha256": "a3a2d01a1b73e2dc83cc31135bef0e77c6aca249368703cbd32dc32746e32d96",
+      "original_bytes": 14082,
+      "published_bytes": 14082,
+      "byte_identical": true
+    },
+    {
+      "path": "anchors/streams/key-lesson-67102.npz",
+      "archived_source": "experiments/credit-preservation-20261127/anchors/streams/key-lesson-67102.npz",
+      "original_sha256": "eebada25c3dc5bd8e0e88efb03115d8cc049fce73abf9ff0b980a27131e18f55",
+      "published_sha256": "eebada25c3dc5bd8e0e88efb03115d8cc049fce73abf9ff0b980a27131e18f55",
+      "original_bytes": 14961,
+      "published_bytes": 14961,
+      "byte_identical": true
+    },
+    {
+      "path": "anchors/streams/key-lesson-67103.npz",
+      "archived_source": "experiments/credit-preservation-20261127/anchors/streams/key-lesson-67103.npz",
+      "original_sha256": "b51008c0d32f21335ef57d495a515072f05fab707d08f72261c7ae5d87e364cb",
+      "published_sha256": "b51008c0d32f21335ef57d495a515072f05fab707d08f72261c7ae5d87e364cb",
+      "original_bytes": 11907,
+      "published_bytes": 11907,
+      "byte_identical": true
+    },
+    {
+      "path": "anchors/streams/key-lesson-67104.npz",
+      "archived_source": "experiments/credit-preservation-20261127/anchors/streams/key-lesson-67104.npz",
+      "original_sha256": "431260d7fba2c15ea80fe6935e39d44852701f19587c13069c84be19414a25d1",
+      "published_sha256": "431260d7fba2c15ea80fe6935e39d44852701f19587c13069c84be19414a25d1",
+      "original_bytes": 14800,
+      "published_bytes": 14800,
+      "byte_identical": true
+    },
+    {
+      "path": "anchors/streams/key-lesson-67105.npz",
+      "archived_source": "experiments/credit-preservation-20261127/anchors/streams/key-lesson-67105.npz",
+      "original_sha256": "92886404359a6926b821f2cde7a24fba76a12d197c24594ebf8ad2c606e92212",
+      "published_sha256": "92886404359a6926b821f2cde7a24fba76a12d197c24594ebf8ad2c606e92212",
+      "original_bytes": 15971,
+      "published_bytes": 15971,
+      "byte_identical": true
+    },
+    {
+      "path": "anchors/streams/key-lesson-67106.npz",
+      "archived_source": "experiments/credit-preservation-20261127/anchors/streams/key-lesson-67106.npz",
+      "original_sha256": "0195867a8ffc1d4ceb676e1262839612097699e9d3d837c48390d7f66185d2ec",
+      "published_sha256": "0195867a8ffc1d4ceb676e1262839612097699e9d3d837c48390d7f66185d2ec",
+      "original_bytes": 15699,
+      "published_bytes": 15699,
+      "byte_identical": true
+    },
+    {
+      "path": "anchors/streams/way-home-67301.npz",
+      "archived_source": "experiments/credit-preservation-20261127/anchors/streams/way-home-67301.npz",
+      "original_sha256": "e69b5aea4e475bc0c7da4ea005d29c80c29e7ec560b832e5695cf5af72baa68e",
+      "published_sha256": "e69b5aea4e475bc0c7da4ea005d29c80c29e7ec560b832e5695cf5af72baa68e",
+      "original_bytes": 12150,
+      "published_bytes": 12150,
+      "byte_identical": true
+    },
+    {
+      "path": "anchors/streams/way-home-67302.npz",
+      "archived_source": "experiments/credit-preservation-20261127/anchors/streams/way-home-67302.npz",
+      "original_sha256": "2d02a7070ccccb11e45855a265d46492955776a0ce03b3aa205ef49295d6e4b0",
+      "published_sha256": "2d02a7070ccccb11e45855a265d46492955776a0ce03b3aa205ef49295d6e4b0",
+      "original_bytes": 180518,
+      "published_bytes": 180518,
+      "byte_identical": true
+    },
+    {
+      "path": "anchors/streams/way-home-67303.npz",
+      "archived_source": "experiments/credit-preservation-20261127/anchors/streams/way-home-67303.npz",
+      "original_sha256": "724770134cb1be15e8317b8602f1dfb72d28caa9ea145742459c89eb60dc2bac",
+      "published_sha256": "724770134cb1be15e8317b8602f1dfb72d28caa9ea145742459c89eb60dc2bac",
+      "original_bytes": 182558,
+      "published_bytes": 182558,
+      "byte_identical": true
+    },
+    {
+      "path": "anchors/streams/way-home-67304.npz",
+      "archived_source": "experiments/credit-preservation-20261127/anchors/streams/way-home-67304.npz",
+      "original_sha256": "52ad0f3809902cd9f389c06cdb04746186cee523d822771b6aab62be98693513",
+      "published_sha256": "52ad0f3809902cd9f389c06cdb04746186cee523d822771b6aab62be98693513",
+      "original_bytes": 181264,
+      "published_bytes": 181264,
+      "byte_identical": true
+    },
+    {
+      "path": "anchors/summary.json",
+      "archived_source": "experiments/credit-preservation-20261127/anchors/summary.json",
+      "original_sha256": "843f467054165bf23a68a174ca77b86a21370a4f0d6edac5f5de371c22b06398",
+      "published_sha256": "d3cdf3c8c28f663878d3a65fa700aa4c231f2e3ec78b3bc88d43670f45f3e643",
+      "original_bytes": 970,
+      "published_bytes": 934,
+      "byte_identical": false
+    },
+    {
+      "path": "anchors/validation.json",
+      "archived_source": "experiments/credit-preservation-20261127/anchors/validation.json",
+      "original_sha256": "005693f6c63ba962b266d5a36c2cdabe7069589d0ab3ffee7bf2eb3fddada110",
+      "published_sha256": "5d0e139a5e88caa77e5fc2349358ce375b2dcd7612a7f14344428d3443b99b3d",
+      "original_bytes": 612,
+      "published_bytes": 594,
+      "byte_identical": false
+    },
+    {
+      "path": "evaluation/paired-brief.md",
+      "archived_source": "experiments/credit-preservation-20261127/screening/results/paired-brief.md",
+      "original_sha256": "b62d865c8dd07a22bde76a8c830a8eca1414eb439ce2670a7988fae3d4c5036c",
+      "published_sha256": "b62d865c8dd07a22bde76a8c830a8eca1414eb439ce2670a7988fae3d4c5036c",
+      "original_bytes": 2670,
+      "published_bytes": 2670,
+      "byte_identical": true
+    },
+    {
+      "path": "evaluation/scoring-manifest.json",
+      "archived_source": "experiments/credit-preservation-20261127/screening/manifests/scoring_manifest.json",
+      "original_sha256": "1ca7aeb19af8b5a787bd66cd86234690764689c5979876fdcb04a0b8f9bfc9fd",
+      "published_sha256": "4ab6abdfa1d044c94eab63c80f5c7ba5c4a2cd8ea16c2c94b03277c20c564fed",
+      "original_bytes": 2892,
+      "published_bytes": 3138,
+      "byte_identical": false
+    },
+    {
+      "path": "evaluation/screening-maps.json",
+      "archived_source": "experiments/credit-preservation-20261127/screening/manifests/protocol.json",
+      "original_sha256": "da14fff9531a75678bf0b178377bbd200237d8ed26ba6622ebfc780b0b60cc57",
+      "published_sha256": "1f7996dcefb4ea1e21672c80f714d91830e49408403580f0f9ffb51ffd86962f",
+      "original_bytes": 10748,
+      "published_bytes": 2170,
+      "byte_identical": false
+    },
+    {
+      "path": "evaluation/screening-summary.json",
+      "archived_source": "experiments/credit-preservation-20261127/screening/results/summary.json",
+      "original_sha256": "7032ea87a3146d9dc4e99e2ee9e32a7e1c949675994114fe4486a6f10b05b3c3",
+      "published_sha256": "7032ea87a3146d9dc4e99e2ee9e32a7e1c949675994114fe4486a6f10b05b3c3",
+      "original_bytes": 350140,
+      "published_bytes": 350140,
+      "byte_identical": true
+    },
+    {
+      "path": "evaluation/screening.jsonl",
+      "archived_source": "experiments/credit-preservation-20261127/screening/results/episodes.jsonl",
+      "original_sha256": "597f022736ad633de8533fcf48f5712917d556b3ad773a1799256f527c35615e",
+      "published_sha256": "e87bfa96d7468c1e0f3d694761969cccbd3ade319412e5af2e6edbf8947b65d3",
+      "original_bytes": 95113,
+      "published_bytes": 86311,
+      "byte_identical": false
+    },
+    {
+      "path": "mathematical-audit.md",
+      "archived_source": "experiments/credit-preservation-20261127/mathematical-audit.md",
+      "original_sha256": "3634c229379be31a84715f7aaddbc473af9bc4463d443f843d55e4ad3cba2549",
+      "published_sha256": "5f997d8390dedd10431a27ba6ed7c1b0ca535c27de4d6aae3a8994976627b379",
+      "original_bytes": 6513,
+      "published_bytes": 6115,
+      "byte_identical": false
+    },
+    {
+      "path": "provenance/screening-protocol.json",
+      "archived_source": "experiments/credit-preservation-20261127/screening/manifests/protocol.json",
+      "original_sha256": "da14fff9531a75678bf0b178377bbd200237d8ed26ba6622ebfc780b0b60cc57",
+      "published_sha256": "3905880670f57f04da065c07db32669a09180bb1f1abb6cd5a9d04e8bcb8b32f",
+      "original_bytes": 10748,
+      "published_bytes": 3067,
+      "byte_identical": false
+    },
+    {
+      "path": "provenance/storage-policy.json",
+      "archived_source": "experiments/credit-preservation-20261127/screening/manifests/storage_policy.json",
+      "original_sha256": "a9d503df7d96b07555b9bb7140299855d0e697c136e09631aa20d67e4dc39baf",
+      "published_sha256": "df9322c8cd142e799aea67a076dbb8f92d40ddeea9c56b272b3584cf3b7ebee7",
+      "original_bytes": 639,
+      "published_bytes": 641,
+      "byte_identical": false
+    },
+    {
+      "path": "source/collect-c749-anchors.py",
+      "archived_source": "experiments/credit-preservation-20261127/collect-c749-anchors.py",
+      "original_sha256": "74a3dbaadc3f9f7c8ff5f395d60bd0cfcb6d5f90be5756389ea56439da7dd0e4",
+      "published_sha256": "74a3dbaadc3f9f7c8ff5f395d60bd0cfcb6d5f90be5756389ea56439da7dd0e4",
+      "original_bytes": 15321,
+      "published_bytes": 15321,
+      "byte_identical": true
+    },
+    {
+      "path": "source/policy-worktree/training/credit.py",
+      "archived_source": "experiments/credit-preservation-20261127/policy-worktree/training/credit.py",
+      "original_sha256": "31d62593a390cf520302aaaf2b68e3e88221f826421388884f483ed3a43186e8",
+      "published_sha256": "31d62593a390cf520302aaaf2b68e3e88221f826421388884f483ed3a43186e8",
+      "original_bytes": 6264,
+      "published_bytes": 6264,
+      "byte_identical": true
+    },
+    {
+      "path": "source/policy-worktree/training/game.py",
+      "archived_source": "experiments/credit-preservation-20261127/policy-worktree/training/game.py",
+      "original_sha256": "08a6dee80df1aa7ca4708c77ab21adaaf0a79f7f8058bb4939ac4cd0fc228c41",
+      "published_sha256": "08a6dee80df1aa7ca4708c77ab21adaaf0a79f7f8058bb4939ac4cd0fc228c41",
+      "original_bytes": 8463,
+      "published_bytes": 8463,
+      "byte_identical": true
+    },
+    {
+      "path": "source/policy-worktree/training/parallel.py",
+      "archived_source": "experiments/credit-preservation-20261127/policy-worktree/training/parallel.py",
+      "original_sha256": "990d4069e7a0b66ae904bfd25c7c3773cb5e437e060029f1e192107ff6854d80",
+      "published_sha256": "990d4069e7a0b66ae904bfd25c7c3773cb5e437e060029f1e192107ff6854d80",
+      "original_bytes": 6195,
+      "published_bytes": 6195,
+      "byte_identical": true
+    },
+    {
+      "path": "source/policy-worktree/training/potential.py",
+      "archived_source": "experiments/credit-preservation-20261127/policy-worktree/training/potential.py",
+      "original_sha256": "0985978cc7eb5f001bdff688917d1ecb68f043c850a271f37a8bc67859d4bbb2",
+      "published_sha256": "0985978cc7eb5f001bdff688917d1ecb68f043c850a271f37a8bc67859d4bbb2",
+      "original_bytes": 4174,
+      "published_bytes": 4174,
+      "byte_identical": true
+    },
+    {
+      "path": "source/policy-worktree/training/ppo.py",
+      "archived_source": "experiments/credit-preservation-20261127/policy-worktree/training/ppo.py",
+      "original_sha256": "ff1b468b2ace594a3212d9339816c0c18953c29b5e54ac5100d79f00e5f2bc29",
+      "published_sha256": "ff1b468b2ace594a3212d9339816c0c18953c29b5e54ac5100d79f00e5f2bc29",
+      "original_bytes": 6187,
+      "published_bytes": 6187,
+      "byte_identical": true
+    },
+    {
+      "path": "source/policy-worktree/training/preservation.py",
+      "archived_source": "experiments/credit-preservation-20261127/policy-worktree/training/preservation.py",
+      "original_sha256": "32b2d05fdd1a2ef445299ae764f6552de89cc13237eead50ae9c98b64c86683c",
+      "published_sha256": "32b2d05fdd1a2ef445299ae764f6552de89cc13237eead50ae9c98b64c86683c",
+      "original_bytes": 3163,
+      "published_bytes": 3163,
+      "byte_identical": true
+    },
+    {
+      "path": "source/policy-worktree/training/reward_diagnostics.py",
+      "archived_source": "experiments/credit-preservation-20261127/policy-worktree/training/reward_diagnostics.py",
+      "original_sha256": "06365d624670172dae6b0a7a6db6b082093d8f303d26ae206602dcf6de06a560",
+      "published_sha256": "06365d624670172dae6b0a7a6db6b082093d8f303d26ae206602dcf6de06a560",
+      "original_bytes": 4133,
+      "published_bytes": 4133,
+      "byte_identical": true
+    },
+    {
+      "path": "source/policy-worktree/training/storage.py",
+      "archived_source": "experiments/credit-preservation-20261127/policy-worktree/training/storage.py",
+      "original_sha256": "6f252b7ea7aa94ac816222a3a69804c14e12816a2c4d9818e315693c06303287",
+      "published_sha256": "6f252b7ea7aa94ac816222a3a69804c14e12816a2c4d9818e315693c06303287",
+      "original_bytes": 2865,
+      "published_bytes": 2865,
+      "byte_identical": true
+    },
+    {
+      "path": "source/policy-worktree/training/train.py",
+      "archived_source": "experiments/credit-preservation-20261127/policy-worktree/training/train.py",
+      "original_sha256": "56321847a714d0703e67b236076c780773866fe5a39116af9295ab8c83dc4432",
+      "published_sha256": "56321847a714d0703e67b236076c780773866fe5a39116af9295ab8c83dc4432",
+      "original_bytes": 19348,
+      "published_bytes": 19348,
+      "byte_identical": true
+    },
+    {
+      "path": "source/run-credit-ppo.ps1",
+      "archived_source": "experiments/credit-preservation-20261127/run-credit-ppo.ps1",
+      "original_sha256": "f137f36b0080e764b6c6e070c876d9da203d6501ab886bd365d72d7136578b0f",
+      "published_sha256": "ce4940d2d3d7c0d3bbd6a6b0a01166df79eb936f0be3b857ef74516c94caec6e",
+      "original_bytes": 4140,
+      "published_bytes": 4209,
+      "byte_identical": false
+    },
+    {
+      "path": "source/screening/evaluate_screen.py",
+      "archived_source": "experiments/credit-preservation-20261127/screening/evaluate_screen.py",
+      "original_sha256": "9c3ad567265ea9fee490a39baf981153b1aa7f634857e7101571bfb868bec008",
+      "published_sha256": "9c3ad567265ea9fee490a39baf981153b1aa7f634857e7101571bfb868bec008",
+      "original_bytes": 14687,
+      "published_bytes": 14687,
+      "byte_identical": true
+    },
+    {
+      "path": "source/screening/evaluator/comparison.py",
+      "archived_source": "experiments/credit-preservation-20261127/screening/evaluator/comparison.py",
+      "original_sha256": "f54b51f360416ff1773518b9aace5fd547b241767dc886fa01fa2d6aca845e08",
+      "published_sha256": "f54b51f360416ff1773518b9aace5fd547b241767dc886fa01fa2d6aca845e08",
+      "original_bytes": 17073,
+      "published_bytes": 17073,
+      "byte_identical": true
+    },
+    {
+      "path": "source/screening/evaluator/run_matched.py",
+      "archived_source": "experiments/credit-preservation-20261127/screening/evaluator/run_matched.py",
+      "original_sha256": "f10a00ddd5f5ebf763846065baa13e91d20f124397866b80da4e4074b0a17413",
+      "published_sha256": "f10a00ddd5f5ebf763846065baa13e91d20f124397866b80da4e4074b0a17413",
+      "original_bytes": 22393,
+      "published_bytes": 22393,
+      "byte_identical": true
+    },
+    {
+      "path": "source/screening/evaluator/storage_gate.py",
+      "archived_source": "experiments/credit-preservation-20261127/screening/evaluator/storage_gate.py",
+      "original_sha256": "5f0b7bfe666873478bf3ffb521b2bcd88c2983e8101d265097a03f5bf352066a",
+      "published_sha256": "5f0b7bfe666873478bf3ffb521b2bcd88c2983e8101d265097a03f5bf352066a",
+      "original_bytes": 2699,
+      "published_bytes": 2699,
+      "byte_identical": true
+    },
+    {
+      "path": "training/CHECKPOINTS.sha256",
+      "archived_source": "experiments/credit-preservation-20261127/CHECKPOINTS.sha256",
+      "original_sha256": "5759a6ea81dbdcdf86ba7a660d4a77b0d07b9ca2d6f25f496ce9ea937b020aa1",
+      "published_sha256": "5759a6ea81dbdcdf86ba7a660d4a77b0d07b9ca2d6f25f496ce9ea937b020aa1",
+      "original_bytes": 1355,
+      "published_bytes": 1355,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-anchor-credit/update-0750.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-anchor-credit/update-0750.npz",
+      "original_sha256": "7721b5be8bf35ec5e79c4eb7edc31ef890b4555c2039e1325043cd760feaa26c",
+      "published_sha256": "7721b5be8bf35ec5e79c4eb7edc31ef890b4555c2039e1325043cd760feaa26c",
+      "original_bytes": 3221,
+      "published_bytes": 3221,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-anchor-credit/update-0751.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-anchor-credit/update-0751.npz",
+      "original_sha256": "c6c31701436242edb1cdc818c1a8fcc9b976c631988af18e37d142f20c3119bc",
+      "published_sha256": "c6c31701436242edb1cdc818c1a8fcc9b976c631988af18e37d142f20c3119bc",
+      "original_bytes": 2917,
+      "published_bytes": 2917,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-anchor-credit/update-0752.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-anchor-credit/update-0752.npz",
+      "original_sha256": "ee8170d888ddb9dbdf086f4935a2818846d2ee632293f9935d33c01c579e97f9",
+      "published_sha256": "ee8170d888ddb9dbdf086f4935a2818846d2ee632293f9935d33c01c579e97f9",
+      "original_bytes": 2836,
+      "published_bytes": 2836,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-anchor-credit/update-0753.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-anchor-credit/update-0753.npz",
+      "original_sha256": "f352d426057fede971a082cb61621641703321f4e2dd2b5f367575eba4d93a84",
+      "published_sha256": "f352d426057fede971a082cb61621641703321f4e2dd2b5f367575eba4d93a84",
+      "original_bytes": 2593,
+      "published_bytes": 2593,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-anchor-credit/update-0754.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-anchor-credit/update-0754.npz",
+      "original_sha256": "8802200e34efdaa81ba955a53955edbc2d3303e41ed808028b702fee96f18784",
+      "published_sha256": "8802200e34efdaa81ba955a53955edbc2d3303e41ed808028b702fee96f18784",
+      "original_bytes": 3210,
+      "published_bytes": 3210,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-anchor-credit/update-0755.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-anchor-credit/update-0755.npz",
+      "original_sha256": "de1fb5468ec0ddbc13b982cdd249a498d630a0a0b924fec4f95adc12a9f8f51b",
+      "published_sha256": "de1fb5468ec0ddbc13b982cdd249a498d630a0a0b924fec4f95adc12a9f8f51b",
+      "original_bytes": 3167,
+      "published_bytes": 3167,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-anchor-credit/update-0756.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-anchor-credit/update-0756.npz",
+      "original_sha256": "17886e60c71174ed25f61f3a6a10fd46cff22a1b2fc83a88d6574ceb885f93a2",
+      "published_sha256": "17886e60c71174ed25f61f3a6a10fd46cff22a1b2fc83a88d6574ceb885f93a2",
+      "original_bytes": 2901,
+      "published_bytes": 2901,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-anchor-credit/update-0757.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-anchor-credit/update-0757.npz",
+      "original_sha256": "0ff1e59cc21f097a2d1c5342a91d8fe32e404694c95c455f9587e7f477436a8b",
+      "published_sha256": "0ff1e59cc21f097a2d1c5342a91d8fe32e404694c95c455f9587e7f477436a8b",
+      "original_bytes": 3490,
+      "published_bytes": 3490,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-anchor-credit/update-0758.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-anchor-credit/update-0758.npz",
+      "original_sha256": "11375d3eedbc4556a587a42bd241cc55716d4cc325e37b4d863e58f33f4788e5",
+      "published_sha256": "11375d3eedbc4556a587a42bd241cc55716d4cc325e37b4d863e58f33f4788e5",
+      "original_bytes": 3535,
+      "published_bytes": 3535,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-anchor-credit/update-0759.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-anchor-credit/update-0759.npz",
+      "original_sha256": "eb5e19cc106a8d8910c69d5139fe26c8109d1a35be7562e5a87ec8b48f1b8621",
+      "published_sha256": "eb5e19cc106a8d8910c69d5139fe26c8109d1a35be7562e5a87ec8b48f1b8621",
+      "original_bytes": 3167,
+      "published_bytes": 3167,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-anchor-credit/update-0760.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-anchor-credit/update-0760.npz",
+      "original_sha256": "614d93d2c9c6ef400e7cb2396d3dc6fe420c76c899f1f4d8c17230670e50333d",
+      "published_sha256": "614d93d2c9c6ef400e7cb2396d3dc6fe420c76c899f1f4d8c17230670e50333d",
+      "original_bytes": 3172,
+      "published_bytes": 3172,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-anchor-credit/update-0761.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-anchor-credit/update-0761.npz",
+      "original_sha256": "8586ba6bc7eb98beb49dcb5f474080316b576db3394029ff8220e68f01b13494",
+      "published_sha256": "8586ba6bc7eb98beb49dcb5f474080316b576db3394029ff8220e68f01b13494",
+      "original_bytes": 3295,
+      "published_bytes": 3295,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-anchor-credit/update-0762.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-anchor-credit/update-0762.npz",
+      "original_sha256": "3d140118fa9a72927b53c27cfbe5d65bd86e00173bd6fc4a8512a2e0d6960652",
+      "published_sha256": "3d140118fa9a72927b53c27cfbe5d65bd86e00173bd6fc4a8512a2e0d6960652",
+      "original_bytes": 3324,
+      "published_bytes": 3324,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-anchor-credit/update-0763.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-anchor-credit/update-0763.npz",
+      "original_sha256": "8c5b23da444840dec9a2b6ce417435ba9a77ec365a2f2aa59d3ef7ccb39d7630",
+      "published_sha256": "8c5b23da444840dec9a2b6ce417435ba9a77ec365a2f2aa59d3ef7ccb39d7630",
+      "original_bytes": 3372,
+      "published_bytes": 3372,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-anchor-credit/update-0764.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-anchor-credit/update-0764.npz",
+      "original_sha256": "9ab9394fb4483f9f8582d95b30360a21044f43204e7f89877dd686595c2ea1e6",
+      "published_sha256": "9ab9394fb4483f9f8582d95b30360a21044f43204e7f89877dd686595c2ea1e6",
+      "original_bytes": 3248,
+      "published_bytes": 3248,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-anchor-credit/update-0765.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-anchor-credit/update-0765.npz",
+      "original_sha256": "fa07426f9859126ed93e1afc13328e7ba3b69b20db897b59770d46149fea1d2d",
+      "published_sha256": "fa07426f9859126ed93e1afc13328e7ba3b69b20db897b59770d46149fea1d2d",
+      "original_bytes": 3392,
+      "published_bytes": 3392,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-anchor-credit/update-0766.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-anchor-credit/update-0766.npz",
+      "original_sha256": "a07fe87f1aeaf5c34fe25940c5b04422225efc7d0ba02a4ed186ad23cb3f6aa2",
+      "published_sha256": "a07fe87f1aeaf5c34fe25940c5b04422225efc7d0ba02a4ed186ad23cb3f6aa2",
+      "original_bytes": 3090,
+      "published_bytes": 3090,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-anchor-credit/update-0767.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-anchor-credit/update-0767.npz",
+      "original_sha256": "e9cb3216895d9345b759ee81d15e34decde43a8b693730359a8d81dcccbe7c57",
+      "published_sha256": "e9cb3216895d9345b759ee81d15e34decde43a8b693730359a8d81dcccbe7c57",
+      "original_bytes": 2840,
+      "published_bytes": 2840,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-anchor-credit/update-0768.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-anchor-credit/update-0768.npz",
+      "original_sha256": "4b69274854af71261b7b3dcd7ef620c1ff76cc0469281b4d119ac67e427b5a7c",
+      "published_sha256": "4b69274854af71261b7b3dcd7ef620c1ff76cc0469281b4d119ac67e427b5a7c",
+      "original_bytes": 2914,
+      "published_bytes": 2914,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-anchor-credit/update-0769.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-anchor-credit/update-0769.npz",
+      "original_sha256": "58a99a12f02929fd7418618e1fdacfcb1495cf75af4802f133b74c57d30492af",
+      "published_sha256": "58a99a12f02929fd7418618e1fdacfcb1495cf75af4802f133b74c57d30492af",
+      "original_bytes": 3209,
+      "published_bytes": 3209,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-anchor-credit/update-0770.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-anchor-credit/update-0770.npz",
+      "original_sha256": "be4a2fb22cb53cf38573bec2fc691a4c03120aa7c948a9a178197d03a6e68680",
+      "published_sha256": "be4a2fb22cb53cf38573bec2fc691a4c03120aa7c948a9a178197d03a6e68680",
+      "original_bytes": 3254,
+      "published_bytes": 3254,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-anchor-credit/update-0771.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-anchor-credit/update-0771.npz",
+      "original_sha256": "2ce243d962a236bacfec77893ca6bbab58d4f8a04f2c38607d1313d56974c2f4",
+      "published_sha256": "2ce243d962a236bacfec77893ca6bbab58d4f8a04f2c38607d1313d56974c2f4",
+      "original_bytes": 3372,
+      "published_bytes": 3372,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-anchor-credit/update-0772.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-anchor-credit/update-0772.npz",
+      "original_sha256": "09f20d26917285a967024af215c91e06621bb2812e62872f9146411f4c8e2292",
+      "published_sha256": "09f20d26917285a967024af215c91e06621bb2812e62872f9146411f4c8e2292",
+      "original_bytes": 2996,
+      "published_bytes": 2996,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-anchor-credit/update-0773.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-anchor-credit/update-0773.npz",
+      "original_sha256": "c935cb6c9ba1667e82abaf05bc39e45da4b6a34a720d8eb242277a52a70c9745",
+      "published_sha256": "c935cb6c9ba1667e82abaf05bc39e45da4b6a34a720d8eb242277a52a70c9745",
+      "original_bytes": 3156,
+      "published_bytes": 3156,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-anchor-credit/update-0774.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-anchor-credit/update-0774.npz",
+      "original_sha256": "cfd9d9594897489a6bc093739bb8514b27f3ddb04583dcfca1ac7ddd08bcaf67",
+      "published_sha256": "cfd9d9594897489a6bc093739bb8514b27f3ddb04583dcfca1ac7ddd08bcaf67",
+      "original_bytes": 2608,
+      "published_bytes": 2608,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-anchor-credit/update-0775.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-anchor-credit/update-0775.npz",
+      "original_sha256": "08e26fce0282e8b128580ddcaaa7b4d5decfe3c9ef34c231fd83a6abc411d488",
+      "published_sha256": "08e26fce0282e8b128580ddcaaa7b4d5decfe3c9ef34c231fd83a6abc411d488",
+      "original_bytes": 2764,
+      "published_bytes": 2764,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-anchor-credit/update-0776.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-anchor-credit/update-0776.npz",
+      "original_sha256": "bdd26e2977e1467a09ed40601febd90fdbadb6fa047525f7a8916f916c0c733d",
+      "published_sha256": "bdd26e2977e1467a09ed40601febd90fdbadb6fa047525f7a8916f916c0c733d",
+      "original_bytes": 2588,
+      "published_bytes": 2588,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-anchor-credit/update-0777.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-anchor-credit/update-0777.npz",
+      "original_sha256": "4a219f5b2aa077f3e2d43f874417a2c7aac7933182f162180f443e114efb851c",
+      "published_sha256": "4a219f5b2aa077f3e2d43f874417a2c7aac7933182f162180f443e114efb851c",
+      "original_bytes": 2941,
+      "published_bytes": 2941,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-anchor-credit/update-0778.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-anchor-credit/update-0778.npz",
+      "original_sha256": "af70afbd7a8d075e6a87b7092baa25ccdafe25119060ff06363a03977ad1c0c9",
+      "published_sha256": "af70afbd7a8d075e6a87b7092baa25ccdafe25119060ff06363a03977ad1c0c9",
+      "original_bytes": 2946,
+      "published_bytes": 2946,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-anchor-credit/update-0779.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-anchor-credit/update-0779.npz",
+      "original_sha256": "716004a815babff83913ddb3097be8cce04d9a9d346f732cdab7a017d2844d7e",
+      "published_sha256": "716004a815babff83913ddb3097be8cce04d9a9d346f732cdab7a017d2844d7e",
+      "original_bytes": 3152,
+      "published_bytes": 3152,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-anchor-credit/update-0780.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-anchor-credit/update-0780.npz",
+      "original_sha256": "d4dee5f590fd1a988e0048c1b13842154f6e4f2abece7f30d51b133af123a4d0",
+      "published_sha256": "d4dee5f590fd1a988e0048c1b13842154f6e4f2abece7f30d51b133af123a4d0",
+      "original_bytes": 2585,
+      "published_bytes": 2585,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-anchor-credit/update-0781.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-anchor-credit/update-0781.npz",
+      "original_sha256": "885b3e0f0461ae5b14b6dd236e227a9aedf64d6becf0676fb64d7f1c018ef4d7",
+      "published_sha256": "885b3e0f0461ae5b14b6dd236e227a9aedf64d6becf0676fb64d7f1c018ef4d7",
+      "original_bytes": 2688,
+      "published_bytes": 2688,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-credit/update-0750.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-credit/update-0750.npz",
+      "original_sha256": "7721b5be8bf35ec5e79c4eb7edc31ef890b4555c2039e1325043cd760feaa26c",
+      "published_sha256": "7721b5be8bf35ec5e79c4eb7edc31ef890b4555c2039e1325043cd760feaa26c",
+      "original_bytes": 3221,
+      "published_bytes": 3221,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-credit/update-0751.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-credit/update-0751.npz",
+      "original_sha256": "2c277487777547374b1ce605fa78a3090db0f0df70e0173586bcfe997e42c6d4",
+      "published_sha256": "2c277487777547374b1ce605fa78a3090db0f0df70e0173586bcfe997e42c6d4",
+      "original_bytes": 2771,
+      "published_bytes": 2771,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-credit/update-0752.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-credit/update-0752.npz",
+      "original_sha256": "a2c747476a0102c92d75ebeaf3099cb4246e592c748eed11435b86f701778e9f",
+      "published_sha256": "a2c747476a0102c92d75ebeaf3099cb4246e592c748eed11435b86f701778e9f",
+      "original_bytes": 2589,
+      "published_bytes": 2589,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-credit/update-0753.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-credit/update-0753.npz",
+      "original_sha256": "7002c84756b6a668f9babf0d06032c4be60b11e05067379dbdd0765dd3b8f1e7",
+      "published_sha256": "7002c84756b6a668f9babf0d06032c4be60b11e05067379dbdd0765dd3b8f1e7",
+      "original_bytes": 2852,
+      "published_bytes": 2852,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-credit/update-0754.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-credit/update-0754.npz",
+      "original_sha256": "699c8a81d813486d33d4aeac4fc4f2caf8b3c403c7bdb4a2b6ce1aec0a467ef4",
+      "published_sha256": "699c8a81d813486d33d4aeac4fc4f2caf8b3c403c7bdb4a2b6ce1aec0a467ef4",
+      "original_bytes": 3125,
+      "published_bytes": 3125,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-credit/update-0755.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-credit/update-0755.npz",
+      "original_sha256": "c821c3b24918630e896d3821dbce189942d1dd3b9881c8cf01f7bfff77e22f56",
+      "published_sha256": "c821c3b24918630e896d3821dbce189942d1dd3b9881c8cf01f7bfff77e22f56",
+      "original_bytes": 2919,
+      "published_bytes": 2919,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-credit/update-0756.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-credit/update-0756.npz",
+      "original_sha256": "771f947351939aa474ed321a91546d389d0da7d306d82be85f1a605401275727",
+      "published_sha256": "771f947351939aa474ed321a91546d389d0da7d306d82be85f1a605401275727",
+      "original_bytes": 2917,
+      "published_bytes": 2917,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-credit/update-0757.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-credit/update-0757.npz",
+      "original_sha256": "7f7de492481fbc2f6dba02b5cf06b2dbf28f0d265c4971518fe58688cef9feda",
+      "published_sha256": "7f7de492481fbc2f6dba02b5cf06b2dbf28f0d265c4971518fe58688cef9feda",
+      "original_bytes": 3282,
+      "published_bytes": 3282,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-credit/update-0758.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-credit/update-0758.npz",
+      "original_sha256": "97f729d85a19455a236a15f7c7f5815c7a893a983c40e6925ce4293f536aad1c",
+      "published_sha256": "97f729d85a19455a236a15f7c7f5815c7a893a983c40e6925ce4293f536aad1c",
+      "original_bytes": 3550,
+      "published_bytes": 3550,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-credit/update-0759.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-credit/update-0759.npz",
+      "original_sha256": "77e4e5b8bfbf98a8fa88cebf8bf87c26b71f28c743d2f30de0d1ff9a98483ece",
+      "published_sha256": "77e4e5b8bfbf98a8fa88cebf8bf87c26b71f28c743d2f30de0d1ff9a98483ece",
+      "original_bytes": 3294,
+      "published_bytes": 3294,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-credit/update-0760.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-credit/update-0760.npz",
+      "original_sha256": "a0a5de0ec77d2058b5ce5986ba5e9a7e87ad7e45ff4d344fdfbbc49e9f8fe712",
+      "published_sha256": "a0a5de0ec77d2058b5ce5986ba5e9a7e87ad7e45ff4d344fdfbbc49e9f8fe712",
+      "original_bytes": 3113,
+      "published_bytes": 3113,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-credit/update-0761.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-credit/update-0761.npz",
+      "original_sha256": "d49f4163b80e27324659f2c7ef8fc9cbee16403208c295d0e35a661fddba3bc9",
+      "published_sha256": "d49f4163b80e27324659f2c7ef8fc9cbee16403208c295d0e35a661fddba3bc9",
+      "original_bytes": 2947,
+      "published_bytes": 2947,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-credit/update-0762.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-credit/update-0762.npz",
+      "original_sha256": "2afb0a7250d90cd0f11bf5e1aa91359677f56e9eb05feeb5e6ac3709c4d04b76",
+      "published_sha256": "2afb0a7250d90cd0f11bf5e1aa91359677f56e9eb05feeb5e6ac3709c4d04b76",
+      "original_bytes": 2929,
+      "published_bytes": 2929,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-credit/update-0763.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-credit/update-0763.npz",
+      "original_sha256": "a3a360ed4d233d7305642c6700b321f0a8806b1f16d4d89a0c3cece1671c8d73",
+      "published_sha256": "a3a360ed4d233d7305642c6700b321f0a8806b1f16d4d89a0c3cece1671c8d73",
+      "original_bytes": 3113,
+      "published_bytes": 3113,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-credit/update-0764.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-credit/update-0764.npz",
+      "original_sha256": "6fc64e905790d9c7ef4e26a7edd0820b96a62b4f71ebf754d6ac2d16dad690d9",
+      "published_sha256": "6fc64e905790d9c7ef4e26a7edd0820b96a62b4f71ebf754d6ac2d16dad690d9",
+      "original_bytes": 2820,
+      "published_bytes": 2820,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-credit/update-0765.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-credit/update-0765.npz",
+      "original_sha256": "89af82fa2e40a102ad15739389c628b7198bc87505c5c2c42c051c1fc83f99c1",
+      "published_sha256": "89af82fa2e40a102ad15739389c628b7198bc87505c5c2c42c051c1fc83f99c1",
+      "original_bytes": 3069,
+      "published_bytes": 3069,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-credit/update-0766.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-credit/update-0766.npz",
+      "original_sha256": "03f3ae43b5753c0a83b045dff9ecac621de19f96ec3ed89b566d03d2d07ab0f1",
+      "published_sha256": "03f3ae43b5753c0a83b045dff9ecac621de19f96ec3ed89b566d03d2d07ab0f1",
+      "original_bytes": 2928,
+      "published_bytes": 2928,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-credit/update-0767.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-credit/update-0767.npz",
+      "original_sha256": "08eaa2d415fe0333d9a301c6e1139acd6624308357e73a66616bddc471c13233",
+      "published_sha256": "08eaa2d415fe0333d9a301c6e1139acd6624308357e73a66616bddc471c13233",
+      "original_bytes": 2971,
+      "published_bytes": 2971,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-credit/update-0768.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-credit/update-0768.npz",
+      "original_sha256": "132e8de3e383dadbe80c0ce957a35f59f669621129141a2401781514b310603c",
+      "published_sha256": "132e8de3e383dadbe80c0ce957a35f59f669621129141a2401781514b310603c",
+      "original_bytes": 2564,
+      "published_bytes": 2564,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-credit/update-0769.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-credit/update-0769.npz",
+      "original_sha256": "feecece736f42808be891f074944bf68230902492c2d219803f984371772af17",
+      "published_sha256": "feecece736f42808be891f074944bf68230902492c2d219803f984371772af17",
+      "original_bytes": 2848,
+      "published_bytes": 2848,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-credit/update-0770.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-credit/update-0770.npz",
+      "original_sha256": "5ea6ed13aaec45c750ba1e864f44627c683a6369ceac20b8b9f59db20c6424e5",
+      "published_sha256": "5ea6ed13aaec45c750ba1e864f44627c683a6369ceac20b8b9f59db20c6424e5",
+      "original_bytes": 2507,
+      "published_bytes": 2507,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-credit/update-0771.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-credit/update-0771.npz",
+      "original_sha256": "74d4e812864aa80a85125c690658a19819a062aa9541c608d35d972b468ec54e",
+      "published_sha256": "74d4e812864aa80a85125c690658a19819a062aa9541c608d35d972b468ec54e",
+      "original_bytes": 2531,
+      "published_bytes": 2531,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-credit/update-0772.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-credit/update-0772.npz",
+      "original_sha256": "b1b5befe60f80a7bbdc36729d2a38d743f6d4325cbe1af2c017603d395c20f03",
+      "published_sha256": "b1b5befe60f80a7bbdc36729d2a38d743f6d4325cbe1af2c017603d395c20f03",
+      "original_bytes": 2690,
+      "published_bytes": 2690,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-credit/update-0773.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-credit/update-0773.npz",
+      "original_sha256": "2fd469c63ce54171e09d24b1d19810d877a8c76c5cf23026976586ea1945292a",
+      "published_sha256": "2fd469c63ce54171e09d24b1d19810d877a8c76c5cf23026976586ea1945292a",
+      "original_bytes": 2763,
+      "published_bytes": 2763,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-credit/update-0774.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-credit/update-0774.npz",
+      "original_sha256": "96b2108a0516fdcac4a7c986c548668906ae4dbc261b2684de50eeb6c70831f3",
+      "published_sha256": "96b2108a0516fdcac4a7c986c548668906ae4dbc261b2684de50eeb6c70831f3",
+      "original_bytes": 3160,
+      "published_bytes": 3160,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-credit/update-0775.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-credit/update-0775.npz",
+      "original_sha256": "77e469fbfd500b3803c17811a9cbb64aef22ba6813aa71c1885b27642ba6fec2",
+      "published_sha256": "77e469fbfd500b3803c17811a9cbb64aef22ba6813aa71c1885b27642ba6fec2",
+      "original_bytes": 3112,
+      "published_bytes": 3112,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-credit/update-0776.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-credit/update-0776.npz",
+      "original_sha256": "86733cbdf4833ff845d6181eb741496237230c08c823d12fed2f2e68b82e8f35",
+      "published_sha256": "86733cbdf4833ff845d6181eb741496237230c08c823d12fed2f2e68b82e8f35",
+      "original_bytes": 3282,
+      "published_bytes": 3282,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-credit/update-0777.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-credit/update-0777.npz",
+      "original_sha256": "c34c6e5fc0627283495780e59fd7a3423e73338ca2a52ff1e2ba674808b3e0e9",
+      "published_sha256": "c34c6e5fc0627283495780e59fd7a3423e73338ca2a52ff1e2ba674808b3e0e9",
+      "original_bytes": 3197,
+      "published_bytes": 3197,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-credit/update-0778.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-credit/update-0778.npz",
+      "original_sha256": "b7aa7c6bb8c184b54b2f7f94a7d331c179a77485ea36351b18821074288a51d2",
+      "published_sha256": "b7aa7c6bb8c184b54b2f7f94a7d331c179a77485ea36351b18821074288a51d2",
+      "original_bytes": 3140,
+      "published_bytes": 3140,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-credit/update-0779.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-credit/update-0779.npz",
+      "original_sha256": "83057c604cb9c3bc8627a7101eff68f48b227810e6b277dafa782ec633e58f3a",
+      "published_sha256": "83057c604cb9c3bc8627a7101eff68f48b227810e6b277dafa782ec633e58f3a",
+      "original_bytes": 2991,
+      "published_bytes": 2991,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-credit/update-0780.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-credit/update-0780.npz",
+      "original_sha256": "8261ca08cca28f08a794635c263db08f57e58e5accee1af281b23bf2a11b0269",
+      "published_sha256": "8261ca08cca28f08a794635c263db08f57e58e5accee1af281b23bf2a11b0269",
+      "original_bytes": 3135,
+      "published_bytes": 3135,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/pbrs-credit/update-0781.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-credit/update-0781.npz",
+      "original_sha256": "72ec8d8e4437c21c1e2096a7ae8d60b4ed61fbf801b50025fa01d1068636a88c",
+      "published_sha256": "72ec8d8e4437c21c1e2096a7ae8d60b4ed61fbf801b50025fa01d1068636a88c",
+      "original_bytes": 3166,
+      "published_bytes": 3166,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/ppo-control-credit/update-0750.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/ppo-control-credit/update-0750.npz",
+      "original_sha256": "ed7850b69ed98b6eab0f25ec538f51fdbe067b1032095cd8573d73bb2605777b",
+      "published_sha256": "ed7850b69ed98b6eab0f25ec538f51fdbe067b1032095cd8573d73bb2605777b",
+      "original_bytes": 2917,
+      "published_bytes": 2917,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/ppo-control-credit/update-0751.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/ppo-control-credit/update-0751.npz",
+      "original_sha256": "af787a202d4215c98c0dfd5fd230d81912fe21d476e4f6679a830cb442f6f780",
+      "published_sha256": "af787a202d4215c98c0dfd5fd230d81912fe21d476e4f6679a830cb442f6f780",
+      "original_bytes": 2769,
+      "published_bytes": 2769,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/ppo-control-credit/update-0752.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/ppo-control-credit/update-0752.npz",
+      "original_sha256": "59139696c0888de100740371d7986e0aae58d564f6867ca6eba138ba60d2df11",
+      "published_sha256": "59139696c0888de100740371d7986e0aae58d564f6867ca6eba138ba60d2df11",
+      "original_bytes": 2584,
+      "published_bytes": 2584,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/ppo-control-credit/update-0753.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/ppo-control-credit/update-0753.npz",
+      "original_sha256": "5c0d2b1cf7d0c47befae64bf58de870aea3a161c7ad605d790a85746893b7e8a",
+      "published_sha256": "5c0d2b1cf7d0c47befae64bf58de870aea3a161c7ad605d790a85746893b7e8a",
+      "original_bytes": 2759,
+      "published_bytes": 2759,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/ppo-control-credit/update-0754.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/ppo-control-credit/update-0754.npz",
+      "original_sha256": "7fc9c0bebae1b498ae4edf46a0bb610ef277172d2781978292c71ddf53d4e806",
+      "published_sha256": "7fc9c0bebae1b498ae4edf46a0bb610ef277172d2781978292c71ddf53d4e806",
+      "original_bytes": 2884,
+      "published_bytes": 2884,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/ppo-control-credit/update-0755.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/ppo-control-credit/update-0755.npz",
+      "original_sha256": "1c963264b138dc5213ef2089edfdb62c5f3a0468bed40fb2529ceced9a5eb524",
+      "published_sha256": "1c963264b138dc5213ef2089edfdb62c5f3a0468bed40fb2529ceced9a5eb524",
+      "original_bytes": 3006,
+      "published_bytes": 3006,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/ppo-control-credit/update-0756.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/ppo-control-credit/update-0756.npz",
+      "original_sha256": "acc42aa4da200c506a146bcfbbbbffee6388eedc24f2eb8579e4dec01bebf12a",
+      "published_sha256": "acc42aa4da200c506a146bcfbbbbffee6388eedc24f2eb8579e4dec01bebf12a",
+      "original_bytes": 2765,
+      "published_bytes": 2765,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/ppo-control-credit/update-0757.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/ppo-control-credit/update-0757.npz",
+      "original_sha256": "09c9471d443d68521ee10280d071b796cf769aafa0592e693b6b1d8ef4ac4f57",
+      "published_sha256": "09c9471d443d68521ee10280d071b796cf769aafa0592e693b6b1d8ef4ac4f57",
+      "original_bytes": 2782,
+      "published_bytes": 2782,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/ppo-control-credit/update-0758.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/ppo-control-credit/update-0758.npz",
+      "original_sha256": "8be420b3fa6b639117ad348f6225f75947cc4bf9c58b4f931193b0096b805ab0",
+      "published_sha256": "8be420b3fa6b639117ad348f6225f75947cc4bf9c58b4f931193b0096b805ab0",
+      "original_bytes": 3022,
+      "published_bytes": 3022,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/ppo-control-credit/update-0759.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/ppo-control-credit/update-0759.npz",
+      "original_sha256": "e7387df0cd2d6c090d0ab2dfd712ddb67678c1df0df3b4b7003708214e718d49",
+      "published_sha256": "e7387df0cd2d6c090d0ab2dfd712ddb67678c1df0df3b4b7003708214e718d49",
+      "original_bytes": 2879,
+      "published_bytes": 2879,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/ppo-control-credit/update-0760.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/ppo-control-credit/update-0760.npz",
+      "original_sha256": "4ced3421761f0de4cc668e1959f7ce130c4b26fff5eb6796ac41734c25ea0165",
+      "published_sha256": "4ced3421761f0de4cc668e1959f7ce130c4b26fff5eb6796ac41734c25ea0165",
+      "original_bytes": 2719,
+      "published_bytes": 2719,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/ppo-control-credit/update-0761.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/ppo-control-credit/update-0761.npz",
+      "original_sha256": "2d8a0c598bbd7752f3a23e367733a0ab39a3fb97431756cc3ea01b48aa8ec214",
+      "published_sha256": "2d8a0c598bbd7752f3a23e367733a0ab39a3fb97431756cc3ea01b48aa8ec214",
+      "original_bytes": 2555,
+      "published_bytes": 2555,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/ppo-control-credit/update-0762.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/ppo-control-credit/update-0762.npz",
+      "original_sha256": "c4a6fb4e58fb396c512deca48404beaeffaf3f02c2c6d04912d581f27391e921",
+      "published_sha256": "c4a6fb4e58fb396c512deca48404beaeffaf3f02c2c6d04912d581f27391e921",
+      "original_bytes": 2791,
+      "published_bytes": 2791,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/ppo-control-credit/update-0763.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/ppo-control-credit/update-0763.npz",
+      "original_sha256": "c9e6932da7c92d0153b97b556f4325058e9ca6fe05ee16957933fc3e110bf79d",
+      "published_sha256": "c9e6932da7c92d0153b97b556f4325058e9ca6fe05ee16957933fc3e110bf79d",
+      "original_bytes": 2969,
+      "published_bytes": 2969,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/ppo-control-credit/update-0764.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/ppo-control-credit/update-0764.npz",
+      "original_sha256": "560187e30160cb46dfc9bba3477cd8406c3ac486afec8f76a2dc76d11aaaf4a9",
+      "published_sha256": "560187e30160cb46dfc9bba3477cd8406c3ac486afec8f76a2dc76d11aaaf4a9",
+      "original_bytes": 2991,
+      "published_bytes": 2991,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/ppo-control-credit/update-0765.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/ppo-control-credit/update-0765.npz",
+      "original_sha256": "9a89597dc829c60fe513e609b688f132abc98d65a3e613238c7827f8ef1b2132",
+      "published_sha256": "9a89597dc829c60fe513e609b688f132abc98d65a3e613238c7827f8ef1b2132",
+      "original_bytes": 2972,
+      "published_bytes": 2972,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/ppo-control-credit/update-0766.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/ppo-control-credit/update-0766.npz",
+      "original_sha256": "a4af5914dc612fff750ae1178c1bf8b06aaae3acccd33a7929ff5cddb569eb1a",
+      "published_sha256": "a4af5914dc612fff750ae1178c1bf8b06aaae3acccd33a7929ff5cddb569eb1a",
+      "original_bytes": 3081,
+      "published_bytes": 3081,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/ppo-control-credit/update-0767.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/ppo-control-credit/update-0767.npz",
+      "original_sha256": "438e2799dd2a09aa9dec4abe45707322c450572413cb86602262e9eedf70ba22",
+      "published_sha256": "438e2799dd2a09aa9dec4abe45707322c450572413cb86602262e9eedf70ba22",
+      "original_bytes": 2768,
+      "published_bytes": 2768,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/ppo-control-credit/update-0768.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/ppo-control-credit/update-0768.npz",
+      "original_sha256": "fff8e69a6bd3de2c3308805ebe529bb38b39d0e3519c4957b85ba0a572f74201",
+      "published_sha256": "fff8e69a6bd3de2c3308805ebe529bb38b39d0e3519c4957b85ba0a572f74201",
+      "original_bytes": 2600,
+      "published_bytes": 2600,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/ppo-control-credit/update-0769.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/ppo-control-credit/update-0769.npz",
+      "original_sha256": "dc100a8fcf7823528fe1e17107fb938c9b9711d5537774fbeaa63de4faa5b775",
+      "published_sha256": "dc100a8fcf7823528fe1e17107fb938c9b9711d5537774fbeaa63de4faa5b775",
+      "original_bytes": 2580,
+      "published_bytes": 2580,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/ppo-control-credit/update-0770.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/ppo-control-credit/update-0770.npz",
+      "original_sha256": "387c555a4380d368867393c9aec223036fad3f7df3935c455d75ac9b4ab9923d",
+      "published_sha256": "387c555a4380d368867393c9aec223036fad3f7df3935c455d75ac9b4ab9923d",
+      "original_bytes": 2983,
+      "published_bytes": 2983,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/ppo-control-credit/update-0771.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/ppo-control-credit/update-0771.npz",
+      "original_sha256": "a29c6931a765b5b9509c22a8275daec412faac89d46d52111179f9b374e6172a",
+      "published_sha256": "a29c6931a765b5b9509c22a8275daec412faac89d46d52111179f9b374e6172a",
+      "original_bytes": 2766,
+      "published_bytes": 2766,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/ppo-control-credit/update-0772.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/ppo-control-credit/update-0772.npz",
+      "original_sha256": "20f0d43c0e9953c6fd840a8e5c7a00547b7d5c304ef1723e6bf093dc5baaebef",
+      "published_sha256": "20f0d43c0e9953c6fd840a8e5c7a00547b7d5c304ef1723e6bf093dc5baaebef",
+      "original_bytes": 2833,
+      "published_bytes": 2833,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/ppo-control-credit/update-0773.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/ppo-control-credit/update-0773.npz",
+      "original_sha256": "0cbd7d2ef21e20824bc61e82d1e512d4f4188c7a8128d2282349d5e8c3e55859",
+      "published_sha256": "0cbd7d2ef21e20824bc61e82d1e512d4f4188c7a8128d2282349d5e8c3e55859",
+      "original_bytes": 2864,
+      "published_bytes": 2864,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/ppo-control-credit/update-0774.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/ppo-control-credit/update-0774.npz",
+      "original_sha256": "d54767b281e3b2825c2ebe90c047defba0c66769bdbb89ef59bc3af96390fe2c",
+      "published_sha256": "d54767b281e3b2825c2ebe90c047defba0c66769bdbb89ef59bc3af96390fe2c",
+      "original_bytes": 2563,
+      "published_bytes": 2563,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/ppo-control-credit/update-0775.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/ppo-control-credit/update-0775.npz",
+      "original_sha256": "72066220cd4eec8a577df03ed7ae63362a823ce99117d56a0e5925c5fd2744b9",
+      "published_sha256": "72066220cd4eec8a577df03ed7ae63362a823ce99117d56a0e5925c5fd2744b9",
+      "original_bytes": 2798,
+      "published_bytes": 2798,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/ppo-control-credit/update-0776.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/ppo-control-credit/update-0776.npz",
+      "original_sha256": "2d4131670e269ba1b53d451ee274b2216af9ec55b6da4d154c9790486c06496a",
+      "published_sha256": "2d4131670e269ba1b53d451ee274b2216af9ec55b6da4d154c9790486c06496a",
+      "original_bytes": 2895,
+      "published_bytes": 2895,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/ppo-control-credit/update-0777.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/ppo-control-credit/update-0777.npz",
+      "original_sha256": "951805940e06f7168e8bcaed52b0123b682e22afe6f8c483a460b83fb7581e16",
+      "published_sha256": "951805940e06f7168e8bcaed52b0123b682e22afe6f8c483a460b83fb7581e16",
+      "original_bytes": 3170,
+      "published_bytes": 3170,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/ppo-control-credit/update-0778.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/ppo-control-credit/update-0778.npz",
+      "original_sha256": "d315119ec564e282532b292a8aaf3990049cf72075b3534084d7fe052fbed3c1",
+      "published_sha256": "d315119ec564e282532b292a8aaf3990049cf72075b3534084d7fe052fbed3c1",
+      "original_bytes": 2937,
+      "published_bytes": 2937,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/ppo-control-credit/update-0779.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/ppo-control-credit/update-0779.npz",
+      "original_sha256": "e0a6dbbda00a4bd622968c4d6c7296e11b42d52bbe448dfa45adb903af118c96",
+      "published_sha256": "e0a6dbbda00a4bd622968c4d6c7296e11b42d52bbe448dfa45adb903af118c96",
+      "original_bytes": 2800,
+      "published_bytes": 2800,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/ppo-control-credit/update-0780.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/ppo-control-credit/update-0780.npz",
+      "original_sha256": "b266698bc90fbe566e864138841f5b75b1ae9364c8033de6c382982ccd1f8240",
+      "published_sha256": "b266698bc90fbe566e864138841f5b75b1ae9364c8033de6c382982ccd1f8240",
+      "original_bytes": 2666,
+      "published_bytes": 2666,
+      "byte_identical": true
+    },
+    {
+      "path": "training/component-ledgers/ppo-control-credit/update-0781.npz",
+      "archived_source": "experiments/credit-preservation-20261127/logs/ppo-control-credit/update-0781.npz",
+      "original_sha256": "45fd111bf86dda2b8cadf1d4a8cbbdd33749a13d1dcafd8986c011868d7e61a7",
+      "published_sha256": "45fd111bf86dda2b8cadf1d4a8cbbdd33749a13d1dcafd8986c011868d7e61a7",
+      "original_bytes": 2350,
+      "published_bytes": 2350,
+      "byte_identical": true
+    },
+    {
+      "path": "training/pbrs-anchor-exit.json",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-anchor-exit.json",
+      "original_sha256": "1af881ef03e44bfea18163ca5a6fb094870ec15721ab4ea9c62e4a3390325567",
+      "published_sha256": "72826add145859418adcaf10150498ef3a275f4a7f0fec32129d0632c177ce6e",
+      "original_bytes": 105,
+      "published_bytes": 100,
+      "byte_identical": false
+    },
+    {
+      "path": "training/pbrs-anchor-launch.json",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-anchor-launch.json",
+      "original_sha256": "4c4625c28165b7d795806b8f91f3283ad9c4ee5dc383f86dff9926175778a9b8",
+      "published_sha256": "12388f487cb3105abec83af3e11212f64383ab83e21d9cdfc2342f6070cd5060",
+      "original_bytes": 532,
+      "published_bytes": 518,
+      "byte_identical": false
+    },
+    {
+      "path": "training/pbrs-anchor.jsonl",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-anchor.jsonl",
+      "original_sha256": "05bd9f778c059c8fa8702f2ac949b382ec6bf09e4682260ba841108e074d4949",
+      "published_sha256": "446ab59e1c923727fdf25555ecdefaee37f297b1e66c3f4f53f8dbe38a59030a",
+      "original_bytes": 191981,
+      "published_bytes": 174464,
+      "byte_identical": false
+    },
+    {
+      "path": "training/pbrs-exit.json",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-exit.json",
+      "original_sha256": "c3f6ea115f875b9352efa3f6c6e986fbce0f5daa3adac9005fb4d9488f5bf6d5",
+      "published_sha256": "b7e7661ea2564290710709785099a00ea3ed5b7c7b6f6a121ed04627806802ca",
+      "original_bytes": 98,
+      "published_bytes": 93,
+      "byte_identical": false
+    },
+    {
+      "path": "training/pbrs-launch.json",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs-launch.json",
+      "original_sha256": "897886f108e0ff0aa8f4e40a2b37a5f4b10db3ad8359484a858ba9eaaae0d01e",
+      "published_sha256": "ebb63d96f41001e555aa141725d966ddeb74c11f1957d68ce45b5f7bbd9f98b5",
+      "original_bytes": 525,
+      "published_bytes": 511,
+      "byte_identical": false
+    },
+    {
+      "path": "training/pbrs.jsonl",
+      "archived_source": "experiments/credit-preservation-20261127/logs/pbrs.jsonl",
+      "original_sha256": "3e275d16694d7f7077f27adb33eec3e8a0b2ef5697e266aa181f5b40e82c4fed",
+      "published_sha256": "8f3332849d8b833d2170a9011d3e3a2e55f78aa8a8db5c71d1fea07093de77c7",
+      "original_bytes": 164445,
+      "published_bytes": 148801,
+      "byte_identical": false
+    },
+    {
+      "path": "training/ppo-control-exit.json",
+      "archived_source": "experiments/credit-preservation-20261127/logs/ppo-control-exit.json",
+      "original_sha256": "b98f908f904dca2cf07d8db347aa1607ba0bbe0a67c548dbc0f1d33560c9cbec",
+      "published_sha256": "8f1ce0167b6064adbb6b0203fca050a082c76a0d116e67aa164519e75aa349d7",
+      "original_bytes": 105,
+      "published_bytes": 100,
+      "byte_identical": false
+    },
+    {
+      "path": "training/ppo-control-launch.json",
+      "archived_source": "experiments/credit-preservation-20261127/logs/ppo-control-launch.json",
+      "original_sha256": "acfe1f0e4e643504d96fd461020af883559ac4de68ddccc9b99e4ddaf51ae3f9",
+      "published_sha256": "0f4b8bdfdf80129782c68595b4714982013332f8c662576d7dad1b33cac863c9",
+      "original_bytes": 532,
+      "published_bytes": 518,
+      "byte_identical": false
+    },
+    {
+      "path": "training/ppo-control.jsonl",
+      "archived_source": "experiments/credit-preservation-20261127/logs/ppo-control.jsonl",
+      "original_sha256": "03f6d06efb9984f277c446b36f56ecb1fddecb53afc5cf3515648d0646c67eb7",
+      "published_sha256": "3f12f12927090e02c665dad1fcb23768ef7899199b609142e3650e792cc58ac1",
+      "original_bytes": 174423,
+      "published_bytes": 157979,
+      "byte_identical": false
+    },
+    {
+      "path": "training/training-plan.json",
+      "archived_source": "experiments/credit-preservation-20261127/training-plan.json",
+      "original_sha256": "f628195a84e2371e5b82316fae6fa6f149f4e47faee0861af4f47a1a407f3707",
+      "published_sha256": "ba9462db3c74ce39fd9bc94ac0ab1c45f08515d7dc2d562fdfd59c8f2037dd21",
+      "original_bytes": 1968,
+      "published_bytes": 1984,
+      "byte_identical": false
+    },
+    {
+      "path": "training/training-statistics.json",
+      "archived_source": "experiments/credit-preservation-20261127/training-statistics.json",
+      "original_sha256": "c1c807ada37733a8c6322da7b4b47bf8e13c51c241e56ce72759b7c8e39e226d",
+      "published_sha256": "c1c807ada37733a8c6322da7b4b47bf8e13c51c241e56ce72759b7c8e39e226d",
+      "original_bytes": 15871,
+      "published_bytes": 15871,
+      "byte_identical": true
+    },
+    {
+      "path": "verification/anchor-rollout-gradients.json",
+      "archived_source": "experiments/credit-preservation-20261127/verification/anchor-rollout-gradients.json",
+      "original_sha256": "a88d36df227eb89bb22f2621fc612d8f0116fadd6d460fc779e98050775c3c6a",
+      "published_sha256": "d3801854a742bc5bd39d2a5bdc5d15c30bf24926ec996362356859e084409e3e",
+      "original_bytes": 7594,
+      "published_bytes": 7412,
+      "byte_identical": false
+    },
+    {
+      "path": "verification/anchor-rollout-gradients.py",
+      "archived_source": "experiments/credit-preservation-20261127/verification/anchor-rollout-gradients.py",
+      "original_sha256": "a3a007602098dd1fb24681a98869e11120ccc779cc12756a0dbb85a6c6023035",
+      "published_sha256": "a3a007602098dd1fb24681a98869e11120ccc779cc12756a0dbb85a6c6023035",
+      "original_bytes": 12014,
+      "published_bytes": 12014,
+      "byte_identical": true
+    },
+    {
+      "path": "verification/check-potential.py",
+      "archived_source": "experiments/credit-preservation-20261127/verification/check-potential.py",
+      "original_sha256": "53355b5915cacb82fd0f16d785e919e37e7f0bb9335dc8acd8422b8549d87d67",
+      "published_sha256": "1ee7ea1e86bc74f9c2b873290e9f9d9ea605983258d4dbc59a06c2986c7f2928",
+      "original_bytes": 5139,
+      "published_bytes": 5160,
+      "byte_identical": false
+    },
+    {
+      "path": "verification/integration-check.json",
+      "archived_source": "experiments/credit-preservation-20261127/verification/integration-check.json",
+      "original_sha256": "9387e5fdc715241d8bac9bfe595f3e22e4d369b69b7255edc20220ac6f5e3970",
+      "published_sha256": "641d184c71817da32e09f6fffa15c7d3ac51f201ff8941cc1bdaa9694d35156b",
+      "original_bytes": 787,
+      "published_bytes": 754,
+      "byte_identical": false
+    },
+    {
+      "path": "verification/potential-check.stdout.txt",
+      "archived_source": "experiments/credit-preservation-20261127/verification/potential-check.stdout.txt",
+      "original_sha256": "7c0a73a5256a548e2e3cc5d33e861e0fbe5da53ce07a40cf469543a641a7ace3",
+      "published_sha256": "7c0a73a5256a548e2e3cc5d33e861e0fbe5da53ce07a40cf469543a641a7ace3",
+      "original_bytes": 159,
+      "published_bytes": 159,
+      "byte_identical": true
+    }
+  ]
+}

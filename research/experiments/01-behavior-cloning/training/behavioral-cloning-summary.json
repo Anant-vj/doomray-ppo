@@ -1,0 +1,543 @@
+{
+  "parent_sha256": "5d90001f01beb4e43560fde4037667e7f440e797b6f86f2ee91a1e12c40d46e8",
+  "seed": 2207,
+  "learning_rate": 0.00015,
+  "batched_history_matches_sequential_actor": true,
+  "whole_episode_layout_split": {
+    "train": [
+      {
+        "path": "demonstrations/human/BasicAim/episode-0000/episode.json",
+        "layout_family": "basic",
+        "seed": 6201,
+        "payload_sha256": "23e38ccdc0f03a1ae89f51fba221768e2b6ac8f5d212d9a99621bfd38140287e",
+        "decisions": 27,
+        "outcome": "exit"
+      },
+      {
+        "path": "demonstrations/human/BasicAim/episode-0001/episode.json",
+        "layout_family": "basic",
+        "seed": 6202,
+        "payload_sha256": "3bfd64e2737ea9afb851acb394efcd6129e054c669313dac7b02bb98a6190488",
+        "decisions": 15,
+        "outcome": "exit"
+      },
+      {
+        "path": "demonstrations/human/BasicAim/episode-0002/episode.json",
+        "layout_family": "basic",
+        "seed": 6203,
+        "payload_sha256": "3c761831a1f875568ed708d95360da07cc3478c8978eefb0b1e59ebf6d9a50a4",
+        "decisions": 62,
+        "outcome": "exit"
+      },
+      {
+        "path": "demonstrations/human/BasicAim/episode-0003/episode.json",
+        "layout_family": "basic",
+        "seed": 6204,
+        "payload_sha256": "bbe7b70b9361908e7497242a96d6a56c13575aeffbccecd118209faf59ed66f5",
+        "decisions": 129,
+        "outcome": "exit"
+      },
+      {
+        "path": "demonstrations/human/KeyDoor/episode-0000/episode.json",
+        "layout_family": "red-key-lesson",
+        "seed": 6101,
+        "payload_sha256": "7ea4fbf0ced78a7a41879c77bbcbd9bc75cd5af0e10c4d519d15945f55686d22",
+        "decisions": 174,
+        "outcome": "exit"
+      },
+      {
+        "path": "demonstrations/human/KeyDoor/episode-0001/episode.json",
+        "layout_family": "red-key-lesson",
+        "seed": 6102,
+        "payload_sha256": "a6a7f4ed5d1ed282595273efcecd3bfe7515c5e9b19b108e4010b15e289e8a83",
+        "decisions": 45,
+        "outcome": "exit"
+      },
+      {
+        "path": "demonstrations/human/KeyDoor/episode-0002/episode.json",
+        "layout_family": "red-key-lesson",
+        "seed": 6103,
+        "payload_sha256": "00b00106d0a8b3b558bd2c50287631b1908d2433ff3e56a7ac82c915caa99db2",
+        "decisions": 350,
+        "outcome": "tick_cap"
+      },
+      {
+        "path": "demonstrations/human/KeyDoor/episode-0003/episode.json",
+        "layout_family": "red-key-lesson",
+        "seed": 6104,
+        "payload_sha256": "bb61fc2018a5b45a3d9094c4d17d811f379ea1699303798a8a4a5aab6a64783f",
+        "decisions": 170,
+        "outcome": "exit"
+      },
+      {
+        "path": "demonstrations/human/KeyDoor/episode-0004/episode.json",
+        "layout_family": "red-key-lesson",
+        "seed": 6105,
+        "payload_sha256": "7c9c65efc50c1d2afc1c1233e6d32344a266af2051748fdb4f2e5b9628639a5e",
+        "decisions": 209,
+        "outcome": "exit"
+      },
+      {
+        "path": "demonstrations/human/KeyDoor/episode-0005/episode.json",
+        "layout_family": "red-key-lesson",
+        "seed": 6106,
+        "payload_sha256": "db4270d76f9585a586376dc769d44c15b15fb9529f4d0eb36afb7a35902ccaa8",
+        "decisions": 163,
+        "outcome": "exit"
+      },
+      {
+        "path": "demonstrations/human/KeyDoor/episode-0006/episode.json",
+        "layout_family": "red-key-lesson",
+        "seed": 6107,
+        "payload_sha256": "993266805f197fc7e08e7c02df022eaf75afe05f5cf2fb8f703f96425e4c58b3",
+        "decisions": 206,
+        "outcome": "exit"
+      },
+      {
+        "path": "demonstrations/human/KeyDoor/episode-0007/episode.json",
+        "layout_family": "red-key-lesson",
+        "seed": 6108,
+        "payload_sha256": "2ea6cdffa5179f4c94d980606b2ef889aedc3c67c0ddb3b6c5c488183fe0729e",
+        "decisions": 38,
+        "outcome": "exit"
+      },
+      {
+        "path": "demonstrations/human/KeyDoor/episode-0008/episode.json",
+        "layout_family": "red-key-lesson",
+        "seed": 6109,
+        "payload_sha256": "1ea92b4db055ba7b94a2f5f7a4e05a5497ef9d79544c1bf4a08fdd1e88c22954",
+        "decisions": 75,
+        "outcome": "exit"
+      },
+      {
+        "path": "demonstrations/human/KeyDoor/episode-0009/episode.json",
+        "layout_family": "red-key-lesson",
+        "seed": 6110,
+        "payload_sha256": "b747a109db008ef54ec3982d4c40c5204b45be9a9f9461693ddfcab39650e7a3",
+        "decisions": 180,
+        "outcome": "exit"
+      },
+      {
+        "path": "demonstrations/human/KeyDoor/episode-0010/episode.json",
+        "layout_family": "red-key-lesson",
+        "seed": 6111,
+        "payload_sha256": "5c4a026c0d4e6f0e070f607f760aac6a17144f378484d89637501b364efb16db",
+        "decisions": 86,
+        "outcome": "exit"
+      },
+      {
+        "path": "demonstrations/human/KeyDoor/episode-0011/episode.json",
+        "layout_family": "red-key-lesson",
+        "seed": 6112,
+        "payload_sha256": "8aec5628c3835b2370a060bab93d057ac6d7b526a809609a4c9ada9bcc23c999",
+        "decisions": 156,
+        "outcome": "exit"
+      },
+      {
+        "path": "demonstrations/human/KeyDoor/episode-0012/episode.json",
+        "layout_family": "red-key-lesson",
+        "seed": 6113,
+        "payload_sha256": "9cc305d0c32d02f8eb322e289053f7a96a3cf8c2e95790bb3c03521ecd463656",
+        "decisions": 77,
+        "outcome": "exit"
+      },
+      {
+        "path": "demonstrations/human/KeyDoor/episode-0013/episode.json",
+        "layout_family": "red-key-lesson",
+        "seed": 6114,
+        "payload_sha256": "2e0a9fb7d0ec6fa8cc8cd0ca2086440358bb43fca4e6a7c9d5d3575ef4128aa4",
+        "decisions": 88,
+        "outcome": "exit"
+      }
+    ],
+    "validation": [
+      {
+        "path": "demonstrations/human/CenterCombat/episode-0000/episode.json",
+        "layout_family": "defend-center",
+        "seed": 6301,
+        "payload_sha256": "5c61497ac8e17a7ac047895ac322c7f22b9a3640744d5ef1e1704641c484d9e8",
+        "decisions": 218,
+        "outcome": "death"
+      },
+      {
+        "path": "demonstrations/human/CenterCombat/episode-0001/episode.json",
+        "layout_family": "defend-center",
+        "seed": 6302,
+        "payload_sha256": "a69672e26936fa263f9d125164638ebca3b403b3b1069dd4f2d91a9b896f8af5",
+        "decisions": 201,
+        "outcome": "death"
+      },
+      {
+        "path": "demonstrations/human/CenterCombat/episode-0002/episode.json",
+        "layout_family": "defend-center",
+        "seed": 6303,
+        "payload_sha256": "a8e51ab5716767ea4737950f9d03cd82a39ebf473253e6edbd9bd2e4a1707dd7",
+        "decisions": 177,
+        "outcome": "death"
+      },
+      {
+        "path": "demonstrations/human/CenterCombat/episode-0003/episode.json",
+        "layout_family": "defend-center",
+        "seed": 6304,
+        "payload_sha256": "a54dd39b98b13bcc00613a61b5e72cf139ebd2843aab63838dcb8d451d39dfdc",
+        "decisions": 186,
+        "outcome": "death"
+      },
+      {
+        "path": "demonstrations/human/CenterCombat/episode-0004/episode.json",
+        "layout_family": "defend-center",
+        "seed": 6305,
+        "payload_sha256": "42dc6b811f76bea2b9036c2ea9a319da9f3df7299e5d3d195504add8df9c0636",
+        "decisions": 210,
+        "outcome": "death"
+      }
+    ]
+  },
+  "eligible_episode_outcomes": {
+    "exit": 17,
+    "death": 5,
+    "tick_cap": 1
+  },
+  "parent_train": {
+    "loss": 1.4136201413472493,
+    "decisions": 2250,
+    "head_accuracy": [
+      0.18355555832386017,
+      0.08711110800504684,
+      0.1124444454908371,
+      0.8946666717529297,
+      0.17599999904632568,
+      0.018666666001081467
+    ],
+    "optimizer_updates": 0
+  },
+  "parent_validation": {
+    "loss": 1.348040302914958,
+    "decisions": 992,
+    "head_accuracy": [
+      0.0463709682226181,
+      0.125,
+      0.18245968222618103,
+      0.5957661271095276,
+      0.9838709831237793,
+      0.9717742204666138
+    ],
+    "optimizer_updates": 0
+  },
+  "epochs": [
+    {
+      "epoch": 1,
+      "train": {
+        "loss": 1.0604227925141652,
+        "decisions": 2250,
+        "head_accuracy": [
+          0.316444456577301,
+          0.2613333463668823,
+          0.12177778035402298,
+          0.8946666717529297,
+          0.7475555539131165,
+          0.6039999723434448
+        ],
+        "optimizer_updates": 31
+      },
+      "validation": {
+        "loss": 1.028046226189021,
+        "decisions": 992,
+        "head_accuracy": [
+          0.055443547666072845,
+          0.44657257199287415,
+          0.1703629046678543,
+          0.7489919066429138,
+          0.9959677457809448,
+          1.0
+        ],
+        "optimizer_updates": 0
+      },
+      "bc_optimizer_updates": 31
+    },
+    {
+      "epoch": 2,
+      "train": {
+        "loss": 0.6258117776181963,
+        "decisions": 2250,
+        "head_accuracy": [
+          0.6755555272102356,
+          0.7528889179229736,
+          0.3444444537162781,
+          0.9306666851043701,
+          0.9848889112472534,
+          0.9942222237586975
+        ],
+        "optimizer_updates": 31
+      },
+      "validation": {
+        "loss": 0.7812367830906184,
+        "decisions": 992,
+        "head_accuracy": [
+          0.07258064299821854,
+          0.7197580933570862,
+          0.17641128599643707,
+          0.7489919066429138,
+          0.9959677457809448,
+          1.0
+        ],
+        "optimizer_updates": 0
+      },
+      "bc_optimizer_updates": 62
+    },
+    {
+      "epoch": 3,
+      "train": {
+        "loss": 0.464291589445538,
+        "decisions": 2250,
+        "head_accuracy": [
+          0.7395555377006531,
+          0.7835555672645569,
+          0.7386666536331177,
+          0.9306666851043701,
+          0.9853333234786987,
+          0.9942222237586975
+        ],
+        "optimizer_updates": 31
+      },
+      "validation": {
+        "loss": 0.5932402661851337,
+        "decisions": 992,
+        "head_accuracy": [
+          0.30241936445236206,
+          0.8780242204666138,
+          0.4395161271095276,
+          0.7489919066429138,
+          0.9959677457809448,
+          1.0
+        ],
+        "optimizer_updates": 0
+      },
+      "bc_optimizer_updates": 93
+    },
+    {
+      "epoch": 4,
+      "train": {
+        "loss": 0.39574403920438556,
+        "decisions": 2250,
+        "head_accuracy": [
+          0.7644444704055786,
+          0.7924444675445557,
+          0.7977777719497681,
+          0.9306666851043701,
+          0.9853333234786987,
+          0.9942222237586975
+        ],
+        "optimizer_updates": 31
+      },
+      "validation": {
+        "loss": 0.5064693662908769,
+        "decisions": 992,
+        "head_accuracy": [
+          0.6209677457809448,
+          0.9213709831237793,
+          0.5231854915618896,
+          0.7489919066429138,
+          0.9959677457809448,
+          1.0
+        ],
+        "optimizer_updates": 0
+      },
+      "bc_optimizer_updates": 124
+    },
+    {
+      "epoch": 5,
+      "train": {
+        "loss": 0.37413763613171047,
+        "decisions": 2250,
+        "head_accuracy": [
+          0.7662222385406494,
+          0.8297777771949768,
+          0.7977777719497681,
+          0.9306666851043701,
+          0.9853333234786987,
+          0.9942222237586975
+        ],
+        "optimizer_updates": 31
+      },
+      "validation": {
+        "loss": 0.45988516079922837,
+        "decisions": 992,
+        "head_accuracy": [
+          0.7893145084381104,
+          0.9475806355476379,
+          0.5816532373428345,
+          0.7489919066429138,
+          0.9959677457809448,
+          1.0
+        ],
+        "optimizer_updates": 0
+      },
+      "bc_optimizer_updates": 155
+    },
+    {
+      "epoch": 6,
+      "train": {
+        "loss": 0.3623499997721778,
+        "decisions": 2250,
+        "head_accuracy": [
+          0.804888904094696,
+          0.8297777771949768,
+          0.7977777719497681,
+          0.9306666851043701,
+          0.9853333234786987,
+          0.9942222237586975
+        ],
+        "optimizer_updates": 31
+      },
+      "validation": {
+        "loss": 0.4370843106279931,
+        "decisions": 992,
+        "head_accuracy": [
+          0.8558467626571655,
+          0.9536290168762207,
+          0.5917338728904724,
+          0.7489919066429138,
+          0.9959677457809448,
+          1.0
+        ],
+        "optimizer_updates": 0
+      },
+      "bc_optimizer_updates": 186
+    },
+    {
+      "epoch": 7,
+      "train": {
+        "loss": 0.35641731591357123,
+        "decisions": 2250,
+        "head_accuracy": [
+          0.804888904094696,
+          0.8297777771949768,
+          0.7977777719497681,
+          0.9306666851043701,
+          0.9853333234786987,
+          0.9942222237586975
+        ],
+        "optimizer_updates": 31
+      },
+      "validation": {
+        "loss": 0.4183866394863975,
+        "decisions": 992,
+        "head_accuracy": [
+          0.8981854915618896,
+          0.9566532373428345,
+          0.6028226017951965,
+          0.7489919066429138,
+          0.9959677457809448,
+          1.0
+        ],
+        "optimizer_updates": 0
+      },
+      "bc_optimizer_updates": 217
+    },
+    {
+      "epoch": 8,
+      "train": {
+        "loss": 0.3508698292771975,
+        "decisions": 2250,
+        "head_accuracy": [
+          0.8040000200271606,
+          0.8297777771949768,
+          0.7977777719497681,
+          0.9306666851043701,
+          0.9853333234786987,
+          0.9942222237586975
+        ],
+        "optimizer_updates": 31
+      },
+      "validation": {
+        "loss": 0.41740633760608975,
+        "decisions": 992,
+        "head_accuracy": [
+          0.9002016186714172,
+          0.9566532373428345,
+          0.5967742204666138,
+          0.7489919066429138,
+          0.9959677457809448,
+          1.0
+        ],
+        "optimizer_updates": 0
+      },
+      "bc_optimizer_updates": 248
+    },
+    {
+      "epoch": 9,
+      "train": {
+        "loss": 0.3447338715195656,
+        "decisions": 2250,
+        "head_accuracy": [
+          0.804444432258606,
+          0.8297777771949768,
+          0.7977777719497681,
+          0.9306666851043701,
+          0.9853333234786987,
+          0.9942222237586975
+        ],
+        "optimizer_updates": 31
+      },
+      "validation": {
+        "loss": 0.39680713316005084,
+        "decisions": 992,
+        "head_accuracy": [
+          0.9122983813285828,
+          0.9566532373428345,
+          0.6018145084381104,
+          0.7489919066429138,
+          0.9959677457809448,
+          1.0
+        ],
+        "optimizer_updates": 0
+      },
+      "bc_optimizer_updates": 279
+    },
+    {
+      "epoch": 10,
+      "train": {
+        "loss": 0.3389599242806435,
+        "decisions": 2250,
+        "head_accuracy": [
+          0.8053333163261414,
+          0.8297777771949768,
+          0.7986666560173035,
+          0.9306666851043701,
+          0.9853333234786987,
+          0.9942222237586975
+        ],
+        "optimizer_updates": 31
+      },
+      "validation": {
+        "loss": 0.3942794374100143,
+        "decisions": 992,
+        "head_accuracy": [
+          0.9092742204666138,
+          0.9556451439857483,
+          0.6048387289047241,
+          0.7489919066429138,
+          0.9959677457809448,
+          1.0
+        ],
+        "optimizer_updates": 0
+      },
+      "bc_optimizer_updates": 310
+    }
+  ],
+  "best_epoch": 10,
+  "best_validation": {
+    "loss": 0.3942794374100143,
+    "decisions": 992,
+    "head_accuracy": [
+      0.9092742204666138,
+      0.9556451439857483,
+      0.6048387289047241,
+      0.7489919066429138,
+      0.9959677457809448,
+      1.0
+    ],
+    "optimizer_updates": 0
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "roster": {
+    "protocol_sha256": "67a60ee5e3a7591eada0107816ac69e7aec911d0b67d7f734f88e3a23c60709d",
+    "models": [
+      {
+        "id": "C749",
+        "source_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+        "checkout": "approved-release",
+        "weight_source": "approved-release/submission/weights/policy.pt",
+        "expected_sha256": "0b8f290cfe36a25f8593da925d4a4a0ddb8790b37f9319a019aed276a73f5e61",
+        "weight_path": "approved-release/submission/weights/policy.pt",
+        "sha256": "0b8f290cfe36a25f8593da925d4a4a0ddb8790b37f9319a019aed276a73f5e61",
+        "bytes": 395269
+      },
+      {
+        "id": "PPO-control",
+        "source_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+        "checkout": "approved-release",
+        "weight_source": "local-checkpoint-archive/checkpoints/ppo-control/resume.pt",
+        "weight_path": "local-checkpoint-archive/screening/results/weights/PPO-control/policy.pt",
+        "sha256": "f15d23a11a5f3d0b03aa589b33fb94cfdffa8862099aef9969896c71fbecf102",
+        "bytes": 1188221
+      },
+      {
+        "id": "Symmetry-KL",
+        "source_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+        "checkout": "approved-release",
+        "weight_source": "local-checkpoint-archive/checkpoints/symmetry-kl/resume.pt",
+        "weight_path": "local-checkpoint-archive/screening/results/weights/Symmetry-KL/policy.pt",
+        "sha256": "6a1b287aa49345a671f6bf2e978a229c0cec58b7feb40ae236c900bdc836db88",
+        "bytes": 1188221
+      }
+    ]
+  },
+  "authorized_competition_model": "C749",
+  "disposition": "Only C749 was retained for competition. Experimental checkpoint bytes remain in local archive."
+}

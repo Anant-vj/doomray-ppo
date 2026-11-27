@@ -1,0 +1,72 @@
+{
+  "scope": "Offline scheduling simulation using archived episode lengths; no actor, engine or optimizer.",
+  "targets": {
+    "combat": 0.3,
+    "navigation": 0.25,
+    "progression": 0.3,
+    "mixed-survival": 0.15
+  },
+  "simulated_decisions_per_case": 12288,
+  "schedule_checks": [
+    {
+      "seed": 66892,
+      "counts": {
+        "combat": 3726,
+        "navigation": 3001,
+        "progression": 3567,
+        "mixed-survival": 1994
+      },
+      "proportions": {
+        "combat": 0.30322265625,
+        "navigation": 0.24422200520833334,
+        "progression": 0.290283203125,
+        "mixed-survival": 0.16227213541666666
+      }
+    },
+    {
+      "seed": 66893,
+      "counts": {
+        "combat": 3692,
+        "navigation": 2935,
+        "progression": 3678,
+        "mixed-survival": 1983
+      },
+      "proportions": {
+        "combat": 0.3004557291666667,
+        "navigation": 0.23885091145833334,
+        "progression": 0.29931640625,
+        "mixed-survival": 0.161376953125
+      }
+    },
+    {
+      "seed": 66894,
+      "counts": {
+        "combat": 3744,
+        "navigation": 3007,
+        "progression": 3677,
+        "mixed-survival": 1860
+      },
+      "proportions": {
+        "combat": 0.3046875,
+        "navigation": 0.24471028645833334,
+        "progression": 0.2992350260416667,
+        "mixed-survival": 0.1513671875
+      }
+    },
+    {
+      "seed": 66895,
+      "counts": {
+        "combat": 3597,
+        "navigation": 3185,
+        "progression": 3677,
+        "mixed-survival": 1829
+      },
+      "proportions": {
+        "combat": 0.292724609375,
+        "navigation": 0.2591959635416667,
+        "progression": 0.2992350260416667,
+        "mixed-survival": 0.14884440104166666
+      }
+    }
+  ]
+}

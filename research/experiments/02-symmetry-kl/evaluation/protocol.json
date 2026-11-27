@@ -1,0 +1,215 @@
+{
+  "frozen_at_ist": "2026-11-27T05:44:22+05:30",
+  "scope": "Fresh synthetic local matched screening; no old hidden/withheld cases.",
+  "screening_maps": [
+    {
+      "geometry_sha256": "17b00f68c1ea67fd07a857ea8bcf34c7097d51551d5d80b4f66f4d42b3f43fb2",
+      "sector_graph_sha256": "402396555b5371fa818be05dd1ad96e853bf687e39c20f33563b7229a169ca74",
+      "format": "udmf",
+      "sectors": 12,
+      "lines": 37,
+      "graph_edges": 11,
+      "graph_components": 1,
+      "graph_cycle_rank": 0,
+      "key_colors": [],
+      "player_starts": null,
+      "placed_monsters_skill3": null,
+      "placed_monsters_within_768_euclidean": null,
+      "placed_resources_skill3": null,
+      "static_exit_triggers": [
+        {
+          "linedef": 11,
+          "special": 243,
+          "activation": "cross",
+          "destination": "normal",
+          "from_xy": [
+            768,
+            256
+          ],
+          "to_xy": [
+            640,
+            256
+          ]
+        }
+      ],
+      "id": "north-dogleg",
+      "map": "MAP01",
+      "family": "local-north-dogleg-402396555b53",
+      "tier": 2,
+      "skill": 3,
+      "seeds": [
+        58231,
+        58232
+      ],
+      "tick_cap": 920,
+      "wad": "evaluation/maps/north-dogleg.wad",
+      "wad_sha256": "593eb1cf1f457420bb8f53d32eb22ccb595a67c13e2ce1ff6bcb837705195f7a",
+      "scope": "New static topology with engine solvability pending"
+    },
+    {
+      "geometry_sha256": "09a929e1a804cf6ff564ddeb67054f3d86c83b2d5ce65f05f19f477cee77ab4f",
+      "sector_graph_sha256": "af33df3e70b5bf9d5b1394c2c3cc05f5faa86fef81082e59247a55b32ae8a5de",
+      "format": "udmf",
+      "sectors": 16,
+      "lines": 48,
+      "graph_edges": 16,
+      "graph_components": 1,
+      "graph_cycle_rank": 1,
+      "key_colors": [],
+      "player_starts": null,
+      "placed_monsters_skill3": null,
+      "placed_monsters_within_768_euclidean": null,
+      "placed_resources_skill3": null,
+      "static_exit_triggers": [
+        {
+          "linedef": 2,
+          "special": 243,
+          "activation": "cross",
+          "destination": "normal",
+          "from_xy": [
+            384,
+            128
+          ],
+          "to_xy": [
+            384,
+            0
+          ]
+        }
+      ],
+      "id": "south-dogleg",
+      "map": "MAP01",
+      "family": "local-south-dogleg-af33df3e70b5",
+      "tier": 2,
+      "skill": 3,
+      "seeds": [
+        58231,
+        58232
+      ],
+      "tick_cap": 980,
+      "wad": "evaluation/maps/south-dogleg.wad",
+      "wad_sha256": "ef2a0af151b71e3b5e5fa50c73815cc092399e936876dc846a2445a00b2cdb66",
+      "scope": "New static topology with engine solvability pending"
+    },
+    {
+      "geometry_sha256": "171255329d25a8e215aca31ec230db54ac242c07b34fc8991d71bf41e7062a46",
+      "sector_graph_sha256": "a0aa98096e109a74e5a37b97beecc02ed631269def1e0398d83f525393859928",
+      "format": "udmf",
+      "sectors": 17,
+      "lines": 49,
+      "graph_edges": 19,
+      "graph_components": 1,
+      "graph_cycle_rank": 3,
+      "key_colors": [],
+      "player_starts": null,
+      "placed_monsters_skill3": null,
+      "placed_monsters_within_768_euclidean": null,
+      "placed_resources_skill3": null,
+      "static_exit_triggers": [
+        {
+          "linedef": 1,
+          "special": 243,
+          "activation": "cross",
+          "destination": "normal",
+          "from_xy": [
+            1024,
+            128
+          ],
+          "to_xy": [
+            896,
+            128
+          ]
+        }
+      ],
+      "id": "deadend-key-retrace",
+      "map": "MAP01",
+      "family": "local-deadend-key-retrace-a0aa98096e10",
+      "tier": 3,
+      "skill": 3,
+      "seeds": [
+        58231,
+        58232
+      ],
+      "tick_cap": 1040,
+      "wad": "evaluation/maps/deadend-key-retrace.wad",
+      "wad_sha256": "9364f0514857edd55bb05d0a53b01f4de38547b930b24a0c5a18e9835e6c69a5",
+      "scope": "New static topology with engine solvability pending"
+    },
+    {
+      "geometry_sha256": "094c292c19af109cbf936b543cdf8f3fa2aef12aeb03926f5b881786d73fa6ee",
+      "sector_graph_sha256": "26794c0563d1cef0839e1a7aa458d3ea1e47f626c1670e196ef6b19600aaa2a2",
+      "format": "udmf",
+      "sectors": 12,
+      "lines": 36,
+      "graph_edges": 12,
+      "graph_components": 1,
+      "graph_cycle_rank": 1,
+      "key_colors": [],
+      "player_starts": null,
+      "placed_monsters_skill3": null,
+      "placed_monsters_within_768_euclidean": null,
+      "placed_resources_skill3": null,
+      "static_exit_triggers": [
+        {
+          "linedef": 31,
+          "special": 243,
+          "activation": "cross",
+          "destination": "normal",
+          "from_xy": [
+            512,
+            640
+          ],
+          "to_xy": [
+            512,
+            512
+          ]
+        }
+      ],
+      "id": "offset-single-enemy",
+      "map": "MAP01",
+      "family": "local-offset-single-enemy-26794c0563d1",
+      "tier": 1,
+      "skill": 3,
+      "seeds": [
+        58231,
+        58232
+      ],
+      "tick_cap": 760,
+      "wad": "evaluation/maps/offset-single-enemy.wad",
+      "wad_sha256": "ac3db4d6a6e334e52288141e618e78d7d35164ed26101984f968be23a5844e52",
+      "scope": "New static topology with engine solvability pending"
+    }
+  ],
+  "prior_static_reference_count": 92,
+  "prior_static_issues": [],
+  "novelty_check": "Different rotation/reflection/scale-normalized line geometry and sector-graph hashes versus every readable prior reference and across this suite. Previous sealed folder and MAP11/MAP12 excluded.",
+  "order": "Listed map order, listed identical engine/policy seeds, then exact frozen roster order. One attempt per identity.",
+  "scoring_manifest_sha256": "1ca7aeb19af8b5a787bd66cd86234690764689c5979876fdcb04a0b8f9bfc9fd",
+  "expected_episodes": 24,
+  "roster": [
+    {
+      "id": "C749",
+      "source_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+      "checkout": "approved-release",
+      "weight_source": "approved-release/submission/weights/policy.pt",
+      "expected_sha256": "0b8f290cfe36a25f8593da925d4a4a0ddb8790b37f9319a019aed276a73f5e61"
+    },
+    {
+      "id": "PPO-control",
+      "source_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+      "checkout": "approved-release",
+      "weight_source": "local-checkpoint-archive/checkpoints/ppo-control/resume.pt"
+    },
+    {
+      "id": "Symmetry-KL",
+      "source_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+      "checkout": "approved-release",
+      "weight_source": "local-checkpoint-archive/checkpoints/symmetry-kl/resume.pt"
+    }
+  ],
+  "promotion_gate": {
+    "legal": "Eight completed legal episodes per model, paired with C749; zero invalid actions or timeouts.",
+    "preserve": "Match or exceed C749's exits and survivals, with neither reduced on any family. No net loss of measured player damage, acquired keys or verified unlocks.",
+    "material_outcome": "On two independent families improve a measured outcome: exits, keys, unlocks, player-attributed damage, or at least one extra visited 96-unit cell together with a lower blocked-move fraction. Lower directional bias alone is diagnostic.",
+    "decision": "If the behavior or safety criterion fails, retain C749. Even passing is local screening evidence; preserve public main and require separate validation and explicit approval for any replacement."
+  }
+}

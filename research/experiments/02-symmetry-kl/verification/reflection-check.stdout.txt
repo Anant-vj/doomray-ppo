@@ -1,0 +1,1 @@
+PASS: official Sensors geometry, 216 action combinations, 419 recorded structured frames, 410 actual four-frame windows, padding, two reflections, and NumPy/Torch parity. No game initialized.

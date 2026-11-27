@@ -1,0 +1,44 @@
+{
+  "frozen_at_ist": "2026-11-27T06:39:28+05:30",
+  "scope": "Fresh matched local screen comparing native C749 and three continuation arms with identical frozen actor/decoding and scoring.",
+  "prior_static_reference_count": 100,
+  "order": "Listed map order, listed identical engine/policy seeds, then exact frozen roster order. One attempt per identity.",
+  "scoring_manifest_sha256": "1ca7aeb19af8b5a787bd66cd86234690764689c5979876fdcb04a0b8f9bfc9fd",
+  "experimental_cutoff_ist": "2026-11-27T08:15:00+05:30",
+  "expected_episodes": 40,
+  "withheld_confirmation_manifest_sha256": "aee430d18dd0d0d1aa19afb13fa252f8639df791e84983c7beb570f3427e411e",
+  "withheld_confirmation_policy": "Two fresh families and two paired seeds each. Only an approved qualified nominee and C749 may run in a new authorized phase. Confirm no regression in exit/survival/key/unlock per family and meaningful gain on both families.",
+  "roster": [
+    {
+      "id": "C749",
+      "source_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+      "checkout": "${DOOMRAY_PROJECT_ROOT}/submission_artifacts/github-fresh-6c2d549-20261127-022250050",
+      "weight_source": "${DOOMRAY_PROJECT_ROOT}/submission_artifacts/github-fresh-6c2d549-20261127-022250050/submission/weights/policy.pt",
+      "expected_sha256": "0b8f290cfe36a25f8593da925d4a4a0ddb8790b37f9319a019aed276a73f5e61"
+    },
+    {
+      "id": "PPO-control",
+      "source_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+      "checkout": "${DOOMRAY_PROJECT_ROOT}/submission_artifacts/github-fresh-6c2d549-20261127-022250050",
+      "weight_source": "${DOOMRAY_PROJECT_ROOT}/experiments/credit-preservation-20261127/checkpoints/ppo-control/resume.pt"
+    },
+    {
+      "id": "PBRS",
+      "source_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+      "checkout": "${DOOMRAY_PROJECT_ROOT}/submission_artifacts/github-fresh-6c2d549-20261127-022250050",
+      "weight_source": "${DOOMRAY_PROJECT_ROOT}/experiments/credit-preservation-20261127/checkpoints/pbrs/resume.pt"
+    },
+    {
+      "id": "PBRS-anchor",
+      "source_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+      "checkout": "${DOOMRAY_PROJECT_ROOT}/submission_artifacts/github-fresh-6c2d549-20261127-022250050",
+      "weight_source": "${DOOMRAY_PROJECT_ROOT}/experiments/credit-preservation-20261127/checkpoints/pbrs-anchor/resume.pt"
+    }
+  ],
+  "promotion_gate": {
+    "legal": "Ten completed legal episodes per model, paired with C749; zero invalid actions or timeouts.",
+    "preserve": "Match or exceed C749 exits, survivals, collected keys and verified unlocks on every family.",
+    "material_outcome": "On two independent families improve exits, keys, unlocks, player-attributed damage, or coverage with a lower blocked-move fraction. At least one gain family must show a gain on both predeclared seeds. Fewer attacks or lower bias alone are diagnostic.",
+    "decision": "If the gate fails, retain C749. A qualifying variant also requires untouched confirmation, exact official validator and explicit approval for any replacement."
+  }
+}

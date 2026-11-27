@@ -1,0 +1,79 @@
+{
+  "source": "unchanged published C749, training-only maps, CPU ViZDoom official wrapper",
+  "release": "6c2d5499f973c77b4a239f778837280edf64e57b",
+  "weight_sha256": "0b8f290cfe36a25f8593da925d4a4a0ddb8790b37f9319a019aed276a73f5e61",
+  "official_iwad_sha256": "a8772e088847032510d97ba2312406a6998f21cbab44d4ff10696faa9c0ecd4b",
+  "cutoff": "2026-11-27T06:46:30+05:30",
+  "frozen_at": "2026-11-27T06:39:33.439507+05:30",
+  "categories": [
+    "key",
+    "unlock",
+    "exit",
+    "navigation",
+    "combat"
+  ],
+  "history": "oldest to latest; zero invalid latent frames after encoding",
+  "success": "Only exit-confirmed episodes. Key increases and once-raised locked sectors in the two lessons; non-combat exits; way-home exit plus two or more visited cells; BasicAim exit with positive verified hits and damage. Category windows are the 16 decisions ending at each event, with duplicate indexes removed per category.",
+  "maps": [
+    {
+      "name": "key-lesson",
+      "wad": "${DOOMRAY_PROJECT_ROOT}/submission_artifacts/github-fresh-6c2d549-20261127-022250050/tests/fixtures/e7ab54fb6834ffa3.wad",
+      "map": "MAP01",
+      "skill": 3,
+      "tick_cap": 1400,
+      "seeds": [
+        67101,
+        67102,
+        67103,
+        67104,
+        67105,
+        67106
+      ],
+      "wad_sha256": "ea6a0b17bca7beae8dc928e9c3b6ced51eceacf1f3c1421d7a98a698a966445e"
+    },
+    {
+      "name": "backtrack-lesson",
+      "wad": "${DOOMRAY_PROJECT_ROOT}/maps/curriculum/red_key_backtrack.wad",
+      "map": "MAP01",
+      "skill": 3,
+      "tick_cap": 1400,
+      "seeds": [
+        67101,
+        67102,
+        67103,
+        67104,
+        67105,
+        67106
+      ],
+      "wad_sha256": "2ec2f02accdda7dd0d23fc4eb43956a075781234bcce82ee7ca299ebc2d97397"
+    },
+    {
+      "name": "basic-combat",
+      "wad": "${DOOMRAY_PROJECT_ROOT}/environments/competition/Lib/site-packages/vizdoom/scenarios/basic.wad",
+      "map": "MAP01",
+      "skill": 3,
+      "tick_cap": 1024,
+      "seeds": [
+        67201,
+        67202,
+        67203,
+        67204
+      ],
+      "wad_sha256": "fd0b7e5e2422e09288c786e7fc32181bb8ee4a3faa613a75ef88a3e39b5ce94e"
+    },
+    {
+      "name": "way-home",
+      "wad": "${DOOMRAY_PROJECT_ROOT}/environments/competition/Lib/site-packages/vizdoom/scenarios/my_way_home.wad",
+      "map": "MAP01",
+      "skill": 3,
+      "tick_cap": 2100,
+      "seeds": [
+        67301,
+        67302,
+        67303,
+        67304
+      ],
+      "wad_sha256": "18e98ff4c9186808eb00696b799cfe88a79e7486429c1692aafbed8ef359c0b1"
+    }
+  ]
+}

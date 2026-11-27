@@ -1,0 +1,685 @@
+{
+  "schema_version": 1,
+  "ledger": {
+    "file": "legacy-counters.jsonl",
+    "bytes": 171705,
+    "sha256": "30f9cc71cd0d4dc820c5c5089d08d0d0a506feb4060b0302ba6a17dc09b0cf48",
+    "rows": 1452
+  },
+  "scope": "Fifteen original learner logs through mission-sustain-44-resumed. Includes logged training shakedowns. Later campaigns, human collection, supervised steps and evaluations are outside this ledger.",
+  "column_definitions": {
+    "run_id": "Original learner log stem. Run plus update identifies a row.",
+    "update": "Original rollout update index, preserved verbatim.",
+    "gradients": "Original cumulative optimizer-step counter, preserved verbatim. Parent counters survive some weights-only initializations.",
+    "transitions_this_run": "Original cumulative transitions since this physical learner run began, preserved verbatim.",
+    "transitions_cumulative": "Lineage transitions calculated from the inherited parent cutoff plus transitions_this_run."
+  },
+  "totals": {
+    "learner_transitions": 618432,
+    "rollout_updates": 1452,
+    "new_ppo_optimizer_steps": 14499
+  },
+  "runs": [
+    {
+      "run_id": "gru-27",
+      "raw_log": {
+        "file": "gru-27.jsonl",
+        "sha256": "ac6fdba60407b7ac54c0c8a0d4c9c7fc53eebb279ff9a9b872a87cd4c801af7f",
+        "bytes": 90124
+      },
+      "launch_receipt": {
+        "file": "gru-27-launch.json",
+        "sha256": "241278dfce75636e00029dc702b79eb7a44a5d3983aa0a239e68caf2fa5fa3b5",
+        "checkpoint_argument": null,
+        "checkpoint_file": null
+      },
+      "parent": null,
+      "model": {
+        "memory": "gru",
+        "seed": 27,
+        "reward_profile": null,
+        "workers": 8,
+        "horizon": 64,
+        "optimizer_restored_as_logged": null
+      },
+      "starting_counters": {
+        "update": 0,
+        "gradients": 0,
+        "transitions_this_run": 0,
+        "transitions_cumulative": 0
+      },
+      "first_update": 1,
+      "last_update": 92,
+      "updates_logged": 92,
+      "new_transitions": 47104,
+      "new_optimizer_steps": 1104
+    },
+    {
+      "run_id": "mission-combat-43",
+      "raw_log": {
+        "file": "mission-combat-43.jsonl",
+        "sha256": "c8e45566de6067ec7e71f067740b10b37e05e264d50a794aecf32f017c8f6a99",
+        "bytes": 246847
+      },
+      "launch_receipt": {
+        "file": "mission-combat-43-launch.json",
+        "sha256": "69d40d531f3fd55e29cc8edb14c97e5b3cbafdc1e669fbf27946fae1b10c4a5c",
+        "checkpoint_argument": "--resume",
+        "checkpoint_file": "stack-26-update-621-resume.pt"
+      },
+      "parent": {
+        "run_id": "stack-26",
+        "update": 621,
+        "checkpoint_file": "stack-26-update-621-resume.pt",
+        "retained_checkpoint_sha256": "87fc6d77251edc89b5b433419fdf12b1a14bd8ffcc8c11a085f7a40b9adfe6c3",
+        "evidence": [
+          "contiguous original rollout and gradient counters",
+          "original launch receipt",
+          "source checkpoint field in original learner log"
+        ]
+      },
+      "model": {
+        "memory": "stack",
+        "seed": 43,
+        "reward_profile": "combat",
+        "workers": 6,
+        "horizon": 64,
+        "optimizer_restored_as_logged": true
+      },
+      "starting_counters": {
+        "update": 621,
+        "gradients": 6462,
+        "transitions_this_run": 0,
+        "transitions_cumulative": 275712
+      },
+      "first_update": 622,
+      "last_update": 749,
+      "updates_logged": 128,
+      "new_transitions": 49152,
+      "new_optimizer_steps": 1152
+    },
+    {
+      "run_id": "mission-conservative-44",
+      "raw_log": {
+        "file": "mission-conservative-44.jsonl",
+        "sha256": "5d2b63cd6d81071b6188df717c41bafe25ce1869ea5a934dc7997ee805408d98",
+        "bytes": 122371
+      },
+      "launch_receipt": {
+        "file": "mission-conservative-44-launch.json",
+        "sha256": "cdf1ebcb6aa37536de48fd1c2504a2c2aa584325d6b9085c94fa74a0f83843e1",
+        "checkpoint_argument": "--resume",
+        "checkpoint_file": "resume.pt"
+      },
+      "parent": {
+        "run_id": "mission-progression-43",
+        "update": 749,
+        "checkpoint_file": "resume.pt",
+        "retained_checkpoint_sha256": "773caff22114bb00d7730005a695f499f0e4fd4c31889ac94edc5119dd7f0e40",
+        "evidence": [
+          "contiguous original rollout and gradient counters",
+          "original launch receipt",
+          "source checkpoint field in original learner log"
+        ]
+      },
+      "model": {
+        "memory": "stack",
+        "seed": 44,
+        "reward_profile": "progression",
+        "workers": 6,
+        "horizon": 64,
+        "optimizer_restored_as_logged": true
+      },
+      "starting_counters": {
+        "update": 749,
+        "gradients": 7614,
+        "transitions_this_run": 0,
+        "transitions_cumulative": 324864
+      },
+      "first_update": 750,
+      "last_update": 814,
+      "updates_logged": 65,
+      "new_transitions": 24960,
+      "new_optimizer_steps": 585
+    },
+    {
+      "run_id": "mission-control-41",
+      "raw_log": {
+        "file": "mission-control-41.jsonl",
+        "sha256": "8af3c7f7f83993be3f15d5f2ebeed16d19b5f605a8c633204ed2598b9cc01e57",
+        "bytes": 122154
+      },
+      "launch_receipt": {
+        "file": "mission-control-41-launch.json",
+        "sha256": "1ceafe58a1a1143e97cce776c2798b3583b51b6291c6d739bb4fe4ece403051c",
+        "checkpoint_argument": "--initialize",
+        "checkpoint_file": "mission-stack-26-update-397.pt"
+      },
+      "parent": {
+        "run_id": "stack-26",
+        "update": 397,
+        "checkpoint_file": "mission-stack-26-update-397.pt",
+        "retained_checkpoint_sha256": "2574402b472441bdd806a285942959d3e5872b1fee9b6c7dec1ee5bcc9559c1b",
+        "evidence": [
+          "contiguous original rollout and gradient counters",
+          "original launch receipt",
+          "source checkpoint field in original learner log"
+        ]
+      },
+      "model": {
+        "memory": "stack",
+        "seed": 41,
+        "reward_profile": "control",
+        "workers": 8,
+        "horizon": 64,
+        "optimizer_restored_as_logged": false
+      },
+      "starting_counters": {
+        "update": 397,
+        "gradients": 3774,
+        "transitions_this_run": 0,
+        "transitions_cumulative": 161024
+      },
+      "first_update": 398,
+      "last_update": 461,
+      "updates_logged": 64,
+      "new_transitions": 32768,
+      "new_optimizer_steps": 768
+    },
+    {
+      "run_id": "mission-progression-43",
+      "raw_log": {
+        "file": "mission-progression-43.jsonl",
+        "sha256": "3eb3be301113870ac4211c97b3101f5c3d9493409a5b8bf412e35244eed7e5f4",
+        "bytes": 238227
+      },
+      "launch_receipt": {
+        "file": "mission-progression-43-launch.json",
+        "sha256": "e72dfc517977a9aaccdb7d98725931b2ac983f27b6a0ae16dcbf2c37e0a26524",
+        "checkpoint_argument": "--resume",
+        "checkpoint_file": "stack-26-update-621-resume.pt"
+      },
+      "parent": {
+        "run_id": "stack-26",
+        "update": 621,
+        "checkpoint_file": "stack-26-update-621-resume.pt",
+        "retained_checkpoint_sha256": "87fc6d77251edc89b5b433419fdf12b1a14bd8ffcc8c11a085f7a40b9adfe6c3",
+        "evidence": [
+          "contiguous original rollout and gradient counters",
+          "original launch receipt",
+          "source checkpoint field in original learner log"
+        ]
+      },
+      "model": {
+        "memory": "stack",
+        "seed": 43,
+        "reward_profile": "progression",
+        "workers": 6,
+        "horizon": 64,
+        "optimizer_restored_as_logged": true
+      },
+      "starting_counters": {
+        "update": 621,
+        "gradients": 6462,
+        "transitions_this_run": 0,
+        "transitions_cumulative": 275712
+      },
+      "first_update": 622,
+      "last_update": 749,
+      "updates_logged": 128,
+      "new_transitions": 49152,
+      "new_optimizer_steps": 1152
+    },
+    {
+      "run_id": "mission-sanity-41",
+      "raw_log": {
+        "file": "mission-sanity-41.jsonl",
+        "sha256": "58bb882b1d20d3cc983dae758c95bead6e832342dd18d68e60ccdb5a52d05523",
+        "bytes": 5484
+      },
+      "launch_receipt": null,
+      "parent": {
+        "run_id": "stack-26",
+        "update": 397,
+        "checkpoint_file": "mission-stack-26-update-397.pt",
+        "retained_checkpoint_sha256": "2574402b472441bdd806a285942959d3e5872b1fee9b6c7dec1ee5bcc9559c1b",
+        "evidence": [
+          "contiguous original rollout and gradient counters",
+          "source checkpoint field in original learner log"
+        ]
+      },
+      "model": {
+        "memory": "stack",
+        "seed": 41,
+        "reward_profile": "survival",
+        "workers": 2,
+        "horizon": 16,
+        "optimizer_restored_as_logged": false
+      },
+      "starting_counters": {
+        "update": 397,
+        "gradients": 3774,
+        "transitions_this_run": 0,
+        "transitions_cumulative": 161024
+      },
+      "first_update": 398,
+      "last_update": 399,
+      "updates_logged": 2,
+      "new_transitions": 64,
+      "new_optimizer_steps": 6
+    },
+    {
+      "run_id": "mission-survival-41",
+      "raw_log": {
+        "file": "mission-survival-41.jsonl",
+        "sha256": "4717cdc4025dbe2f4e8572c14cbbfa63da0f9bcd7ea86d309a53aa848d05d092",
+        "bytes": 122720
+      },
+      "launch_receipt": {
+        "file": "mission-survival-41-launch.json",
+        "sha256": "8ae611a2c2a99891a8e77a77362bebca953f4416f6822b07d054efcca075c643",
+        "checkpoint_argument": "--initialize",
+        "checkpoint_file": "mission-stack-26-update-397.pt"
+      },
+      "parent": {
+        "run_id": "stack-26",
+        "update": 397,
+        "checkpoint_file": "mission-stack-26-update-397.pt",
+        "retained_checkpoint_sha256": "2574402b472441bdd806a285942959d3e5872b1fee9b6c7dec1ee5bcc9559c1b",
+        "evidence": [
+          "contiguous original rollout and gradient counters",
+          "original launch receipt",
+          "source checkpoint field in original learner log"
+        ]
+      },
+      "model": {
+        "memory": "stack",
+        "seed": 41,
+        "reward_profile": "survival",
+        "workers": 8,
+        "horizon": 64,
+        "optimizer_restored_as_logged": false
+      },
+      "starting_counters": {
+        "update": 397,
+        "gradients": 3774,
+        "transitions_this_run": 0,
+        "transitions_cumulative": 161024
+      },
+      "first_update": 398,
+      "last_update": 461,
+      "updates_logged": 64,
+      "new_transitions": 32768,
+      "new_optimizer_steps": 768
+    },
+    {
+      "run_id": "mission-sustain-44-resumed",
+      "raw_log": {
+        "file": "mission-sustain-44-resumed.jsonl",
+        "sha256": "f81f4337f4ddd6e7b52ad8f61021dc137d329e03b38c3e81bb0d8cb506aa65a2",
+        "bytes": 273223
+      },
+      "launch_receipt": {
+        "file": "mission-sustain-44-resumed-launch.json",
+        "sha256": "4b13d2a85f45aa1af5cd2f517633a674e4f4eea656d0a1eab5d8422f6e61e37e",
+        "checkpoint_argument": "--resume",
+        "checkpoint_file": "resume.pt"
+      },
+      "parent": {
+        "run_id": "mission-sustain-44",
+        "update": 814,
+        "checkpoint_file": "resume.pt",
+        "retained_checkpoint_sha256": "0ac2530e7d5776bd4a986ae2bbdafac3a6f867cb6455c15d35e494ec4ff1a369",
+        "evidence": [
+          "contiguous original rollout and gradient counters",
+          "original launch receipt",
+          "source checkpoint field in original learner log"
+        ]
+      },
+      "model": {
+        "memory": "stack",
+        "seed": 44,
+        "reward_profile": "progression",
+        "workers": 6,
+        "horizon": 64,
+        "optimizer_restored_as_logged": true
+      },
+      "starting_counters": {
+        "update": 814,
+        "gradients": 8199,
+        "transitions_this_run": 0,
+        "transitions_cumulative": 349824
+      },
+      "first_update": 815,
+      "last_update": 957,
+      "updates_logged": 143,
+      "new_transitions": 54912,
+      "new_optimizer_steps": 1287
+    },
+    {
+      "run_id": "mission-sustain-44",
+      "raw_log": {
+        "file": "mission-sustain-44.jsonl",
+        "sha256": "0dfe7f79ec3e15545835cd99cd0064e4bd1cc4ba6222f75795b2b7fd3a37c182",
+        "bytes": 121606
+      },
+      "launch_receipt": {
+        "file": "mission-sustain-44-launch.json",
+        "sha256": "49f3de8801ced6117fda0de972bba5bbc3a3bd02feca4c24a8e63d938cdcaa6d",
+        "checkpoint_argument": "--resume",
+        "checkpoint_file": "resume.pt"
+      },
+      "parent": {
+        "run_id": "mission-progression-43",
+        "update": 749,
+        "checkpoint_file": "resume.pt",
+        "retained_checkpoint_sha256": "773caff22114bb00d7730005a695f499f0e4fd4c31889ac94edc5119dd7f0e40",
+        "evidence": [
+          "contiguous original rollout and gradient counters",
+          "original launch receipt",
+          "source checkpoint field in original learner log"
+        ]
+      },
+      "model": {
+        "memory": "stack",
+        "seed": 44,
+        "reward_profile": "progression",
+        "workers": 6,
+        "horizon": 64,
+        "optimizer_restored_as_logged": true
+      },
+      "starting_counters": {
+        "update": 749,
+        "gradients": 7614,
+        "transitions_this_run": 0,
+        "transitions_cumulative": 324864
+      },
+      "first_update": 750,
+      "last_update": 814,
+      "updates_logged": 65,
+      "new_transitions": 24960,
+      "new_optimizer_steps": 585
+    },
+    {
+      "run_id": "mission-varied-44",
+      "raw_log": {
+        "file": "mission-varied-44.jsonl",
+        "sha256": "08e07583f6b6c200b8c1e8b8f02f68cfeba69db46aaf6d01512480bf97faa68b",
+        "bytes": 121740
+      },
+      "launch_receipt": {
+        "file": "mission-varied-44-launch.json",
+        "sha256": "3c5364f1754e3299dd45cff089135e3cce12e89abeaca4d15eff12611e718c87",
+        "checkpoint_argument": "--resume",
+        "checkpoint_file": "resume.pt"
+      },
+      "parent": {
+        "run_id": "mission-progression-43",
+        "update": 749,
+        "checkpoint_file": "resume.pt",
+        "retained_checkpoint_sha256": "773caff22114bb00d7730005a695f499f0e4fd4c31889ac94edc5119dd7f0e40",
+        "evidence": [
+          "contiguous original rollout and gradient counters",
+          "original launch receipt",
+          "source checkpoint field in original learner log"
+        ]
+      },
+      "model": {
+        "memory": "stack",
+        "seed": 44,
+        "reward_profile": "progression",
+        "workers": 6,
+        "horizon": 64,
+        "optimizer_restored_as_logged": true
+      },
+      "starting_counters": {
+        "update": 749,
+        "gradients": 7614,
+        "transitions_this_run": 0,
+        "transitions_cumulative": 324864
+      },
+      "first_update": 750,
+      "last_update": 814,
+      "updates_logged": 65,
+      "new_transitions": 24960,
+      "new_optimizer_steps": 585
+    },
+    {
+      "run_id": "stack-17",
+      "raw_log": {
+        "file": "stack-17.jsonl",
+        "sha256": "8615cf2ac114f0dd87c523f13bbab02d455ab39db71ed6bc4a4402828df36d68",
+        "bytes": 3075
+      },
+      "launch_receipt": null,
+      "parent": null,
+      "model": {
+        "memory": "stack",
+        "seed": 17,
+        "reward_profile": null,
+        "workers": null,
+        "horizon": null,
+        "optimizer_restored_as_logged": null
+      },
+      "starting_counters": {
+        "update": 0,
+        "gradients": 0,
+        "transitions_this_run": 0,
+        "transitions_cumulative": 0
+      },
+      "first_update": 1,
+      "last_update": 8,
+      "updates_logged": 8,
+      "new_transitions": 1024,
+      "new_optimizer_steps": 24
+    },
+    {
+      "run_id": "stack-23",
+      "raw_log": {
+        "file": "stack-23.jsonl",
+        "sha256": "dbc43c3aea06d93b00c828df99b6442e5e4999a157ccb78701ae7cfff4b69268",
+        "bytes": 8636
+      },
+      "launch_receipt": null,
+      "parent": null,
+      "model": {
+        "memory": "stack",
+        "seed": 23,
+        "reward_profile": null,
+        "workers": null,
+        "horizon": null,
+        "optimizer_restored_as_logged": null
+      },
+      "starting_counters": {
+        "update": 0,
+        "gradients": 0,
+        "transitions_this_run": 0,
+        "transitions_cumulative": 0
+      },
+      "first_update": 1,
+      "last_update": 32,
+      "updates_logged": 32,
+      "new_transitions": 4096,
+      "new_optimizer_steps": 96
+    },
+    {
+      "run_id": "stack-24",
+      "raw_log": {
+        "file": "stack-24.jsonl",
+        "sha256": "759a0f11f20f8fffbf7adc208f0889a2274a9d0aae8b271d69e6d3e1fb2a1435",
+        "bytes": 24202
+      },
+      "launch_receipt": null,
+      "parent": {
+        "run_id": "stack-23",
+        "update": 32,
+        "checkpoint_file": "resume.pt",
+        "retained_checkpoint_sha256": "479854be1cfd589576d335470633439821f5402938c58f6a8e5d948ea5470176",
+        "evidence": [
+          "contiguous original rollout and gradient counters",
+          "adjacent Stack-23 checkpoint and matched inherited counters; no original launch receipt"
+        ]
+      },
+      "model": {
+        "memory": "stack",
+        "seed": 24,
+        "reward_profile": null,
+        "workers": null,
+        "horizon": null,
+        "optimizer_restored_as_logged": null
+      },
+      "starting_counters": {
+        "update": 32,
+        "gradients": 96,
+        "transitions_this_run": 0,
+        "transitions_cumulative": 4096
+      },
+      "first_update": 33,
+      "last_update": 117,
+      "updates_logged": 85,
+      "new_transitions": 10880,
+      "new_optimizer_steps": 255
+    },
+    {
+      "run_id": "stack-25",
+      "raw_log": {
+        "file": "stack-25.jsonl",
+        "sha256": "1ab62e527084ff60dff90cca4060e5e8705457daad06c191adf2a9c65a37c320",
+        "bytes": 130299
+      },
+      "launch_receipt": {
+        "file": "stack-25-launch.json",
+        "sha256": "e98ace2a19d00460c52a92a5e880557c4f3c046d8d1e6b63589481db6ee07fc5",
+        "checkpoint_argument": "--resume",
+        "checkpoint_file": "resume.pt"
+      },
+      "parent": {
+        "run_id": "stack-24",
+        "update": 110,
+        "checkpoint_file": "resume.pt",
+        "retained_checkpoint_sha256": "f47ac6c6de412a21351cdeffbf1227682aa610580900af6098f7a220b05e55e9",
+        "evidence": [
+          "contiguous original rollout and gradient counters",
+          "original launch receipt"
+        ]
+      },
+      "model": {
+        "memory": "stack",
+        "seed": 25,
+        "reward_profile": null,
+        "workers": 8,
+        "horizon": 64,
+        "optimizer_restored_as_logged": null
+      },
+      "starting_counters": {
+        "update": 110,
+        "gradients": 330,
+        "transitions_this_run": 0,
+        "transitions_cumulative": 14080
+      },
+      "first_update": 111,
+      "last_update": 243,
+      "updates_logged": 133,
+      "new_transitions": 68096,
+      "new_optimizer_steps": 1596
+    },
+    {
+      "run_id": "stack-26",
+      "raw_log": {
+        "file": "stack-26.jsonl",
+        "sha256": "e7f42b8bfd903f781af699a48aced3f51f73b2692b24e6b02862fad074574fd7",
+        "bytes": 280746
+      },
+      "launch_receipt": {
+        "file": "stack-26-launch.json",
+        "sha256": "afe314319f830943dbaa02107532dd5bcc2f69e4d6119023292f00228f3a5586",
+        "checkpoint_argument": "--resume",
+        "checkpoint_file": "resume.pt"
+      },
+      "parent": {
+        "run_id": "stack-25",
+        "update": 243,
+        "checkpoint_file": "resume.pt",
+        "retained_checkpoint_sha256": "c8b2e187bd3d0605e19d93856b63469d2ae1a05dfbd70b661f74efef0d1879d8",
+        "evidence": [
+          "contiguous original rollout and gradient counters",
+          "original launch receipt"
+        ]
+      },
+      "model": {
+        "memory": "stack",
+        "seed": 26,
+        "reward_profile": null,
+        "workers": 8,
+        "horizon": 64,
+        "optimizer_restored_as_logged": null
+      },
+      "starting_counters": {
+        "update": 243,
+        "gradients": 1926,
+        "transitions_this_run": 0,
+        "transitions_cumulative": 82176
+      },
+      "first_update": 244,
+      "last_update": 621,
+      "updates_logged": 378,
+      "new_transitions": 193536,
+      "new_optimizer_steps": 4536
+    }
+  ],
+  "selected_c749": {
+    "approved_release": "6c2d5499f973c77b4a239f778837280edf64e57b",
+    "training_checkpoint_file": "mission-progression-43-update-749.pt",
+    "training_checkpoint_sha256": "1c741cae310c3b169a18ad86a34c25c7371a6be47dcbefbcce8ba43077e36930",
+    "inference_file": "submission/weights/policy.pt",
+    "inference_sha256": "0b8f290cfe36a25f8593da925d4a4a0ddb8790b37f9319a019aed276a73f5e61",
+    "verified_cutoffs": [
+      {
+        "run_id": "stack-23",
+        "first_update": 1,
+        "last_update": 32,
+        "new_transitions": 4096,
+        "rollout_updates": 32,
+        "new_optimizer_steps": 96
+      },
+      {
+        "run_id": "stack-24",
+        "first_update": 33,
+        "last_update": 110,
+        "new_transitions": 9984,
+        "rollout_updates": 78,
+        "new_optimizer_steps": 234
+      },
+      {
+        "run_id": "stack-25",
+        "first_update": 111,
+        "last_update": 243,
+        "new_transitions": 68096,
+        "rollout_updates": 133,
+        "new_optimizer_steps": 1596
+      },
+      {
+        "run_id": "stack-26",
+        "first_update": 244,
+        "last_update": 621,
+        "new_transitions": 193536,
+        "rollout_updates": 378,
+        "new_optimizer_steps": 4536
+      },
+      {
+        "run_id": "mission-progression-43",
+        "first_update": 622,
+        "last_update": 749,
+        "new_transitions": 49152,
+        "rollout_updates": 128,
+        "new_optimizer_steps": 1152
+      }
+    ],
+    "totals": {
+      "learner_transitions": 324864,
+      "rollout_updates": 749,
+      "new_ppo_optimizer_steps": 7614
+    },
+    "lineage_note": "Stack-24 logged updates 111–117 after the update-110 snapshot. All seven are included in legacy totals. The released lineage follows the Stack-25 continuation of the saved update-110 branch."
+  }
+}

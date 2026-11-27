@@ -1,0 +1,335 @@
+{
+  "frozen_at_ist": "2026-11-27T07:06:33+05:30",
+  "scope": "Fresh exact-credit screen with four authored local fixtures and two resident bundled Freedoom1 layouts. All arms use the unchanged C749 actor, decoding and score profiles.",
+  "screening_maps": [
+    {
+      "geometry_sha256": "3f3d43f5f75678c9ca08bba39c29692324fc7d5767d04c2c3e1977e62f4139e7",
+      "sector_graph_sha256": "9ba1020887a912693d94638c5c8aa673bf75ab665c2ea0aeacae0f7b10920e03",
+      "format": "udmf",
+      "sectors": 17,
+      "lines": 50,
+      "graph_edges": 18,
+      "graph_components": 1,
+      "graph_cycle_rank": 2,
+      "key_colors": [],
+      "player_starts": null,
+      "placed_monsters_skill3": null,
+      "placed_monsters_within_768_euclidean": null,
+      "placed_resources_skill3": null,
+      "static_exit_triggers": [
+        {
+          "linedef": 5,
+          "special": 243,
+          "activation": "cross",
+          "destination": "normal",
+          "from_xy": [
+            768,
+            128
+          ],
+          "to_xy": [
+            640,
+            128
+          ]
+        }
+      ],
+      "id": "offset-alley-duel",
+      "map": "MAP01",
+      "family": "local-offset-alley-duel-9ba1020887a9",
+      "tier": 1,
+      "skill": 3,
+      "seeds": [
+        70421,
+        70422
+      ],
+      "tick_cap": 800,
+      "wad": "maps/screening/offset-alley-duel.wad",
+      "wad_sha256": "5542a53309075d4f05bf35f20034d14b8d1a38ecd9a0cd7ce616ee4606e9510f",
+      "scope": "New static topology with engine solvability pending"
+    },
+    {
+      "geometry_sha256": "1ed142e8ff7a9f838b8c9dc9398bdaf87f7e8eeb452c4979a72593517a40a56c",
+      "sector_graph_sha256": "74e2384bb930305a4619247bc778d5fdb8b2c8289e2db5f82de85e881e0702e1",
+      "format": "udmf",
+      "sectors": 26,
+      "lines": 73,
+      "graph_edges": 31,
+      "graph_components": 1,
+      "graph_cycle_rank": 6,
+      "key_colors": [],
+      "player_starts": null,
+      "placed_monsters_skill3": null,
+      "placed_monsters_within_768_euclidean": null,
+      "placed_resources_skill3": null,
+      "static_exit_triggers": [
+        {
+          "linedef": 1,
+          "special": 243,
+          "activation": "cross",
+          "destination": "normal",
+          "from_xy": [
+            512,
+            128
+          ],
+          "to_xy": [
+            384,
+            128
+          ]
+        }
+      ],
+      "id": "alternating-chicanes",
+      "map": "MAP01",
+      "family": "local-alternating-chicanes-74e2384bb930",
+      "tier": 2,
+      "skill": 3,
+      "seeds": [
+        70421,
+        70422
+      ],
+      "tick_cap": 1100,
+      "wad": "maps/screening/alternating-chicanes.wad",
+      "wad_sha256": "ed3da88b7b1183d9cf9b1ccfc82cb8c2cdda0ee0bc73c453599cd65066cb6519",
+      "scope": "New static topology with engine solvability pending"
+    },
+    {
+      "geometry_sha256": "278a6f4e772f42873b8b2fa713d3f9827a0ba1f5131036e402953919673aac3d",
+      "sector_graph_sha256": "edd344667552f782c096c2aa41fc3be592591541e3d290fa947b20805a2a9877",
+      "format": "udmf",
+      "sectors": 21,
+      "lines": 62,
+      "graph_edges": 22,
+      "graph_components": 1,
+      "graph_cycle_rank": 2,
+      "key_colors": [],
+      "player_starts": null,
+      "placed_monsters_skill3": null,
+      "placed_monsters_within_768_euclidean": null,
+      "placed_resources_skill3": null,
+      "static_exit_triggers": [
+        {
+          "linedef": 1,
+          "special": 243,
+          "activation": "cross",
+          "destination": "normal",
+          "from_xy": [
+            896,
+            128
+          ],
+          "to_xy": [
+            768,
+            128
+          ]
+        }
+      ],
+      "id": "return-throat-lock",
+      "map": "MAP01",
+      "family": "local-return-throat-lock-edd344667552",
+      "tier": 3,
+      "skill": 3,
+      "seeds": [
+        70421,
+        70422
+      ],
+      "tick_cap": 1160,
+      "wad": "maps/screening/return-throat-lock.wad",
+      "wad_sha256": "18c2c1c3ad85d34d360caeae61a85aae98f63f62b0f410625c3baed21b35687a",
+      "scope": "New static topology with engine solvability pending"
+    },
+    {
+      "geometry_sha256": "0bb9123eae24399d95025ba7310e532e779e6f4b4dab25b038da1facd4ccef05",
+      "sector_graph_sha256": "d986ddef07d3a3c70b37d3b9015e87f0080f7dd12a72ff7db8ada3e7cdc8bb67",
+      "format": "udmf",
+      "sectors": 32,
+      "lines": 88,
+      "graph_edges": 40,
+      "graph_components": 1,
+      "graph_cycle_rank": 9,
+      "key_colors": [],
+      "player_starts": null,
+      "placed_monsters_skill3": null,
+      "placed_monsters_within_768_euclidean": null,
+      "placed_resources_skill3": null,
+      "static_exit_triggers": [
+        {
+          "linedef": 20,
+          "special": 243,
+          "activation": "cross",
+          "destination": "normal",
+          "from_xy": [
+            768,
+            256
+          ],
+          "to_xy": [
+            768,
+            128
+          ]
+        },
+        {
+          "linedef": 22,
+          "special": 243,
+          "activation": "cross",
+          "destination": "normal",
+          "from_xy": [
+            896,
+            256
+          ],
+          "to_xy": [
+            768,
+            256
+          ]
+        }
+      ],
+      "id": "interleaved-courts",
+      "map": "MAP01",
+      "family": "local-interleaved-courts-d986ddef07d3",
+      "tier": 4,
+      "skill": 3,
+      "seeds": [
+        70421,
+        70422
+      ],
+      "tick_cap": 980,
+      "wad": "maps/screening/interleaved-courts.wad",
+      "wad_sha256": "d93cb2d9f0e6b7fc7bc80f6708bb4e2dad6cfe0d7b50eab2a97efe00a2677927",
+      "scope": "New static topology with engine solvability pending"
+    },
+    {
+      "geometry_sha256": "08641e5f1d0d299ead023cbafde31acfded2b5dfe56159da2c2ae67f22c0920f",
+      "sector_graph_sha256": "00101aa0961dfed3de0a394f93f81dac526c556ea28566d8ebf3d190f0d57367",
+      "format": "doom",
+      "sectors": 380,
+      "lines": 2290,
+      "graph_edges": 471,
+      "graph_components": 1,
+      "graph_cycle_rank": 92,
+      "key_colors": [
+        "blue",
+        "red",
+        "yellow"
+      ],
+      "player_starts": 1,
+      "placed_monsters_skill3": 93,
+      "placed_monsters_within_768_euclidean": 7,
+      "placed_resources_skill3": 116,
+      "static_exit_triggers": [
+        {
+          "linedef": 737,
+          "special": 11,
+          "activation": "use",
+          "destination": "normal",
+          "from_xy": [
+            1824,
+            1248
+          ],
+          "to_xy": [
+            1856,
+            1248
+          ]
+        }
+      ],
+      "id": "freedoom1-E1M2",
+      "map": "E1M2",
+      "family": "freedoom1-E1M2-00101aa0961d",
+      "tier": 3,
+      "skill": 3,
+      "seeds": [
+        70421,
+        70422
+      ],
+      "tick_cap": 2100,
+      "wad": "runtime/vizdoom/freedoom1.wad",
+      "wad_sha256": "7323bcc168c5a45ff10749b339960e98314740a734c30d4b9f3337001f9e703d",
+      "scope": "Previously unused in inspected local gameplay records. Resident bundled map, not organizer holdout. Native reset pending under exact wrapper.",
+      "provenance": "resident-bundled-freedoom1"
+    },
+    {
+      "geometry_sha256": "287b02599f2da44f584f4c5f0eb128fed5f85c6ee159cb8b33628a2bf32b5f72",
+      "sector_graph_sha256": "cccbe0bba257658c9eb76dcc0c69cf19f418c7ff56418f079c8579976e7366aa",
+      "format": "doom",
+      "sectors": 256,
+      "lines": 1784,
+      "graph_edges": 381,
+      "graph_components": 1,
+      "graph_cycle_rank": 126,
+      "key_colors": [
+        "yellow"
+      ],
+      "player_starts": 1,
+      "placed_monsters_skill3": 54,
+      "placed_monsters_within_768_euclidean": 8,
+      "placed_resources_skill3": 147,
+      "static_exit_triggers": [
+        {
+          "linedef": 273,
+          "special": 52,
+          "activation": "cross",
+          "destination": "normal",
+          "from_xy": [
+            56,
+            -2224
+          ],
+          "to_xy": [
+            -56,
+            -2224
+          ]
+        }
+      ],
+      "id": "freedoom1-E2M1",
+      "map": "E2M1",
+      "family": "freedoom1-E2M1-cccbe0bba257",
+      "tier": 4,
+      "skill": 3,
+      "seeds": [
+        70421,
+        70422
+      ],
+      "tick_cap": 2100,
+      "wad": "runtime/vizdoom/freedoom1.wad",
+      "wad_sha256": "7323bcc168c5a45ff10749b339960e98314740a734c30d4b9f3337001f9e703d",
+      "scope": "Previously unused in inspected local gameplay records. Resident bundled map, not organizer holdout. Native reset pending under exact wrapper.",
+      "provenance": "resident-bundled-freedoom1"
+    }
+  ],
+  "prior_static_reference_count": 105,
+  "prior_static_issues": [],
+  "novelty_check": "Different normalized line geometry and sector-graph hashes versus every readable prior reference and across this suite. All prior withheld WAD directories and official MAP11/MAP12 excluded. Repeated seeds are nested within a family. Geometric variants of the same topology would share a family.",
+  "bundled_layout_provenance": "Freedoom1/E1M2 and E2M1 have zero matching archived training/assessment gameplay references in reviewed manifests and ledgers; explicit search also checked all E1\u2013E4 episode labels. Earlier training and wide assessment used Freedoom2 for larger maps. MAP31 is trained and MAP30 has a boss ending without a standard comparable exit. The resident package supplies Freedoom1 as a local archive. The unchanged wrapper retains its native Freedoom2 base and uses Freedoom1 as the episode-specific scenario. Successful native reset is required.",
+  "order": "Listed map order, listed identical engine/policy seeds, then exact frozen roster order. One attempt per identity.",
+  "scoring_manifest_sha256": "1ca7aeb19af8b5a787bd66cd86234690764689c5979876fdcb04a0b8f9bfc9fd",
+  "experimental_cutoff_ist": "2026-11-27T08:15:00+05:30",
+  "expected_episodes": 48,
+  "withheld_confirmation_manifest_sha256": "96ce1327029de63adab81ee6fe65a01c10dd08327184df2c93eb48da40d72033",
+  "withheld_confirmation_policy": "Two fresh families and two paired seeds each. Only an approved qualified nominee and C749 may run in a new authorized phase. Confirm no regression in exit/survival/key/unlock per family and meaningful gain on both families.",
+  "roster": [
+    {
+      "id": "C749",
+      "source_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+      "checkout": "release/",
+      "weight_source": "release/submission/weights/policy.pt",
+      "expected_sha256": "0b8f290cfe36a25f8593da925d4a4a0ddb8790b37f9319a019aed276a73f5e61"
+    },
+    {
+      "id": "Exact-PPO",
+      "source_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+      "checkout": "release/",
+      "weight_source": "local-not-published/checkpoints/exact-ppo/resume.pt"
+    },
+    {
+      "id": "Balanced-Reward",
+      "source_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+      "checkout": "release/",
+      "weight_source": "local-not-published/checkpoints/balanced-reward/resume.pt"
+    },
+    {
+      "id": "Balanced-PBRS-Anchor",
+      "source_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+      "checkout": "release/",
+      "weight_source": "local-not-published/checkpoints/balanced-pbrs-anchor/resume.pt"
+    }
+  ],
+  "promotion_gate": {
+    "legal": "Twelve completed legal episodes per model, paired with C749; zero invalid actions or timeouts. Failed bundled resets remain failures and prevent promotion.",
+    "preserve": "Match or exceed C749 exits, survivals, collected keys and verified unlocks on every family.",
+    "material_outcome": "On two independent families improve exits, keys, unlocks, player-attributed damage, or coverage with a lower blocked-move fraction. At least one gain family must show a gain on both predeclared seeds. Fewer attacks or lower bias alone are diagnostic.",
+    "decision": "If the gate fails, retain C749. A qualifying variant also requires untouched confirmation, exact official validator and explicit approval for any replacement."
+  }
+}

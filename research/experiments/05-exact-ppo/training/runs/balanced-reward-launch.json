@@ -1,0 +1,16 @@
+{
+  "arm": "balanced-reward",
+  "started_ist": "2026-11-27T07:11:07.7790322+05:30",
+  "plan_sha256": "ad2da3e32e0b95cf2a0b583b96f3028aab44270d159850cee9755211afe6aaf7",
+  "protocol_sha256": "8d5f3de975c3924edb0acb2c1e96e97e3d6b6a45178ea44b1dbaa0413b9382df",
+  "parent_sha256": "1c741cae310c3b169a18ad86a34c25c7371a6be47dcbefbcce8ba43077e36930",
+  "updates": 48,
+  "storage": {
+    "internal_free_bytes": 28840980480,
+    "internal_delta_bytes": 5198741504,
+    "external_free_bytes": 60350574592,
+    "internal_limit_bytes": 7000000000,
+    "physical_available_bytes": 3356241920,
+    "commit_available_bytes": 3123912704
+  }
+}

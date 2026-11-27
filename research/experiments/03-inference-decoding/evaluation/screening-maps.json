@@ -1,0 +1,62 @@
+{
+  "stage": "screening",
+  "scope": "Match identities only. Layout geometry and assets are withheld.",
+  "maps": [
+    {
+      "id": "aim-pocket",
+      "map": "MAP01",
+      "family": "local-aim-pocket-32ac625dd0be",
+      "tier": 1,
+      "skill": 3,
+      "seeds": [
+        59621,
+        59622
+      ],
+      "tick_cap": 660,
+      "wad_sha256": "c9647742b8f0714b493a40d09adf62bbe6e4c3e216749ffbe4726a52215c4c51",
+      "geometry_sha256": "0e3fc1a53a5f43c6c9472bb216733099a314c672179718ba5e8b4587ab67189c"
+    },
+    {
+      "id": "recovery-switchback",
+      "map": "MAP01",
+      "family": "local-recovery-switchback-5b75d6efa40b",
+      "tier": 2,
+      "skill": 3,
+      "seeds": [
+        59621,
+        59622
+      ],
+      "tick_cap": 840,
+      "wad_sha256": "eafd4dd4c4ed16908a6189486c3939fbd68736f36f5f417669a656ae5e248640",
+      "geometry_sha256": "13bd9d860fbf9c81f3a848c6e974bca10a8cf8b018f1c91e6506a3ae2d425977"
+    },
+    {
+      "id": "card-loop-lock",
+      "map": "MAP01",
+      "family": "local-card-loop-lock-ed667fde60db",
+      "tier": 3,
+      "skill": 3,
+      "seeds": [
+        59621,
+        59622
+      ],
+      "tick_cap": 1040,
+      "wad_sha256": "865314adc866ae3488f97a6dd732f2eeb9630200a23b2d38b0d49c107e6623bb",
+      "geometry_sha256": "18ce6bce722ec5cb75e74f35fa4e9e1eae4e9b08347bbc40a8aa92a70718e0a9"
+    },
+    {
+      "id": "danger-intersections",
+      "map": "MAP01",
+      "family": "local-danger-intersections-383802ba1553",
+      "tier": 1,
+      "skill": 3,
+      "seeds": [
+        59621,
+        59622
+      ],
+      "tick_cap": 760,
+      "wad_sha256": "318f4839686eb07fd1e169d87e2e56af13bb8526bbc049d9aa6ba0b9446ce659",
+      "geometry_sha256": "1be94064590da276d1f53bffe01865f02b1d8fe222e63ef1a36d66e14894afc3"
+    }
+  ]
+}

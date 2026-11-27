@@ -1,0 +1,542 @@
+{
+  "ppo-control": {
+    "source_log_sha256": "03f6d06efb9984f277c446b36f56ecb1fddecb53afc5cf3515648d0646c67eb7",
+    "live_decisions": 8192,
+    "snapshot_count": 32,
+    "optimizer_steps": 192,
+    "transitions_per_second": 67.45,
+    "sampled_peak_internal_decline_bytes": 5240336384,
+    "components_over_all_decisions": {
+      "native_exit": {
+        "sum": 9.0,
+        "mean": 0.0010986328125,
+        "population_variance": 0.0010974258184432983,
+        "nonzero_decisions": 9
+      },
+      "native_death": {
+        "sum": -24.0,
+        "mean": -0.0029296875,
+        "population_variance": 0.0029211044311523438,
+        "nonzero_decisions": 24
+      },
+      "native_map_kills": {
+        "sum": 3.7,
+        "mean": 0.00045166015625,
+        "population_variance": 4.49620187282562e-05,
+        "nonzero_decisions": 37
+      },
+      "exit_bonus": {
+        "sum": 3.1499999999999995,
+        "mean": 0.00038452148437499993,
+        "population_variance": 0.00013443466275930404,
+        "nonzero_decisions": 9
+      },
+      "coverage": {
+        "sum": 31.220000000000006,
+        "mean": 0.0038110351562500007,
+        "population_variance": 0.00011886224150657658,
+        "nonzero_decisions": 892
+      },
+      "keys": {
+        "sum": 3.6,
+        "mean": 0.000439453125,
+        "population_variance": 0.00019756078720092787,
+        "nonzero_decisions": 8
+      },
+      "doors": {
+        "sum": 3.0,
+        "mean": 0.0003662109375,
+        "population_variance": 5.4797530174255366e-05,
+        "nonzero_decisions": 20
+      },
+      "unlocks": {
+        "sum": 2.0,
+        "mean": 0.000244140625,
+        "population_variance": 6.097555160522461e-05,
+        "nonzero_decisions": 8
+      },
+      "damage": {
+        "sum": -19.05,
+        "mean": -0.002325439453125,
+        "population_variance": 0.0004738906711935999,
+        "nonzero_decisions": 213
+      },
+      "dealt": {
+        "sum": 0.0,
+        "mean": 0.0,
+        "population_variance": 0.0,
+        "nonzero_decisions": 0
+      },
+      "healed": {
+        "sum": 0.0,
+        "mean": 0.0,
+        "population_variance": 0.0,
+        "nonzero_decisions": 0
+      },
+      "potential": {
+        "sum": 0.0,
+        "mean": 0.0,
+        "population_variance": 0.0,
+        "nonzero_decisions": 0
+      },
+      "player_hits": {
+        "sum": 19.0,
+        "mean": 0.0023193359375,
+        "population_variance": 0.002558097243309021,
+        "nonzero_decisions": 18
+      },
+      "player_damage": {
+        "sum": 200.0,
+        "mean": 0.0244140625,
+        "population_variance": 0.3228902816772461,
+        "nonzero_decisions": 18
+      },
+      "damage_received": {
+        "sum": 3175.0,
+        "mean": 0.3875732421875,
+        "population_variance": 13.16362975537777,
+        "nonzero_decisions": 213
+      },
+      "health_gain_lower_bound": {
+        "sum": 373.0,
+        "mean": 0.0455322265625,
+        "population_variance": 0.8220234960317612,
+        "nonzero_decisions": 41
+      },
+      "attack_held": {
+        "sum": 3279.0,
+        "mean": 0.4002685546875,
+        "population_variance": 0.24005363881587982,
+        "nonzero_decisions": 3279
+      },
+      "attacks_without_enemy_cues": {
+        "sum": 1768.0,
+        "mean": 0.2158203125,
+        "population_variance": 0.16924190521240234,
+        "nonzero_decisions": 1768
+      },
+      "ammo_net_drop": {
+        "sum": 285.0,
+        "mean": 0.0347900390625,
+        "population_variance": 0.033579692244529724,
+        "nonzero_decisions": 285
+      },
+      "enemy_visible": {
+        "sum": 1462.0,
+        "mean": 0.178466796875,
+        "population_variance": 0.1466163992881775,
+        "nonzero_decisions": 1462
+      },
+      "enemy_alignment_abs_rad": {
+        "sum": 686.191340533318,
+        "mean": 0.08376359137369604,
+        "population_variance": 0.046102278779661054,
+        "nonzero_decisions": 1454
+      }
+    },
+    "reward_total_per_decision": {
+      "sum": 12.620000000000001,
+      "mean": 0.0015405273437499997,
+      "population_variance": 0.007261388005971912
+    },
+    "skill_decisions": {
+      "combat": 1201,
+      "navigation": 2361,
+      "progression": 1507,
+      "mixed-survival": 3123
+    },
+    "random_reset_counts_by_skill": {
+      "combat": 8,
+      "mixed-survival": 12,
+      "progression": 8,
+      "navigation": 8
+    },
+    "completed_episodes": 36,
+    "completed_episode_decisions": 7287,
+    "mean_discounted_components_per_completed_episode": {
+      "native_exit": 0.11680655830666803,
+      "native_death": -0.17400975097014987,
+      "native_map_kills": 0.03300360677851526,
+      "exit_bonus": 0.040882295407333805,
+      "coverage": 0.3583240493155308,
+      "keys": 0.07078231084314447,
+      "doors": 0.03865099255053065,
+      "unlocks": 0.03394772444128995,
+      "damage": -0.16356997039650542,
+      "dealt": 0.0,
+      "healed": 0.0,
+      "potential": 0.0
+    },
+    "completed_annotated_episodes": 0,
+    "maximum_annotated_telescoping_residual": null
+  },
+  "pbrs": {
+    "source_log_sha256": "3e275d16694d7f7077f27adb33eec3e8a0b2ef5697e266aa181f5b40e82c4fed",
+    "live_decisions": 8192,
+    "snapshot_count": 32,
+    "optimizer_steps": 192,
+    "transitions_per_second": 92.69,
+    "sampled_peak_internal_decline_bytes": 5240696832,
+    "components_over_all_decisions": {
+      "native_exit": {
+        "sum": 7.0,
+        "mean": 0.0008544921875,
+        "population_variance": 0.0008537620306015015,
+        "nonzero_decisions": 7
+      },
+      "native_death": {
+        "sum": -17.0,
+        "mean": -0.0020751953125,
+        "population_variance": 0.002070888876914978,
+        "nonzero_decisions": 17
+      },
+      "native_map_kills": {
+        "sum": 2.2,
+        "mean": 0.0002685546875,
+        "population_variance": 2.6783347129821772e-05,
+        "nonzero_decisions": 22
+      },
+      "exit_bonus": {
+        "sum": 2.4499999999999997,
+        "mean": 0.00029907226562499997,
+        "population_variance": 0.00010458584874868398,
+        "nonzero_decisions": 7
+      },
+      "coverage": {
+        "sum": 26.565,
+        "mean": 0.0032427978515625,
+        "population_variance": 0.00010298218689858913,
+        "nonzero_decisions": 759
+      },
+      "keys": {
+        "sum": 2.7,
+        "mean": 0.00032958984375,
+        "population_variance": 0.0001482068002223968,
+        "nonzero_decisions": 6
+      },
+      "doors": {
+        "sum": 1.35,
+        "mean": 0.000164794921875,
+        "population_variance": 2.4692080914974218e-05,
+        "nonzero_decisions": 9
+      },
+      "unlocks": {
+        "sum": 1.5,
+        "mean": 0.00018310546875,
+        "population_variance": 4.574283957481384e-05,
+        "nonzero_decisions": 6
+      },
+      "damage": {
+        "sum": -12.516000000000002,
+        "mean": -0.0015278320312500002,
+        "population_variance": 0.0003558991277217865,
+        "nonzero_decisions": 122
+      },
+      "dealt": {
+        "sum": 0.0,
+        "mean": 0.0,
+        "population_variance": 0.0,
+        "nonzero_decisions": 0
+      },
+      "healed": {
+        "sum": 0.0,
+        "mean": 0.0,
+        "population_variance": 0.0,
+        "nonzero_decisions": 0
+      },
+      "potential": {
+        "sum": -0.8056242100171181,
+        "mean": -9.834279907435524e-05,
+        "population_variance": 4.653804624490421e-05,
+        "nonzero_decisions": 1286
+      },
+      "player_hits": {
+        "sum": 17.0,
+        "mean": 0.0020751953125,
+        "population_variance": 0.003047451376914978,
+        "nonzero_decisions": 14
+      },
+      "player_damage": {
+        "sum": 125.0,
+        "mean": 0.0152587890625,
+        "population_variance": 0.18592439591884613,
+        "nonzero_decisions": 14
+      },
+      "damage_received": {
+        "sum": 2086.0,
+        "mean": 0.254638671875,
+        "population_variance": 9.886086881160736,
+        "nonzero_decisions": 122
+      },
+      "health_gain_lower_bound": {
+        "sum": 61.0,
+        "mean": 0.0074462890625,
+        "population_variance": 0.04450021684169769,
+        "nonzero_decisions": 22
+      },
+      "attack_held": {
+        "sum": 3084.0,
+        "mean": 0.37646484375,
+        "population_variance": 0.23473906517028809,
+        "nonzero_decisions": 3084
+      },
+      "attacks_without_enemy_cues": {
+        "sum": 1618.0,
+        "mean": 0.197509765625,
+        "population_variance": 0.15849965810775757,
+        "nonzero_decisions": 1618
+      },
+      "ammo_net_drop": {
+        "sum": 303.0,
+        "mean": 0.0369873046875,
+        "population_variance": 0.03561924397945404,
+        "nonzero_decisions": 303
+      },
+      "enemy_visible": {
+        "sum": 1458.0,
+        "mean": 0.177978515625,
+        "population_variance": 0.14630216360092163,
+        "nonzero_decisions": 1458
+      },
+      "enemy_alignment_abs_rad": {
+        "sum": 692.7971151453094,
+        "mean": 0.0845699603448864,
+        "population_variance": 0.047280643591684476,
+        "nonzero_decisions": 1450
+      }
+    },
+    "reward_total_per_decision": {
+      "sum": 13.443375789982882,
+      "mean": 0.0016410370837381446,
+      "population_variance": 0.004766066701360809
+    },
+    "skill_decisions": {
+      "combat": 1881,
+      "navigation": 2528,
+      "progression": 1286,
+      "mixed-survival": 2497
+    },
+    "random_reset_counts_by_skill": {
+      "combat": 8,
+      "mixed-survival": 10,
+      "progression": 7,
+      "navigation": 5
+    },
+    "completed_episodes": 30,
+    "completed_episode_decisions": 7234,
+    "mean_discounted_components_per_completed_episode": {
+      "native_exit": 0.10988855778236338,
+      "native_death": -0.15999617528442522,
+      "native_map_kills": 0.027805604417329502,
+      "exit_bonus": 0.03846099522382718,
+      "coverage": 0.3541716949359017,
+      "keys": 0.07179820709417264,
+      "doors": 0.02434392339930395,
+      "unlocks": 0.03228128040716272,
+      "damage": -0.1596025452507747,
+      "dealt": 0.0,
+      "healed": 0.0,
+      "potential": -0.008333333333333333
+    },
+    "completed_annotated_episodes": 7,
+    "maximum_annotated_telescoping_residual": 1.1102230246251565e-16
+  },
+  "pbrs-anchor": {
+    "source_log_sha256": "05bd9f778c059c8fa8702f2ac949b382ec6bf09e4682260ba841108e074d4949",
+    "live_decisions": 8192,
+    "snapshot_count": 32,
+    "optimizer_steps": 192,
+    "transitions_per_second": 90.41,
+    "sampled_peak_internal_decline_bytes": 5241663488,
+    "components_over_all_decisions": {
+      "native_exit": {
+        "sum": 9.0,
+        "mean": 0.0010986328125,
+        "population_variance": 0.0010974258184432983,
+        "nonzero_decisions": 9
+      },
+      "native_death": {
+        "sum": -22.0,
+        "mean": -0.002685546875,
+        "population_variance": 0.0026783347129821777,
+        "nonzero_decisions": 22
+      },
+      "native_map_kills": {
+        "sum": 4.4,
+        "mean": 0.000537109375,
+        "population_variance": 5.342245101928712e-05,
+        "nonzero_decisions": 44
+      },
+      "exit_bonus": {
+        "sum": 3.1499999999999995,
+        "mean": 0.00038452148437499993,
+        "population_variance": 0.00013443466275930407,
+        "nonzero_decisions": 9
+      },
+      "coverage": {
+        "sum": 32.690000000000005,
+        "mean": 0.003990478515625001,
+        "population_variance": 0.00012374282926321033,
+        "nonzero_decisions": 934
+      },
+      "keys": {
+        "sum": 3.6,
+        "mean": 0.000439453125,
+        "population_variance": 0.00019756078720092787,
+        "nonzero_decisions": 8
+      },
+      "doors": {
+        "sum": 2.7,
+        "mean": 0.00032958984375,
+        "population_variance": 4.9329847097396854e-05,
+        "nonzero_decisions": 18
+      },
+      "unlocks": {
+        "sum": 2.0,
+        "mean": 0.000244140625,
+        "population_variance": 6.097555160522461e-05,
+        "nonzero_decisions": 8
+      },
+      "damage": {
+        "sum": -17.034,
+        "mean": -0.002079345703125,
+        "population_variance": 0.00046194048160314564,
+        "nonzero_decisions": 187
+      },
+      "dealt": {
+        "sum": 0.0,
+        "mean": 0.0,
+        "population_variance": 0.0,
+        "nonzero_decisions": 0
+      },
+      "healed": {
+        "sum": 0.0,
+        "mean": 0.0,
+        "population_variance": 0.0,
+        "nonzero_decisions": 0
+      },
+      "potential": {
+        "sum": -0.9166689597514157,
+        "mean": -0.00011189806637590524,
+        "population_variance": 6.213201136484833e-05,
+        "nonzero_decisions": 1174
+      },
+      "player_hits": {
+        "sum": 20.0,
+        "mean": 0.00244140625,
+        "population_variance": 0.002435445785522461,
+        "nonzero_decisions": 20
+      },
+      "player_damage": {
+        "sum": 205.0,
+        "mean": 0.0250244140625,
+        "population_variance": 0.30760131776332855,
+        "nonzero_decisions": 20
+      },
+      "damage_received": {
+        "sum": 2839.0,
+        "mean": 0.3465576171875,
+        "population_variance": 12.831680044531822,
+        "nonzero_decisions": 187
+      },
+      "health_gain_lower_bound": {
+        "sum": 201.0,
+        "mean": 0.0245361328125,
+        "population_variance": 0.6450278609991074,
+        "nonzero_decisions": 26
+      },
+      "attack_held": {
+        "sum": 3451.0,
+        "mean": 0.4212646484375,
+        "population_variance": 0.24380074441432953,
+        "nonzero_decisions": 3451
+      },
+      "attacks_without_enemy_cues": {
+        "sum": 1794.0,
+        "mean": 0.218994140625,
+        "population_variance": 0.17103570699691772,
+        "nonzero_decisions": 1794
+      },
+      "ammo_net_drop": {
+        "sum": 271.0,
+        "mean": 0.0330810546875,
+        "population_variance": 0.031986698508262634,
+        "nonzero_decisions": 271
+      },
+      "enemy_visible": {
+        "sum": 1582.0,
+        "mean": 0.193115234375,
+        "population_variance": 0.15582174062728882,
+        "nonzero_decisions": 1582
+      },
+      "enemy_alignment_abs_rad": {
+        "sum": 723.1422331932699,
+        "mean": 0.08827419838785033,
+        "population_variance": 0.046807144970438364,
+        "nonzero_decisions": 1574
+      }
+    },
+    "reward_total_per_decision": {
+      "sum": 17.589331040248585,
+      "mean": 0.002147135136749095,
+      "population_variance": 0.00614511311440127
+    },
+    "skill_decisions": {
+      "combat": 1552,
+      "navigation": 2850,
+      "progression": 1174,
+      "mixed-survival": 2616
+    },
+    "random_reset_counts_by_skill": {
+      "combat": 8,
+      "mixed-survival": 12,
+      "progression": 8,
+      "navigation": 7
+    },
+    "completed_episodes": 35,
+    "completed_episode_decisions": 7539,
+    "mean_discounted_components_per_completed_episode": {
+      "native_exit": 0.14562575285885773,
+      "native_death": -0.15590993731147587,
+      "native_map_kills": 0.042941551278036456,
+      "exit_bonus": 0.0509690135006002,
+      "coverage": 0.3395345057348898,
+      "keys": 0.08424761848690537,
+      "doors": 0.034431223151160505,
+      "unlocks": 0.03735089491135216,
+      "damage": -0.15911855992753662,
+      "dealt": 0.0,
+      "healed": 0.0,
+      "potential": -0.009285714285714286
+    },
+    "completed_annotated_episodes": 9,
+    "maximum_annotated_telescoping_residual": 5.551115123125783e-17,
+    "anchor_final_kl_by_category_nats": {
+      "combat": {
+        "anchors": 47,
+        "kl_nats": 0.055707741528749466
+      },
+      "exit": {
+        "anchors": 192,
+        "kl_nats": 0.06097610108554363
+      },
+      "key": {
+        "anchors": 128,
+        "kl_nats": 0.04158681258559227
+      },
+      "navigation": {
+        "anchors": 16,
+        "kl_nats": 0.04419746994972229
+      },
+      "unlock": {
+        "anchors": 173,
+        "kl_nats": 0.056801905909370135
+      }
+    },
+    "weighted_anchor_norm_over_ppo": {
+      "median": 0.03426149653012289,
+      "max": 0.12934157120262887,
+      "negative_first_minibatch_cosines": 10
+    }
+  }
+}

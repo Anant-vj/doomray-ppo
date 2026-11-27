@@ -1,0 +1,40 @@
+{
+  "protocol_sha256": "e9ec321a8f28bc5381f130b09ef2ded9cfb4c2f3d418a08575d4ab4f0844f7dd",
+  "map_ids": [
+    "aim-fork",
+    "occluded-combat-loop",
+    "branch-recovery",
+    "key-return-lock"
+  ],
+  "models": [
+    {
+      "id": "C749",
+      "assessment_id": "A",
+      "name": "Published C749",
+      "checkout": "approved-release",
+      "source_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+      "weight_path": "historical-local-reference/submission_artifacts/final-blind-assessment/checkpoints/model-A.pt",
+      "sha256": "0b8f290cfe36a25f8593da925d4a4a0ddb8790b37f9319a019aed276a73f5e61",
+      "parameter_count": 97208,
+      "training_transitions": 324864,
+      "optimizer_steps": 7614,
+      "architecture": "Four-encoding feed-forward temporal stack, shared structured encoder and six categorical actor heads",
+      "weight_bytes": 395269
+    },
+    {
+      "id": "Stack26-u621",
+      "assessment_id": "C",
+      "name": "Stack-26 update 621",
+      "checkout": "local-u621-checkout",
+      "source_commit": "40218823c3a337fa8df04ac0cad2381f051ebce8",
+      "weight_path": "historical-local-reference/submission_artifacts/final-blind-assessment/checkpoints/model-C.pt",
+      "sha256": "5b7dca6d1bcce1569ac9164b2461bec9e11622c31a793047046790d0c76f32fd",
+      "parameter_count": 97208,
+      "training_transitions": 275712,
+      "optimizer_steps": 6462,
+      "architecture": "Four-encoding feed-forward temporal stack, shared structured encoder and six categorical actor heads",
+      "weight_bytes": 395269
+    }
+  ],
+  "confirmed_nominee": null
+}

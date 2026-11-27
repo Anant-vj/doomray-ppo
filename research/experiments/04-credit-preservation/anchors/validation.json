@@ -1,0 +1,18 @@
+{
+  "verified_at": "2026-11-27T06:40:59.356877+05:30",
+  "archive_sha256": "fd32f3c049b0c3e221ea3ba223f176ef13cae82b7759e7440f5e228322a9d87c",
+  "ordered_attempts_verified": 20,
+  "verified_stream_decisions": 3417,
+  "verified_anchor_samples": 556,
+  "unique_anchor_decisions": 495,
+  "source_episodes_by_category": {
+    "key": 11,
+    "unlock": 11,
+    "exit": 12,
+    "navigation": 1,
+    "combat": 4
+  },
+  "maximum_stream_reencoded_logit_error": 1.6689300537109375e-06,
+  "maximum_action_log_probability_error": 8.232852835021731e-07,
+  "validity_causality_action_window_checks": "PASS"
+}

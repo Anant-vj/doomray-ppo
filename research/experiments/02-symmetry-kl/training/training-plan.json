@@ -1,0 +1,44 @@
+{
+  "scope": "One matched CPU comparison from C749 with unchanged progression rewards, architecture and mixed training curriculum.",
+  "base_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+  "parent": "historical-local-reference/evaluations/candidates/mission-progression-43-update-749.pt",
+  "parent_sha256": "1c741cae310c3b169a18ad86a34c25c7371a6be47dcbefbcce8ba43077e36930",
+  "release_weight_sha256": "0b8f290cfe36a25f8593da925d4a4a0ddb8790b37f9319a019aed276a73f5e61",
+  "seed": 34219,
+  "workers": 4,
+  "horizon": 64,
+  "updates": 24,
+  "transitions_per_arm": 6144,
+  "tick_cap": 2100,
+  "learning_rate": 6e-05,
+  "optimizer": "Fresh Adam, epsilon 1e-5, unchanged PPO clipping and entropy coefficients",
+  "curriculum": "mixed",
+  "reward_profile": "progression",
+  "spawn_heading_policy": "Use the original training WADs and headings in both arms. Reflection affects only the auxiliary objective.",
+  "arms": {
+    "ppo-control": {
+      "reference_coefficient": 0.0,
+      "symmetry_coefficient": 0.0
+    },
+    "symmetry-kl": {
+      "reference_coefficient": 0.1,
+      "symmetry_coefficient": 0.02
+    }
+  },
+  "losses": {
+    "reference": "Sum over six action heads of KL(frozen C749 || learner) averaged over genuine rollout contexts.",
+    "symmetry": "Average of the two KL directions between original and mirrored learner action heads after undoing action reflection. Stop gradient through each KL target."
+  },
+  "stop": {
+    "max_approx_ppo_kl": 0.025,
+    "max_clip_fraction": 0.25,
+    "max_reference_kl_nats": 0.15,
+    "max_first_log_ratio_error": 0.01,
+    "launch_c_decline_bytes": 6500000000,
+    "soft_c_decline_bytes": 6800000000,
+    "available_physical_bytes": 536870912,
+    "available_commit_bytes": 1000000000,
+    "training_cutoff_ist": "2026-11-27T06:05:00+05:30",
+    "optional_experiment_cutoff_ist": "2026-11-27T06:15:00+05:30"
+  }
+}

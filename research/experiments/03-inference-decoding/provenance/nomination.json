@@ -1,0 +1,28 @@
+{
+  "selected_at_ist": "2026-11-27T06:06:05+05:30",
+  "nominee": "T07",
+  "selection_rationale": "T07 adds one exit, one survivor and one verified unlock, preserving keys and recorded player damage versus T1-control.",
+  "roster": [
+    {
+      "id": "T1-control",
+      "source_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+      "checkout": "${DOOMRAY_PROJECT_ROOT}/submission_artifacts/github-fresh-6c2d549-20261127-022250050",
+      "weight_source": "${DOOMRAY_PROJECT_ROOT}/submission_artifacts/github-fresh-6c2d549-20261127-022250050/submission/weights/policy.pt",
+      "expected_sha256": "0b8f290cfe36a25f8593da925d4a4a0ddb8790b37f9319a019aed276a73f5e61"
+    },
+    {
+      "id": "T07",
+      "source_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+      "checkout": "${DOOMRAY_PROJECT_ROOT}/submission_artifacts/github-fresh-6c2d549-20261127-022250050",
+      "weight_source": "${DOOMRAY_PROJECT_ROOT}/submission_artifacts/github-fresh-6c2d549-20261127-022250050/submission/weights/policy.pt",
+      "expected_sha256": "0b8f290cfe36a25f8593da925d4a4a0ddb8790b37f9319a019aed276a73f5e61"
+    }
+  ],
+  "screening_protocol_sha256": "c83cfebbf32c26e97f7e9de8cdae7501a4149ab80207dc40f5a1dde49a4b4a66",
+  "screening_summary_sha256": "7e8d14b6d8decbf673219f5cb86436b2aee10bbbff062d611313e7478cb2bd11",
+  "screening_ledger_sha256": "31954cb637341aa01000202073271471df6a904874f5bc6a7546f025d0792dc9",
+  "decoder_sha256": "2a1b7504129cb4c1643be1d7af1d7fdd2ff276ef72bbeb1576e4b950b14a5195",
+  "confirmation_manifest_sha256": "5f1a99094ca2f837ace2748e3c7bdef15fe1191ad8b2589a59d191cd5ec28ce6",
+  "gate": "Complete legal sample; preserve exits, survival, keys, unlocks on each family and total player damage. Material gain on both families and replicated on both seeds in at least one of them.",
+  "further_nominees": false
+}

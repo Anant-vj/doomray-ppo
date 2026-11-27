@@ -1,0 +1,10 @@
+{
+  "attempts.jsonl": {
+    "original_sha256": "dc01156366d879564f74e3da24161abc3067f2ef234ec32a0d7d002bb897a41f",
+    "published_sha256": "00d1d30257fea988e8523013927673165408a53ac44c24040e73e43c0576def7"
+  },
+  "collection-manifest.json": {
+    "original_sha256": "39aa7e48b602ac56545bc69cddab5f0045f5e8704f598d08b0fbd354eea756cd",
+    "published_sha256": "8c10f557802d29753be13c0ddbc1fc5a47e0315e557e743d175ec8bd519870fa"
+  }
+}

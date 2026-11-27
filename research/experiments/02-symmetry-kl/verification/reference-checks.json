@@ -1,0 +1,10 @@
+{
+  "torch": "2.15.0+cpu",
+  "exact_matching_teacher_tensors": 22,
+  "archived_contexts": 47,
+  "episode_resets_checked": 2,
+  "maximum_context_logit_error": 2.384185791015625e-07,
+  "initial_reference_kl_nats": 0.0,
+  "reflection_kl_nats": 1.1773197650909424,
+  "teacher_has_no_gradients": true
+}

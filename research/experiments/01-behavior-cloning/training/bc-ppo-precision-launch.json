@@ -1,0 +1,22 @@
+{
+  "name": "bc-ppo-precision",
+  "seed": 2207,
+  "workers": 4,
+  "horizon": 64,
+  "updates": 128,
+  "target_transitions": 32768,
+  "max_seconds": 900,
+  "learning_rate": 8e-05,
+  "ticks": 1050,
+  "profile": "precision",
+  "initial_path": "local-checkpoint-archive/checkpoints/bc-precision/policy.pt",
+  "initial_sha256": "f83d2bc74782bf4594bf757e9d0823ca7a7788f515b63acf891aab900d9f3eb8",
+  "preflight": {
+    "internal_free_bytes": 28914360320,
+    "internal_delta_bytes": 5125361664,
+    "external_free_bytes": 60412747776,
+    "internal_limit_bytes": 7000000000,
+    "physical_available_bytes": 2905313280,
+    "commit_available_bytes": 3441119232
+  }
+}

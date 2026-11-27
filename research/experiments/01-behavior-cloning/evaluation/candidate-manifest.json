@@ -1,0 +1,64 @@
+{
+  "candidates": [
+    {
+      "id": "C749",
+      "assessment_id": "A",
+      "name": "Published C749",
+      "checkout": "approved-release",
+      "source_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+      "weight_path": "historical-local-reference/submission_artifacts/final-blind-assessment/checkpoints/model-A.pt",
+      "sha256": "0b8f290cfe36a25f8593da925d4a4a0ddb8790b37f9319a019aed276a73f5e61",
+      "parameter_count": 97208,
+      "training_transitions": 324864,
+      "optimizer_steps": 7614,
+      "architecture": "Four-encoding feed-forward temporal stack, shared structured encoder and six categorical actor heads",
+      "weight_bytes": 395269
+    },
+    {
+      "id": "Stack26-u621",
+      "assessment_id": "C",
+      "name": "Stack-26 update 621",
+      "checkout": "local-u621-checkout",
+      "source_commit": "40218823c3a337fa8df04ac0cad2381f051ebce8",
+      "weight_path": "historical-local-reference/submission_artifacts/final-blind-assessment/checkpoints/model-C.pt",
+      "sha256": "5b7dca6d1bcce1569ac9164b2461bec9e11622c31a793047046790d0c76f32fd",
+      "parameter_count": 97208,
+      "training_transitions": 275712,
+      "optimizer_steps": 6462,
+      "architecture": "Four-encoding feed-forward temporal stack, shared structured encoder and six categorical actor heads",
+      "weight_bytes": 395269
+    },
+    {
+      "id": "BC-only",
+      "checkout": "approved-release",
+      "source_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+      "sha256": "f83d2bc74782bf4594bf757e9d0823ca7a7788f515b63acf891aab900d9f3eb8",
+      "weight_path": "local-checkpoint-archive/evaluation-weights/BC-only/f83d2bc74782bf4594bf757e9d0823ca7a7788f515b63acf891aab900d9f3eb8/policy.pt",
+      "continuation": true,
+      "archive_source": "local-checkpoint-archive/checkpoints/bc-precision/policy.pt",
+      "weight_bytes": 395333
+    },
+    {
+      "id": "BC-PPO",
+      "checkout": "approved-release",
+      "source_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+      "sha256": "60bbad3b69d1c1a85bd8022ae3e661a9efd644de7e78dc294ce6a0ed160e3a90",
+      "weight_path": "local-checkpoint-archive/evaluation-weights/BC-PPO/60bbad3b69d1c1a85bd8022ae3e661a9efd644de7e78dc294ce6a0ed160e3a90/policy.pt",
+      "continuation": true,
+      "archive_source": "local-checkpoint-archive/checkpoints/bc-ppo-precision/resume.pt",
+      "weight_bytes": 1188221
+    },
+    {
+      "id": "PPO-only",
+      "checkout": "approved-release",
+      "source_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+      "sha256": "c87f282929c5a3544ffcfd2c09ebc3e73a5383e6f112a995878183cf1ad98641",
+      "weight_path": "local-checkpoint-archive/evaluation-weights/PPO-only/c87f282929c5a3544ffcfd2c09ebc3e73a5383e6f112a995878183cf1ad98641/policy.pt",
+      "continuation": true,
+      "archive_source": "local-checkpoint-archive/checkpoints/ppo-only-precision-1/resume.pt",
+      "weight_bytes": 1188221
+    }
+  ],
+  "authorized_competition_model": "C749",
+  "disposition": "Only C749 was retained for competition. Experimental checkpoint bytes remain in local archive."
+}

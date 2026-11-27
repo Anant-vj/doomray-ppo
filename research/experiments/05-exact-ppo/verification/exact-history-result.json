@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "direct_agent_decisions": 32,
+  "paired_rollout_decisions": 256,
+  "threads": 1,
+  "independent_current_encoder_shift_max": 0.054669275879859924,
+  "cached_initial_log_ratio_abs_max": 1.9073486328125e-06,
+  "exact_initial_log_ratio_abs_max": 1.9073486328125e-06,
+  "cached_optimize_median_s": 0.07197799999994459,
+  "exact_optimize_median_s": 0.1262083999972674,
+  "exact_over_cached_learner_ratio": 1.7534302147512375,
+  "scope": "Offline synthetic batching on saved observations, with no live engine or trained artifact."
+}

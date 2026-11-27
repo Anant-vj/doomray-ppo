@@ -1,0 +1,41 @@
+{
+  "layout": "KeyDoor",
+  "layout_family": "red-key-lesson",
+  "map": "MAP01",
+  "skill": 3,
+  "tick_cap": 1400,
+  "wad": "approved-release/tests/fixtures/e7ab54fb6834ffa3.wad",
+  "wad_sha256": "ea6a0b17bca7beae8dc928e9c3b6ced51eceacf1f3c1421d7a98a698a966445e",
+  "frozen_wrapper_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+  "pack_source_sha256": "3d759688cd9ac103624548610a9a0cad7ce551be4148b4b95dff35eb99b3ef80",
+  "schema_version": 1,
+  "source": "registered_team_member_keyboard",
+  "teammate": "anonymous-registered-team-participant",
+  "permission_reference": "Official starter docs/RULES.md sections 1-3, registered participant input confirmed by team",
+  "attestations": "Registered teammate confirms own game input and organizer permission reference",
+  "torch_loaded": false,
+  "started_session_at": "2026-11-27T05:10:39+05:30",
+  "seed": 6111,
+  "episode_index": 10,
+  "started_at": "2026-11-27T05:15:11+05:30",
+  "buttons": [
+    "MOVE_FORWARD",
+    "MOVE_BACKWARD",
+    "MOVE_LEFT",
+    "MOVE_RIGHT",
+    "TURN_LEFT",
+    "TURN_RIGHT",
+    "ATTACK",
+    "USE",
+    "SELECT_NEXT_WEAPON"
+  ],
+  "frame_skip": 4,
+  "storage_before": {
+    "launch_allowed": true,
+    "c_decline": 5135380480,
+    "c_free": 28904341504,
+    "d_free": 60417937408,
+    "available_memory": 1968558080,
+    "commit_available": 2842411008
+  }
+}
