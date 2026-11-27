@@ -1,0 +1,9 @@
+{
+  "model": "candidate",
+  "code": 0,
+  "cpu_affinity_mask": 1,
+  "omp_threads": "1",
+  "commit": "fb9f1eb8e844c6047454b14c5219bc81c5d80d7f",
+  "sha256": "60cdc992b2505f46b97bc43667cce305a8df331e91a562fc138bff11fc8ef677",
+  "checked": "2026-11-27T08:05:26.8739934+05:30"
+}

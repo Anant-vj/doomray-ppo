@@ -1,0 +1,134 @@
+{
+  "created": "2026-11-27T07:57:06.829823+05:30",
+  "start": "2026-11-27T07:54:09+05:30",
+  "hard_training_deadline": "2026-11-27T08:44:09+05:30",
+  "official_base": "6c2d5499f973c77b4a239f778837280edf64e57b",
+  "source_weight_sha256": "0b8f290cfe36a25f8593da925d4a4a0ddb8790b37f9319a019aed276a73f5e61",
+  "known_published_geometry_fingerprints_compared": 81,
+  "evaluation": {
+    "engine_seeds": [
+      81431,
+      81437
+    ],
+    "policy_seeds": [
+      92561,
+      92569
+    ],
+    "pairs": "zip",
+    "tick_cap": 2100,
+    "skill": 3,
+    "early_death": "Confirmed death at or before 525 elapsed game ticks (first quarter).",
+    "target": [
+      "west-pocket-return",
+      "south-spur-return"
+    ],
+    "retention": [
+      "forward-key-gallery",
+      "guarded-court"
+    ],
+    "gate": "Require at least one additional successful exit or key pickup on each recovery layout. Reject any loss of a baseline exit, survival, key or unlock on the same map/seed, any extra early death, any invalid action, or a failed validator. No rerolls."
+  },
+  "training": {
+    "updates": 96,
+    "workers": 4,
+    "horizon": 64,
+    "transitions": 24576,
+    "lr": 2e-05,
+    "seed": 83453,
+    "ticks": 448,
+    "sampler": "Original six categorical heads",
+    "history": "Archived exact raw four",
+    "selection": "Only the final update 845; retain baseline on interrupted or incomplete run.",
+    "reward": "Original progression reward profile, unchanged."
+  },
+  "maps": {
+    "reserved": [
+      {
+        "name": "west-pocket-return",
+        "file": "reserved\\west-pocket-return.wad",
+        "marker": "MAP01",
+        "sha256": "b2ae012e0bd802c7a1070f0905d03188f4da66d05ddb2c5b3c140f504691e120",
+        "geometry_sha256": "3ee4f5f7830a612849257df26bc0b4eaf7d7b02679c3533c03fe0d1644f48dc2"
+      },
+      {
+        "name": "south-spur-return",
+        "file": "reserved\\south-spur-return.wad",
+        "marker": "MAP01",
+        "sha256": "e1fea053fd77b4075825a6d70361f443a0a1d50be6273516ef8e6a394493df5c",
+        "geometry_sha256": "070f4a715c285a553afc727f68582af850ae346dfa2a948f8b2961c58cb985e5"
+      },
+      {
+        "name": "forward-key-gallery",
+        "file": "reserved\\forward-key-gallery.wad",
+        "marker": "MAP01",
+        "sha256": "4b541ffaf13319eb6212468bec04aa3ef7caedaaf227e6fc7c5d83a9ecbc3c95",
+        "geometry_sha256": "407c518cc833e1358bd1cc71aaed6a04f77155cb37ff830f518dfcfab51d05e8"
+      },
+      {
+        "name": "guarded-court",
+        "file": "reserved\\guarded-court.wad",
+        "marker": "MAP01",
+        "sha256": "cf30adba6ca47d1d2526f683ee5e651c61a1fb5a0f096c37baa969d24c18f5ba",
+        "geometry_sha256": "5a561ea43c34cb641884388036c160e710bdb3248bcb33ae69a20752f637a593"
+      }
+    ],
+    "drills": [
+      {
+        "name": "reverse-short",
+        "file": "drills\\reverse-short.wad",
+        "marker": "MAP01",
+        "sha256": "c0362259380282516678e5b6a11324842f21e10d65c4cfe3004dc0dabecdb8eb",
+        "geometry_sha256": "148b79a3f96267e558477fe44eb87260e65158f85eab5bd37f10dae23547c8f5"
+      },
+      {
+        "name": "reverse-wide",
+        "file": "drills\\reverse-wide.wad",
+        "marker": "MAP01",
+        "sha256": "857501d2f23636ee42e0093eea0f9f48ff48d5fe0d117580a1aeb44d15d75f23",
+        "geometry_sha256": "10f45716dc38f952a6e12aca1d45db5d494dd900af4e8a2e867153d080b4d206"
+      },
+      {
+        "name": "reverse-mirror",
+        "file": "drills\\reverse-mirror.wad",
+        "marker": "MAP01",
+        "sha256": "ce001f5ed3611b57616d421e045dbf6475a3c4a133af4235aff0ed25a6430d26",
+        "geometry_sha256": "0e6b4d0587dcdf4ecbef3c188eb6b12684594b0e6307c337608357188e82c802"
+      },
+      {
+        "name": "reverse-north",
+        "file": "drills\\reverse-north.wad",
+        "marker": "MAP01",
+        "sha256": "320b8b32a7da94d899760acf1741fa3db449f009b65e969a5dd5b1240e40a745",
+        "geometry_sha256": "10f7c8624a73595555dce85b8537680b87f878d7aa77d4cc464bf214dbb26558"
+      },
+      {
+        "name": "oblique-south",
+        "file": "drills\\oblique-south.wad",
+        "marker": "MAP01",
+        "sha256": "5986de4c267f89cfe004334e19d555cef1d987ad8a0a25d9275282dce5288f25",
+        "geometry_sha256": "51d10ac47c747e18ec3bfea2597a223dbe68f2f982b56bdcd443e919ca49b678"
+      },
+      {
+        "name": "side-card",
+        "file": "drills\\side-card.wad",
+        "marker": "MAP01",
+        "sha256": "fd5752676082e04405b0276583253182dca48ff423a4de524da7d1319d26ea9d",
+        "geometry_sha256": "13f0a5c1e753d35ed4b9afa16921587ed2471b13ec9b1cec18920cb78b081833"
+      },
+      {
+        "name": "opposite-card",
+        "file": "drills\\opposite-card.wad",
+        "marker": "MAP01",
+        "sha256": "512144309a797a2818156e42b02c29ebedfaea6bdaccd26ded97aab86d0e64ca",
+        "geometry_sha256": "15f7299bb0e8917b988f2d36db72e3865070fa01891ed6f04865c8403d1bc5d5"
+      },
+      {
+        "name": "forward-retention",
+        "file": "drills\\forward-retention.wad",
+        "marker": "MAP01",
+        "sha256": "ede68ee7303db3d967beedd3168dda6289011aa3228e27f68808ef6d27650a87",
+        "geometry_sha256": "1f45988b5a8ee7512215e1671a1f4d6a9d7fb0ad9a13afe52f9243aad9fc1a2e"
+      }
+    ]
+  }
+}

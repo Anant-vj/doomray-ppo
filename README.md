@@ -1,5 +1,7 @@
 # DoomRay PPO
 
+**Experimental branch with update 845 weights.** C749 remains the approved competition submission. [Candidate results](research/key-recovery-u845/) · [Approved release on main](https://github.com/Anant-vj/doomray-ppo/tree/6c2d5499f973c77b4a239f778837280edf64e57b)
+
 A compact neural ViZDoom player for **Yugaantar 2026 · DevForge Track 1,
 Can It Play DOOM?** The task is to navigate, survive, fight, and progress in
 unseen maps using the official ego-centric observations.
