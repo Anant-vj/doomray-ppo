@@ -1,118 +1,45 @@
 # DoomRay PPO
 
-A compact neural ViZDoom player for **Yugaantar 2026 · DevForge Track 1,
-Can It Play DOOM?** The task is to navigate, survive, fight, and progress in
-unseen maps using the official ego-centric observations.
+DoomRay PPO is a ViZDoom agent for **DevForge Track 1 · Can It Play DOOM?** Its policy learns to move, turn, interact and fire from live gameplay. The competition entry is **C749** (Progression C, run 43, update 749). Its training lineage contains 324,864 simulator transitions and 7,614 PPO optimizer steps. [Frozen model and code](https://github.com/Anant-vj/doomray-ppo/tree/6c2d5499f973c77b4a239f778837280edf64e57b)
 
-The policy combines an ordered circular ray encoder, masked entity pooling,
-player vitals, and a four-frame history. Its six trained categorical heads
-produce the official nine-button action. We trained the model from
-simulator rollouts using a custom PyTorch implementation of PPO and batched
-inference across separate environment workers. The evaluation agent
-reads the official observation and loads the committed Git LFS weights.
+## Watch C749 recover a key
 
-## Quickstart
+![Seven seconds of C749 picking up the red keycard, returning to the locked door and reaching the exit. Captions show the recorded decision numbers.](docs/media/c749-key-return.gif)
 
-Clone with Git LFS enabled. For a fresh native environment with Python 3.13
-and [uv](https://docs.astral.sh/uv/), run the following.
+These are the final **7.31 seconds** of a recorded backtracking drill. The red keycard was behind the spawn. C749 collected it at decision **177**, unlocked the door at **211** and exited at **231**. Seed **3102** was selected for this demonstration after the diagnostic trials. It was the only success in three attempts on this layout. [Recorded events](https://github.com/Anant-vj/doomray-ppo/blob/e9fe1740994a78b3bfb650017061b8e832d7a957/assessment/demos/c749-demonstration-runs/Backtracking-20261127-040413648/audit-report.json)
+
+## What the evaluator runs
+
+The organizer takes the latest commit on the default branch at the submission deadline. From that checkout, `DoomAgent` loads `submission/weights/policy.pt`. The model, policy and training source are all on `main`. [Agent entry point](submission/agent.py) · [Official scoring rules](https://github.com/Reinforce-SST/devforge-doom-template/blob/main/docs/EVALUATION.md)
+
+At each decision the policy encodes 64 rays around the player, pools visible entities and reads player vitals and the previous action. A feed-forward layer combines the current observation’s features with those from the previous three decisions. Six categorical heads sample movement, strafe, turn, attack, use and weapon selection, producing the nine-button action expected by the wrapper. [Policy implementation](submission/policy.py) · [PPO trainer](training/ppo.py)
+
+## What the tests showed
+
+| Test | Result |
+| --- | --- |
+| Controlled keycard routes | C749 reached the exit in 3/3 straight-route trials and 1/3 backtracking trials. |
+| Original locked holdout | C749 survived 0/8 episodes and recorded zero keys, unlocks and exits. |
+| Independent examination | Three models played the same 16 unfamiliar Freedoom layouts, two seeds each. All 41,035 decisions were legal. Across 96 episodes, no model collected a key, unlocked a door or reached an exit. |
+| Matched key-recovery follow-up | U845 exited 7/8 times overall versus 4/8 for C749, including 4/4 versus 1/4 on key-return layouts. Each exited one of the two guarded-court runs. On the seed where C749 exited, U845 died. |
+
+C749 ranked first on the local development score used to select the submission. In the independent examination, **Stack-26 u621** scored higher on the local balanced measure (**10.542 vs 9.895**) and survived more often (**8/32 vs 3/32**). U845 later improved key recovery but missed the requirement to preserve earlier successful routes. C749 remains the selected entry. The organizers’ hidden-map score and ranking are unknown. [Development results](https://github.com/Anant-vj/doomray-ppo/blob/6c2d5499f973c77b4a239f778837280edf64e57b/README.md#checkpoint-selection) · [Independent assessment](https://github.com/Anant-vj/doomray-ppo/tree/e9fe1740994a78b3bfb650017061b8e832d7a957/assessment) · [U845 paired results](https://github.com/Anant-vj/doomray-ppo/blob/fc69c00d43479dd93baeb0f399e15647629d8b9f/research/key-recovery-u845/matched-results.md)
+
+Combat accuracy and movement bias limit C749 on unfamiliar layouts. Across its 32 independent episodes, it strafed left on 92% of decisions and right on 1.9%. The player counters recorded 8 hits and 66 damage dealt. The engine counted 58 kills without establishing who caused them. [Action and combat measurements](https://github.com/Anant-vj/doomray-ppo/blob/e9fe1740994a78b3bfb650017061b8e832d7a957/assessment/reports/observed-runtime-comparison.json)
+
+## Run the validator
+
+With Git LFS and the competition Python 3.13 environment available, run the following.
 
 ```bash
+git clone https://github.com/Anant-vj/doomray-ppo.git
+cd doomray-ppo
 git lfs pull
-uv sync --locked --no-dev
-uv pip install torch --index-url https://download.pytorch.org/whl/cpu
-uv run --no-sync python validate.py --device cpu
+python validate.py --device cpu
 ```
 
-Training and evaluation commands for the existing D: environment are in
-[training/LOCAL.md](training/LOCAL.md). The official Linux image can be
-used with the validator’s Docker mode when that image and engine are available.
+The frozen C749 release passed the native Windows validator. In the independent examination its CPU inference averaged **2.22 ms** per decision, with **8.84 ms** at the 99th percentile over 11,446 decisions. The official Linux Docker image and scorer GPU remain unverified. [Native validator log](https://github.com/Anant-vj/doomray-ppo/blob/fc69c00d43479dd93baeb0f399e15647629d8b9f/research/key-recovery-u845/logs/validator-C749.txt) · [Environment and Docker instructions](docs/SUBMISSION.md)
 
-**Platforms:** Linux (x86-64/ARM), macOS on Apple Silicon (macOS 15+) and Windows (x86-64) all
-work with `uv sync` and `validate.py`. Intel Macs have no `vizdoom` 1.3.3 wheel: use Docker or a
-Linux machine. Evaluation runs on Linux, so `validate.py --docker` is the closest check.
+**C749 weight SHA-256** `0b8f290cfe36a25f8593da925d4a4a0ddb8790b37f9319a019aed276a73f5e61`
 
-## Repository layout
-
-```
-env/                  official ViZDoom Gymnasium wrapper (doom_env): spaces, sensors, protocol, limits
-maps/                 one small test map (NOT an evaluation map); bring your own for training
-submission/agent.py   your DoomAgent: the evaluation entry point
-submission/weights/   model weights (Git LFS)
-training/             your training pipeline
-validate.py           run before submitting
-tests/                tests for the wrapper and validator (uv run pytest)
-docs/                 contract, rules, submission guide, evaluation details
-```
-
-## Using the environment
-
-```python
-from doom_env import make_env
-
-env = make_env("maps/two_rooms.wad")     # test map; use your own maps for training
-obs, info = env.reset(seed=0)
-obs, reward, terminated, truncated, info = env.step(env.action_space.sample())
-```
-
-Observations are a dict of `rgb`, `depth`, `vitals`, `rays` and `visible_entities`, all
-ego-centric and partially observable. See [docs/CONTRACT.md](docs/CONTRACT.md).
-The wrapper's `reward` is a basic default for convenience. Shape your own reward for training.
-
-Headless training uses rays, visible entities, and vitals. Local checkpoint
-selection uses matched seeds, maps, and tick caps. The reports separate
-development, inspected diagnostic maps, and the final untouched holdout.
-
-## Checkpoint selection
-
-The selected frame-stack checkpoint is progression run 43, update 749.
-Its lineage contains 324,864 gameplay decisions and 7,614 optimizer steps.
-Evaluation compares policies on identical seeds, maps and 2,100-tick caps.
-The local score proxy combines combat, exploration, progression and survival.
-The official scoring weights are private.
-
-| Four-map development, 16 episodes per policy | Proxy | Alive | Kills | Door events |
-| --- | ---: | ---: | ---: | ---: |
-| Selected progression update 749 | 11.219 | 3/16 | 54 | 21 |
-| Original stack update 174 | 6.245 | 9/16 | 20 | 7 |
-| Seeded random | 4.855 | 10/16 | 15 | 9 |
-
-The selected checkpoint led the documented balanced, survival-combat
-and progression profiles. The gains came with lower survival. It produced
-zero invalid actions in the development suite.
-
-The final holdout used previously untouched MAP11 and MAP12, with seeds
-1001–1004. The checkpoint was frozen before the first holdout episode.
-
-| Final holdout, 8 episodes per policy | Proxy | Alive | Kills | Door events | Mean explored cells |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| Selected progression update 749 | 4.570 | 0/8 | 9 | 4 | 24.125 |
-| Original stack update 174 | 2.263 | 0/8 | 7 | 0 | 19.750 |
-| Seeded random | 0.853 | 0/8 | 6 | 1 | 10.625 |
-
-C749 led on both holdout maps and won six of eight matched seed comparisons.
-Across all 24 episodes, each policy recorded zero keys, unlocks, exits and
-invalid actions. Full-level survival and progression remain weak.
-
-## Hardware at evaluation
-
-One NVIDIA **RTX 3090 (24 GB)** shared between evaluation workers. Each agent gets **2 GB VRAM,
-8 GB RAM and 1 CPU thread**, so keep models compact and inference fast
-(see [hardware](docs/EVALUATION.md#hardware) and [timeouts](docs/EVALUATION.md#timeouts)).
-`validate.py` runs your agent under the same CPU/RAM limits and reports GPU memory.
-
-## Documentation
-
-| Doc | What's inside |
-| --- | --- |
-| [docs/CONTRACT.md](docs/CONTRACT.md) | Observation/action spaces and the `DoomAgent` interface |
-| [docs/RULES.md](docs/RULES.md) | Ground rules: what's allowed, what gets you disqualified |
-| [docs/SUBMISSION.md](docs/SUBMISSION.md) | Submission checklist, Git LFS, 1 GB limit, `requirements.txt` |
-| [docs/EVALUATION.md](docs/EVALUATION.md) | Map tiers, scoring categories, timeouts, replays |
-
-## Rules in one minute
-
-- Actions must come from **trained neural parameters**: no rule trees, no `A*`/Dijkstra, no `atan2` aimbots,
-  no unmodified off-the-shelf SB3.
-- Change anything you want **during training**. Evaluation uses the **vanilla engine**, the
-  official wrapper and **unseen maps**.
-- Create the repo during the hackathon. Libraries are fine; the core architecture and training must be yours.
+[Training guide](training/LOCAL.md) · [Agent contract](docs/CONTRACT.md) · [Research archive](https://github.com/Anant-vj/doomray-ppo/tree/4bfd9e2fdbf9e09da6d02fff246d40a1e1aa15a6/research)
