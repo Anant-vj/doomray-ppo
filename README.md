@@ -42,4 +42,4 @@ The frozen C749 release passed the native Windows validator. In the independent 
 
 **C749 weight SHA-256** `0b8f290cfe36a25f8593da925d4a4a0ddb8790b37f9319a019aed276a73f5e61`
 
-[Training guide](training/LOCAL.md) · [Agent contract](docs/CONTRACT.md) · [Research archive](https://github.com/Anant-vj/doomray-ppo/tree/4bfd9e2fdbf9e09da6d02fff246d40a1e1aa15a6/research)
+[Training guide](training/LOCAL.md) · [Agent contract](docs/CONTRACT.md) · [Five PPO research campaigns](research/README.md) · [U845 training and matched runs](research/key-recovery-u845/README.md)

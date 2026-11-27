@@ -1,0 +1,20 @@
+{
+  "parent_sha256": "0b8f290cfe36a25f8593da925d4a4a0ddb8790b37f9319a019aed276a73f5e61",
+  "init": "published inference weights, fresh Adam",
+  "local_update": 845,
+  "new_rollouts": 96,
+  "live_transitions": 24576,
+  "new_optimizer_steps": 576,
+  "changed_tensors": 22,
+  "max_initial_log_ratio_error": 1.9073486328125e-06,
+  "measured_training_sps": 69.35,
+  "trainer": {
+    "started": "2026-11-27T07:57:25.691828+05:30",
+    "finished": "2026-11-27T08:03:27.843209+05:30",
+    "exit_code": 0
+  },
+  "training_sha256": "89a212a1a043001a768a572da0db31033c1736bbc9d1e7182d44bd8bef1cf3d6",
+  "inference_sha256": "60cdc992b2505f46b97bc43667cce305a8df331e91a562fc138bff11fc8ef677",
+  "inference_path": "submission/weights/policy.pt",
+  "weight_commit": "fb9f1eb8e844c6047454b14c5219bc81c5d80d7f"
+}

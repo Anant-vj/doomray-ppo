@@ -1,0 +1,9 @@
+{
+  "model": "C749",
+  "code": 0,
+  "cpu_affinity_mask": 1,
+  "omp_threads": "1",
+  "commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+  "sha256": "0b8f290cfe36a25f8593da925d4a4a0ddb8790b37f9319a019aed276a73f5e61",
+  "checked": "2026-11-27T08:05:07.7511066+05:30"
+}

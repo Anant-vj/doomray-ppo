@@ -1,0 +1,12 @@
+Validating C749 (contract 1.0.0-draft)
+
+ [32m✓[0m Repository size (tracked files): 686.0 KB of 1.0 GB
+ [32m✓[0m requirements.txt: no extra packages
+ [32m✓[0m DoomAgent interface: __init__, reset, act
+ [33m![0m CPU limit: could not pin the agent to 1 CPU here; evaluation gives it one CPU, so timings may look better than they will be
+ [32m✓[0m Initialization: 2.7s (limit 60s) on device 'cpu'
+ [32m✓[0m Episode on 'two_rooms.wad:MAP01': 484 steps, died, agent time 7.3s of 21.0s budget, 8.8s wall-clock
+ [32m✓[0m Step latency 'two_rooms.wad:MAP01': first 16 ms, p50 14.9 ms, p99 25.8 ms, max 28 ms
+ [33m![0m Peak RAM: could not be measured here (needs Linux /proc); the limit is 8192 MB
+
+[32mPASSED[0m with 2 warning(s).

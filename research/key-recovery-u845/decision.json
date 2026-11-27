@@ -1,0 +1,51 @@
+{
+  "finished": "2026-11-27T08:05:27.077936+05:30",
+  "recommended": "C749",
+  "recommended_commit": "6c2d5499f973c77b4a239f778837280edf64e57b",
+  "recommended_weight_sha256": "0b8f290cfe36a25f8593da925d4a4a0ddb8790b37f9319a019aed276a73f5e61",
+  "approved_main": "6c2d5499f973c77b4a239f778837280edf64e57b",
+  "candidate_local_commit": "fb9f1eb8e844c6047454b14c5219bc81c5d80d7f",
+  "candidate_weight_sha256": "60cdc992b2505f46b97bc43667cce305a8df331e91a562fc138bff11fc8ef677",
+  "aggregate": {
+    "C749": {
+      "exit": 4,
+      "keys": 5,
+      "unlocks": 4,
+      "early_death": 1,
+      "invalid_actions": 0,
+      "decisions": 2260,
+      "death": 1,
+      "player_hits": 1.0,
+      "player_damage": 15.0
+    },
+    "candidate": {
+      "exit": 7,
+      "keys": 8,
+      "unlocks": 8,
+      "early_death": 0,
+      "invalid_actions": 0,
+      "decisions": 2149,
+      "death": 1,
+      "player_hits": 0.0,
+      "player_damage": 0.0
+    }
+  },
+  "decision_reasons": [
+    "guarded-court seed 81437 lost exit",
+    "guarded-court seed 81437 regressed on survival"
+  ],
+  "native_validators": {
+    "C749": {
+      "exit_code": 0,
+      "log_sha256": "356ff75bc542035c62e2cdd806b94a257b2695988ba7d2a72015daa089b906cc",
+      "original_log_sha256": "2eed55d3e10cad1233c4c84cc0155934172226201eb6b5c84000fc87319fd39e"
+    },
+    "candidate": {
+      "exit_code": 0,
+      "log_sha256": "8a88eeab0435ae221c07d7de1ead36e30130fe543eed9ff0b15deda55abf6f84",
+      "original_log_sha256": "00606a96690f6818812081d7b42c4a5e3085dfe5d636a3f8c70feb874bc1299f"
+    }
+  },
+  "C_decline_bytes": 5229854720,
+  "elapsed_minutes_to_training_end": 9.314053483333334
+}

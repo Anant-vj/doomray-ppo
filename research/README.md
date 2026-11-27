@@ -1,6 +1,6 @@
 # DoomRay PPO research archive
 
-DoomRay PPO learns combat, navigation, and keycard progression from structured ViZDoom observations and emits the nine buttons in the official action contract. The frozen competition submission is [C749 on main](https://github.com/Anant-vj/doomray-ppo/tree/6c2d5499f973c77b4a239f778837280edf64e57b), Progression C, run 43, update 749. This branch documents five follow-up campaigns. It contains no alternative model weights. The [96-episode independent assessment](https://github.com/Anant-vj/doomray-ppo/tree/e9fe1740994a78b3bfb650017061b8e832d7a957) is a separate publication.
+This archive follows the [original C749 release](https://github.com/Anant-vj/doomray-ppo/tree/6c2d5499f973c77b4a239f778837280edf64e57b), Progression C, run 43, update 749. The five campaigns below studied combat, navigation, and keycard progression. A subsequent [key-recovery study](key-recovery-u845/README.md) trained U845 from C749. The totals below cover the original five campaigns and their stated baselines. The [96-episode independent assessment](https://github.com/Anant-vj/doomray-ppo/tree/e9fe1740994a78b3bfb650017061b8e832d7a957/assessment) has its own episode ledger.
 
 ## Submitted policy and training
 
